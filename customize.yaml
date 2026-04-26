@@ -1,3 +1,21 @@
 #script.sonos_group_speakers_all:
 #  friendly_name: Gruppiere alle Sonos
 #  icon: mdi:home-variant
+
+light.deckenlicht_kinderspielzimmer_light:
+  friendly_name: Deckenlicht Zimmer Julian
+
+light.licht_schlafzimmer_julian:
+  friendly_name: Licht Zimmer Julian
+
+switch.nachttisch_julian:
+  friendly_name: Nachttisch Zimmer Julian
+
+light.licht_schlafzimmer_joshua:
+  friendly_name: Licht Zimmer Joshua
+
+switch.nachttisch_joshua:
+  friendly_name: Nachttisch Zimmer Joshua
+
+light.kinderzimmer_hochbett_licht:
+  friendly_name: Hochbett Licht Zimmer Joshua

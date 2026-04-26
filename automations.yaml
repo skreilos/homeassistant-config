@@ -1261,10 +1261,9 @@
         id:
         - Button I
       sequence:
-      - type: toggle
-        device_id: 4744a907fed7a39284952dd53fbef77c
-        entity_id: 47a4e8c3305f48640146a6bf72843b69
-        domain: light
+      - service: light.toggle
+        target:
+          entity_id: light.deckenlicht_kinderspielzimmer_light
     - conditions:
       - condition: trigger
         id:

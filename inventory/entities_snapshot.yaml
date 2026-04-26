@@ -325,6 +325,19 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: null
+  - entity_id: "automation.button_zimmer_joshua_schreibtisch"
+    domain: "automation"
+    platform: "automation"
+    name: null
+    original_name: "Button Zimmer Joshua Schreibtisch"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: null
   - entity_id: "automation.button_zimmer_julian_schreibtisch"
     domain: "automation"
     platform: "automation"
@@ -10835,7 +10848,7 @@ entities:
     name: null
     original_name: "Schlafzimmer Stephan - Off - Motion On"
     area_id: "schlafzimmer"
-    area_name: "Schlafzimmer Stefan"
+    area_name: "Zimmer Stephan"
     device_id: null
     device_name: null
     disabled_by: null

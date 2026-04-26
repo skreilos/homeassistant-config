@@ -1,0 +1,5735 @@
+{
+  "version": 1,
+  "minor_version": 12,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {
+        "area_id": null,
+        "config_entries": [
+          "7cb3fb84959b17dfec50f953ec7c1963"
+        ],
+        "config_entries_subentries": {
+          "7cb3fb84959b17dfec50f953ec7c1963": [
+            null
+          ]
+        },
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": "config_entry",
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "78947a6de11363ef8915100005a9cdc1",
+        "identifiers": [
+          [
+            "hacs",
+            "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "hacs.xyz",
+        "model": "",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:16:55.644759+00:00",
+        "name_by_user": null,
+        "name": "HACS",
+        "primary_config_entry": "7cb3fb84959b17dfec50f953ec7c1963",
+        "serial_number": null,
+        "sw_version": "2.0.5",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "a50d8aa4429a79b3c07cb7b618521338"
+        ],
+        "config_entries_subentries": {
+          "a50d8aa4429a79b3c07cb7b618521338": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "5cd5179db8383b5b5c4402085c6f645b",
+        "identifiers": [
+          [
+            "sun",
+            "a50d8aa4429a79b3c07cb7b618521338"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": null,
+        "model": null,
+        "model_id": null,
+        "modified_at": "2024-10-03T19:40:20.775648+00:00",
+        "name_by_user": null,
+        "name": "Sun",
+        "primary_config_entry": "a50d8aa4429a79b3c07cb7b618521338",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "joshua",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "0c:43:14:ff:fe:18:ad:86"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "37686e2beb8eb3a62b51f3971685ad74",
+        "identifiers": [
+          [
+            "deconz",
+            "0c:43:14:ff:fe:18:ad:86"
+          ],
+          [
+            "zha",
+            "0c:43:14:ff:fe:18:ad:86"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI on/off switch",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.733506+00:00",
+        "name_by_user": "Button Nachttisch Joshua",
+        "name": "IKEA of Sweden TRADFRI on/off switch",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x22010631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "0c:43:14:ff:fe:18:b0:1c"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "12235c8bebf69aaad3fd31f850dee7f5",
+        "identifiers": [
+          [
+            "deconz",
+            "0c:43:14:ff:fe:18:b0:1c"
+          ],
+          [
+            "zha",
+            "0c:43:14:ff:fe:18:b0:1c"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI on/off switch",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.735349+00:00",
+        "name_by_user": "Button Schreibtisch",
+        "name": "IKEA of Sweden TRADFRI on/off switch",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x22010631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "julian",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "08:6b:d7:ff:fe:5f:7f:64"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4e17a203dbc17cd16616e13cba2c2af3",
+        "identifiers": [
+          [
+            "deconz",
+            "08:6b:d7:ff:fe:5f:7f:64"
+          ],
+          [
+            "zha",
+            "08:6b:d7:ff:fe:5f:7f:64"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI on/off switch",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.735617+00:00",
+        "name_by_user": "Button Werktisch",
+        "name": "IKEA of Sweden TRADFRI on/off switch",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x22008631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "kinderschlafzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "08:6b:d7:ff:fe:5f:75:ad"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0b6ac1d9ef3f5dc60796d658eab9b08b",
+        "identifiers": [
+          [
+            "deconz",
+            "08:6b:d7:ff:fe:5f:75:ad"
+          ],
+          [
+            "zha",
+            "08:6b:d7:ff:fe:5f:75:ad"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI on/off switch",
+        "model_id": null,
+        "modified_at": "2025-08-26T22:20:18.977368+00:00",
+        "name_by_user": "Button Nachttisch Julian",
+        "name": "IKEA of Sweden TRADFRI on/off switch",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x22008631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "gang",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "90:ab:96:ff:fe:37:ad:4f"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e39a6a9bb01f2a016c770c4678661e5f",
+        "identifiers": [
+          [
+            "deconz",
+            "90:ab:96:ff:fe:37:ad:4f"
+          ],
+          [
+            "zha",
+            "90:ab:96:ff:fe:37:ad:4f"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI on/off switch",
+        "model_id": null,
+        "modified_at": "2025-09-14T08:15:48.627478+00:00",
+        "name_by_user": "Button Eingangstüre",
+        "name": "IKEA of Sweden TRADFRI on/off switch",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x22010631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "julian",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "90:ab:96:ff:fe:37:b1:fb"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "7c03d2ff1e88cd5113d8a6a5a04d1f37",
+        "identifiers": [
+          [
+            "deconz",
+            "90:ab:96:ff:fe:37:b1:fb"
+          ],
+          [
+            "zha",
+            "90:ab:96:ff:fe:37:b1:fb"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI on/off switch",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.734262+00:00",
+        "name_by_user": "Button Spielzimmer",
+        "name": "IKEA of Sweden TRADFRI on/off switch",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x22010631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "trolley",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "90:ab:96:ff:fe:37:a2:1e"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0eed94805fadb03c36917a60a6bfb84f",
+        "identifiers": [
+          [
+            "deconz",
+            "90:ab:96:ff:fe:37:a2:1e"
+          ],
+          [
+            "zha",
+            "90:ab:96:ff:fe:37:a2:1e"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI on/off switch",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.733359+00:00",
+        "name_by_user": "Button Trolley",
+        "name": "IKEA of Sweden TRADFRI on/off switch",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x22010631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "schlafzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:03:f3:b4:4f"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0283b2963c652472d3cddf0880770a65",
+        "identifiers": [
+          [
+            "deconz",
+            "00:15:8d:00:03:f3:b4:4f"
+          ],
+          [
+            "zha",
+            "00:15:8d:00:03:f3:b4:4f"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_motion.aq2",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.895869+00:00",
+        "name_by_user": "Motion Bett Stefan R",
+        "name": "LUMI lumi.sensor_motion.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "wohnzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:04:4d:00:ea"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "9873417369167e1538d8a3d98ca63c4f",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:04:4d:00:ea"
+          ],
+          [
+            "deconz",
+            "00:15:8d:00:04:4d:00:ea"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_motion.aq2",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.895984+00:00",
+        "name_by_user": "Motion TV",
+        "name": "LUMI lumi.sensor_motion.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "wohnzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:04:05:4e:9a"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2ca0200f1899b85ef94427d2286d18e6",
+        "identifiers": [
+          [
+            "deconz",
+            "00:15:8d:00:04:05:4e:9a"
+          ],
+          [
+            "zha",
+            "00:15:8d:00:04:05:4e:9a"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_motion.aq2",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.895931+00:00",
+        "name_by_user": "Motion Sofa",
+        "name": "LUMI lumi.sensor_motion.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "kuche",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:05:41:46:46"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "51879b5d5dac01662aa2fc857af1aa6a",
+        "identifiers": [
+          [
+            "deconz",
+            "00:15:8d:00:05:41:46:46"
+          ],
+          [
+            "zha",
+            "00:15:8d:00:05:41:46:46"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_motion.aq2",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.896407+00:00",
+        "name_by_user": "Motion Küche",
+        "name": "LUMI lumi.sensor_motion.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "gang",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:04:4d:00:eb"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "aa9260cd45b06cc5a54848fc36a01dc8",
+        "identifiers": [
+          [
+            "deconz",
+            "00:15:8d:00:04:4d:00:eb"
+          ],
+          [
+            "zha",
+            "00:15:8d:00:04:4d:00:eb"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_motion.aq2",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.896357+00:00",
+        "name_by_user": "Motion Gang hinten",
+        "name": "LUMI lumi.sensor_motion.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "gang",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:02:53:15:d0"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e67f6135517ff05869cc65c93f5d7b4e",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:02:53:15:d0"
+          ],
+          [
+            "deconz",
+            "00:15:8d:00:02:53:15:d0"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_magnet.aq2",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.896256+00:00",
+        "name_by_user": "Eingangstüre",
+        "name": "LUMI lumi.sensor_magnet.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "gang",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:05:3f:80:6e"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "5ed17d30e78159f88e8eb93388744446",
+        "identifiers": [
+          [
+            "deconz",
+            "00:15:8d:00:05:3f:80:6e"
+          ],
+          [
+            "zha",
+            "00:15:8d:00:05:3f:80:6e"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_motion.aq2",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.896306+00:00",
+        "name_by_user": "Motion Gang mitte",
+        "name": "LUMI lumi.sensor_motion.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "wohnzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "dc:8e:95:ff:fe:2d:d0:5b"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "482bd8f596aeb2ef1745a17efc0d5ce6",
+        "identifiers": [
+          [
+            "deconz",
+            "dc:8e:95:ff:fe:2d:d0:5b"
+          ],
+          [
+            "zha",
+            "dc:8e:95:ff:fe:2d:d0:5b"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI bulb GU10 WW 400lm",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.731583+00:00",
+        "name_by_user": "Sofa Spot",
+        "name": "IKEA of Sweden TRADFRI bulb GU10 WW 400lm",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x21022631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "schlafzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:17:88:01:0b:04:ed:c6"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "726d2334b69fb77d7e258d9eafdcd083",
+        "identifiers": [
+          [
+            "deconz",
+            "00:17:88:01:0b:04:ed:c6"
+          ],
+          [
+            "zha",
+            "00:17:88:01:0b:04:ed:c6"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Philips",
+        "model": "LWV001",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.731106+00:00",
+        "name_by_user": "Stefan Deckenlicht",
+        "name": "Philips LWV001",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x01001408",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "julian",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:17:88:01:0b:05:2e:ac"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4744a907fed7a39284952dd53fbef77c",
+        "identifiers": [
+          [
+            "deconz",
+            "00:17:88:01:0b:05:2e:ac"
+          ],
+          [
+            "zha",
+            "00:17:88:01:0b:05:2e:ac"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Philips",
+        "model": "LWV001",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.734408+00:00",
+        "name_by_user": "Spielzimmer Deckenlicht",
+        "name": "Philips LWV001",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x01001408",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "joshua",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:17:88:01:09:9c:28:ae"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "63aa61c380a7932519e7479316839d5e",
+        "identifiers": [
+          [
+            "deconz",
+            "00:17:88:01:09:9c:28:ae"
+          ],
+          [
+            "zha",
+            "00:17:88:01:09:9c:28:ae"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Philips",
+        "model": "LWV001",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.735828+00:00",
+        "name_by_user": "Schlafzimmer Kinder Deckenlicht",
+        "name": "Philips LWV001",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x01001408",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "essraum",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:17:88:01:0b:07:a7:5c"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "17657ce5f6476e5acff1a28788b61338",
+        "identifiers": [
+          [
+            "deconz",
+            "00:17:88:01:0b:07:a7:5c"
+          ],
+          [
+            "zha",
+            "00:17:88:01:0b:07:a7:5c"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Philips",
+        "model": "LWV001",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.730941+00:00",
+        "name_by_user": "Esstisch MR",
+        "name": "Philips LWV001",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x01001408",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "essraum",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:17:88:01:0b:09:14:40"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4a10108d8bd50065a600c5e09ddf571b",
+        "identifiers": [
+          [
+            "deconz",
+            "00:17:88:01:0b:09:14:40"
+          ],
+          [
+            "zha",
+            "00:17:88:01:0b:09:14:40"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Philips",
+        "model": "LWV001",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.733032+00:00",
+        "name_by_user": "Esstisch ML",
+        "name": "Philips LWV001",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x01001408",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "essraum",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:17:88:01:0b:07:92:10"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c9da57d8155ebf844f55f2206b7c7f86",
+        "identifiers": [
+          [
+            "deconz",
+            "00:17:88:01:0b:07:92:10"
+          ],
+          [
+            "zha",
+            "00:17:88:01:0b:07:92:10"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Philips",
+        "model": "LWV001",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.731426+00:00",
+        "name_by_user": "Esstisch R",
+        "name": "Philips LWV001",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x01001408",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "wohnzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:17:88:01:0b:07:62:f1"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "be31456f9d9558edd71e8b8a50022e18",
+        "identifiers": [
+          [
+            "deconz",
+            "00:17:88:01:0b:07:62:f1"
+          ],
+          [
+            "zha",
+            "00:17:88:01:0b:07:62:f1"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Philips",
+        "model": "LWV001",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.730724+00:00",
+        "name_by_user": "Sofa Deckenlicht",
+        "name": "Philips LWV001",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x01001408",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:21:2e:ff:ff:02:a5:8b"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "217561ab421863b1321f8c046c338ede",
+        "identifiers": [
+          [
+            "deconz",
+            "00:21:2e:ff:ff:02:a5:8b"
+          ],
+          [
+            "zha",
+            "00:21:2e:ff:ff:02:a5:8b"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "dresden elektronik",
+        "model": "Conbee II",
+        "model_id": null,
+        "modified_at": "2026-04-26T15:26:39.036333+00:00",
+        "name_by_user": null,
+        "name": "dresden elektronik Conbee II",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "wc",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:09:1c:7e:ea"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "b072ee5522f7b80870e21a7234d874ff",
+        "identifiers": [
+          [
+            "deconz",
+            "00:15:8d:00:09:1c:7e:ea"
+          ],
+          [
+            "zha",
+            "00:15:8d:00:09:1c:7e:ea"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.weather",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.896037+00:00",
+        "name_by_user": "MultiSensor WC",
+        "name": "LUMI lumi.weather",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "schlafzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:09:1c:81:5a"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "3c8b53c2969c5a3e50931fa191890088",
+        "identifiers": [
+          [
+            "deconz",
+            "00:15:8d:00:09:1c:81:5a"
+          ],
+          [
+            "zha",
+            "00:15:8d:00:09:1c:81:5a"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.weather",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.895518+00:00",
+        "name_by_user": "MultiSensor Schlafzimmer Stephan",
+        "name": "LUMI lumi.weather",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "schlafzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:09:1b:56:c7"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "709ca4cbacfbbee4f21c56ae2e4b33f1",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:09:1b:56:c7"
+          ],
+          [
+            "deconz",
+            "00:15:8d:00:09:1b:56:c7"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.weather",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.896101+00:00",
+        "name_by_user": "MultiSensor Schlafzimmer Stephan",
+        "name": "LUMI lumi.weather",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "julian",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:09:1b:56:8a"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4bad305e69673bc35f3b6d64b5589c38",
+        "identifiers": [
+          [
+            "deconz",
+            "00:15:8d:00:09:1b:56:8a"
+          ],
+          [
+            "zha",
+            "00:15:8d:00:09:1b:56:8a"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.weather",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.896203+00:00",
+        "name_by_user": "MultiSensor Spielzimmer",
+        "name": "LUMI lumi.weather",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "joshua",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "cc:86:ec:ff:fe:91:29:07"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "39c23fb1cbd1d92b9c93780eeed3cfb4",
+        "identifiers": [
+          [
+            "deconz",
+            "cc:86:ec:ff:fe:91:29:07"
+          ],
+          [
+            "zha",
+            "cc:86:ec:ff:fe:91:29:07"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI control outlet",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.732735+00:00",
+        "name_by_user": "Julian Nachttisch",
+        "name": "IKEA of Sweden TRADFRI control outlet",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x20024623",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "julian",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "08:6b:d7:ff:fe:5c:bb:1c"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "d8cd05abed81ccd27d4bad7da9865254",
+        "identifiers": [
+          [
+            "deconz",
+            "08:6b:d7:ff:fe:5c:bb:1c"
+          ],
+          [
+            "zha",
+            "08:6b:d7:ff:fe:5c:bb:1c"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI control outlet",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.735191+00:00",
+        "name_by_user": "Werktisch Licht",
+        "name": "IKEA of Sweden TRADFRI control outlet",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x20022623",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "joshua",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "08:6b:d7:ff:fe:5d:aa:74"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a3e1db2d95ab52e549c92ec4ac6bc0b5",
+        "identifiers": [
+          [
+            "deconz",
+            "08:6b:d7:ff:fe:5d:aa:74"
+          ],
+          [
+            "zha",
+            "08:6b:d7:ff:fe:5d:aa:74"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI control outlet",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.731903+00:00",
+        "name_by_user": "Joshua Nachttisch",
+        "name": "IKEA of Sweden TRADFRI control outlet",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x20022623",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "joshua",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "94:34:69:ff:fe:01:5e:1b"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "b647cdc3d04cbc30eb7716c2b4eb4ca2",
+        "identifiers": [
+          [
+            "zha",
+            "94:34:69:ff:fe:01:5e:1b"
+          ],
+          [
+            "deconz",
+            "94:34:69:ff:fe:01:5e:1b"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI control outlet",
+        "model_id": null,
+        "modified_at": "2026-04-26T14:51:28.878724+00:00",
+        "name_by_user": "Schalter Zimmer Joshua Schreibtisch Licht",
+        "name": "IKEA of Sweden TRADFRI control outlet",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x20024623",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "aquarien",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "34:25:b4:ff:fe:ed:5d:30"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c794f7612318dc4e64c4d94fb93d547d",
+        "identifiers": [
+          [
+            "deconz",
+            "34:25:b4:ff:fe:ed:5d:30"
+          ],
+          [
+            "zha",
+            "34:25:b4:ff:fe:ed:5d:30"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI control outlet",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.732068+00:00",
+        "name_by_user": "Wasserpumpe",
+        "name": "IKEA of Sweden TRADFRI control outlet",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x20024623",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "aquarien",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "b4:e3:f9:ff:fe:73:ea:00"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "bfb83bea93282c7862c0c76a4c205db3",
+        "identifiers": [
+          [
+            "deconz",
+            "b4:e3:f9:ff:fe:73:ea:00"
+          ],
+          [
+            "zha",
+            "b4:e3:f9:ff:fe:73:ea:00"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI control outlet",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.731270+00:00",
+        "name_by_user": "45p CO2",
+        "name": "IKEA of Sweden TRADFRI control outlet",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x20024623",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "aquarien",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "b4:e3:f9:ff:fe:83:45:32"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "11fa6727ed7be0a87a976bb9ffbabea3",
+        "identifiers": [
+          [
+            "deconz",
+            "b4:e3:f9:ff:fe:83:45:32"
+          ],
+          [
+            "zha",
+            "b4:e3:f9:ff:fe:83:45:32"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI control outlet",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.732375+00:00",
+        "name_by_user": "65p CO2",
+        "name": "IKEA of Sweden TRADFRI control outlet",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x20024623",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "3f7212cfc0066a309adbc5e43c829a82"
+        ],
+        "config_entries_subentries": {
+          "3f7212cfc0066a309adbc5e43c829a82": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "bbc2078063e5601be400846620f1e2d8",
+        "identifiers": [
+          [
+            "google_assistant",
+            "home-assistant-e8067"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Google",
+        "model": "Google Assistant",
+        "model_id": null,
+        "modified_at": "2026-04-26T15:26:35.964787+00:00",
+        "name_by_user": null,
+        "name": "Google Assistant",
+        "primary_config_entry": "3f7212cfc0066a309adbc5e43c829a82",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "trolley",
+        "config_entries": [
+          "ab5a02aa465f95ed7f6f3503e1c6fef7"
+        ],
+        "config_entries_subentries": {
+          "ab5a02aa465f95ed7f6f3503e1c6fef7": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.104:80",
+        "connections": [
+          [
+            "mac",
+            "8c:aa:b5:05:f6:ca"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen1",
+        "id": "afa775962b66fe73d9efb36deadc74d1",
+        "identifiers": [
+          [
+            "shelly",
+            "8CAAB505F6CA"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly 1PM",
+        "model_id": "SHSW-PM",
+        "modified_at": "2025-04-06T22:42:06.568408+00:00",
+        "name_by_user": "Trolley",
+        "name": "SH_1PM_Trolley",
+        "primary_config_entry": "ab5a02aa465f95ed7f6f3503e1c6fef7",
+        "serial_number": null,
+        "sw_version": "20230913-113709/v1.14.0-gcb84623",
+        "via_device_id": null
+      },
+      {
+        "area_id": "schlafzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:02:e9:f9:19"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c837c3a276a2472f5bb7509e33e3fed7",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:02:e9:f9:19"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_motion.aq2",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.726734+00:00",
+        "name_by_user": "Motion Bett Stefan L",
+        "name": "LUMI lumi.sensor_motion.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "51d1277df54cbb8c29281ae0eef76325"
+        ],
+        "config_entries_subentries": {
+          "51d1277df54cbb8c29281ae0eef76325": [
+            null
+          ]
+        },
+        "configuration_url": "https://www.met.no/en",
+        "connections": [],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "276714ada09d64e020977ff8053a9cde",
+        "identifiers": [
+          [
+            "met",
+            "51d1277df54cbb8c29281ae0eef76325"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Met.no",
+        "model": "Forecast",
+        "model_id": null,
+        "modified_at": "2024-10-03T19:40:23.307853+00:00",
+        "name_by_user": null,
+        "name": "Forecast",
+        "primary_config_entry": "51d1277df54cbb8c29281ae0eef76325",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "bad",
+        "config_entries": [
+          "a4860d387a41c25906b7ad30adedf83f"
+        ],
+        "config_entries_subentries": {
+          "a4860d387a41c25906b7ad30adedf83f": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.31:80",
+        "connections": [
+          [
+            "mac",
+            "40:f5:20:01:04:f7"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen1",
+        "id": "4308bc8fc7705891ca220cf7d273b612",
+        "identifiers": [
+          [
+            "shelly",
+            "40F5200104F7"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly 2.5",
+        "model_id": "SHSW-25",
+        "modified_at": "2025-04-06T22:42:06.703046+00:00",
+        "name_by_user": null,
+        "name": "SH_Bad_Licht",
+        "primary_config_entry": "a4860d387a41c25906b7ad30adedf83f",
+        "serial_number": null,
+        "sw_version": "20230913-112234/v1.14.0-gcb84623",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wc",
+        "config_entries": [
+          "8615069ff06a7cdca2840d50e2cccbd3"
+        ],
+        "config_entries_subentries": {
+          "8615069ff06a7cdca2840d50e2cccbd3": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.166:80",
+        "connections": [
+          [
+            "mac",
+            "40:f5:20:00:84:23"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen1",
+        "id": "8c8ce852dad82b7f1455c3531036ee18",
+        "identifiers": [
+          [
+            "shelly",
+            "40F520008423"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly 2.5",
+        "model_id": "SHSW-25",
+        "modified_at": "2025-04-06T22:42:06.704157+00:00",
+        "name_by_user": null,
+        "name": "SH_WC_Licht",
+        "primary_config_entry": "8615069ff06a7cdca2840d50e2cccbd3",
+        "serial_number": null,
+        "sw_version": "20230913-112234/v1.14.0-gcb84623",
+        "via_device_id": null
+      },
+      {
+        "area_id": "gang",
+        "config_entries": [
+          "023392263c304cef8b730e8dc3c7dd04"
+        ],
+        "config_entries_subentries": {
+          "023392263c304cef8b730e8dc3c7dd04": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.147:80",
+        "connections": [
+          [
+            "mac",
+            "34:85:18:e0:6c:74"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2",
+        "id": "9a6e6c81a54f61b657afb03c60354d16",
+        "identifiers": [
+          [
+            "shelly",
+            "348518E06C74"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus 1PM Mini",
+        "model_id": "SNSW-001P8EU",
+        "modified_at": "2026-04-23T18:58:22.467986+00:00",
+        "name_by_user": "Gang Licht",
+        "name": "SH_Gang_Licht",
+        "primary_config_entry": "023392263c304cef8b730e8dc3c7dd04",
+        "serial_number": null,
+        "sw_version": "20260311-095857/1.7.5-g9979d16",
+        "via_device_id": null
+      },
+      {
+        "area_id": "aquarien",
+        "config_entries": [
+          "c0a91e197c6cd53ddce6fe7c3dcd41f7"
+        ],
+        "config_entries_subentries": {
+          "c0a91e197c6cd53ddce6fe7c3dcd41f7": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.68:80",
+        "connections": [
+          [
+            "mac",
+            "34:85:18:e0:57:b8"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2",
+        "id": "28a0e52e485932684d4de5ad97cd3dfe",
+        "identifiers": [
+          [
+            "shelly",
+            "348518E057B8"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus 1PM Mini",
+        "model_id": "SNSW-001P8EU",
+        "modified_at": "2026-04-23T18:58:32.806899+00:00",
+        "name_by_user": null,
+        "name": "SH_Aquarium_HS",
+        "primary_config_entry": "c0a91e197c6cd53ddce6fe7c3dcd41f7",
+        "serial_number": null,
+        "sw_version": "20260311-095857/1.7.5-g9979d16",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wohnzimmer",
+        "config_entries": [
+          "0d6711afed5f6b71edefdc47004bd694"
+        ],
+        "config_entries_subentries": {
+          "0d6711afed5f6b71edefdc47004bd694": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.162:80",
+        "connections": [
+          [
+            "mac",
+            "54:43:b2:3e:23:ec"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2",
+        "id": "02025aec51e9ccad504a27797c95aeed",
+        "identifiers": [
+          [
+            "shelly",
+            "5443B23E23EC"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus 2PM",
+        "model_id": "SNSW-102P16EU",
+        "modified_at": "2025-04-06T22:42:06.469033+00:00",
+        "name_by_user": null,
+        "name": "SH_Wohnraum_Store",
+        "primary_config_entry": "0d6711afed5f6b71edefdc47004bd694",
+        "serial_number": null,
+        "sw_version": "20240819-074337/1.4.2-gc2639da",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wc",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "a4:c1:38:ba:d5:1f:17:bc"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "33f03f64307454afde70a08f80eb904d",
+        "identifiers": [
+          [
+            "zha",
+            "a4:c1:38:ba:d5:1f:17:bc"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "_TZ3000_ko6v90pg",
+        "model": "TS011F",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.896595+00:00",
+        "name_by_user": "Waschmaschine",
+        "name": "_TZ3000_ko6v90pg TS011F",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x0000004d",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "db4ea018e5a9c016d216948790adb284"
+        ],
+        "config_entries_subentries": {
+          "db4ea018e5a9c016d216948790adb284": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c4356767ba3cf6562d17c23cd6bb9be6",
+        "identifiers": [
+          [
+            "mobile_app",
+            "13803949fb8a0310"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Google",
+        "model": "Pixel 8 Pro",
+        "model_id": null,
+        "modified_at": "2024-10-03T19:40:23.754884+00:00",
+        "name_by_user": null,
+        "name": "Pixel 8 Pro",
+        "primary_config_entry": "db4ea018e5a9c016d216948790adb284",
+        "serial_number": null,
+        "sw_version": "34",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kuche",
+        "config_entries": [
+          "219bb6ce282533e7100df74f8d138b58"
+        ],
+        "config_entries_subentries": {
+          "219bb6ce282533e7100df74f8d138b58": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.142:80",
+        "connections": [
+          [
+            "mac",
+            "60:55:f9:9f:ff:6c"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2",
+        "id": "d69a27018dd360b7ad8bb6c1a7b1ae1e",
+        "identifiers": [
+          [
+            "shelly",
+            "6055F99FFF6C"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus 1PM Mini",
+        "model_id": "SNSW-001P8EU",
+        "modified_at": "2026-04-23T18:58:47.405490+00:00",
+        "name_by_user": null,
+        "name": "SH_Kaffeemaschine",
+        "primary_config_entry": "219bb6ce282533e7100df74f8d138b58",
+        "serial_number": null,
+        "sw_version": "20260311-095857/1.7.5-g9979d16",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "c8dc6b2a4acb67a571f3d49026f80d25"
+        ],
+        "config_entries_subentries": {
+          "c8dc6b2a4acb67a571f3d49026f80d25": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "84:f3:eb:e4:25:fa"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4919dc8c9e4afcfdd3e4c5bc7ea4826c",
+        "identifiers": [],
+        "labels": [],
+        "manufacturer": "Espressif",
+        "model": "nodemcu",
+        "model_id": null,
+        "modified_at": "2024-10-12T21:00:58.678154+00:00",
+        "name_by_user": null,
+        "name": "45P Temp",
+        "primary_config_entry": "c8dc6b2a4acb67a571f3d49026f80d25",
+        "serial_number": null,
+        "sw_version": "2023.10.6 (Oct 12 2024, 22:59:47)",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kuche",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "b4:e3:f9:ff:fe:7d:2e:27"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "8c7c515faa48c8d947c6de52471616f7",
+        "identifiers": [
+          [
+            "zha",
+            "b4:e3:f9:ff:fe:7d:2e:27"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI Driver 30W",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.736191+00:00",
+        "name_by_user": "Küche LED",
+        "name": "IKEA of Sweden TRADFRI Driver 30W",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x12245572",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "gang",
+        "config_entries": [
+          "5654ba279164dffb56d0e1ff4beba4ac"
+        ],
+        "config_entries_subentries": {
+          "5654ba279164dffb56d0e1ff4beba4ac": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.230:80",
+        "connections": [
+          [
+            "mac",
+            "cc:50:e3:9b:6b:30"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "b5338f447eae9e290edb2c2fcd1d92ca",
+        "identifiers": [],
+        "labels": [],
+        "manufacturer": "Espressif",
+        "model": "esp32dev",
+        "model_id": null,
+        "modified_at": "1970-01-01T00:00:00+00:00",
+        "name_by_user": null,
+        "name": "Esp32-Cam",
+        "primary_config_entry": null,
+        "serial_number": null,
+        "sw_version": "2023.10.6 (Nov 14 2023, 22:39:06)",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wc",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:09:cf:6d:39"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c55a1b89e291b01c7a182936b2aaa3f6",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:09:cf:6d:39"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_motion.aq2",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.727082+00:00",
+        "name_by_user": "MotionSensor WC",
+        "name": "LUMI lumi.sensor_motion.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:08:d0:a2:f3"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c3cf5bda71b84c6bfb5549f4841b197a",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:08:d0:a2:f3"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.vibration.aq1",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.727444+00:00",
+        "name_by_user": null,
+        "name": "LUMI lumi.vibration.aq1",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "joshua",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:09:d0:bc:f2"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "30eb2c48b9f016cc0d29c317f0e7868b",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:09:d0:bc:f2"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_motion.aq2",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.727690+00:00",
+        "name_by_user": "Motion Schlafzimmer Kinder",
+        "name": "LUMI lumi.sensor_motion.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "gang",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:09:d0:ba:fb"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "5164dffbefde5ba344f22e30e27c1fb5",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:09:d0:ba:fb"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_motion.aq2",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.728038+00:00",
+        "name_by_user": "Motion Gang Küche",
+        "name": "LUMI lumi.sensor_motion.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "35b18adf3a3e1dbd85db0163813ad0a1"
+        ],
+        "config_entries_subentries": {
+          "35b18adf3a3e1dbd85db0163813ad0a1": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.76:80",
+        "connections": [
+          [
+            "mac",
+            "c0:49:ef:8e:36:3c"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2",
+        "id": "013948c228814d8df22fc650a3d73803",
+        "identifiers": [
+          [
+            "shelly",
+            "C049EF8E363C"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus 2PM",
+        "model_id": "SNSW-102P16EU",
+        "modified_at": "2026-04-23T18:58:53.609669+00:00",
+        "name_by_user": null,
+        "name": "SH_Buro_Store",
+        "primary_config_entry": "35b18adf3a3e1dbd85db0163813ad0a1",
+        "serial_number": null,
+        "sw_version": "20260311-095847/1.7.5-g9979d16",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kuche",
+        "config_entries": [
+          "9815d466fda52efe64d1c47682838fd1"
+        ],
+        "config_entries_subentries": {
+          "9815d466fda52efe64d1c47682838fd1": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.177:80",
+        "connections": [
+          [
+            "mac",
+            "80:64:6f:e5:ad:d0"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2",
+        "id": "d2d23f11b7df2716b0ce4fb7a1acf235",
+        "identifiers": [
+          [
+            "shelly",
+            "80646FE5ADD0"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus 1PM",
+        "model_id": "SNSW-001P16EU",
+        "modified_at": "2026-04-23T18:58:55.735720+00:00",
+        "name_by_user": null,
+        "name": "SH_Kuche_Spot",
+        "primary_config_entry": "9815d466fda52efe64d1c47682838fd1",
+        "serial_number": null,
+        "sw_version": "20260311-095847/1.7.5-g9979d16",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wc",
+        "config_entries": [
+          "abc54d5aa210e7f6e753ae57aec4f38a"
+        ],
+        "config_entries_subentries": {
+          "abc54d5aa210e7f6e753ae57aec4f38a": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.168:80",
+        "connections": [
+          [
+            "mac",
+            "80:64:6f:e5:bc:1c"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2",
+        "id": "be87ed94651627c8d310d32c8216593f",
+        "identifiers": [
+          [
+            "shelly",
+            "80646FE5BC1C"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus 1PM",
+        "model_id": "SNSW-001P16EU",
+        "modified_at": "2026-04-23T18:58:38.767493+00:00",
+        "name_by_user": null,
+        "name": "SH_3D_Printer",
+        "primary_config_entry": "abc54d5aa210e7f6e753ae57aec4f38a",
+        "serial_number": null,
+        "sw_version": "20260311-095847/1.7.5-g9979d16",
+        "via_device_id": null
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "04:0d:84:ff:fe:97:67:e2"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "54a2eec1700b73cccf36bd5e6a8e81f0",
+        "identifiers": [
+          [
+            "zha",
+            "04:0d:84:ff:fe:97:67:e2"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRIbulbE14WScandleopal470lm",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.736756+00:00",
+        "name_by_user": "Büro Tischlampe Links",
+        "name": "IKEA of Sweden TRADFRIbulbE14WScandleopal470lm",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x00010032",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "essraum",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:04:4d:2d:57"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "265b30cca6a252a0611b9ba4c2bdcf18",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:04:4d:2d:57"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_motion.aq2",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.728377+00:00",
+        "name_by_user": "Motion Esstisch",
+        "name": "LUMI lumi.sensor_motion.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "2fb49c5253639e4566705d92ab776c10"
+        ],
+        "config_entries_subentries": {
+          "2fb49c5253639e4566705d92ab776c10": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "122b92717eb146921384e655a9f9bfa7",
+        "identifiers": [
+          [
+            "mobile_app",
+            "dc4bd52f45ad8c90"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Google",
+        "model": "Google Pixel Watch 2",
+        "model_id": null,
+        "modified_at": "2024-10-03T19:40:23.757753+00:00",
+        "name_by_user": null,
+        "name": "PW Stephan",
+        "primary_config_entry": "2fb49c5253639e4566705d92ab776c10",
+        "serial_number": null,
+        "sw_version": "33",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "dfd83f3efd8c6becfb9af7f7bc49b8f5"
+        ],
+        "config_entries_subentries": {
+          "dfd83f3efd8c6becfb9af7f7bc49b8f5": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "db6f5dcf2a4da614aeeb400cc6630fed",
+        "identifiers": [
+          [
+            "mobile_app",
+            "fcc40f30072f0b45"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LENOVO",
+        "model": "Lenovo TB-J616X",
+        "model_id": null,
+        "modified_at": "2024-10-03T19:40:23.756720+00:00",
+        "name_by_user": null,
+        "name": "Tablet-SK-I",
+        "primary_config_entry": "dfd83f3efd8c6becfb9af7f7bc49b8f5",
+        "serial_number": null,
+        "sw_version": "31",
+        "via_device_id": null
+      },
+      {
+        "area_id": "kuche",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "08:6b:d7:ff:fe:41:29:3f"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "05a84d8b8c2ba883aeacd7aa16e8d3bc",
+        "identifiers": [
+          [
+            "zha",
+            "08:6b:d7:ff:fe:41:29:3f"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI on/off switch",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.737131+00:00",
+        "name_by_user": "Button Kaffeemaschine",
+        "name": "IKEA of Sweden TRADFRI on/off switch",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x22008631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:05:48:82:9d"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "08e1143a2e040d9cc3468bddc7d80983",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:05:48:82:9d"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_magnet.aq2",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.728700+00:00",
+        "name_by_user": null,
+        "name": "LUMI lumi.sensor_magnet.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "5bbb0110dd7d84f65a3e2c0b4cd24ead"
+        ],
+        "config_entries_subentries": {
+          "5bbb0110dd7d84f65a3e2c0b4cd24ead": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.158:80",
+        "connections": [
+          [
+            "mac",
+            "fc:b4:67:26:1b:28"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2",
+        "id": "b3c97797d0a3013ab16a551c284c7d53",
+        "identifiers": [
+          [
+            "shelly",
+            "FCB467261B28"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus H&T",
+        "model_id": "SNSN-0013A",
+        "modified_at": "2026-04-03T08:18:19.617459+00:00",
+        "name_by_user": null,
+        "name": "SH - TH - Wohnraum",
+        "primary_config_entry": "5bbb0110dd7d84f65a3e2c0b4cd24ead",
+        "serial_number": null,
+        "sw_version": "",
+        "via_device_id": null
+      },
+      {
+        "area_id": "essraum",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:17:88:01:0c:c5:cc:aa"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "45f719483464d3d450bbeb7e000d5233",
+        "identifiers": [
+          [
+            "zha",
+            "00:17:88:01:0c:c5:cc:aa"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Signify Netherlands B.V.",
+        "model": "LWV005",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.737424+00:00",
+        "name_by_user": "Esstisch L",
+        "name": "Signify Netherlands B.V. LWV005",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x0100150a",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01J99YPPCD5S2ZCDHNMMAAJ4VS"
+        ],
+        "config_entries_subentries": {
+          "01J99YPPCD5S2ZCDHNMMAAJ4VS": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.82:80",
+        "connections": [
+          [
+            "mac",
+            "a0:dd:6c:9f:98:70"
+          ]
+        ],
+        "created_at": "2024-10-03T19:43:06.911779+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2",
+        "id": "848beb4629b057323216a0de0d558096",
+        "identifiers": [
+          [
+            "shelly",
+            "A0DD6C9F9870"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Pro 3EM",
+        "model_id": "SPEM-003CEBEU",
+        "modified_at": "2026-04-23T18:59:03.761092+00:00",
+        "name_by_user": null,
+        "name": "SH_Pro3_EM",
+        "primary_config_entry": "01J99YPPCD5S2ZCDHNMMAAJ4VS",
+        "serial_number": null,
+        "sw_version": "20260311-095913/1.7.5-g9979d16",
+        "via_device_id": null
+      },
+      {
+        "area_id": "joshua",
+        "config_entries": [
+          "01J9A0SNX1PZQPCJEHAAPN3BRM"
+        ],
+        "config_entries_subentries": {
+          "01J9A0SNX1PZQPCJEHAAPN3BRM": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.253:80",
+        "connections": [
+          [
+            "mac",
+            "34:b7:da:ca:60:d0"
+          ]
+        ],
+        "created_at": "2024-10-03T20:23:00.896075+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen3",
+        "id": "376b708a5118c72148b0d82736f456a9",
+        "identifiers": [
+          [
+            "shelly",
+            "34B7DACA60D0"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly 1PM Mini Gen3",
+        "model_id": "S3SW-001P8EU",
+        "modified_at": "2026-04-23T18:59:11.582970+00:00",
+        "name_by_user": null,
+        "name": "SH_Schlafzimmer_Kinder",
+        "primary_config_entry": "01J9A0SNX1PZQPCJEHAAPN3BRM",
+        "serial_number": null,
+        "sw_version": "20260311-095854/1.7.5-g9979d16",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01J9XVS9BE2Q3RH48AWC2ZP6R1"
+        ],
+        "config_entries_subentries": {
+          "01J9XVS9BE2Q3RH48AWC2ZP6R1": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "2024-10-11T13:20:13.678518+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "212246d13c1dc2a20c1209b7a18c8528",
+        "identifiers": [
+          [
+            "mobile_app",
+            "ade1843d0f3f80a4"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Google",
+        "model": "Pixel 9 Pro",
+        "model_id": null,
+        "modified_at": "2025-06-27T20:50:04.895534+00:00",
+        "name_by_user": null,
+        "name": "Pixel 9 Pro",
+        "primary_config_entry": "01J9XVS9BE2Q3RH48AWC2ZP6R1",
+        "serial_number": null,
+        "sw_version": "36",
+        "via_device_id": null
+      },
+      {
+        "area_id": "schlafzimmer",
+        "config_entries": [
+          "01JA13F4R8ZV09X72KGTK0KHSW"
+        ],
+        "config_entries_subentries": {
+          "01JA13F4R8ZV09X72KGTK0KHSW": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.225:80",
+        "connections": [
+          [
+            "mac",
+            "34:b7:da:c7:f1:80"
+          ]
+        ],
+        "created_at": "2024-10-03T20:08:37.571397+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen3",
+        "id": "a88527b5f1129070c8d90d34fb8d4c13",
+        "identifiers": [
+          [
+            "shelly",
+            "34B7DAC7F180"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly 1PM Mini Gen3",
+        "model_id": "S3SW-001P8EU",
+        "modified_at": "2026-04-23T18:59:09.716985+00:00",
+        "name_by_user": null,
+        "name": "SH_Schlafzimmer_Stephan",
+        "primary_config_entry": "01JA13F4R8ZV09X72KGTK0KHSW",
+        "serial_number": null,
+        "sw_version": "20260311-095854/1.7.5-g9979d16",
+        "via_device_id": null
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "01JA13G9005NP2Y7MVX1SSQTF5"
+        ],
+        "config_entries_subentries": {
+          "01JA13G9005NP2Y7MVX1SSQTF5": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.128:80",
+        "connections": [
+          [
+            "mac",
+            "e8:68:e7:f3:34:c9"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen1",
+        "id": "2aec0b6b7856f26b54dbd484dc36734a",
+        "identifiers": [
+          [
+            "shelly",
+            "E868E7F334C9"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly RGBW2",
+        "model_id": "SHRGBW2",
+        "modified_at": "2025-04-06T22:42:06.676554+00:00",
+        "name_by_user": null,
+        "name": "SH_Schreibtisch_Licht",
+        "primary_config_entry": "01JA13G9005NP2Y7MVX1SSQTF5",
+        "serial_number": null,
+        "sw_version": "20230913-131259/v1.14.0-gcb84623",
+        "via_device_id": null
+      },
+      {
+        "area_id": "aquarien",
+        "config_entries": [
+          "01JA155DBMGJE7YSRY52VS9Y4V"
+        ],
+        "config_entries_subentries": {
+          "01JA155DBMGJE7YSRY52VS9Y4V": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "80:7d:3a:3c:90:29"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "b366c9c1d1ef1ca45925debc3ac4515c",
+        "identifiers": [],
+        "labels": [],
+        "manufacturer": "Espressif",
+        "model": "nodemcu",
+        "model_id": null,
+        "modified_at": "2024-10-12T21:11:10.822992+00:00",
+        "name_by_user": null,
+        "name": "60P Temp",
+        "primary_config_entry": "01JA155DBMGJE7YSRY52VS9Y4V",
+        "serial_number": null,
+        "sw_version": "2023.10.6 (Oct 12 2024, 23:09:59)",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "7cb3fb84959b17dfec50f953ec7c1963"
+        ],
+        "config_entries_subentries": {
+          "7cb3fb84959b17dfec50f953ec7c1963": [
+            null
+          ]
+        },
+        "configuration_url": "homeassistant://hacs/repository/594007512",
+        "connections": [],
+        "created_at": "2024-10-12T21:49:35.209015+00:00",
+        "disabled_by": "config_entry",
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "d27f959d5247e5856a85b20bd0b571f9",
+        "identifiers": [
+          [
+            "hacs",
+            "594007512"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "marcolivierarsenault, cashew22",
+        "model": "integration",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:16:55.644983+00:00",
+        "name_by_user": null,
+        "name": "Moonraker",
+        "primary_config_entry": "7cb3fb84959b17dfec50f953ec7c1963",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "7cb3fb84959b17dfec50f953ec7c1963"
+        ],
+        "config_entries_subentries": {
+          "7cb3fb84959b17dfec50f953ec7c1963": [
+            null
+          ]
+        },
+        "configuration_url": "homeassistant://hacs/repository/544426802",
+        "connections": [],
+        "created_at": "2024-10-12T21:49:35.209262+00:00",
+        "disabled_by": "config_entry",
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "121f0a2b017d8d8dd5b28aca3f616997",
+        "identifiers": [
+          [
+            "hacs",
+            "544426802"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "tasshack",
+        "model": "integration",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:16:55.645088+00:00",
+        "name_by_user": null,
+        "name": "Dreame Vacuum",
+        "primary_config_entry": "7cb3fb84959b17dfec50f953ec7c1963",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "7cb3fb84959b17dfec50f953ec7c1963"
+        ],
+        "config_entries_subentries": {
+          "7cb3fb84959b17dfec50f953ec7c1963": [
+            null
+          ]
+        },
+        "configuration_url": "homeassistant://hacs/repository/146194325",
+        "connections": [],
+        "created_at": "2024-10-12T21:49:35.209436+00:00",
+        "disabled_by": "config_entry",
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "c1d6fedc6929e282414721875127f949",
+        "identifiers": [
+          [
+            "hacs",
+            "146194325"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "custom-cards",
+        "model": "plugin",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:16:55.645186+00:00",
+        "name_by_user": null,
+        "name": "button-card",
+        "primary_config_entry": "7cb3fb84959b17dfec50f953ec7c1963",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "44:e2:f8:ff:fe:17:32:12"
+          ]
+        ],
+        "created_at": "2024-10-14T14:14:40.371859+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "61061956e512e545398109636de7040a",
+        "identifiers": [
+          [
+            "zha",
+            "44:e2:f8:ff:fe:17:32:12"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "VINDSTYRKA",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.896933+00:00",
+        "name_by_user": "SensorAir Büro",
+        "name": "IKEA of Sweden VINDSTYRKA",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x00010010",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "kuche",
+        "config_entries": [
+          "01JASPHQHJD0NJBN39THSH851Y"
+        ],
+        "config_entries_subentries": {
+          "01JASPHQHJD0NJBN39THSH851Y": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.127:80",
+        "connections": [
+          [
+            "mac",
+            "80:64:6f:e5:2d:c4"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2",
+        "id": "beeb1b0eee37b68115e7256fe4a817b9",
+        "identifiers": [
+          [
+            "shelly",
+            "80646FE52DC4"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus 1PM",
+        "model_id": "SNSW-001P16EU",
+        "modified_at": "2026-04-23T18:59:22.016122+00:00",
+        "name_by_user": null,
+        "name": "Abwaschmaschine",
+        "primary_config_entry": "01JASPHQHJD0NJBN39THSH851Y",
+        "serial_number": null,
+        "sw_version": "20260311-095847/1.7.5-g9979d16",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wohnzimmer",
+        "config_entries": [
+          "01JASQ0VB5DPZQ81EB7W3JZ60D"
+        ],
+        "config_entries_subentries": {
+          "01JASQ0VB5DPZQ81EB7W3JZ60D": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.188:80",
+        "connections": [
+          [
+            "mac",
+            "60:55:f9:9f:f1:fc"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2",
+        "id": "dd3e86fb7e0cddbe9b8bef0c3eb13db8",
+        "identifiers": [
+          [
+            "shelly",
+            "6055F99FF1FC"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus 1PM Mini",
+        "model_id": "SNSW-001P8EU",
+        "modified_at": "2026-04-23T18:58:57.930421+00:00",
+        "name_by_user": null,
+        "name": "SH_TV_Board",
+        "primary_config_entry": "01JASQ0VB5DPZQ81EB7W3JZ60D",
+        "serial_number": null,
+        "sw_version": "20260311-095857/1.7.5-g9979d16",
+        "via_device_id": null
+      },
+      {
+        "area_id": "aquarien",
+        "config_entries": [
+          "01JASQ2H6KQJDSJ4NMJJXQKA0K"
+        ],
+        "config_entries_subentries": {
+          "01JASQ2H6KQJDSJ4NMJJXQKA0K": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.189:80",
+        "connections": [
+          [
+            "mac",
+            "e8:68:e7:f2:b3:f6"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen1",
+        "id": "75b186965a869b0636ccaf797b84ec1e",
+        "identifiers": [
+          [
+            "shelly",
+            "E868E7F2B3F6"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly RGBW2",
+        "model_id": "SHRGBW2",
+        "modified_at": "2025-04-06T22:42:06.696908+00:00",
+        "name_by_user": null,
+        "name": "SH_RGBW_Aquarium_Kinder",
+        "primary_config_entry": "01JASQ2H6KQJDSJ4NMJJXQKA0K",
+        "serial_number": null,
+        "sw_version": "20230913-131259/v1.14.0-gcb84623",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wohnzimmer",
+        "config_entries": [
+          "01JAXMMMSYS45DJN1VR0C7YNCS"
+        ],
+        "config_entries_subentries": {
+          "01JAXMMMSYS45DJN1VR0C7YNCS": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.137:80",
+        "connections": [
+          [
+            "mac",
+            "d8:13:2a:dd:4f:6c"
+          ]
+        ],
+        "created_at": "2024-10-23T21:28:28.233102+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2",
+        "id": "411e66d1578ff7b151717d6791208816",
+        "identifiers": [
+          [
+            "shelly",
+            "D8132ADD4F6C"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus RGBW PM",
+        "model_id": "SNDC-0D4P10WW",
+        "modified_at": "2026-04-23T18:59:27.279509+00:00",
+        "name_by_user": null,
+        "name": "SH - Sofa TV LED",
+        "primary_config_entry": "01JAXMMMSYS45DJN1VR0C7YNCS",
+        "serial_number": null,
+        "sw_version": "20260311-095900/1.7.5-g9979d16",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01JC1J2V7GA2DX02FEXARYNAPA"
+        ],
+        "config_entries_subentries": {
+          "01JC1J2V7GA2DX02FEXARYNAPA": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "2024-11-06T20:19:02.512741+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "469348f44ac0ba3b051327d6be4c718c",
+        "identifiers": [
+          [
+            "mobile_app",
+            "b37b4c44274468ae"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Google",
+        "model": "Google Pixel Watch 2",
+        "model_id": null,
+        "modified_at": "2024-11-06T20:19:02.512801+00:00",
+        "name_by_user": null,
+        "name": "Google Pixel Watch 2",
+        "primary_config_entry": "01JC1J2V7GA2DX02FEXARYNAPA",
+        "serial_number": null,
+        "sw_version": "33",
+        "via_device_id": null
+      },
+      {
+        "area_id": "julian",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:09:6d:d3:ec"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "10f2c28e538678afa87baa50f1a46a60",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:09:6d:d3:ec"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_motion.aq2",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.728865+00:00",
+        "name_by_user": null,
+        "name": "LUMI lumi.sensor_motion.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "bad",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:09:1b:5b:ec"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "07254fb5f67699e67cf3722c9536be2d",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:09:1b:5b:ec"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.weather",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.737851+00:00",
+        "name_by_user": "MultiSensor Bad",
+        "name": "LUMI lumi.weather",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "bad",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:09:6d:d8:11"
+          ]
+        ],
+        "created_at": "2024-10-04T09:51:36.293663+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a2c72d5593d31fa200d7f375e214d88b",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:09:6d:d8:11"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_motion.aq2",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.729209+00:00",
+        "name_by_user": "MotionSensor Bad",
+        "name": "LUMI lumi.sensor_motion.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "schlafzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "08:6b:d7:ff:fe:38:3f:87"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "94cc912ee2e36e2b1729915273714518",
+        "identifiers": [
+          [
+            "zha",
+            "08:6b:d7:ff:fe:38:3f:87"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI control outlet",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.897078+00:00",
+        "name_by_user": "Light Bed Stephan Links",
+        "name": "IKEA of Sweden TRADFRI control outlet",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x20022623",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "schlafzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "d0:cf:5e:ff:fe:da:4c:8e"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "29bebceb57edffb25da52febde808a9e",
+        "identifiers": [
+          [
+            "zha",
+            "d0:cf:5e:ff:fe:da:4c:8e"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI control outlet",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.897129+00:00",
+        "name_by_user": "Light Bed Stephan Rechts",
+        "name": "IKEA of Sweden TRADFRI control outlet",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x20022623",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "schlafzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "4c:5b:b3:ff:fe:0b:3c:9f"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ae9fc2892fbb6812212c72a80073c2b6",
+        "identifiers": [
+          [
+            "zha",
+            "4c:5b:b3:ff:fe:0b:3c:9f"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI on/off switch",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.897178+00:00",
+        "name_by_user": "Button Nachttisch Stephan Links",
+        "name": "IKEA of Sweden TRADFRI on/off switch",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x23079631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "schlafzimmer",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "08:6b:d7:ff:fe:3c:57:37"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ba8d2e579b9ff224eab4590c3d54095d",
+        "identifiers": [
+          [
+            "zha",
+            "08:6b:d7:ff:fe:3c:57:37"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI on/off switch",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.897227+00:00",
+        "name_by_user": "Button Nachttisch Stephan Rechts",
+        "name": "IKEA of Sweden TRADFRI on/off switch",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x22008631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "44:e2:f8:ff:fe:0a:6a:44"
+          ]
+        ],
+        "created_at": "2024-11-13T20:01:49.708204+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0f83f413590ddb49644239b620cecdd0",
+        "identifiers": [
+          [
+            "zha",
+            "44:e2:f8:ff:fe:0a:6a:44"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI bulb E14 WS candle 470lm",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.897276+00:00",
+        "name_by_user": "Büro Tischlampe Rechts",
+        "name": "IKEA of Sweden TRADFRI bulb E14 WS candle 470lm",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x03000008",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "kinderschlafzimmer",
+        "config_entries": [
+          "01JCNN4K5P43FF1R6FX0QEE4Z6"
+        ],
+        "config_entries_subentries": {
+          "01JCNN4K5P43FF1R6FX0QEE4Z6": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.105:1400/support/review",
+        "connections": [
+          [
+            "mac",
+            "54:2a:1b:5d:80:4e"
+          ],
+          [
+            "upnp",
+            "uuid:RINCON_542A1B5D804E01400"
+          ]
+        ],
+        "created_at": "2024-11-14T15:37:19.474605+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a918949a76462c059190e5b92729bdf7",
+        "identifiers": [
+          [
+            "sonos",
+            "RINCON_542A1B5D804E01400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Sonos",
+        "model": "SYMFONISK Bookshelf",
+        "model_id": "S33",
+        "modified_at": "2026-04-26T13:00:45.657044+00:00",
+        "name_by_user": null,
+        "name": "Zimmer Joshua",
+        "primary_config_entry": "01JCNN4K5P43FF1R6FX0QEE4Z6",
+        "serial_number": null,
+        "sw_version": "18.3",
+        "via_device_id": null
+      },
+      {
+        "area_id": "spielzimmer",
+        "config_entries": [
+          "01JCNN4K5P43FF1R6FX0QEE4Z6"
+        ],
+        "config_entries_subentries": {
+          "01JCNN4K5P43FF1R6FX0QEE4Z6": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.6:1400/support/review",
+        "connections": [
+          [
+            "mac",
+            "38:42:0b:96:07:9a"
+          ],
+          [
+            "upnp",
+            "uuid:RINCON_38420B96079A01400"
+          ]
+        ],
+        "created_at": "2024-11-14T15:37:19.655624+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2abcb02850b538c31cb323b1e9aa537e",
+        "identifiers": [
+          [
+            "sonos",
+            "RINCON_38420B96079A01400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Sonos",
+        "model": "SYMFONISK Bookshelf",
+        "model_id": "S33",
+        "modified_at": "2026-04-26T13:00:45.252041+00:00",
+        "name_by_user": null,
+        "name": "Zimmer Julian",
+        "primary_config_entry": "01JCNN4K5P43FF1R6FX0QEE4Z6",
+        "serial_number": null,
+        "sw_version": "18.3",
+        "via_device_id": null
+      },
+      {
+        "area_id": "bad",
+        "config_entries": [
+          "01JCNN4K5P43FF1R6FX0QEE4Z6"
+        ],
+        "config_entries_subentries": {
+          "01JCNN4K5P43FF1R6FX0QEE4Z6": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.20:1400/support/review",
+        "connections": [
+          [
+            "mac",
+            "54:2a:1b:63:48:08"
+          ],
+          [
+            "upnp",
+            "uuid:RINCON_542A1B63480801400"
+          ]
+        ],
+        "created_at": "2024-11-14T15:37:19.835738+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2a1c7eb5d599b7bc80458da6cd0ef5cd",
+        "identifiers": [
+          [
+            "sonos",
+            "RINCON_542A1B63480801400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Sonos",
+        "model": "SYMFONISK Bookshelf",
+        "model_id": "S21",
+        "modified_at": "2026-03-04T09:20:49.360193+00:00",
+        "name_by_user": null,
+        "name": "Bad",
+        "primary_config_entry": "01JCNN4K5P43FF1R6FX0QEE4Z6",
+        "serial_number": null,
+        "sw_version": "17.2.3",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wc",
+        "config_entries": [
+          "01JCNN4K5P43FF1R6FX0QEE4Z6"
+        ],
+        "config_entries_subentries": {
+          "01JCNN4K5P43FF1R6FX0QEE4Z6": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.234:1400/support/review",
+        "connections": [
+          [
+            "mac",
+            "54:2a:1b:b3:c8:be"
+          ],
+          [
+            "upnp",
+            "uuid:RINCON_542A1BB3C8BE01400"
+          ]
+        ],
+        "created_at": "2024-11-14T15:37:19.992704+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "14f799102b1d0c01eae80914b52ff48d",
+        "identifiers": [
+          [
+            "sonos",
+            "RINCON_542A1BB3C8BE01400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Sonos",
+        "model": "Roam",
+        "model_id": "S27",
+        "modified_at": "2026-04-20T22:49:58.494988+00:00",
+        "name_by_user": null,
+        "name": "Sonos Roam",
+        "primary_config_entry": "01JCNN4K5P43FF1R6FX0QEE4Z6",
+        "serial_number": null,
+        "sw_version": "18.3",
+        "via_device_id": null
+      },
+      {
+        "area_id": "tv",
+        "config_entries": [
+          "01JCNN4K5P43FF1R6FX0QEE4Z6"
+        ],
+        "config_entries_subentries": {
+          "01JCNN4K5P43FF1R6FX0QEE4Z6": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.126:1400/support/review",
+        "connections": [
+          [
+            "mac",
+            "5c:aa:fd:11:f9:47"
+          ],
+          [
+            "upnp",
+            "uuid:RINCON_5CAAFD11F94701400"
+          ]
+        ],
+        "created_at": "2024-11-14T15:37:20.140720+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f5cf1c02cb417dd268c3770a3a4e20be",
+        "identifiers": [
+          [
+            "sonos",
+            "RINCON_5CAAFD11F94701400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Sonos",
+        "model": "Playbar",
+        "model_id": "S9",
+        "modified_at": "2026-04-20T22:49:57.745009+00:00",
+        "name_by_user": null,
+        "name": "Wohnraum",
+        "primary_config_entry": "01JCNN4K5P43FF1R6FX0QEE4Z6",
+        "serial_number": null,
+        "sw_version": "17.2.4",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wohnzimmer_2",
+        "config_entries": [
+          "01JCNN4K5P43FF1R6FX0QEE4Z6"
+        ],
+        "config_entries_subentries": {
+          "01JCNN4K5P43FF1R6FX0QEE4Z6": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.19:1400/support/review",
+        "connections": [
+          [
+            "mac",
+            "f0:f6:c1:86:f2:7c"
+          ],
+          [
+            "upnp",
+            "uuid:RINCON_F0F6C186F27C01400"
+          ]
+        ],
+        "created_at": "2024-11-14T15:37:20.263083+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "404d81769d7c77a538a1ba6e587b2827",
+        "identifiers": [
+          [
+            "sonos",
+            "RINCON_F0F6C186F27C01400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Sonos",
+        "model": "One",
+        "model_id": "S18",
+        "modified_at": "2025-01-13T09:29:55.755188+00:00",
+        "name_by_user": null,
+        "name": "Wohnzimmer",
+        "primary_config_entry": "01JCNN4K5P43FF1R6FX0QEE4Z6",
+        "serial_number": null,
+        "sw_version": "16.5.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "01JCNN4K5P43FF1R6FX0QEE4Z6"
+        ],
+        "config_entries_subentries": {
+          "01JCNN4K5P43FF1R6FX0QEE4Z6": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.202:1400/support/review",
+        "connections": [
+          [
+            "mac",
+            "c4:38:75:93:2c:3a"
+          ],
+          [
+            "upnp",
+            "uuid:RINCON_C43875932C3A01400"
+          ]
+        ],
+        "created_at": "2024-11-14T15:37:20.425310+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6c22b372a67cf23be0d014bf853a300e",
+        "identifiers": [
+          [
+            "sonos",
+            "RINCON_C43875932C3A01400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Sonos",
+        "model": "Era 100",
+        "model_id": "S39",
+        "modified_at": "2026-04-20T22:49:57.908890+00:00",
+        "name_by_user": null,
+        "name": "Essraum",
+        "primary_config_entry": "01JCNN4K5P43FF1R6FX0QEE4Z6",
+        "serial_number": null,
+        "sw_version": "18.3",
+        "via_device_id": null
+      },
+      {
+        "area_id": "schlafzimmer",
+        "config_entries": [
+          "01JCNN4K5P43FF1R6FX0QEE4Z6"
+        ],
+        "config_entries_subentries": {
+          "01JCNN4K5P43FF1R6FX0QEE4Z6": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.145:1400/support/review",
+        "connections": [
+          [
+            "mac",
+            "b8:e9:37:e1:46:d6"
+          ],
+          [
+            "upnp",
+            "uuid:RINCON_B8E937E146D601400"
+          ]
+        ],
+        "created_at": "2024-11-14T15:37:20.589401+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ee2c163f604aaac32db5a2ac0b54afe6",
+        "identifiers": [
+          [
+            "sonos",
+            "RINCON_B8E937E146D601400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Sonos",
+        "model": "Play:1",
+        "model_id": "S1",
+        "modified_at": "2026-04-26T15:08:37.094113+00:00",
+        "name_by_user": null,
+        "name": "Schlafzimmer Stephan",
+        "primary_config_entry": "01JCNN4K5P43FF1R6FX0QEE4Z6",
+        "serial_number": null,
+        "sw_version": "17.2.4",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wohnzimmer",
+        "config_entries": [
+          "01JDMFD6S9BYP6W9NZTZ38ZHQ6"
+        ],
+        "config_entries_subentries": {
+          "01JDMFD6S9BYP6W9NZTZ38ZHQ6": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "48:b0:2d:58:80:13"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2d0456d52fa68e75d63f68b94fa5ca8b",
+        "identifiers": [
+          [
+            "androidtv",
+            "48:b0:2d:58:80:13"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "NVIDIA",
+        "model": "SHIELD Android TV (Android TV)",
+        "model_id": null,
+        "modified_at": "2024-11-26T14:53:36.781612+00:00",
+        "name_by_user": null,
+        "name": "Android TV 10.0.0.220",
+        "primary_config_entry": "01JDMFD6S9BYP6W9NZTZ38ZHQ6",
+        "serial_number": null,
+        "sw_version": "11",
+        "via_device_id": null
+      },
+      {
+        "area_id": "essraum",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "f4:b3:b1:ff:fe:8b:18:b1"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2eee9c2d99957e91612f1734ee553fc2",
+        "identifiers": [
+          [
+            "zha",
+            "f4:b3:b1:ff:fe:8b:18:b1"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI control outlet",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.897330+00:00",
+        "name_by_user": "Weihnachten",
+        "name": "IKEA of Sweden TRADFRI control outlet",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x20024623",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "gang",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:02:3d:b1:29"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "1cb40930c485eeb5eb388a7c1b4a22a5",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:02:3d:b1:29"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_switch.aq2",
+        "model_id": null,
+        "modified_at": "2025-04-06T22:42:11.775280+00:00",
+        "name_by_user": "Button Eingang",
+        "name": "LUMI lumi.sensor_switch.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "ec:1b:bd:ff:fe:2c:3a:e6"
+          ]
+        ],
+        "created_at": "2024-12-03T09:22:59.139652+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "23f3d7dab64946f776b59768ec6297d2",
+        "identifiers": [
+          [
+            "zha",
+            "ec:1b:bd:ff:fe:2c:3a:e6"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI remote control",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.897410+00:00",
+        "name_by_user": "Button - Sound Control - Büro",
+        "name": "IKEA of Sweden TRADFRI remote control",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x23014631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01JH6AVTCFFZGQTNMZK9NYX9Z6"
+        ],
+        "config_entries_subentries": {
+          "01JH6AVTCFFZGQTNMZK9NYX9Z6": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "2025-01-09T20:07:33.519674+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ef075dae11195b101b4af71b7fc5a6d8",
+        "identifiers": [
+          [
+            "mobile_app",
+            "70196a4e9d0f1f35"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LENOVO",
+        "model": "TB310XU",
+        "model_id": null,
+        "modified_at": "2025-01-09T20:07:33.519694+00:00",
+        "name_by_user": null,
+        "name": "Tablet Stephan 8\"",
+        "primary_config_entry": "01JH6AVTCFFZGQTNMZK9NYX9Z6",
+        "serial_number": null,
+        "sw_version": "33",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01JH90MEPWYD78B3K94EEHWV9Y"
+        ],
+        "config_entries_subentries": {
+          "01JH90MEPWYD78B3K94EEHWV9Y": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "2025-01-10T21:06:29.725116+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "acc197092c4cdaf74cc0df9013e67b73",
+        "identifiers": [
+          [
+            "mobile_app",
+            "7ddb475df356b78b"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LENOVO",
+        "model": "Lenovo TB-J616X",
+        "model_id": null,
+        "modified_at": "2025-01-10T21:06:29.725176+00:00",
+        "name_by_user": null,
+        "name": "Lenovo TB-J616X",
+        "primary_config_entry": "01JH90MEPWYD78B3K94EEHWV9Y",
+        "serial_number": null,
+        "sw_version": "31",
+        "via_device_id": null
+      },
+      {
+        "area_id": "julian",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "44:e2:f8:ff:fe:4c:cd:7e"
+          ]
+        ],
+        "created_at": "2025-01-18T10:17:07.884501+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "bfc8e74f31ce91129eefe837f443d520",
+        "identifiers": [
+          [
+            "zha",
+            "44:e2:f8:ff:fe:4c:cd:7e"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "JETSTROM 40100",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.897459+00:00",
+        "name_by_user": "Deckenlicht Kinderspielzimmer",
+        "name": "IKEA of Sweden JETSTROM 40100",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x02040005",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "wohnzimmer_2",
+        "config_entries": [
+          "01JCNN4K5P43FF1R6FX0QEE4Z6"
+        ],
+        "config_entries_subentries": {
+          "01JCNN4K5P43FF1R6FX0QEE4Z6": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.125:1400/support/review",
+        "connections": [
+          [
+            "mac",
+            "c4:38:75:ec:58:60"
+          ],
+          [
+            "upnp",
+            "uuid:RINCON_C43875EC586001400"
+          ]
+        ],
+        "created_at": "2025-01-21T09:32:35.020631+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "75afa4f51216b93ddde803ad4bb4203a",
+        "identifiers": [
+          [
+            "sonos",
+            "RINCON_C43875EC586001400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Sonos",
+        "model": "Era 100",
+        "model_id": "S39",
+        "modified_at": "2025-01-21T09:32:35.020726+00:00",
+        "name_by_user": null,
+        "name": "Wohnzimmer",
+        "primary_config_entry": "01JCNN4K5P43FF1R6FX0QEE4Z6",
+        "serial_number": null,
+        "sw_version": "16.5.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": "wc",
+        "config_entries": [
+          "01JP7V8CDRCG0WW8B23NVAXJS4"
+        ],
+        "config_entries_subentries": {
+          "01JP7V8CDRCG0WW8B23NVAXJS4": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "2025-03-13T13:31:46.968172+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "85ee7c49686889bd6f2881364db59ca2",
+        "identifiers": [
+          [
+            "moonraker",
+            "01JP7V8CDRCG0WW8B23NVAXJS4"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "moonraker",
+        "model": "moonraker",
+        "model_id": null,
+        "modified_at": "2025-03-13T13:31:56.775650+00:00",
+        "name_by_user": null,
+        "name": "K1-05F2",
+        "primary_config_entry": "01JP7V8CDRCG0WW8B23NVAXJS4",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "4c:5b:b3:ff:fe:0e:99:57"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "72d360109c18e525a7872f6ccbd3ec6f",
+        "identifiers": [
+          [
+            "zha",
+            "4c:5b:b3:ff:fe:0e:99:57"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI on/off switch",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.897513+00:00",
+        "name_by_user": null,
+        "name": "IKEA of Sweden TRADFRI on/off switch",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x23079631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01JR6MAFVHYGRRPPVBGJBX94HQ"
+        ],
+        "config_entries_subentries": {
+          "01JR6MAFVHYGRRPPVBGJBX94HQ": [
+            null
+          ]
+        },
+        "configuration_url": "homeassistant://config/backup",
+        "connections": [],
+        "created_at": "2025-04-06T22:42:44.220049+00:00",
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "a3a15b0a3d1b912a85ac9c5619e7d674",
+        "identifiers": [
+          [
+            "backup",
+            "backup_manager"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Backup",
+        "model_id": null,
+        "modified_at": "2026-03-04T09:20:32.408253+00:00",
+        "name_by_user": null,
+        "name": "Backup",
+        "primary_config_entry": "01JR6MAFVHYGRRPPVBGJBX94HQ",
+        "serial_number": null,
+        "sw_version": "2026.2.3",
+        "via_device_id": null
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "01JR6MC39XZPXCB5NGFZNRXGQG"
+        ],
+        "config_entries_subentries": {
+          "01JR6MC39XZPXCB5NGFZNRXGQG": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.85:80",
+        "connections": [
+          [
+            "mac",
+            "b4:8a:0a:21:08:c0"
+          ]
+        ],
+        "created_at": "2025-04-06T22:43:37.039940+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen2",
+        "id": "2265f8918870adc8a5aab93134ed7a0d",
+        "identifiers": [
+          [
+            "shelly",
+            "B48A0A2108C0"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Plus 1PM",
+        "model_id": "SNSW-001P16EU",
+        "modified_at": "2025-04-06T22:43:39.960251+00:00",
+        "name_by_user": null,
+        "name": "SH_Reserve",
+        "primary_config_entry": "01JR6MC39XZPXCB5NGFZNRXGQG",
+        "serial_number": null,
+        "sw_version": "20241011-114445/1.4.4-g6d2a586",
+        "via_device_id": null
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "01JRDZ60RNYHTA5E5KB646MKMD"
+        ],
+        "config_entries_subentries": {
+          "01JRDZ60RNYHTA5E5KB646MKMD": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.77:80",
+        "connections": [
+          [
+            "mac",
+            "dc:da:0c:ba:21:90"
+          ]
+        ],
+        "created_at": "2025-04-09T19:05:06.276957+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "gen3",
+        "id": "7dbfb3c78ca082c2bcbf3e51cc44b0dc",
+        "identifiers": [
+          [
+            "shelly",
+            "DCDA0CBA2190"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly 1PM Mini Gen3",
+        "model_id": "S3SW-001P8EU",
+        "modified_at": "2026-04-23T18:59:44.155634+00:00",
+        "name_by_user": null,
+        "name": "SH_Büro_Geräte",
+        "primary_config_entry": "01JRDZ60RNYHTA5E5KB646MKMD",
+        "serial_number": null,
+        "sw_version": "20260311-095854/1.7.5-g9979d16",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01JT0MB60YJ7RDK32AS94S2AAN"
+        ],
+        "config_entries_subentries": {
+          "01JT0MB60YJ7RDK32AS94S2AAN": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "2024-12-04T20:49:09.162541+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6938083bd12bfeab74fc171de5e52724",
+        "identifiers": [
+          [
+            "nuki",
+            "3858533B"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Nuki Home Solutions GmbH",
+        "model": "Hardware Bridge",
+        "model_id": null,
+        "modified_at": "2025-04-29T11:19:05.854686+00:00",
+        "name_by_user": null,
+        "name": "Nuki Bridge 3858533B",
+        "primary_config_entry": "01JT0MB60YJ7RDK32AS94S2AAN",
+        "serial_number": "3858533B",
+        "sw_version": "2.18.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01JT0MB60YJ7RDK32AS94S2AAN"
+        ],
+        "config_entries_subentries": {
+          "01JT0MB60YJ7RDK32AS94S2AAN": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "2024-12-04T20:49:10.454503+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e1073554d3a1f48f955cffff2efef071",
+        "identifiers": [
+          [
+            "nuki",
+            "346A3A4A"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Nuki Home Solutions GmbH",
+        "model": "Nuki opener",
+        "model_id": null,
+        "modified_at": "2026-04-26T13:31:10.901162+00:00",
+        "name_by_user": null,
+        "name": "Hauseingang Mühle 5 ",
+        "primary_config_entry": "01JT0MB60YJ7RDK32AS94S2AAN",
+        "serial_number": "346A3A4A",
+        "sw_version": null,
+        "via_device_id": "6938083bd12bfeab74fc171de5e52724"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01JT0MB60YJ7RDK32AS94S2AAN"
+        ],
+        "config_entries_subentries": {
+          "01JT0MB60YJ7RDK32AS94S2AAN": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "2025-04-29T11:23:51.517891+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "719a3c0327936653254a784c7282015c",
+        "identifiers": [
+          [
+            "nuki",
+            "3A63607C"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Nuki Home Solutions GmbH",
+        "model": "Nuki smart lock 3.0 (pro)",
+        "model_id": null,
+        "modified_at": "2026-04-26T13:31:10.900422+00:00",
+        "name_by_user": null,
+        "name": "Wohnung Eingang ",
+        "primary_config_entry": "01JT0MB60YJ7RDK32AS94S2AAN",
+        "serial_number": "3A63607C",
+        "sw_version": null,
+        "via_device_id": "6938083bd12bfeab74fc171de5e52724"
+      },
+      {
+        "area_id": "trolley",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:05:72:e8:79"
+          ]
+        ],
+        "created_at": "2025-09-14T06:35:48.678969+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "bd7272d261039ed654820767fab87803",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:05:72:e8:79"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_magnet.aq2",
+        "model_id": null,
+        "modified_at": "2025-09-14T06:36:08.561295+00:00",
+        "name_by_user": "Trolley door opener",
+        "name": "LUMI lumi.sensor_magnet.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "aquarien",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "a4:c1:38:02:71:54:ff:ff"
+          ]
+        ],
+        "created_at": "2025-09-25T13:30:48.182480+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2c4da59513b9e8ec77bd924f5cadec51",
+        "identifiers": [
+          [
+            "zha",
+            "a4:c1:38:02:71:54:ff:ff"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "SONOFF",
+        "model": "SNZB-02LD",
+        "model_id": null,
+        "modified_at": "2025-09-30T11:13:26.897592+00:00",
+        "name_by_user": "Temperatur Aquarium 60p",
+        "name": "SONOFF SNZB-02LD",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x00001100",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01J99YPPCD5S2ZCDHNMMAAJ4VS"
+        ],
+        "config_entries_subentries": {
+          "01J99YPPCD5S2ZCDHNMMAAJ4VS": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.82:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.694324+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "584995401f71495ec13477a4e30c619e",
+        "identifiers": [
+          [
+            "shelly",
+            "A0DD6C9F9870-em:0-a"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Pro 3EM",
+        "model_id": "SPEM-003CEBEU",
+        "modified_at": "2025-09-30T11:13:22.694349+00:00",
+        "name_by_user": null,
+        "name": "SH_Pro3_EM Phase A",
+        "primary_config_entry": "01J99YPPCD5S2ZCDHNMMAAJ4VS",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "848beb4629b057323216a0de0d558096"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01J99YPPCD5S2ZCDHNMMAAJ4VS"
+        ],
+        "config_entries_subentries": {
+          "01J99YPPCD5S2ZCDHNMMAAJ4VS": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.82:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.694576+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6df716dd934146ec6688e69b26174e95",
+        "identifiers": [
+          [
+            "shelly",
+            "A0DD6C9F9870-em:0-b"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Pro 3EM",
+        "model_id": "SPEM-003CEBEU",
+        "modified_at": "2025-09-30T11:13:22.694596+00:00",
+        "name_by_user": null,
+        "name": "SH_Pro3_EM Phase B",
+        "primary_config_entry": "01J99YPPCD5S2ZCDHNMMAAJ4VS",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "848beb4629b057323216a0de0d558096"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01J99YPPCD5S2ZCDHNMMAAJ4VS"
+        ],
+        "config_entries_subentries": {
+          "01J99YPPCD5S2ZCDHNMMAAJ4VS": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.82:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.694774+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f8ba0833d14149e79e6700ff0f2a1eb8",
+        "identifiers": [
+          [
+            "shelly",
+            "A0DD6C9F9870-em:0-c"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly Pro 3EM",
+        "model_id": "SPEM-003CEBEU",
+        "modified_at": "2025-09-30T11:13:22.694788+00:00",
+        "name_by_user": null,
+        "name": "SH_Pro3_EM Phase C",
+        "primary_config_entry": "01J99YPPCD5S2ZCDHNMMAAJ4VS",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "848beb4629b057323216a0de0d558096"
+      },
+      {
+        "area_id": "bad",
+        "config_entries": [
+          "a4860d387a41c25906b7ad30adedf83f"
+        ],
+        "config_entries_subentries": {
+          "a4860d387a41c25906b7ad30adedf83f": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.31:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.711784+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "52869241f28052b86868e85478035fd3",
+        "identifiers": [
+          [
+            "shelly",
+            "40F5200104F7-relay_0"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly 2.5",
+        "model_id": "SHSW-25",
+        "modified_at": "2025-09-30T11:13:22.711810+00:00",
+        "name_by_user": null,
+        "name": "SH_Bad_Licht Channel 1",
+        "primary_config_entry": "a4860d387a41c25906b7ad30adedf83f",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "4308bc8fc7705891ca220cf7d273b612"
+      },
+      {
+        "area_id": "bad",
+        "config_entries": [
+          "a4860d387a41c25906b7ad30adedf83f"
+        ],
+        "config_entries_subentries": {
+          "a4860d387a41c25906b7ad30adedf83f": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.31:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.712023+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e07df25121b5a5940676819ffe76b6b8",
+        "identifiers": [
+          [
+            "shelly",
+            "40F5200104F7-relay_1"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly 2.5",
+        "model_id": "SHSW-25",
+        "modified_at": "2025-09-30T11:13:22.712039+00:00",
+        "name_by_user": null,
+        "name": "SH_Bad_Licht Channel 2",
+        "primary_config_entry": "a4860d387a41c25906b7ad30adedf83f",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "4308bc8fc7705891ca220cf7d273b612"
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "01JA13G9005NP2Y7MVX1SSQTF5"
+        ],
+        "config_entries_subentries": {
+          "01JA13G9005NP2Y7MVX1SSQTF5": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.128:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.716785+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c685b3675754500243b2840322867e7e",
+        "identifiers": [
+          [
+            "shelly",
+            "E868E7F334C9-light_0"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly RGBW2",
+        "model_id": "SHRGBW2",
+        "modified_at": "2025-09-30T11:13:22.716822+00:00",
+        "name_by_user": null,
+        "name": "Büro Tisch Licht",
+        "primary_config_entry": "01JA13G9005NP2Y7MVX1SSQTF5",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "2aec0b6b7856f26b54dbd484dc36734a"
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "01JA13G9005NP2Y7MVX1SSQTF5"
+        ],
+        "config_entries_subentries": {
+          "01JA13G9005NP2Y7MVX1SSQTF5": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.128:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.717127+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2317cf79f1d2ab3a47e0c2a731ac0546",
+        "identifiers": [
+          [
+            "shelly",
+            "E868E7F334C9-light_1"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly RGBW2",
+        "model_id": "SHRGBW2",
+        "modified_at": "2025-09-30T11:13:22.717151+00:00",
+        "name_by_user": null,
+        "name": "SH_Schreibtisch_Licht Channel 2",
+        "primary_config_entry": "01JA13G9005NP2Y7MVX1SSQTF5",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "2aec0b6b7856f26b54dbd484dc36734a"
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "01JA13G9005NP2Y7MVX1SSQTF5"
+        ],
+        "config_entries_subentries": {
+          "01JA13G9005NP2Y7MVX1SSQTF5": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.128:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.717362+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "d09f8d307484f906db983ed2c4a02617",
+        "identifiers": [
+          [
+            "shelly",
+            "E868E7F334C9-light_2"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly RGBW2",
+        "model_id": "SHRGBW2",
+        "modified_at": "2025-09-30T11:13:22.717394+00:00",
+        "name_by_user": null,
+        "name": "SH_Schreibtisch_Licht Channel 3",
+        "primary_config_entry": "01JA13G9005NP2Y7MVX1SSQTF5",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "2aec0b6b7856f26b54dbd484dc36734a"
+      },
+      {
+        "area_id": "buro",
+        "config_entries": [
+          "01JA13G9005NP2Y7MVX1SSQTF5"
+        ],
+        "config_entries_subentries": {
+          "01JA13G9005NP2Y7MVX1SSQTF5": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.128:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.717583+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0cd803488708c861352d47f8cd5621c1",
+        "identifiers": [
+          [
+            "shelly",
+            "E868E7F334C9-light_3"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly RGBW2",
+        "model_id": "SHRGBW2",
+        "modified_at": "2025-09-30T11:13:22.717602+00:00",
+        "name_by_user": null,
+        "name": "SH_Schreibtisch_Licht Channel 4",
+        "primary_config_entry": "01JA13G9005NP2Y7MVX1SSQTF5",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "2aec0b6b7856f26b54dbd484dc36734a"
+      },
+      {
+        "area_id": "aquarien",
+        "config_entries": [
+          "01JASQ2H6KQJDSJ4NMJJXQKA0K"
+        ],
+        "config_entries_subentries": {
+          "01JASQ2H6KQJDSJ4NMJJXQKA0K": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.189:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.720856+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "86ca766cf8a3b0fafd68809167c6fbb3",
+        "identifiers": [
+          [
+            "shelly",
+            "E868E7F2B3F6-light_0"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly RGBW2",
+        "model_id": "SHRGBW2",
+        "modified_at": "2025-09-30T11:13:22.720885+00:00",
+        "name_by_user": null,
+        "name": "SH_RGBW_Aquarium_Kinder Channel 1",
+        "primary_config_entry": "01JASQ2H6KQJDSJ4NMJJXQKA0K",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "75b186965a869b0636ccaf797b84ec1e"
+      },
+      {
+        "area_id": "aquarien",
+        "config_entries": [
+          "01JASQ2H6KQJDSJ4NMJJXQKA0K"
+        ],
+        "config_entries_subentries": {
+          "01JASQ2H6KQJDSJ4NMJJXQKA0K": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.189:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.721054+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "0c5dc4ad055fab67986581bd13d92576",
+        "identifiers": [
+          [
+            "shelly",
+            "E868E7F2B3F6-light_1"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly RGBW2",
+        "model_id": "SHRGBW2",
+        "modified_at": "2025-09-30T11:13:22.721070+00:00",
+        "name_by_user": null,
+        "name": "SH_RGBW_Aquarium_Kinder Channel 2",
+        "primary_config_entry": "01JASQ2H6KQJDSJ4NMJJXQKA0K",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "75b186965a869b0636ccaf797b84ec1e"
+      },
+      {
+        "area_id": "aquarien",
+        "config_entries": [
+          "01JASQ2H6KQJDSJ4NMJJXQKA0K"
+        ],
+        "config_entries_subentries": {
+          "01JASQ2H6KQJDSJ4NMJJXQKA0K": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.189:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.721267+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c1246413be89e5e706d62e007329b523",
+        "identifiers": [
+          [
+            "shelly",
+            "E868E7F2B3F6-light_2"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly RGBW2",
+        "model_id": "SHRGBW2",
+        "modified_at": "2025-09-30T11:13:22.721286+00:00",
+        "name_by_user": null,
+        "name": "SH_RGBW_Aquarium_Kinder Channel 3",
+        "primary_config_entry": "01JASQ2H6KQJDSJ4NMJJXQKA0K",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "75b186965a869b0636ccaf797b84ec1e"
+      },
+      {
+        "area_id": "aquarien",
+        "config_entries": [
+          "01JASQ2H6KQJDSJ4NMJJXQKA0K"
+        ],
+        "config_entries_subentries": {
+          "01JASQ2H6KQJDSJ4NMJJXQKA0K": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.189:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.721427+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "7b98aaee8c1f1b544f4ca52b752bb9fe",
+        "identifiers": [
+          [
+            "shelly",
+            "E868E7F2B3F6-light_3"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly RGBW2",
+        "model_id": "SHRGBW2",
+        "modified_at": "2025-09-30T11:13:22.721441+00:00",
+        "name_by_user": null,
+        "name": "SH_RGBW_Aquarium_Kinder Channel 4",
+        "primary_config_entry": "01JASQ2H6KQJDSJ4NMJJXQKA0K",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "75b186965a869b0636ccaf797b84ec1e"
+      },
+      {
+        "area_id": "wc",
+        "config_entries": [
+          "8615069ff06a7cdca2840d50e2cccbd3"
+        ],
+        "config_entries_subentries": {
+          "8615069ff06a7cdca2840d50e2cccbd3": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.166:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.878063+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "d39e4de071e48c2da70e7efdbe4345da",
+        "identifiers": [
+          [
+            "shelly",
+            "40F520008423-relay_0"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly 2.5",
+        "model_id": "SHSW-25",
+        "modified_at": "2025-09-30T11:13:22.878093+00:00",
+        "name_by_user": null,
+        "name": "SH_WC_Licht Channel 1",
+        "primary_config_entry": "8615069ff06a7cdca2840d50e2cccbd3",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "8c8ce852dad82b7f1455c3531036ee18"
+      },
+      {
+        "area_id": "wc",
+        "config_entries": [
+          "8615069ff06a7cdca2840d50e2cccbd3"
+        ],
+        "config_entries_subentries": {
+          "8615069ff06a7cdca2840d50e2cccbd3": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.166:80",
+        "connections": [],
+        "created_at": "2025-09-30T11:13:22.878367+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ab47451e1a7d905d5ad4efe23a990d5b",
+        "identifiers": [
+          [
+            "shelly",
+            "40F520008423-relay_1"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Shelly",
+        "model": "Shelly 2.5",
+        "model_id": "SHSW-25",
+        "modified_at": "2025-09-30T11:13:22.878383+00:00",
+        "name_by_user": null,
+        "name": "SH_WC_Licht Channel 2",
+        "primary_config_entry": "8615069ff06a7cdca2840d50e2cccbd3",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "8c8ce852dad82b7f1455c3531036ee18"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01K6XG7WXN9TQ6ZXKNRSN8TZR7"
+        ],
+        "config_entries_subentries": {
+          "01K6XG7WXN9TQ6ZXKNRSN8TZR7": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "2025-10-06T19:36:18.470141+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ddbf718f8dbd0a7f065c78eccebd0e8e",
+        "identifiers": [
+          [
+            "tuya",
+            "bf0f6ac319402ee085luol"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Tuya",
+        "model": "Hombli Smart Socket",
+        "model_id": "a6m8imppq00pydi9",
+        "modified_at": "2026-04-26T15:26:36.249729+00:00",
+        "name_by_user": null,
+        "name": "Hombli Reserve 2",
+        "primary_config_entry": "01K6XG7WXN9TQ6ZXKNRSN8TZR7",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "bad_stay_on",
+        "config_entries": [
+          "01K6XG7WXN9TQ6ZXKNRSN8TZR7"
+        ],
+        "config_entries_subentries": {
+          "01K6XG7WXN9TQ6ZXKNRSN8TZR7": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "2025-10-06T19:38:11.820625+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "9b18d2d8abf4a0c9579ed3bf1a2b3f31",
+        "identifiers": [
+          [
+            "tuya",
+            "bffdae24783dfdd0de2ltu"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Tuya",
+        "model": "Hombli Smart Socket",
+        "model_id": "a6m8imppq00pydi9",
+        "modified_at": "2026-04-26T15:26:36.249964+00:00",
+        "name_by_user": null,
+        "name": "Hombli Bad",
+        "primary_config_entry": "01K6XG7WXN9TQ6ZXKNRSN8TZR7",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01K6XG7WXN9TQ6ZXKNRSN8TZR7"
+        ],
+        "config_entries_subentries": {
+          "01K6XG7WXN9TQ6ZXKNRSN8TZR7": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [],
+        "created_at": "2025-10-06T19:40:45.922387+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c600d38f326a0dd233b56213a6e543c4",
+        "identifiers": [
+          [
+            "tuya",
+            "bf8afa3bc1a66af7f8jfib"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "Tuya",
+        "model": "Hombli Smart Socket",
+        "model_id": "a6m8imppq00pydi9",
+        "modified_at": "2026-04-26T15:26:36.249523+00:00",
+        "name_by_user": null,
+        "name": "Hombli Reserve 1",
+        "primary_config_entry": "01K6XG7WXN9TQ6ZXKNRSN8TZR7",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "aquarien",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "a4:c1:38:04:f4:d8:ff:ff"
+          ]
+        ],
+        "created_at": "2025-10-13T07:01:51.695410+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "75c88d67180b1855bbb60451bfaead6e",
+        "identifiers": [
+          [
+            "zha",
+            "a4:c1:38:04:f4:d8:ff:ff"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "SONOFF",
+        "model": "SNZB-02LD",
+        "model_id": null,
+        "modified_at": "2025-10-13T07:02:16.081992+00:00",
+        "name_by_user": "Temperatur 45p",
+        "name": "SONOFF SNZB-02LD",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x00001100",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "cc:cc:cc:ff:fe:27:4f:af"
+          ]
+        ],
+        "created_at": "2026-03-23T18:13:50.150616+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ba34d82f6b77e59742e475fbf0fafe1f",
+        "identifiers": [
+          [
+            "zha",
+            "cc:cc:cc:ff:fe:27:4f:af"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "IKEA of Sweden",
+        "model": "TRADFRI bulb GU10 WW 400lm",
+        "model_id": null,
+        "modified_at": "2026-03-23T18:13:50.151292+00:00",
+        "name_by_user": null,
+        "name": "IKEA of Sweden TRADFRI bulb GU10 WW 400lm",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": "0x21022631",
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": "joshua",
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "configuration_url": null,
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:02:39:dd:bc"
+          ]
+        ],
+        "created_at": "2026-04-26T14:53:46.361071+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e4e79f70e00732d0a09f791cedf96965",
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:02:39:dd:bc"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "LUMI",
+        "model": "lumi.sensor_switch.aq2",
+        "model_id": null,
+        "modified_at": "2026-04-26T14:54:29.864532+00:00",
+        "name_by_user": "Button Zimmer Joshua Schreibtisch",
+        "name": "LUMI lumi.sensor_switch.aq2",
+        "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": "217561ab421863b1321f8c046c338ede"
+      }
+    ],
+    "deleted_devices": [
+      {
+        "area_id": null,
+        "config_entries": [
+          "51d1277df54cbb8c29281ae0eef76325"
+        ],
+        "config_entries_subentries": {
+          "51d1277df54cbb8c29281ae0eef76325": [
+            null
+          ]
+        },
+        "connections": [],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "disabled_by_undefined": true,
+        "identifiers": [
+          [
+            "met"
+          ]
+        ],
+        "id": "9f48dea7aa5438ac85e46cb30b50b922",
+        "labels": [],
+        "modified_at": "1970-01-01T00:00:00+00:00",
+        "name_by_user": null,
+        "orphaned_timestamp": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "connections": [
+          [
+            "zigbee",
+            "00:17:88:01:0b:85:21:85"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "disabled_by_undefined": true,
+        "identifiers": [
+          [
+            "deconz",
+            "00:17:88:01:0b:85:21:85"
+          ],
+          [
+            "zha",
+            "00:17:88:01:0b:85:21:85"
+          ]
+        ],
+        "id": "57b5cf16713ed39e42bd0177ab837815",
+        "labels": [],
+        "modified_at": "2024-10-04T21:45:14.534892+00:00",
+        "name_by_user": null,
+        "orphaned_timestamp": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "connections": [
+          [
+            "zigbee",
+            "00:0d:6f:ff:fe:dd:a4:f1"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "disabled_by_undefined": true,
+        "identifiers": [
+          [
+            "zha",
+            "00:0d:6f:ff:fe:dd:a4:f1"
+          ]
+        ],
+        "id": "ad559a0cb144f2f473524b3b6abbf5cb",
+        "labels": [],
+        "modified_at": "2024-10-12T19:47:46.046918+00:00",
+        "name_by_user": null,
+        "orphaned_timestamp": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:02:c9:3a:4a"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "disabled_by_undefined": true,
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:02:c9:3a:4a"
+          ]
+        ],
+        "id": "2b6f26a514b0e62732661ed575aee50f",
+        "labels": [],
+        "modified_at": "2024-10-12T19:48:59.879028+00:00",
+        "name_by_user": null,
+        "orphaned_timestamp": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "connections": [
+          [
+            "zigbee",
+            "70:ac:08:ff:fe:f9:67:e7"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "disabled_by_undefined": true,
+        "identifiers": [
+          [
+            "zha",
+            "70:ac:08:ff:fe:f9:67:e7"
+          ]
+        ],
+        "id": "235c3fcd81dc88a8f49026121ffdb498",
+        "labels": [],
+        "modified_at": "2024-10-12T19:50:01.522547+00:00",
+        "name_by_user": null,
+        "orphaned_timestamp": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:09:1b:5b:ca"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "disabled_by_undefined": true,
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:09:1b:5b:ca"
+          ]
+        ],
+        "id": "7e8513930f21c1d7143f1d7529300886",
+        "labels": [],
+        "modified_at": "2024-10-12T19:51:02.259601+00:00",
+        "name_by_user": null,
+        "orphaned_timestamp": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:08:d0:bf:d9"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "disabled_by_undefined": true,
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:08:d0:bf:d9"
+          ]
+        ],
+        "id": "a798a663e6ec6e5edac6e3843c18940b",
+        "labels": [],
+        "modified_at": "2024-10-12T19:52:20.421155+00:00",
+        "name_by_user": null,
+        "orphaned_timestamp": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "connections": [
+          [
+            "zigbee",
+            "00:17:88:01:04:36:07:37"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "disabled_by_undefined": true,
+        "identifiers": [
+          [
+            "zha",
+            "00:17:88:01:04:36:07:37"
+          ]
+        ],
+        "id": "a3a2f23da585793cf5f0d28b940defe2",
+        "labels": [],
+        "modified_at": "2024-10-12T19:53:22.807215+00:00",
+        "name_by_user": null,
+        "orphaned_timestamp": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "connections": [
+          [
+            "zigbee",
+            "00:15:8d:00:09:6b:a4:a5"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "disabled_by_undefined": true,
+        "identifiers": [
+          [
+            "zha",
+            "00:15:8d:00:09:6b:a4:a5"
+          ]
+        ],
+        "id": "3fa942720ea097bc260428ffdbdebbd6",
+        "labels": [],
+        "modified_at": "2024-11-08T12:35:43.659125+00:00",
+        "name_by_user": null,
+        "orphaned_timestamp": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc"
+        ],
+        "config_entries_subentries": {
+          "ef27fe088aeeb3cd12f9b9b5db7e8fcc": [
+            null
+          ]
+        },
+        "connections": [
+          [
+            "zigbee",
+            "4c:5b:b3:ff:fe:13:b8:a5"
+          ]
+        ],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "disabled_by": null,
+        "disabled_by_undefined": true,
+        "identifiers": [
+          [
+            "deconz",
+            "4c:5b:b3:ff:fe:13:b8:a5"
+          ],
+          [
+            "zha",
+            "4c:5b:b3:ff:fe:13:b8:a5"
+          ]
+        ],
+        "id": "74ebc94599130babd39b0769a192207c",
+        "labels": [],
+        "modified_at": "2024-11-13T19:28:08.900662+00:00",
+        "name_by_user": null,
+        "orphaned_timestamp": null
+      }
+    ]
+  }
+}

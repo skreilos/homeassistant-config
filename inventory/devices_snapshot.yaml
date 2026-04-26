@@ -773,7 +773,7 @@ devices:
   - device_id: "ee2c163f604aaac32db5a2ac0b54afe6"
     name: "Schlafzimmer Stephan"
     name_by_user: null
-    area_id: "stephan"
+    area_id: "schlafzimmer"
     manufacturer: "Sonos"
     model: "Play:1"
     via_device_id: null

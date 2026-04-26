@@ -1,0 +1,29 @@
+night_brightness_kuche:
+  name: Nacht Helligkeit Küche
+  min: 1
+  max: 100
+  step: 1
+  mode: slider
+  unit_of_measurement: "%"
+  icon: mdi:brightness-6
+  initial: 15
+
+night_brightness_esstisch:
+  name: Nacht Helligkeit Esstisch
+  min: 1
+  max: 100
+  step: 1
+  mode: slider
+  unit_of_measurement: "%"
+  icon: mdi:brightness-6
+  initial: 15
+
+night_brightness_sofa:
+  name: Nacht Helligkeit Sofa
+  min: 1
+  max: 100
+  step: 1
+  mode: slider
+  unit_of_measurement: "%"
+  icon: mdi:brightness-6
+  initial: 15

@@ -34,7 +34,7 @@ Normalization rules:
 
 - Local repo: `/home/stephanprivat/Dokumente/Development/homeassistant-config`
 - Server repo: `/data/home-assistant`
-- Container: `home-assistant_2026_2_3`
+- Container: `home-assistant`
 - Branch: `main`
 - Local HA access: `http://10.0.0.2:8123`
 - External HA URL (Cloudflare): `https://home.the-force.ch/dashboard-tedt?homescreen=1`
@@ -72,7 +72,7 @@ git pull origin main
 ### C) Server: activate config in Docker
 
 ```bash
-docker restart home-assistant_2026_2_3
+docker restart home-assistant
 ```
 
 ## Verification checklist
@@ -143,7 +143,7 @@ SSH remote format should be:
 2. Confirm running container name:
    - `docker ps --format '{{.Names}}' | rg home-assistant`
 3. Confirm container `/config` mount points to `/data/home-assistant`:
-   - `docker inspect home-assistant_2026_2_3`
+   - `docker inspect home-assistant`
 4. Restart again after successful pull.
 
 ## Optional Home Assistant CLI path
@@ -172,7 +172,7 @@ Action order:
 2. Add Cloudflare proxy CIDRs to `http.trusted_proxies` in `configuration.yaml`.
 3. Ensure Cloudflare SSL mode is `Full (strict)` and origin cert/path is valid.
 4. Restart Home Assistant container:
-   - `docker restart home-assistant_2026_2_3`
+   - `docker restart home-assistant`
 5. Retest external URL and local URL.
 
 Verification commands:
@@ -180,7 +180,7 @@ Verification commands:
 ```bash
 cd "/data/home-assistant"
 rg "http:|use_x_forwarded_for|trusted_proxies" configuration.yaml
-docker logs --tail=200 home-assistant_2026_2_3
+docker logs --tail=200 home-assistant
 ```
 
 Expected:
@@ -210,7 +210,7 @@ Recommended run order:
 4. Apply in server registry:
    - `python3 scripts/migrate_entity_registry_ids.py --registry "/data/home-assistant/.storage/core.entity_registry" --map "/data/home-assistant/entity_id_rename_map.yaml" --apply`
 5. Restart Home Assistant:
-   - `docker restart home-assistant_2026_2_3`
+   - `docker restart home-assistant`
 
 ## Full entity inventory export (for complete naming audits)
 
@@ -283,7 +283,7 @@ Run order:
 2. Apply:
    - `sudo python3 scripts/migrate_entity_areas.py --config-dir "/data/home-assistant" --map "/data/home-assistant/entity_area_assignment_map.yaml" --apply`
 3. Restart:
-   - `docker restart home-assistant_2026_2_3`
+   - `docker restart home-assistant`
 4. Re-export snapshot:
    - `python3 scripts/export_entity_snapshot.py --config-dir "/data/home-assistant" --out "/data/home-assistant/inventory/entities_snapshot.yaml"`
 
@@ -292,6 +292,57 @@ Run order:
 - HTTPS and SSH remotes are both fine if they reference the same GitHub repo.
 - Prefer repo-local git identity on servers (`git config`, not `--global`).
 - Keep commands copy/paste friendly and avoid placeholders in final user instructions.
+
+## Docker Compose update workflow (Home Assistant)
+
+Use this project file:
+
+- `/data/home-assistant/docker-compose.yml`
+
+Recommended container name:
+
+- `home-assistant` (stable, no version in name)
+
+### Regular update (already on compose)
+
+1. Update image tag in `docker-compose.yml` (in git).
+2. Push changes from local.
+3. On server:
+
+```bash
+cd "/data/home-assistant"
+git pull origin main
+docker compose pull
+docker compose up -d
+```
+
+### First-time migration from manual `docker run` to compose
+
+If compose fails with name conflict, remove old manually created container first:
+
+```bash
+cd "/data/home-assistant"
+docker stop home-assistant_2026_2_3
+docker rm home-assistant_2026_2_3
+docker compose pull
+docker compose up -d
+```
+
+### Optional cleanup of old docker images
+
+Safe periodic cleanup:
+
+```bash
+docker image prune -a
+```
+
+Stronger cleanup (includes stopped containers/networks/cache):
+
+```bash
+docker system prune -a
+```
+
+Do not use `--volumes` unless user explicitly asks.
 
 ## Full operational runbook (this project)
 
@@ -355,7 +406,7 @@ sudo python3 scripts/migrate_entity_areas.py \
 ### 5) Restart Home Assistant
 
 ```bash
-docker restart home-assistant_2026_2_3
+docker restart home-assistant
 ```
 
 ### 6) Export full inventory snapshots

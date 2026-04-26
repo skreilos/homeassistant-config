@@ -1,0 +1,13 @@
+night_auto_light_start:
+  name: Nachtmodus Start
+  has_date: false
+  has_time: true
+  icon: mdi:clock-start
+  initial: "22:00:00"
+
+night_auto_light_end:
+  name: Nachtmodus Ende
+  has_date: false
+  has_time: true
+  icon: mdi:clock-end
+  initial: "06:00:00"

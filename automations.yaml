@@ -34,7 +34,11 @@
       sequence:
       - service: light.turn_on
         data:
-          brightness_pct: 100
+          brightness_pct: >
+            {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
+            {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
+            {% set in_night = now() >= start or now() < end %}
+            {{ states('input_number.night_brightness_kuche') | int if in_night else 100 }}
         target:
           area_id: kuche
       - service: switch.turn_on
@@ -213,10 +217,24 @@
         domain: sensor
         below: 250
       sequence:
-      - action: scene.turn_on
-        data: {}
-        target:
-          entity_id: scene.esstisch_on_high_motion_on
+      - choose:
+        - conditions:
+          - condition: template
+            value_template: >
+              {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
+              {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
+              {{ now() >= start or now() < end }}
+          sequence:
+          - action: light.turn_on
+            data:
+              brightness_pct: "{{ states('input_number.night_brightness_esstisch') | int }}"
+            target:
+              area_id: essraum
+        default:
+        - action: scene.turn_on
+          data: {}
+          target:
+            entity_id: scene.esstisch_on_high_motion_on
     - conditions:
       - condition: trigger
         id:
@@ -254,7 +272,11 @@
         - Motion Sofa On
       sequence:
       - data:
-          brightness: 255
+          brightness_pct: >
+            {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
+            {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
+            {% set in_night = now() >= start or now() < end %}
+            {{ states('input_number.night_brightness_sofa') | int if in_night else 100 }}
         target:
           device_id:
           - be31456f9d9558edd71e8b8a50022e18

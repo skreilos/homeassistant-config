@@ -50,6 +50,8 @@ sonos:
 
 automation: !include automations.yaml
 input_boolean:  !include input_boolean.yaml
+input_number: !include input_number.yaml
+input_datetime: !include input_datetime.yaml
 scene: !include scenes.yaml
 
 google_assistant: !include google_assistant.yaml 
@@ -57,6 +59,15 @@ google_assistant: !include google_assistant.yaml
 frontend:
   themes:
     theme-lion: !include theme-lion.yaml
+
+lovelace:
+  dashboards:
+    licht-einstellungen:
+      mode: yaml
+      title: Licht Einstellungen
+      icon: mdi:lightbulb-auto
+      show_in_sidebar: true
+      filename: dashboard-light-settings.yaml
 
 template:
   - binary_sensor:

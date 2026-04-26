@@ -1,0 +1,24 @@
+title: Licht Einstellungen
+views:
+  - title: Licht Einstellungen
+    path: licht-einstellungen
+    icon: mdi:lightbulb-auto
+    cards:
+      - type: entities
+        title: Nacht Auto-Licht
+        show_header_toggle: false
+        entities:
+          - entity: input_datetime.night_auto_light_start
+            name: Nachtmodus Start
+          - entity: input_datetime.night_auto_light_end
+            name: Nachtmodus Ende
+      - type: entities
+        title: Helligkeit je Bereich
+        show_header_toggle: false
+        entities:
+          - entity: input_number.night_brightness_sofa
+            name: Sofa
+          - entity: input_number.night_brightness_esstisch
+            name: Essraum
+          - entity: input_number.night_brightness_kuche
+            name: Küche

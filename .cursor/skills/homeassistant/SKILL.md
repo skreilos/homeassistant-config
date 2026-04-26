@@ -1,6 +1,6 @@
 ---
-name: homeassistant-config
-description: Keep Home Assistant config changes consistent for this repository, including deployment and naming standards. Use when the user mentions home assistant deploy, update, git pull/push, docker restart, entity naming, automation alias naming, or asks why server has no updates.
+name: homeassistant
+description: Keep Home Assistant config changes consistent for this repository, including deployment, exports, audits, and naming standards. Use when the user mentions home assistant deploy, update, git pull/push, docker restart, entity naming, automation alias naming, exports, or asks why server has no updates.
 ---
 
 # Home Assistant Config

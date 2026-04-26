@@ -65,7 +65,7 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: null
-  - entity_id: "automation.auto_light_zimmer_joshua"
+  - entity_id: "automation.auto_light_schlafzimmer_kinder"
     domain: "automation"
     platform: "automation"
     name: null
@@ -2249,7 +2249,7 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "binary_sensor.motion_zimmer_joshua_motion_9"
+  - entity_id: "binary_sensor.motion_schlafzimmer_kinder_motion_9"
     domain: "binary_sensor"
     platform: "zha"
     name: "Motion Schlafzimmer Kinder Motion"
@@ -9542,7 +9542,7 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "light.zimmer_joshua_deckenlicht_light"
+  - entity_id: "light.schlafzimmer_kinder_deckenlicht_light"
     domain: "light"
     platform: "zha"
     name: null
@@ -9581,7 +9581,7 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "light.sh_rgbw_aquarium_joshua_channel_3"
+  - entity_id: "light.sh_rgbw_aquarium_kinder_channel_3"
     domain: "light"
     platform: "shelly"
     name: null
@@ -9594,7 +9594,7 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "light.sh_rgbw_aquarium_joshua_channel_4"
+  - entity_id: "light.sh_rgbw_aquarium_kinder_channel_4"
     domain: "light"
     platform: "shelly"
     name: null
@@ -9789,7 +9789,7 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "media_player.zimmer_joshua"
+  - entity_id: "media_player.kinderschlafzimmer"
     domain: "media_player"
     platform: "sonos"
     name: null
@@ -9815,7 +9815,7 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "media_player.zimmer_julian"
+  - entity_id: "media_player.spielzimmer"
     domain: "media_player"
     platform: "sonos"
     name: null

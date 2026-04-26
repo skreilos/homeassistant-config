@@ -1,11 +1,34 @@
 ---
-name: homeassistant-deploy
-description: Keep Home Assistant config deployment consistent for this repository. Use when the user mentions home assistant deploy, update, git pull/push, docker restart, config activation, or asks why server has no updates.
+name: homeassistant-config
+description: Keep Home Assistant config changes consistent for this repository, including deployment and naming standards. Use when the user mentions home assistant deploy, update, git pull/push, docker restart, entity naming, automation alias naming, or asks why server has no updates.
 ---
 
-# Home Assistant Deploy
+# Home Assistant Config
 
 Use this workflow for this project.
+
+## Naming standard (use for all new changes)
+
+Use these patterns consistently:
+
+- Automation alias: `<Typ> <Zimmer> <Person> [<Funktion>]`
+- Entity friendly name: `<Typ> <Zimmer> <Person> [<Funktion>]`
+- Trigger IDs inside one automation should follow the same room/person token as that automation.
+
+Project examples:
+
+- `Button Zimmer Julian`
+- `Button Zimmer Julian Nachttisch`
+- `Button Zimmer Julian Schreibtisch`
+- `Licht Zimmer Julian`
+- `Nachttisch Zimmer Julian`
+- `Licht Zimmer Joshua`
+
+Normalization rules:
+
+- Keep order fixed (`Typ` -> `Zimmer` -> `Person` -> optional function).
+- Prefer `Zimmer Julian` / `Zimmer Joshua` over older room labels.
+- Do not rename technical `entity_id` values unless the user explicitly asks for entity migration.
 
 ## Setup
 
@@ -164,6 +187,43 @@ Expected:
 
 - No repeated proxy/auth related warnings in HA logs.
 - External URL responds without `403`.
+
+## Automated entity_id migration (no manual UI renaming)
+
+Use the mapping file:
+
+- `entity_id_rename_map.yaml`
+
+Use scripts:
+
+- `scripts/migrate_entity_registry_ids.py` (updates `/config/.storage/core.entity_registry`)
+- `scripts/replace_entity_ids_in_repo.py` (updates YAML/MD references in this git repo)
+
+Recommended run order:
+
+1. Dry run in repo:
+   - `python3 scripts/replace_entity_ids_in_repo.py --repo "/home/stephanprivat/Dokumente/Development/homeassistant-config" --map "entity_id_rename_map.yaml"`
+2. Dry run on server registry:
+   - `python3 scripts/migrate_entity_registry_ids.py --registry "/data/home-assistant/.storage/core.entity_registry" --map "/data/home-assistant/entity_id_rename_map.yaml"`
+3. Apply in repo:
+   - `python3 scripts/replace_entity_ids_in_repo.py --repo "/home/stephanprivat/Dokumente/Development/homeassistant-config" --map "entity_id_rename_map.yaml" --apply`
+4. Apply in server registry:
+   - `python3 scripts/migrate_entity_registry_ids.py --registry "/data/home-assistant/.storage/core.entity_registry" --map "/data/home-assistant/entity_id_rename_map.yaml" --apply`
+5. Restart Home Assistant:
+   - `docker restart home-assistant_2026_2_3`
+
+## Full entity inventory export (for complete naming audits)
+
+To avoid naming checks based only on automation references, export full entity registry snapshot on the server:
+
+```bash
+cd "/data/home-assistant"
+python3 scripts/export_entity_snapshot.py \
+  --config-dir "/data/home-assistant" \
+  --out "/data/home-assistant/inventory/entities_snapshot.yaml"
+```
+
+Commit `inventory/entities_snapshot.yaml` to git. Use this file as the source of truth for future naming consistency checks.
 
 ## Notes
 

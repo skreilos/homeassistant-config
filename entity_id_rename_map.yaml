@@ -1,0 +1,9 @@
+entity_id_renames:
+  light.deckenlicht_kinderspielzimmer_light: light.licht_zimmer_julian_decke
+  light.licht_schlafzimmer_julian: light.licht_zimmer_julian_hauptlicht
+  switch.nachttisch_julian: switch.schalter_zimmer_julian_nachttisch
+  switch.nachttisch_Joshua: switch.schalter_zimmer_joshua_nachttisch
+  switch.nachttisch_joshua: switch.schalter_zimmer_joshua_nachttisch
+  light.licht_schlafzimmer_joshua: light.licht_zimmer_joshua_hauptlicht
+  light.kinderzimmer_hochbett_licht: light.licht_zimmer_joshua_hochbett
+  switch.schreibtisch_switch_0: switch.schalter_zimmer_julian_schreibtisch

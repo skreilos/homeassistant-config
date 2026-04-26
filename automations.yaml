@@ -1234,14 +1234,19 @@
       device_ieee: 00:15:8d:00:02:39:dd:bc
       command: attribute_updated
       cluster_id: 6
+      args:
+        attribute_id: 0
     id: Button I
   - platform: event
     event_type: zha_event
     event_data:
       device_ieee: 00:15:8d:00:02:39:dd:bc
-      command: move_with_on_off
-      cluster_id: 8
-    id: Button I - Lang
+      command: attribute_updated
+      cluster_id: 6
+      args:
+        attribute_id: 32768
+        attribute_value: 2
+    id: Button I - Doppel
   condition: []
   action:
   - choose:
@@ -1256,7 +1261,7 @@
     - conditions:
       - condition: trigger
         id:
-        - Button I - Lang
+        - Button I - Doppel
       sequence:
       - service: switch.toggle
         target:

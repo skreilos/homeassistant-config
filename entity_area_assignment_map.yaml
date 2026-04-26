@@ -1,21 +1,21 @@
 entity_area_assignments:
-  sensor.button_spielzimmer_battery_6: Zimmer Julian
-  sensor.button_werktisch_battery_6: Zimmer Julian
-  sensor.button_werktisch_lqi_7: Zimmer Julian
-  sensor.button_werktisch_rssi_7: Zimmer Julian
-  sensor.ikea_of_sweden_jetstrom_40100_lqi: Zimmer Julian
-  sensor.ikea_of_sweden_jetstrom_40100_rssi: Zimmer Julian
-  sensor.ikea_of_sweden_tradfri_control_outlet_lqi_2: Zimmer Julian
-  sensor.ikea_of_sweden_tradfri_control_outlet_rssi_2: Zimmer Julian
-  sensor.ikea_of_sweden_tradfri_on_off_switch_lqi_6: Zimmer Julian
-  sensor.ikea_of_sweden_tradfri_on_off_switch_rssi_6: Zimmer Julian
-  sensor.lumi_lumi_weather_battery_5: Zimmer Julian
-  sensor.lumi_lumi_weather_humidity_5: Zimmer Julian
-  sensor.lumi_lumi_weather_lqi_5: Zimmer Julian
-  sensor.lumi_lumi_weather_pressure_5: Zimmer Julian
-  sensor.lumi_lumi_weather_rssi_5: Zimmer Julian
-  sensor.lumi_lumi_weather_temperature_5: Zimmer Julian
-  sensor.philips_lwv001_lqi: Zimmer Julian
-  sensor.philips_lwv001_rssi: Zimmer Julian
-  sensor.zimmer_julian_spot_lqi_6: Zimmer Julian
-  sensor.zimmer_julian_spot_rssi_6: Zimmer Julian
+  sensor.button_spielzimmer_battery_6: julian
+  sensor.button_werktisch_battery_6: julian
+  sensor.button_werktisch_lqi_7: julian
+  sensor.button_werktisch_rssi_7: julian
+  sensor.ikea_of_sweden_jetstrom_40100_lqi: julian
+  sensor.ikea_of_sweden_jetstrom_40100_rssi: julian
+  sensor.ikea_of_sweden_tradfri_control_outlet_lqi_2: julian
+  sensor.ikea_of_sweden_tradfri_control_outlet_rssi_2: julian
+  sensor.ikea_of_sweden_tradfri_on_off_switch_lqi_6: julian
+  sensor.ikea_of_sweden_tradfri_on_off_switch_rssi_6: julian
+  sensor.lumi_lumi_weather_battery_5: julian
+  sensor.lumi_lumi_weather_humidity_5: julian
+  sensor.lumi_lumi_weather_lqi_5: julian
+  sensor.lumi_lumi_weather_pressure_5: julian
+  sensor.lumi_lumi_weather_rssi_5: julian
+  sensor.lumi_lumi_weather_temperature_5: julian
+  sensor.philips_lwv001_lqi: julian
+  sensor.philips_lwv001_rssi: julian
+  sensor.zimmer_julian_spot_lqi_6: julian
+  sensor.zimmer_julian_spot_rssi_6: julian

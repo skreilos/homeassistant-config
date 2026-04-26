@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assign Home Assistant entity areas by entity_id using area names.
+"""Assign Home Assistant entity areas by entity_id using area names or area IDs.
 
 Usage:
   python3 scripts/migrate_entity_areas.py \
@@ -65,6 +65,7 @@ def main() -> int:
 
     areas = area.get("data", {}).get("areas", [])
     area_id_by_name = {a.get("name"): a.get("id") for a in areas if isinstance(a, dict)}
+    known_area_ids = {a.get("id") for a in areas if isinstance(a, dict)}
 
     entities = ent.get("data", {}).get("entities", [])
     ent_by_id = {}
@@ -75,10 +76,11 @@ def main() -> int:
                 ent_by_id[eid] = e
 
     planned: list[Tuple[str, str, str | None]] = []
-    for entity_id, area_name in assign.items():
-        target_area_id = area_id_by_name.get(area_name)
+    for entity_id, area_ref in assign.items():
+        # Accept both area names and explicit area IDs for stable automation.
+        target_area_id = area_ref if area_ref in known_area_ids else area_id_by_name.get(area_ref)
         if not target_area_id:
-            print(f"WARN missing area in registry: {area_name} (for {entity_id})")
+            print(f"WARN missing area in registry: {area_ref} (for {entity_id})")
             continue
         entry = ent_by_id.get(entity_id)
         if not entry:
@@ -86,7 +88,7 @@ def main() -> int:
             continue
         before = entry.get("area_id")
         if before != target_area_id:
-            planned.append((entity_id, area_name, before))
+            planned.append((entity_id, area_ref, before))
             entry["area_id"] = target_area_id
 
     print(f"Planned area assignments: {len(planned)}")

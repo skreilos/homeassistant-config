@@ -224,6 +224,12 @@ python3 scripts/export_entity_snapshot.py \
 ```
 
 Commit `inventory/entities_snapshot.yaml` to git. Use this file as the source of truth for future naming consistency checks.
+The export also writes:
+
+- `inventory/areas_snapshot.yaml`
+- `inventory/devices_snapshot.yaml`
+
+Use all three files as source of truth for naming and assignment audits.
 
 ## Category B consistency pass (safe mode)
 

@@ -32,3 +32,10 @@ Die Datei `inventory/entities_snapshot.yaml` enthält pro Entity:
 - `disabled_by` / `hidden_by`
 
 Damit kann ich beim nächsten Mal repo-weit und vollständig Namenskonsistenz prüfen.
+
+Zusätzlich werden automatisch erzeugt:
+
+- `inventory/areas_snapshot.yaml`
+- `inventory/devices_snapshot.yaml`
+
+Damit sind Area- und Device-Daten ebenfalls versioniert und für Konsistenzprüfungen verfügbar.

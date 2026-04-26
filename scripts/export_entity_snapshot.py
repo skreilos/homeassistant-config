@@ -62,6 +62,34 @@ def dump_yaml_entities(rows: List[Dict[str, Any]]) -> str:
     return "\n".join(lines)
 
 
+def dump_yaml_areas(rows: List[Dict[str, Any]]) -> str:
+    lines: List[str] = []
+    lines.append("generated_by: export_entity_snapshot.py")
+    lines.append("areas:")
+    for row in rows:
+        lines.append(f'  - area_id: {yaml_quote(row.get("area_id"))}')
+        lines.append(f'    name: {yaml_quote(row.get("name"))}')
+        lines.append(f'    aliases: {yaml_quote(row.get("aliases"))}')
+    lines.append("")
+    return "\n".join(lines)
+
+
+def dump_yaml_devices(rows: List[Dict[str, Any]]) -> str:
+    lines: List[str] = []
+    lines.append("generated_by: export_entity_snapshot.py")
+    lines.append("devices:")
+    for row in rows:
+        lines.append(f'  - device_id: {yaml_quote(row.get("device_id"))}')
+        lines.append(f'    name: {yaml_quote(row.get("name"))}')
+        lines.append(f'    name_by_user: {yaml_quote(row.get("name_by_user"))}')
+        lines.append(f'    area_id: {yaml_quote(row.get("area_id"))}')
+        lines.append(f'    manufacturer: {yaml_quote(row.get("manufacturer"))}')
+        lines.append(f'    model: {yaml_quote(row.get("model"))}')
+        lines.append(f'    via_device_id: {yaml_quote(row.get("via_device_id"))}')
+    lines.append("")
+    return "\n".join(lines)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -133,6 +161,42 @@ def main() -> int:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(dump_yaml_entities(rows), encoding="utf-8")
     print(f"Exported {len(rows)} entities -> {out_path}")
+
+    area_rows: List[Dict[str, Any]] = []
+    for a in areas:
+        if not isinstance(a, dict):
+            continue
+        area_rows.append(
+            {
+                "area_id": a.get("id"),
+                "name": a.get("name"),
+                "aliases": a.get("aliases"),
+            }
+        )
+    area_rows.sort(key=lambda x: (x.get("name") or ""))
+    areas_out = out_path.parent / "areas_snapshot.yaml"
+    areas_out.write_text(dump_yaml_areas(area_rows), encoding="utf-8")
+    print(f"Exported {len(area_rows)} areas -> {areas_out}")
+
+    device_rows: List[Dict[str, Any]] = []
+    for d in devices:
+        if not isinstance(d, dict):
+            continue
+        device_rows.append(
+            {
+                "device_id": d.get("id"),
+                "name": d.get("name"),
+                "name_by_user": d.get("name_by_user"),
+                "area_id": d.get("area_id"),
+                "manufacturer": d.get("manufacturer"),
+                "model": d.get("model"),
+                "via_device_id": d.get("via_device_id"),
+            }
+        )
+    device_rows.sort(key=lambda x: (x.get("name_by_user") or x.get("name") or ""))
+    devices_out = out_path.parent / "devices_snapshot.yaml"
+    devices_out.write_text(dump_yaml_devices(device_rows), encoding="utf-8")
+    print(f"Exported {len(device_rows)} devices -> {devices_out}")
     return 0
 
 

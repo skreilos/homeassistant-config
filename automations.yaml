@@ -106,8 +106,6 @@
         {% else %}
           20
         {% endif %}
-  - delay:
-      seconds: 1
   - target:
       entity_id: "{{ target_light }}"
     data:

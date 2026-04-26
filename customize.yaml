@@ -70,3 +70,18 @@ sensor.philips_lwv001_lqi:
 
 sensor.philips_lwv001_rssi:
   friendly_name: Sensor Deckenlicht Zimmer Julian RSSI
+
+media_player.spielzimmer:
+  friendly_name: MediaPlayer Zimmer Julian
+
+media_player.kinderschlafzimmer:
+  friendly_name: MediaPlayer Zimmer Joshua
+
+light.deckenlicht_kinderspielzimmer_light:
+  friendly_name: Licht Zimmer Julian Decke
+
+light.spielzimmer_deckenlicht_light:
+  friendly_name: Licht Zimmer Julian Hauptlicht
+
+switch.spielzimmer_spot_switch_6:
+  friendly_name: Schalter Zimmer Julian Spot

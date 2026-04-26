@@ -8203,6 +8203,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "button.schalter_zimmer_joshua_schreibtisch_licht_identify"
+    domain: "button"
+    platform: "zha"
+    name: null
+    original_name: "Identify"
+    area_id: null
+    area_name: null
+    device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
+    device_name: "Schalter Zimmer Joshua Schreibtisch Licht"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
   - entity_id: "button.schlafzimmer_kinder_deckenlicht_identify"
     domain: "button"
     platform: "zha"
@@ -8394,19 +8407,6 @@ entities:
     area_name: null
     device_id: "4744a907fed7a39284952dd53fbef77c"
     device_name: "Spielzimmer Deckenlicht"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
-  - entity_id: "button.spielzimmer_spot_identify_6"
-    domain: "button"
-    platform: "zha"
-    name: null
-    original_name: "Identify"
-    area_id: null
-    area_name: null
-    device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
-    device_name: "Spielzimmer Spot"
     disabled_by: null
     hidden_by: null
     has_entity_name: true
@@ -11713,6 +11713,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "select.schalter_zimmer_joshua_schreibtisch_licht_start_up_behavior"
+    domain: "select"
+    platform: "zha"
+    name: null
+    original_name: "Start-up behavior"
+    area_id: null
+    area_name: null
+    device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
+    device_name: "Schalter Zimmer Joshua Schreibtisch Licht"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
   - entity_id: "select.schlafzimmer_kinder_deckenlicht_start_up_behavior"
     domain: "select"
     platform: "zha"
@@ -11774,19 +11787,6 @@ entities:
     area_name: null
     device_id: "4744a907fed7a39284952dd53fbef77c"
     device_name: "Spielzimmer Deckenlicht"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
-  - entity_id: "select.spielzimmer_spot_start_up_behavior_5"
-    domain: "select"
-    platform: "zha"
-    name: null
-    original_name: "Start-up behavior"
-    area_id: null
-    area_name: null
-    device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
-    device_name: "Spielzimmer Spot"
     disabled_by: null
     hidden_by: null
     has_entity_name: true
@@ -12876,7 +12876,7 @@ entities:
     name: "Button Spielzimmer Battery"
     original_name: "Battery"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "7c03d2ff1e88cd5113d8a6a5a04d1f37"
     device_name: "Button Spielzimmer"
     disabled_by: null
@@ -12928,7 +12928,7 @@ entities:
     name: null
     original_name: "Battery"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "4e17a203dbc17cd16616e13cba2c2af3"
     device_name: "Button Werktisch"
     disabled_by: null
@@ -12941,7 +12941,7 @@ entities:
     name: null
     original_name: "LQI"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "4e17a203dbc17cd16616e13cba2c2af3"
     device_name: "Button Werktisch"
     disabled_by: "integration"
@@ -12954,9 +12954,61 @@ entities:
     name: null
     original_name: "RSSI"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "4e17a203dbc17cd16616e13cba2c2af3"
     device_name: "Button Werktisch"
+    disabled_by: "integration"
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "sensor.button_zimmer_joshua_schreibtisch"
+    domain: "sensor"
+    platform: "zha"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "e4e79f70e00732d0a09f791cedf96965"
+    device_name: "Button Zimmer Joshua Schreibtisch"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "sensor.button_zimmer_joshua_schreibtisch_battery"
+    domain: "sensor"
+    platform: "zha"
+    name: null
+    original_name: "Battery"
+    area_id: null
+    area_name: null
+    device_id: "e4e79f70e00732d0a09f791cedf96965"
+    device_name: "Button Zimmer Joshua Schreibtisch"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "sensor.button_zimmer_joshua_schreibtisch_lqi"
+    domain: "sensor"
+    platform: "zha"
+    name: null
+    original_name: "LQI"
+    area_id: null
+    area_name: null
+    device_id: "e4e79f70e00732d0a09f791cedf96965"
+    device_name: "Button Zimmer Joshua Schreibtisch"
+    disabled_by: "integration"
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "sensor.button_zimmer_joshua_schreibtisch_rssi"
+    domain: "sensor"
+    platform: "zha"
+    name: null
+    original_name: "RSSI"
+    area_id: null
+    area_name: null
+    device_id: "e4e79f70e00732d0a09f791cedf96965"
+    device_name: "Button Zimmer Joshua Schreibtisch"
     disabled_by: "integration"
     hidden_by: null
     has_entity_name: true
@@ -14137,7 +14189,7 @@ entities:
     name: null
     original_name: "LQI"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "bfc8e74f31ce91129eefe837f443d520"
     device_name: "Deckenlicht Kinderspielzimmer"
     disabled_by: "integration"
@@ -14150,7 +14202,7 @@ entities:
     name: null
     original_name: "RSSI"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "bfc8e74f31ce91129eefe837f443d520"
     device_name: "Deckenlicht Kinderspielzimmer"
     disabled_by: "integration"
@@ -14228,7 +14280,7 @@ entities:
     name: null
     original_name: "LQI"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "d8cd05abed81ccd27d4bad7da9865254"
     device_name: "Werktisch Licht"
     disabled_by: "integration"
@@ -14280,7 +14332,7 @@ entities:
     name: null
     original_name: "RSSI"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "d8cd05abed81ccd27d4bad7da9865254"
     device_name: "Werktisch Licht"
     disabled_by: "integration"
@@ -14384,7 +14436,7 @@ entities:
     name: null
     original_name: "LQI"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "7c03d2ff1e88cd5113d8a6a5a04d1f37"
     device_name: "Button Spielzimmer"
     disabled_by: "integration"
@@ -14449,7 +14501,7 @@ entities:
     name: null
     original_name: "RSSI"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "7c03d2ff1e88cd5113d8a6a5a04d1f37"
     device_name: "Button Spielzimmer"
     disabled_by: "integration"
@@ -17309,7 +17361,7 @@ entities:
     name: "MultiSensor Spielzimmer Battery"
     original_name: "Battery"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "4bad305e69673bc35f3b6d64b5589c38"
     device_name: "MultiSensor Spielzimmer"
     disabled_by: null
@@ -17361,7 +17413,7 @@ entities:
     name: "MultiSensor Spielzimmer Humidity"
     original_name: "Humidity"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "4bad305e69673bc35f3b6d64b5589c38"
     device_name: "MultiSensor Spielzimmer"
     disabled_by: null
@@ -17426,7 +17478,7 @@ entities:
     name: null
     original_name: "LQI"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "4bad305e69673bc35f3b6d64b5589c38"
     device_name: "MultiSensor Spielzimmer"
     disabled_by: "integration"
@@ -17478,7 +17530,7 @@ entities:
     name: "MultiSensor Spielzimmer Pressure"
     original_name: "Pressure"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "4bad305e69673bc35f3b6d64b5589c38"
     device_name: "MultiSensor Spielzimmer"
     disabled_by: null
@@ -17543,7 +17595,7 @@ entities:
     name: null
     original_name: "RSSI"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "4bad305e69673bc35f3b6d64b5589c38"
     device_name: "MultiSensor Spielzimmer"
     disabled_by: "integration"
@@ -17595,7 +17647,7 @@ entities:
     name: "MultiSensor Spielzimmer Temperature"
     original_name: "Temperature"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "4bad305e69673bc35f3b6d64b5589c38"
     device_name: "MultiSensor Spielzimmer"
     disabled_by: null
@@ -17881,7 +17933,7 @@ entities:
     name: null
     original_name: "LQI"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "4744a907fed7a39284952dd53fbef77c"
     device_name: "Spielzimmer Deckenlicht"
     disabled_by: "integration"
@@ -17894,7 +17946,7 @@ entities:
     name: null
     original_name: "RSSI"
     area_id: "julian"
-    area_name: "Spielzimmer Kinder"
+    area_name: "Zimmer Julian"
     device_id: "4744a907fed7a39284952dd53fbef77c"
     device_name: "Spielzimmer Deckenlicht"
     disabled_by: "integration"
@@ -21151,6 +21203,32 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: "mdi:wifi-strength-3"
+  - entity_id: "sensor.schalter_zimmer_joshua_schreibtisch_licht_lqi"
+    domain: "sensor"
+    platform: "zha"
+    name: null
+    original_name: "LQI"
+    area_id: "julian"
+    area_name: "Zimmer Julian"
+    device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
+    device_name: "Schalter Zimmer Joshua Schreibtisch Licht"
+    disabled_by: "integration"
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "sensor.schalter_zimmer_joshua_schreibtisch_licht_rssi"
+    domain: "sensor"
+    platform: "zha"
+    name: null
+    original_name: "RSSI"
+    area_id: "julian"
+    area_name: "Zimmer Julian"
+    device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
+    device_name: "Schalter Zimmer Joshua Schreibtisch Licht"
+    disabled_by: "integration"
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
   - entity_id: "sensor.schlafzimmer_kinder_deckenlicht_lqi_2"
     domain: "sensor"
     platform: "zha"
@@ -22993,32 +23071,6 @@ entities:
     area_name: null
     device_id: "14f799102b1d0c01eae80914b52ff48d"
     device_name: "Sonos Roam"
-    disabled_by: "integration"
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
-  - entity_id: "sensor.spielzimmer_spot_lqi_6"
-    domain: "sensor"
-    platform: "zha"
-    name: null
-    original_name: "LQI"
-    area_id: "julian"
-    area_name: "Spielzimmer Kinder"
-    device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
-    device_name: "Spielzimmer Spot"
-    disabled_by: "integration"
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
-  - entity_id: "sensor.spielzimmer_spot_rssi_6"
-    domain: "sensor"
-    platform: "zha"
-    name: null
-    original_name: "RSSI"
-    area_id: "julian"
-    area_name: "Spielzimmer Kinder"
-    device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
-    device_name: "Spielzimmer Spot"
     disabled_by: "integration"
     hidden_by: null
     has_entity_name: true
@@ -26117,6 +26169,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "switch.schalter_zimmer_joshua_schreibtisch_licht"
+    domain: "switch"
+    platform: "zha"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
+    device_name: "Schalter Zimmer Joshua Schreibtisch Licht"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
   - entity_id: "switch.sh_buro_gerate_switch_0"
     domain: "switch"
     platform: "shelly"
@@ -26659,19 +26724,6 @@ entities:
     area_name: null
     device_id: "d8cd05abed81ccd27d4bad7da9865254"
     device_name: "Werktisch Licht"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
-  - entity_id: "switch.zimmer_julian_spot_switch_6"
-    domain: "switch"
-    platform: "zha"
-    name: null
-    original_name: null
-    area_id: null
-    area_name: null
-    device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
-    device_name: "Spielzimmer Spot"
     disabled_by: null
     hidden_by: null
     has_entity_name: true
@@ -27495,6 +27547,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "update.schalter_zimmer_joshua_schreibtisch_licht_firmware"
+    domain: "update"
+    platform: "zha"
+    name: null
+    original_name: "Firmware"
+    area_id: null
+    area_name: null
+    device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
+    device_name: "Schalter Zimmer Joshua Schreibtisch Licht"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
   - entity_id: "update.schlafzimmer_kinder_deckenlicht_firmware"
     domain: "update"
     platform: "zha"
@@ -27855,19 +27920,6 @@ entities:
     area_name: null
     device_id: "4744a907fed7a39284952dd53fbef77c"
     device_name: "Spielzimmer Deckenlicht"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
-  - entity_id: "update.spielzimmer_spot_firmware"
-    domain: "update"
-    platform: "zha"
-    name: null
-    original_name: "Firmware"
-    area_id: null
-    area_name: null
-    device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
-    device_name: "Spielzimmer Spot"
     disabled_by: null
     hidden_by: null
     has_entity_name: true

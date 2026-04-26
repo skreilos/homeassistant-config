@@ -1305,7 +1305,7 @@
       sequence:
       - service: light.toggle
         target:
-          entity_id: light.deckenlicht_zimmer_julian_light
+          entity_id: light.zimmer_julian_deckenlicht_light
     - conditions:
       - condition: trigger
         id:
@@ -1584,7 +1584,7 @@
       sequence:
       - service: switch.toggle
         target:
-          entity_id: switch.schalter_zimmer_julian_schreibtisch
+          entity_id: switch.zimmer_julian_schreibtisch_licht_switch
   mode: single
 - id: '1699386944016'
   alias: Auto Light - Bad V2

@@ -264,7 +264,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: null
-    original_name: "Button Nachttisch Joshua"
+    original_name: "Button Zimmer Joshua Nachttisch"
     area_id: null
     area_name: null
     device_id: null
@@ -290,7 +290,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: null
-    original_name: "Button Nachttisch Julian"
+    original_name: "Button Zimmer Julian Nachttisch"
     area_id: null
     area_name: null
     device_id: null
@@ -329,7 +329,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: null
-    original_name: "Button Werktisch"
+    original_name: "Button Zimmer Julian Schreibtisch"
     area_id: null
     area_name: null
     device_id: null
@@ -8779,7 +8779,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Alarm active"
+    original_name: "Alarm Aktiv"
     area_id: null
     area_name: null
     device_id: null
@@ -8792,7 +8792,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Kinder zuhause"
+    original_name: "Kinder Zuhause"
     area_id: null
     area_name: null
     device_id: null
@@ -8805,7 +8805,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Manual Activation Essraum"
+    original_name: "Manuelle Aktivierung Essraum"
     area_id: null
     area_name: null
     device_id: null
@@ -8818,7 +8818,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Manual Activation Zimmer Julian"
+    original_name: "Manuelle Aktivierung Zimmer Julian"
     area_id: null
     area_name: null
     device_id: null
@@ -8831,7 +8831,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Manual Activation Schlafzimmer Stephan"
+    original_name: "Manuelle Aktivierung Schlafzimmer Stephan"
     area_id: null
     area_name: null
     device_id: null
@@ -8844,7 +8844,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Manual Activation Wohnraum"
+    original_name: "Manuelle Aktivierung Wohnraum"
     area_id: null
     area_name: null
     device_id: null
@@ -8857,7 +8857,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "motion Essraum"
+    original_name: "Bewegung Essraum"
     area_id: null
     area_name: null
     device_id: null
@@ -8870,7 +8870,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "motion Wohnraum"
+    original_name: "Bewegung Wohnraum"
     area_id: null
     area_name: null
     device_id: null
@@ -8909,7 +8909,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Show additional functionality"
+    original_name: "Zusätzliche Funktionen Anzeigen"
     area_id: null
     area_name: null
     device_id: null
@@ -8948,7 +8948,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "tageslicht"
+    original_name: "Tageslicht"
     area_id: null
     area_name: null
     device_id: null
@@ -12875,8 +12875,8 @@ entities:
     platform: "zha"
     name: "Button Spielzimmer Battery"
     original_name: "Battery"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "7c03d2ff1e88cd5113d8a6a5a04d1f37"
     device_name: "Button Spielzimmer"
     disabled_by: null
@@ -12927,8 +12927,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "Battery"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "4e17a203dbc17cd16616e13cba2c2af3"
     device_name: "Button Werktisch"
     disabled_by: null
@@ -12940,8 +12940,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "LQI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "4e17a203dbc17cd16616e13cba2c2af3"
     device_name: "Button Werktisch"
     disabled_by: "integration"
@@ -12953,8 +12953,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "RSSI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "4e17a203dbc17cd16616e13cba2c2af3"
     device_name: "Button Werktisch"
     disabled_by: "integration"
@@ -14136,8 +14136,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "LQI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "bfc8e74f31ce91129eefe837f443d520"
     device_name: "Deckenlicht Kinderspielzimmer"
     disabled_by: "integration"
@@ -14149,8 +14149,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "RSSI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "bfc8e74f31ce91129eefe837f443d520"
     device_name: "Deckenlicht Kinderspielzimmer"
     disabled_by: "integration"
@@ -14227,8 +14227,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "LQI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "d8cd05abed81ccd27d4bad7da9865254"
     device_name: "Werktisch Licht"
     disabled_by: "integration"
@@ -14279,8 +14279,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "RSSI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "d8cd05abed81ccd27d4bad7da9865254"
     device_name: "Werktisch Licht"
     disabled_by: "integration"
@@ -14383,8 +14383,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "LQI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "7c03d2ff1e88cd5113d8a6a5a04d1f37"
     device_name: "Button Spielzimmer"
     disabled_by: "integration"
@@ -14448,8 +14448,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "RSSI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "7c03d2ff1e88cd5113d8a6a5a04d1f37"
     device_name: "Button Spielzimmer"
     disabled_by: "integration"
@@ -17308,8 +17308,8 @@ entities:
     platform: "zha"
     name: "MultiSensor Spielzimmer Battery"
     original_name: "Battery"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "4bad305e69673bc35f3b6d64b5589c38"
     device_name: "MultiSensor Spielzimmer"
     disabled_by: null
@@ -17360,8 +17360,8 @@ entities:
     platform: "zha"
     name: "MultiSensor Spielzimmer Humidity"
     original_name: "Humidity"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "4bad305e69673bc35f3b6d64b5589c38"
     device_name: "MultiSensor Spielzimmer"
     disabled_by: null
@@ -17425,8 +17425,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "LQI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "4bad305e69673bc35f3b6d64b5589c38"
     device_name: "MultiSensor Spielzimmer"
     disabled_by: "integration"
@@ -17477,8 +17477,8 @@ entities:
     platform: "zha"
     name: "MultiSensor Spielzimmer Pressure"
     original_name: "Pressure"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "4bad305e69673bc35f3b6d64b5589c38"
     device_name: "MultiSensor Spielzimmer"
     disabled_by: null
@@ -17542,8 +17542,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "RSSI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "4bad305e69673bc35f3b6d64b5589c38"
     device_name: "MultiSensor Spielzimmer"
     disabled_by: "integration"
@@ -17594,8 +17594,8 @@ entities:
     platform: "zha"
     name: "MultiSensor Spielzimmer Temperature"
     original_name: "Temperature"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "4bad305e69673bc35f3b6d64b5589c38"
     device_name: "MultiSensor Spielzimmer"
     disabled_by: null
@@ -17880,8 +17880,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "LQI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "4744a907fed7a39284952dd53fbef77c"
     device_name: "Spielzimmer Deckenlicht"
     disabled_by: "integration"
@@ -17893,8 +17893,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "RSSI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "4744a907fed7a39284952dd53fbef77c"
     device_name: "Spielzimmer Deckenlicht"
     disabled_by: "integration"
@@ -21805,7 +21805,7 @@ entities:
     domain: "sensor"
     platform: "energy"
     name: null
-    original_name: "sensor Cost"
+    original_name: "SH_Pro3_EM Energy Cost"
     area_id: null
     area_name: null
     device_id: null

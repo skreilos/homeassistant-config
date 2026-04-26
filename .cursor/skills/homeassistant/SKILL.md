@@ -48,6 +48,22 @@ When the user asks for deploy help, always provide:
 3. A short "verify" step with expected outcome.
 4. A fallback path if one command fails.
 
+When the user asks for `commit` + `push` (or equivalent):
+
+1. First provide a short summary of commit hash + push result.
+2. Immediately after the summary, always output a copy/paste ready **Server Script** block.
+3. The default server script must include:
+   - `cd "/data/home-assistant"`
+   - `git pull origin main`
+   - `docker restart home-assistant`
+   - `python3 scripts/export_entity_snapshot.py --config-dir "/data/home-assistant" --out "/data/home-assistant/inventory/entities_snapshot.yaml"`
+   - `git add inventory/entities_snapshot.yaml inventory/areas_snapshot.yaml inventory/devices_snapshot.yaml`
+   - `git commit -m "Update entity/area/device snapshots."`
+   - `git push origin main`
+4. If compose/image changes are part of the commit, use `docker compose pull && docker compose up -d` instead of simple restart.
+5. After the server script, also provide the local sync command:
+   - `cd "/home/stephanprivat/Dokumente/Development/homeassistant-config" && git pull origin main`
+
 Use German by default when the user writes in German.
 
 ## Standard deploy flow (copy/paste ready)

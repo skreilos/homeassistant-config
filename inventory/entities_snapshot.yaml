@@ -9009,6 +9009,32 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: "mdi:water-check"
+  - entity_id: "input_datetime.night_auto_light_end"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Nachtmodus Ende"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-end"
+  - entity_id: "input_datetime.night_auto_light_start"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Nachtmodus Start"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-start"
   - entity_id: "input_number.ckw_energy_cost"
     domain: "input_number"
     platform: "input_number"
@@ -9074,6 +9100,45 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: null
+  - entity_id: "input_number.night_brightness_esstisch"
+    domain: "input_number"
+    platform: "input_number"
+    name: null
+    original_name: "Nacht Helligkeit Esstisch"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:brightness-6"
+  - entity_id: "input_number.night_brightness_kuche"
+    domain: "input_number"
+    platform: "input_number"
+    name: null
+    original_name: "Nacht Helligkeit Küche"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:brightness-6"
+  - entity_id: "input_number.night_brightness_sofa"
+    domain: "input_number"
+    platform: "input_number"
+    name: null
+    original_name: "Nacht Helligkeit Sofa"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:brightness-6"
   - entity_id: "input_select.buro_licht_scene"
     domain: "input_select"
     platform: "input_select"
@@ -9832,7 +9897,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: "Büro Tischlampe Links Start-up current level"
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "54a2eec1700b73cccf36bd5e6a8e81f0"
@@ -9884,7 +9949,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: "Büro Tischlampe Rechts Start-up current level"
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "0f83f413590ddb49644239b620cecdd0"
@@ -9949,7 +10014,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: "Deckenlicht Kinderspielzimmer Start-up current level"
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "bfc8e74f31ce91129eefe837f443d520"
@@ -9962,7 +10027,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: null
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "4a10108d8bd50065a600c5e09ddf571b"
@@ -9975,7 +10040,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: null
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "17657ce5f6476e5acff1a28788b61338"
@@ -9988,7 +10053,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: null
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "c9da57d8155ebf844f55f2206b7c7f86"
@@ -10027,7 +10092,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: null
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "ba34d82f6b77e59742e475fbf0fafe1f"
@@ -10222,7 +10287,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: null
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "8c7c515faa48c8d947c6de52471616f7"
@@ -10235,7 +10300,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: null
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "63aa61c380a7932519e7479316839d5e"
@@ -10248,7 +10313,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: null
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "45f719483464d3d450bbeb7e000d5233"
@@ -10261,7 +10326,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: null
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "be31456f9d9558edd71e8b8a50022e18"
@@ -10300,7 +10365,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: null
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "482bd8f596aeb2ef1745a17efc0d5ce6"
@@ -10378,7 +10443,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: "Spielzimmer Deckenlicht Start-up current level"
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "4744a907fed7a39284952dd53fbef77c"
@@ -10404,7 +10469,7 @@ entities:
     domain: "number"
     platform: "zha"
     name: null
-    original_name: "Start-up current level"
+    original_name: "Power-on level"
     area_id: null
     area_name: null
     device_id: "726d2334b69fb77d7e258d9eafdcd083"
@@ -11496,7 +11561,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "bfb83bea93282c7862c0c76a4c205db3"
@@ -11509,7 +11574,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "11fa6727ed7be0a87a976bb9ffbabea3"
@@ -11522,7 +11587,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: "Büro Tischlampe Links Start-up behavior"
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "54a2eec1700b73cccf36bd5e6a8e81f0"
@@ -11535,7 +11600,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: "Büro Tischlampe Rechts Start-up behavior"
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "0f83f413590ddb49644239b620cecdd0"
@@ -11548,7 +11613,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: "Deckenlicht Kinderspielzimmer Start-up behavior"
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "bfc8e74f31ce91129eefe837f443d520"
@@ -11561,7 +11626,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "4a10108d8bd50065a600c5e09ddf571b"
@@ -11574,7 +11639,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "17657ce5f6476e5acff1a28788b61338"
@@ -11587,7 +11652,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "c9da57d8155ebf844f55f2206b7c7f86"
@@ -11600,7 +11665,7 @@ entities:
     domain: "select"
     platform: "tuya"
     name: null
-    original_name: "Power on behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "9b18d2d8abf4a0c9579ed3bf1a2b3f31"
@@ -11613,7 +11678,7 @@ entities:
     domain: "select"
     platform: "tuya"
     name: null
-    original_name: "Power on behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "c600d38f326a0dd233b56213a6e543c4"
@@ -11626,7 +11691,7 @@ entities:
     domain: "select"
     platform: "tuya"
     name: null
-    original_name: "Power on behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "ddbf718f8dbd0a7f065c78eccebd0e8e"
@@ -11639,7 +11704,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "ba34d82f6b77e59742e475fbf0fafe1f"
@@ -11652,7 +11717,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "2eee9c2d99957e91612f1734ee553fc2"
@@ -11665,7 +11730,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "a3e1db2d95ab52e549c92ec4ac6bc0b5"
@@ -11678,7 +11743,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "39c23fb1cbd1d92b9c93780eeed3cfb4"
@@ -11691,7 +11756,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "8c7c515faa48c8d947c6de52471616f7"
@@ -11704,7 +11769,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: "Light Bed Stephan Links Start-up behavior"
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "94cc912ee2e36e2b1729915273714518"
@@ -11717,7 +11782,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: "Light Bed Stephan Rechts Start-up behavior"
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "29bebceb57edffb25da52febde808a9e"
@@ -11730,7 +11795,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
@@ -11743,7 +11808,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "63aa61c380a7932519e7479316839d5e"
@@ -11756,7 +11821,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "45f719483464d3d450bbeb7e000d5233"
@@ -11769,7 +11834,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "be31456f9d9558edd71e8b8a50022e18"
@@ -11782,7 +11847,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "482bd8f596aeb2ef1745a17efc0d5ce6"
@@ -11795,7 +11860,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: "Spielzimmer Deckenlicht Start-up behavior"
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "4744a907fed7a39284952dd53fbef77c"
@@ -11808,7 +11873,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "726d2334b69fb77d7e258d9eafdcd083"
@@ -11847,7 +11912,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: null
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "c794f7612318dc4e64c4d94fb93d547d"
@@ -11860,7 +11925,7 @@ entities:
     domain: "select"
     platform: "zha"
     name: "Werktisch Licht Start-up behavior"
-    original_name: "Start-up behavior"
+    original_name: "Power-on behavior"
     area_id: null
     area_name: null
     device_id: "d8cd05abed81ccd27d4bad7da9865254"
@@ -15651,7 +15716,7 @@ entities:
     disabled_by: null
     hidden_by: null
     has_entity_name: false
-    original_icon: "mdi:battery-70"
+    original_icon: "mdi:battery-30"
   - entity_id: "sensor.lenovo_tb_j616x_battery_power"
     domain: "sensor"
     platform: "mobile_app"
@@ -19200,7 +19265,7 @@ entities:
     disabled_by: null
     hidden_by: null
     has_entity_name: false
-    original_icon: "mdi:battery-80"
+    original_icon: "mdi:battery-outline"
   - entity_id: "sensor.pixel_9_pro_battery_power"
     domain: "sensor"
     platform: "mobile_app"

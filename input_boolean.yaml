@@ -14,7 +14,7 @@ manual_activation_essraum:
   initial: off
 
 manual_activation_licht_julian:
-  name: Manual Activation Licht Julian
+  name: Manual Activation Zimmer Julian
   icon: mdi:kettle
   initial: off
 

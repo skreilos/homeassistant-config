@@ -1022,7 +1022,7 @@
         domain: switch
   mode: single
 - id: '1698875614104'
-  alias: Button Spielzimmer
+  alias: Button Zimmer Julian
   description: ''
   trigger:
   - device_id: 7c03d2ff1e88cd5113d8a6a5a04d1f37
@@ -1030,32 +1030,32 @@
     platform: device
     type: remote_button_short_press
     subtype: turn_on
-    id: Taster I - Spielzimmer
+    id: Taster I - Zimmer Julian
   - device_id: 7c03d2ff1e88cd5113d8a6a5a04d1f37
     domain: zha
     platform: device
     type: remote_button_short_press
     subtype: turn_off
-    id: Taster O - Spielzimmer
+    id: Taster O - Zimmer Julian
   - device_id: 7c03d2ff1e88cd5113d8a6a5a04d1f37
     domain: zha
     platform: device
     type: remote_button_long_press
     subtype: dim_up
-    id: Taster I - Spielzimmer - Lang
+    id: Taster I - Zimmer Julian - Lang
   - device_id: 7c03d2ff1e88cd5113d8a6a5a04d1f37
     domain: zha
     platform: device
     type: remote_button_long_press
     subtype: dim_down
-    id: Taster O - Spielzimmer - Lang
+    id: Taster O - Zimmer Julian - Lang
   condition: []
   action:
   - choose:
     - conditions:
       - condition: trigger
         id:
-        - Taster I - Spielzimmer
+        - Taster I - Zimmer Julian
       sequence:
       - type: toggle
         device_id: 4744a907fed7a39284952dd53fbef77c
@@ -1064,7 +1064,7 @@
     - conditions:
       - condition: trigger
         id:
-        - Taster O - Spielzimmer
+        - Taster O - Zimmer Julian
       sequence:
       - type: toggle
         device_id: b647cdc3d04cbc30eb7716c2b4eb4ca2
@@ -1262,8 +1262,8 @@
         - Button I
       sequence:
       - type: toggle
-        device_id: 63aa61c380a7932519e7479316839d5e
-        entity_id: bb337e6ed39451134f124fd80bb93410
+        device_id: 4744a907fed7a39284952dd53fbef77c
+        entity_id: 47a4e8c3305f48640146a6bf72843b69
         domain: light
     - conditions:
       - condition: trigger
@@ -1779,7 +1779,7 @@
         action: switch.turn_off
   mode: single
 - id: '1700081600900'
-  alias: Auto Light - Spielzimmer
+  alias: Auto Light - Zimmer Julian
   description: ''
   trigger:
   - type: motion
@@ -1825,7 +1825,7 @@
           device_id: b647cdc3d04cbc30eb7716c2b4eb4ca2
   mode: single
 - id: '1700083428473'
-  alias: Auto Light - Schlafzimmer Kinder
+  alias: Auto Light - Zimmer Joshua
   description: ''
   trigger:
   - type: motion

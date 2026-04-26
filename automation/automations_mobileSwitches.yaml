@@ -62,7 +62,7 @@
         entity_id: light.gruppe_buro_decke
         brightness: 20
 
-################################################ Schalter Julian Bett Einzeln ####
+################################################ Schalter Zimmer Julian Bett Einzeln ####
 - alias: 'MS-JU-Bett-Ein-Einzeln'
   initial_state: 'on'
   trigger:
@@ -92,7 +92,7 @@
       data_template:
         entity_id: switch.nachttisch_julian
 
-################################################ Schalter Joshua Bett Einzeln ####
+################################################ Schalter Zimmer Joshua Bett Einzeln ####
 - alias: 'MS-JO-Bett-Ein-Einzeln'
   initial_state: 'on'
   trigger:
@@ -290,7 +290,7 @@
 #vierfach = 1006
 
 
-################################################ Dimmer Kinderzimmer ####
+################################################ Dimmer Zimmer Joshua ####
 - alias: 'MS-OG-KZ-Dimmer-Power'
   initial_state: 'on'
   trigger:

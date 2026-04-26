@@ -2,7 +2,7 @@
 #  friendly_name: Gruppiere alle Sonos
 #  icon: mdi:home-variant
 
-light.licht_zimmer_julian_decke:
+light.deckenlicht_zimmer_julian_light:
   friendly_name: Licht Zimmer Julian Decke
 
 light.licht_zimmer_julian_hauptlicht:

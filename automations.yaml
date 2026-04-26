@@ -1193,10 +1193,9 @@
         id:
         - Button I
       sequence:
-      - type: toggle
-        device_id: 63aa61c380a7932519e7479316839d5e
-        entity_id: bb337e6ed39451134f124fd80bb93410
-        domain: light
+      - service: switch.toggle
+        target:
+          entity_id: switch.sh_schlafzimmer_kinder_switch_0
     - conditions:
       - condition: trigger
         id:
@@ -1263,7 +1262,7 @@
       sequence:
       - service: light.toggle
         target:
-          entity_id: light.licht_zimmer_julian_decke
+          entity_id: light.deckenlicht_zimmer_julian_light
     - conditions:
       - condition: trigger
         id:
@@ -1329,10 +1328,9 @@
         - Button O Stephan Rechts
         - Button O Stephan Links
       sequence:
-      - type: toggle
-        device_id: 726d2334b69fb77d7e258d9eafdcd083
-        entity_id: d33a19f25272848eddf708e8ef3a7b3c
-        domain: light
+      - action: switch.toggle
+        target:
+          entity_id: switch.sh_schlafzimmer_stephan_switch_0
     - conditions:
       - condition: trigger
         id:
@@ -1535,7 +1533,7 @@
       sequence:
       - service: light.toggle
         target:
-          entity_id: light.licht_zimmer_julian_decke
+          entity_id: light.deckenlicht_zimmer_julian_light
     - conditions:
       - condition: trigger
         id:

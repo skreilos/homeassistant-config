@@ -384,6 +384,15 @@ Fix: run migration scripts with `sudo` on server.
 Cause: mapping uses area display name that does not exist in `core.area_registry`.
 Fix: prefer stable area IDs in `entity_area_assignment_map.yaml` (for example `julian`).
 
+### Area names still legacy
+
+Use area name migration mapping and script:
+
+- `area_rename_map.yaml`
+- `scripts/migrate_area_names.py`
+
+Run dry run first, then apply with `sudo`, restart HA, and re-export snapshots.
+
 ### `rg` not available on server
 
 Use:

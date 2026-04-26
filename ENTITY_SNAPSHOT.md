@@ -39,3 +39,35 @@ Zusätzlich werden automatisch erzeugt:
 - `inventory/devices_snapshot.yaml`
 
 Damit sind Area- und Device-Daten ebenfalls versioniert und für Konsistenzprüfungen verfügbar.
+
+## Area-Namen automatisch umbenennen
+
+Mapping-Datei:
+
+- `area_rename_map.yaml`
+
+Script:
+
+- `scripts/migrate_area_names.py`
+
+Dry-Run:
+
+```bash
+cd "/data/home-assistant"
+python3 scripts/migrate_area_names.py \
+  --config-dir "/data/home-assistant" \
+  --map "/data/home-assistant/area_rename_map.yaml"
+```
+
+Apply:
+
+```bash
+cd "/data/home-assistant"
+sudo python3 scripts/migrate_area_names.py \
+  --config-dir "/data/home-assistant" \
+  --map "/data/home-assistant/area_rename_map.yaml" \
+  --apply
+docker restart home-assistant_2026_2_3
+```
+
+Danach wieder Snapshot exportieren und committen.

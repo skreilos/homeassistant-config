@@ -498,7 +498,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: null
-    original_name: "Nacht Spezial-Dimmung Auto Reaktivieren"
+    original_name: "Nacht Gästemodus Auto Aus"
     area_id: null
     area_name: null
     device_id: null
@@ -8827,6 +8827,19 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: "mdi:alarm-light"
+  - entity_id: "input_boolean.guest_mode"
+    domain: "input_boolean"
+    platform: "input_boolean"
+    name: null
+    original_name: "Gästemodus"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:account-group"
   - entity_id: "input_boolean.kids_home"
     domain: "input_boolean"
     platform: "input_boolean"

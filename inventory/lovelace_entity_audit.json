@@ -1,0 +1,71 @@
+{
+  "scanned_references": 514,
+  "missing_count": 13,
+  "missing": [
+    {
+      "entity_id": "conversation.home_assistant",
+      "path": "$.data[46].state.entity_id",
+      "suggested_replacement": null
+    },
+    {
+      "entity_id": "button.spielzimmer_spot_identify_6",
+      "path": "$.data[502].state.entity_id",
+      "suggested_replacement": null
+    },
+    {
+      "entity_id": "select.spielzimmer_spot_start_up_behavior_5",
+      "path": "$.data[503].state.entity_id",
+      "suggested_replacement": null
+    },
+    {
+      "entity_id": "switch.zimmer_julian_spot_switch_6",
+      "path": "$.data[504].state.entity_id",
+      "suggested_replacement": null
+    },
+    {
+      "entity_id": "update.spielzimmer_spot_firmware",
+      "path": "$.data[505].state.entity_id",
+      "suggested_replacement": null
+    },
+    {
+      "entity_id": "light.spielzimmer_deckenlicht_light",
+      "path": "$.data[506].state.entity_id",
+      "suggested_replacement": "light.zimmer_julian_deckenlicht_light"
+    },
+    {
+      "entity_id": "light.deckenlicht_kinderspielzimmer_light",
+      "path": "$.data[507].state.entity_id",
+      "suggested_replacement": "light.deckenlicht_zimmer_julian_light"
+    },
+    {
+      "entity_id": "switch.spielzimmer_spot_switch_6",
+      "path": "$.data[508].state.entity_id",
+      "suggested_replacement": "switch.zimmer_julian_spot_switch_6"
+    },
+    {
+      "entity_id": "switch.werktisch_licht_switch",
+      "path": "$.data[509].state.entity_id",
+      "suggested_replacement": "switch.zimmer_julian_schreibtisch_licht_switch"
+    },
+    {
+      "entity_id": "automation.mobiler_schalter_werktisch",
+      "path": "$.data[510].state.entity_id",
+      "suggested_replacement": "automation.mobiler_schalter_zimmer_julian_schreibtisch"
+    },
+    {
+      "entity_id": "automation.mobile_schalter_spielzimmer_v2",
+      "path": "$.data[511].state.entity_id",
+      "suggested_replacement": "automation.mobile_schalter_zimmer_julian_v2"
+    },
+    {
+      "entity_id": "automation.button_arbeitstisch",
+      "path": "$.data[512].state.entity_id",
+      "suggested_replacement": "automation.button_zimmer_julian_schreibtisch"
+    },
+    {
+      "entity_id": "automation.auto_light_spielzimmer",
+      "path": "$.data[513].state.entity_id",
+      "suggested_replacement": "automation.auto_light_zimmer_julian"
+    }
+  ]
+}

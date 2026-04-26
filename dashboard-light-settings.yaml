@@ -29,7 +29,7 @@ views:
         show_header_toggle: false
         entities:
           - entity: input_number.night_brightness_decke_stephan
-            name: Licht Zimmer Stephan Decke Nacht
+            name: Licht Schlafzimmer Stephan Decke Nacht
           - entity: input_number.night_brightness_decke_julian
             name: Licht Zimmer Julian Decke Nacht
           - entity: input_number.night_brightness_decke_joshua

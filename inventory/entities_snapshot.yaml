@@ -494,6 +494,32 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: null
+  - entity_id: "automation.nacht_spezial_dimmung_auto_reaktivieren"
+    domain: "automation"
+    platform: "automation"
+    name: null
+    original_name: "Nacht Spezial-Dimmung Auto Reaktivieren"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: null
+  - entity_id: "automation.nachtlimit_deckenlicht_zimmer"
+    domain: "automation"
+    platform: "automation"
+    name: null
+    original_name: "Nachtlimit Deckenlicht Zimmer"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: null
   - entity_id: "automation.new_automation"
     domain: "automation"
     platform: "automation"
@@ -8905,6 +8931,19 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: "mdi:Light"
+  - entity_id: "input_boolean.night_special_dimming_enabled"
+    domain: "input_boolean"
+    platform: "input_boolean"
+    name: null
+    original_name: "Nacht Spezial-Dimmung Aktiv"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:weather-night"
   - entity_id: "input_boolean.nightmode"
     domain: "input_boolean"
     platform: "input_boolean"
@@ -9100,6 +9139,45 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: null
+  - entity_id: "input_number.night_brightness_decke_joshua"
+    domain: "input_number"
+    platform: "input_number"
+    name: null
+    original_name: "Nacht Helligkeit Decke Joshua"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:brightness-6"
+  - entity_id: "input_number.night_brightness_decke_julian"
+    domain: "input_number"
+    platform: "input_number"
+    name: null
+    original_name: "Nacht Helligkeit Decke Julian"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:brightness-6"
+  - entity_id: "input_number.night_brightness_decke_stephan"
+    domain: "input_number"
+    platform: "input_number"
+    name: null
+    original_name: "Nacht Helligkeit Decke Stephan"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:brightness-6"
   - entity_id: "input_number.night_brightness_esstisch"
     domain: "input_number"
     platform: "input_number"

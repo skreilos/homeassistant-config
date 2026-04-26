@@ -37,7 +37,7 @@
           brightness_pct: >
             {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
             {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-            {% set in_night = (now() >= start or now() < end) and is_state('input_boolean.night_special_dimming_enabled', 'on') %}
+            {% set in_night = (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') %}
             {{ states('input_number.night_brightness_kuche') | int if in_night else 100 }}
         target:
           area_id: kuche
@@ -48,7 +48,7 @@
               {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
               {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
               {% set in_night = now() >= start or now() < end %}
-              {{ (not in_night) or is_state('input_boolean.night_special_dimming_enabled', 'off') }}
+              {{ (not in_night) or is_state('input_boolean.guest_mode', 'on') }}
           sequence:
           - service: switch.turn_on
             data: {}
@@ -76,6 +76,8 @@
     - light.stefan_deckenlicht_light_3
     - light.deckenlicht_zimmer_julian_light
     - light.schlafzimmer_kinder_deckenlicht_light
+    - switch.sh_schlafzimmer_stephan_switch_0
+    - switch.sh_schlafzimmer_kinder_switch_0
     to: 'on'
     trigger: state
   conditions:
@@ -83,21 +85,31 @@
     value_template: >
       {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
       {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-      {{ (now() >= start or now() < end) and is_state('input_boolean.night_special_dimming_enabled', 'on') }}
+      {{ (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') }}
   actions:
   - variables:
+      target_light: >
+        {% if trigger.entity_id in ['light.stefan_deckenlicht_light_3', 'switch.sh_schlafzimmer_stephan_switch_0'] %}
+          light.stefan_deckenlicht_light_3
+        {% elif trigger.entity_id in ['light.schlafzimmer_kinder_deckenlicht_light', 'switch.sh_schlafzimmer_kinder_switch_0'] %}
+          light.schlafzimmer_kinder_deckenlicht_light
+        {% else %}
+          light.deckenlicht_zimmer_julian_light
+        {% endif %}
       night_pct: >
-        {% if trigger.entity_id == 'light.stefan_deckenlicht_light_3' %}
+        {% if target_light == 'light.stefan_deckenlicht_light_3' %}
           {{ states('input_number.night_brightness_decke_stephan') | int }}
-        {% elif trigger.entity_id == 'light.deckenlicht_zimmer_julian_light' %}
+        {% elif target_light == 'light.deckenlicht_zimmer_julian_light' %}
           {{ states('input_number.night_brightness_decke_julian') | int }}
-        {% elif trigger.entity_id == 'light.schlafzimmer_kinder_deckenlicht_light' %}
+        {% elif target_light == 'light.schlafzimmer_kinder_deckenlicht_light' %}
           {{ states('input_number.night_brightness_decke_joshua') | int }}
         {% else %}
           20
         {% endif %}
+  - delay:
+      seconds: 1
   - target:
-      entity_id: "{{ trigger.entity_id }}"
+      entity_id: "{{ target_light }}"
     data:
       brightness_pct: "{{ night_pct | int }}"
       transition: 1
@@ -105,16 +117,16 @@
   mode: queued
   max: 10
 - id: '1761513800002'
-  alias: Nacht Spezial-Dimmung Auto Reaktivieren
-  description: Schaltet die Nacht Spezial-Dimmung nach Nachtende automatisch wieder ein
+  alias: Nacht Gästemodus Auto Aus
+  description: Schaltet den Gästemodus nach Nachtende automatisch wieder aus
   triggers:
   - at: input_datetime.night_auto_light_end
     trigger: time
   conditions: []
   actions:
   - target:
-      entity_id: input_boolean.night_special_dimming_enabled
-    action: input_boolean.turn_on
+      entity_id: input_boolean.guest_mode
+    action: input_boolean.turn_off
     data: {}
   mode: single
 - id: '1668932306495'
@@ -281,7 +293,7 @@
             value_template: >
               {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
               {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-              {{ (now() >= start or now() < end) and is_state('input_boolean.night_special_dimming_enabled', 'on') }}
+              {{ (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') }}
           sequence:
           - action: light.turn_on
             data:
@@ -333,7 +345,7 @@
           brightness_pct: >
             {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
             {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-            {% set in_night = (now() >= start or now() < end) and is_state('input_boolean.night_special_dimming_enabled', 'on') %}
+            {% set in_night = (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') %}
             {{ states('input_number.night_brightness_sofa') | int if in_night else 100 }}
         target:
           device_id:

@@ -9,28 +9,28 @@ views:
         show_header_toggle: false
         entities:
           - entity: input_datetime.night_auto_light_start
-            name: Nachtmodus Start
+            name: Auto Licht Nacht Start
           - entity: input_datetime.night_auto_light_end
-            name: Nachtmodus Ende
-          - entity: input_boolean.night_special_dimming_enabled
-            name: Spezial-Dimmung aktiv
+            name: Auto Licht Nacht Ende
+          - entity: input_boolean.guest_mode
+            name: Gästemodus
       - type: entities
         title: Helligkeit je Bereich
         show_header_toggle: false
         entities:
           - entity: input_number.night_brightness_sofa
-            name: Sofa
+            name: Licht Wohnzimmer Sofa Nacht
           - entity: input_number.night_brightness_esstisch
-            name: Essraum
+            name: Licht Essraum Nacht
           - entity: input_number.night_brightness_kuche
-            name: Küche
+            name: Licht Küche Nacht
       - type: entities
         title: Nacht Helligkeit Deckenlichter
         show_header_toggle: false
         entities:
           - entity: input_number.night_brightness_decke_stephan
-            name: Zimmer Stephan
+            name: Licht Zimmer Stephan Decke Nacht
           - entity: input_number.night_brightness_decke_julian
-            name: Zimmer Julian
+            name: Licht Zimmer Julian Decke Nacht
           - entity: input_number.night_brightness_decke_joshua
-            name: Zimmer Joshua
+            name: Licht Zimmer Joshua Decke Nacht

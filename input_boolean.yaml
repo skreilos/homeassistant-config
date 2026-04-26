@@ -63,8 +63,8 @@ motion_essraum:
   icon: mdi:kettle
   initial: off
 
-night_special_dimming_enabled:
-  name: Nacht Spezial-Dimmung Aktiv
-  icon: mdi:weather-night
-  initial: on
+guest_mode:
+  name: Gästemodus
+  icon: mdi:account-group
+  initial: off
 

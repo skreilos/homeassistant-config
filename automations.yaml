@@ -1224,6 +1224,42 @@
         entity_id: bb337e6ed39451134f124fd80bb93410
         type: brightness_decrease
   mode: single
+- id: '1761498000001'
+  alias: Button Zimmer Joshua Schreibtisch
+  description: ''
+  trigger:
+  - device_id: e4e79f70e00732d0a09f791cedf96965
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+    id: Button I
+  - device_id: e4e79f70e00732d0a09f791cedf96965
+    domain: zha
+    platform: device
+    type: remote_button_long_press
+    subtype: dim_up
+    id: Button I - Lang
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Button I
+      sequence:
+      - service: switch.toggle
+        target:
+          entity_id: switch.schalter_zimmer_joshua_schreibtisch_licht
+    - conditions:
+      - condition: trigger
+        id:
+        - Button I - Lang
+      sequence:
+      - service: switch.toggle
+        target:
+          entity_id: switch.sh_schlafzimmer_kinder_switch_0
+  mode: single
 - id: '1698877723756'
   alias: Button Zimmer Julian Nachttisch
   description: ''

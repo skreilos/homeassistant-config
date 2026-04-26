@@ -6,25 +6,25 @@
 - C (manual check): 34
 
 ## A - Entity ID Rename (IST -> SOLL)
-- `automation.auto_light_spielzimmer` -> `automation.auto_light_zimmer_julian`
-- `automation.button_arbeitstisch` -> `automation.button_zimmer_julian_schreibtisch`
-- `automation.mobile_schalter_spielzimmer_v2` -> `automation.mobile_schalter_zimmer_julian_v2`
-- `automation.mobiler_schalter_werktisch` -> `automation.mobiler_schalter_zimmer_julian_schreibtisch`
-- `light.deckenlicht_kinderspielzimmer_light` -> `light.deckenlicht_zimmer_julian_light`
-- `light.spielzimmer_deckenlicht_light` -> `light.zimmer_julian_deckenlicht_light`
-- `script.sonos_play_spielzimmer` -> `script.sonos_play_zimmer_julian`
-- `script.sonos_stop_spielzimmer` -> `script.sonos_stop_zimmer_julian`
-- `script.sonos_volume_set_eg_sound_spielzimmer` -> `script.sonos_volume_set_eg_sound_zimmer_julian`
-- `switch.kinderschlafzimmer_crossfade` -> `switch.zimmer_joshua_crossfade`
-- `switch.kinderschlafzimmer_loudness` -> `switch.zimmer_joshua_loudness`
-- `switch.kinderschlafzimmer_status_light` -> `switch.zimmer_joshua_status_light`
-- `switch.kinderschlafzimmer_touch_controls` -> `switch.zimmer_joshua_touch_controls`
-- `switch.spielzimmer_crossfade` -> `switch.zimmer_julian_crossfade`
-- `switch.spielzimmer_loudness` -> `switch.zimmer_julian_loudness`
-- `switch.spielzimmer_spot_switch_6` -> `switch.zimmer_julian_spot_switch_6`
-- `switch.spielzimmer_status_light` -> `switch.zimmer_julian_status_light`
-- `switch.spielzimmer_touch_controls` -> `switch.zimmer_julian_touch_controls`
-- `switch.werktisch_licht_switch` -> `switch.zimmer_julian_schreibtisch_licht_switch`
+- `automation.auto_light_zimmer_julian` -> `automation.auto_light_zimmer_julian`
+- `automation.button_zimmer_julian_schreibtisch` -> `automation.button_zimmer_julian_schreibtisch`
+- `automation.mobile_schalter_zimmer_julian_v2` -> `automation.mobile_schalter_zimmer_julian_v2`
+- `automation.mobiler_schalter_zimmer_julian_schreibtisch` -> `automation.mobiler_schalter_zimmer_julian_schreibtisch`
+- `light.deckenlicht_zimmer_julian_light` -> `light.deckenlicht_zimmer_julian_light`
+- `light.zimmer_julian_deckenlicht_light` -> `light.zimmer_julian_deckenlicht_light`
+- `script.sonos_play_zimmer_julian` -> `script.sonos_play_zimmer_julian`
+- `script.sonos_stop_zimmer_julian` -> `script.sonos_stop_zimmer_julian`
+- `script.sonos_volume_set_eg_sound_zimmer_julian` -> `script.sonos_volume_set_eg_sound_zimmer_julian`
+- `switch.zimmer_joshua_crossfade` -> `switch.zimmer_joshua_crossfade`
+- `switch.zimmer_joshua_loudness` -> `switch.zimmer_joshua_loudness`
+- `switch.zimmer_joshua_status_light` -> `switch.zimmer_joshua_status_light`
+- `switch.zimmer_joshua_touch_controls` -> `switch.zimmer_joshua_touch_controls`
+- `switch.zimmer_julian_crossfade` -> `switch.zimmer_julian_crossfade`
+- `switch.zimmer_julian_loudness` -> `switch.zimmer_julian_loudness`
+- `switch.zimmer_julian_spot_switch_6` -> `switch.zimmer_julian_spot_switch_6`
+- `switch.zimmer_julian_status_light` -> `switch.zimmer_julian_status_light`
+- `switch.zimmer_julian_touch_controls` -> `switch.zimmer_julian_touch_controls`
+- `switch.zimmer_julian_schreibtisch_licht_switch` -> `switch.zimmer_julian_schreibtisch_licht_switch`
 
 ## B - Keep entity_id, update Name/Area/Device
 - `sensor.button_kinderzimmer_lqi_4` (name: `MISSING`, area: `MISSING`, device: `Button Eingangstüre`)
@@ -59,8 +59,8 @@
 - `button.spielzimmer_spot_identify_6` (name: `MISSING`)
 - `button.werktisch_licht_identify_2` (name: `Werktisch Licht Identify`)
 - `input_number.eg_sound_spielzimmer` (name: `MISSING`)
-- `media_player.kinderschlafzimmer` (name: `MISSING`)
-- `media_player.spielzimmer` (name: `MISSING`)
+- `media_player.zimmer_joshua` (name: `MISSING`)
+- `media_player.zimmer_julian` (name: `MISSING`)
 - `number.deckenlicht_kinderspielzimmer_on_level` (name: `Deckenlicht Kinderspielzimmer On level`)
 - `number.deckenlicht_kinderspielzimmer_on_off_transition_time` (name: `Deckenlicht Kinderspielzimmer On/Off transition time`)
 - `number.deckenlicht_kinderspielzimmer_start_up_color_temperature` (name: `Deckenlicht Kinderspielzimmer Start-up color temperature`)

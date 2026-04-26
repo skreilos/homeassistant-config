@@ -75,7 +75,7 @@
   - entity_id:
     - light.stefan_deckenlicht_light_3
     - light.deckenlicht_zimmer_julian_light
-    - light.schlafzimmer_kinder_deckenlicht_light
+    - light.zimmer_joshua_deckenlicht_light
     - switch.sh_schlafzimmer_stephan_switch_0
     - switch.sh_schlafzimmer_kinder_switch_0
     to: 'on'
@@ -91,8 +91,8 @@
       target_light: >
         {% if trigger.entity_id in ['light.stefan_deckenlicht_light_3', 'switch.sh_schlafzimmer_stephan_switch_0'] %}
           light.stefan_deckenlicht_light_3
-        {% elif trigger.entity_id in ['light.schlafzimmer_kinder_deckenlicht_light', 'switch.sh_schlafzimmer_kinder_switch_0'] %}
-          light.schlafzimmer_kinder_deckenlicht_light
+        {% elif trigger.entity_id in ['light.zimmer_joshua_deckenlicht_light', 'switch.sh_schlafzimmer_kinder_switch_0'] %}
+          light.zimmer_joshua_deckenlicht_light
         {% else %}
           light.deckenlicht_zimmer_julian_light
         {% endif %}
@@ -101,7 +101,7 @@
           {{ states('input_number.night_brightness_decke_stephan') | int }}
         {% elif target_light == 'light.deckenlicht_zimmer_julian_light' %}
           {{ states('input_number.night_brightness_decke_julian') | int }}
-        {% elif target_light == 'light.schlafzimmer_kinder_deckenlicht_light' %}
+        {% elif target_light == 'light.zimmer_joshua_deckenlicht_light' %}
           {{ states('input_number.night_brightness_decke_joshua') | int }}
         {% else %}
           20
@@ -613,7 +613,7 @@
     action: media_player.volume_set
     target:
       entity_id:
-      - media_player.spielzimmer
+      - media_player.zimmer_julian
       - media_player.buro
       - media_player.tv
       - media_player.stephan
@@ -627,7 +627,7 @@
   - data:
       group_members:
       - media_player.buro
-      - media_player.kinderschlafzimmer
+      - media_player.zimmer_joshua
       - media_player.stephan
     target:
       entity_id:
@@ -667,7 +667,7 @@
       - media_player.tv
       - media_player.buro
       - media_player.stephan
-      - media_player.kinderschlafzimmer
+      - media_player.zimmer_joshua
   - delay:
       hours: 0
       minutes: 30
@@ -677,7 +677,7 @@
     metadata: {}
     data: {}
     target:
-      entity_id: media_player.kinderschlafzimmer
+      entity_id: media_player.zimmer_joshua
   - action: light.turn_off
     metadata: {}
     data: {}
@@ -719,7 +719,7 @@
     data:
       group_members:
       - media_player.stephan
-      - media_player.kinderschlafzimmer
+      - media_player.zimmer_joshua
       - media_player.wohnzimmer
       - media_player.buro
     target:
@@ -783,7 +783,7 @@
       - data:
           brightness_pct: 5
         target:
-          entity_id: light.sh_rgbw_aquarium_kinder_channel_4
+          entity_id: light.sh_rgbw_aquarium_joshua_channel_4
         action: light.turn_on
       - delay:
           hours: 0
@@ -793,7 +793,7 @@
       - data:
           brightness_pct: 10
         target:
-          entity_id: light.sh_rgbw_aquarium_kinder_channel_4
+          entity_id: light.sh_rgbw_aquarium_joshua_channel_4
         action: light.turn_on
       - delay:
           hours: 0
@@ -803,7 +803,7 @@
       - data:
           brightness_pct: 20
         target:
-          entity_id: light.sh_rgbw_aquarium_kinder_channel_4
+          entity_id: light.sh_rgbw_aquarium_joshua_channel_4
         action: light.turn_on
       - delay:
           hours: 0
@@ -813,7 +813,7 @@
       - data:
           brightness_pct: 35
         target:
-          entity_id: light.sh_rgbw_aquarium_kinder_channel_4
+          entity_id: light.sh_rgbw_aquarium_joshua_channel_4
         action: light.turn_on
     - conditions:
       - condition: trigger
@@ -853,7 +853,7 @@
       - data:
           transition: 300
         target:
-          entity_id: light.sh_rgbw_aquarium_kinder_channel_4
+          entity_id: light.sh_rgbw_aquarium_joshua_channel_4
         action: light.turn_off
   - choose:
     - conditions:
@@ -865,7 +865,7 @@
           brightness_pct: 5
         target:
           entity_id:
-          - light.sh_rgbw_aquarium_kinder_channel_3
+          - light.sh_rgbw_aquarium_joshua_channel_3
         action: light.turn_on
       - delay:
           hours: 0
@@ -876,7 +876,7 @@
           brightness_pct: 10
         target:
           entity_id:
-          - light.sh_rgbw_aquarium_kinder_channel_3
+          - light.sh_rgbw_aquarium_joshua_channel_3
         action: light.turn_on
       - delay:
           hours: 0
@@ -887,7 +887,7 @@
           brightness_pct: 20
         action: light.turn_on
         target:
-          entity_id: light.sh_rgbw_aquarium_kinder_channel_3
+          entity_id: light.sh_rgbw_aquarium_joshua_channel_3
       - delay:
           hours: 0
           minutes: 5
@@ -896,7 +896,7 @@
       - data:
           brightness_pct: 35
         target:
-          entity_id: light.sh_rgbw_aquarium_kinder_channel_3
+          entity_id: light.sh_rgbw_aquarium_joshua_channel_3
         action: light.turn_on
     - conditions:
       - condition: trigger
@@ -935,7 +935,7 @@
           milliseconds: 0
       - data: {}
         target:
-          entity_id: light.sh_rgbw_aquarium_kinder_channel_3
+          entity_id: light.sh_rgbw_aquarium_joshua_channel_3
         action: light.turn_off
   mode: single
 - id: '1695327230694'

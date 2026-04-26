@@ -43,8 +43,8 @@
 - `button.spielzimmer_deckenlicht_identify`
 - `button.werktisch_licht_identify_2`
 - `input_number.eg_sound_spielzimmer`
-- `media_player.kinderschlafzimmer`
-- `media_player.spielzimmer`
+- `media_player.zimmer_joshua`
+- `media_player.zimmer_julian`
 - `number.deckenlicht_kinderspielzimmer_on_level`
 - `number.deckenlicht_kinderspielzimmer_on_off_transition_time`
 - `number.deckenlicht_kinderspielzimmer_start_up_color_temperature`

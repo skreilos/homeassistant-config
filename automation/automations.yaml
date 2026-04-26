@@ -34,7 +34,7 @@
       entity_id: input_number.eg_sound_spielzimmer
   action:
     service: script.turn_on
-    entity_id: script.sonos_volume_set_eg_sound_spielzimmer
+    entity_id: script.sonos_volume_set_eg_sound_zimmer_julian
 
 - alias: Lautstärkenänderung_sonos_volume_set_eg_sound_esszimmer
   initial_state: 'on'

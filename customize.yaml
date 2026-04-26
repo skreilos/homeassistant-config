@@ -11,7 +11,7 @@ light.zimmer_julian_deckenlicht_light:
 switch.julian_nachttisch_switch:
   friendly_name: Schalter Zimmer Julian Nachttisch
 
-light.schlafzimmer_kinder_deckenlicht_light:
+light.zimmer_joshua_deckenlicht_light:
   friendly_name: Licht Zimmer Joshua Hauptlicht
 
 switch.joshua_nachttisch_switch_2:
@@ -71,17 +71,29 @@ sensor.philips_lwv001_lqi:
 sensor.philips_lwv001_rssi:
   friendly_name: Sensor Deckenlicht Zimmer Julian RSSI
 
-media_player.spielzimmer:
+media_player.zimmer_julian:
   friendly_name: MediaPlayer Zimmer Julian
 
-media_player.kinderschlafzimmer:
+media_player.zimmer_joshua:
   friendly_name: MediaPlayer Zimmer Joshua
 
-light.deckenlicht_kinderspielzimmer_light:
+light.deckenlicht_zimmer_julian_light:
   friendly_name: Licht Zimmer Julian Decke
 
-light.spielzimmer_deckenlicht_light:
+light.zimmer_julian_deckenlicht_light:
   friendly_name: Licht Zimmer Julian Hauptlicht
 
-switch.spielzimmer_spot_switch_6:
+switch.zimmer_julian_spot_switch_6:
   friendly_name: Schalter Zimmer Julian Spot
+
+binary_sensor.motion_zimmer_joshua_motion_9:
+  friendly_name: Sensor Bewegung Zimmer Joshua
+
+light.sh_rgbw_aquarium_joshua_channel_3:
+  friendly_name: Licht Aquarium Zimmer Joshua Kanal 3
+
+light.sh_rgbw_aquarium_joshua_channel_4:
+  friendly_name: Licht Aquarium Zimmer Joshua Kanal 4
+
+automation.auto_light_zimmer_joshua:
+  friendly_name: Auto Licht Zimmer Joshua

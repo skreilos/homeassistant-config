@@ -18,3 +18,10 @@ entity_id_renames:
   switch.spielzimmer_status_light: switch.zimmer_julian_status_light
   switch.spielzimmer_touch_controls: switch.zimmer_julian_touch_controls
   switch.werktisch_licht_switch: switch.zimmer_julian_schreibtisch_licht_switch
+  automation.auto_light_schlafzimmer_kinder: automation.auto_light_zimmer_joshua
+  light.schlafzimmer_kinder_deckenlicht_light: light.zimmer_joshua_deckenlicht_light
+  binary_sensor.motion_schlafzimmer_kinder_motion_9: binary_sensor.motion_zimmer_joshua_motion_9
+  media_player.kinderschlafzimmer: media_player.zimmer_joshua
+  media_player.spielzimmer: media_player.zimmer_julian
+  light.sh_rgbw_aquarium_kinder_channel_3: light.sh_rgbw_aquarium_joshua_channel_3
+  light.sh_rgbw_aquarium_kinder_channel_4: light.sh_rgbw_aquarium_joshua_channel_4

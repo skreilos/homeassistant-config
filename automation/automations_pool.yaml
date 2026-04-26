@@ -1,0 +1,62 @@
+################################################ Auto Pool Punmpe ####
+- alias: Pool Pumpe morgens an
+  initial_state: false
+  trigger:
+    platform: time
+    at: '09:30:00'
+  action:
+  - service: homeassistant.turn_on
+    entity_id: switch.eg_pool_pumpe
+  id: '6AL014'
+
+- alias: Pool Pumpe abends an
+  initial_state: false
+  trigger:
+    platform: time
+    at: '16:30:00'
+  action:
+  - service: homeassistant.turn_on
+    entity_id: switch.eg_pool_pumpe
+  id: '6AL015'
+
+- alias: Pool Pumpe Auto aus
+  initial_state: false
+  trigger:
+    platform: state
+    entity_id: switch.eg_pool_pumpe
+    to: 'on'
+    for:
+      hours: 3
+  action:
+  - service: homeassistant.turn_off
+    entity_id: switch.eg_pool_pumpe
+  id: '6AL016'
+
+################################################ Auto Pool Punmpe ####
+
+- alias: Pool heizen wenn waermer
+  initial_state: false
+  trigger:
+    platform: template
+    value_template: >
+      {{ (states('sensor.eg_temp_pool_wasser')|int)
+        < (states('sensor.openweathermap_temperature')|int + 1) }} 
+#        < (states('sensor.eg_temp_pool_aussen')|int + 1) }} 
+  action:
+    - service: homeassistant.turn_on
+      entity_id: switch.eg_pool_wasserheizung
+  id: c7e79593fca14Av3e2723sad2fb153b0
+
+- alias: Pool heizen aus
+  initial_state: false
+  trigger:
+    platform: template
+    value_template: >
+      {{ (states('sensor.eg_temp_pool_wasser')|int)
+        > (states('sensor.openweathermap_temperature')|int + 1) }} 
+#        < (states('sensor.eg_temp_pool_aussen')|int + 1) }} 
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.eg_pool_wasserheizung
+  id: c7e79593fca14Av3e272456f2fb153b0
+

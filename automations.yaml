@@ -1,0 +1,2626 @@
+- id: '1668931799898'
+  alias: Auto Light - Küche V2
+  description: ''
+  trigger:
+  - type: motion
+    platform: device
+    device_id: 51879b5d5dac01662aa2fc857af1aa6a
+    entity_id: 9ba0ab2e14add997aba2920326a990bc
+    domain: binary_sensor
+    id: Motion Küche On
+  - type: no_motion
+    platform: device
+    device_id: 51879b5d5dac01662aa2fc857af1aa6a
+    entity_id: 9ba0ab2e14add997aba2920326a990bc
+    domain: binary_sensor
+    id: Motion Küche Off
+    for:
+      hours: 0
+      minutes: 2
+      seconds: 0
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion Küche On
+      - type: is_illuminance
+        condition: device
+        device_id: 51879b5d5dac01662aa2fc857af1aa6a
+        entity_id: 2727f4c60cd15af34090663bd6eb8bd3
+        domain: sensor
+        below: 180
+      sequence:
+      - service: light.turn_on
+        data:
+          brightness_pct: 100
+        target:
+          area_id: kuche
+      - service: switch.turn_on
+        data: {}
+        target:
+          device_id: d2d23f11b7df2716b0ce4fb7a1acf235
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion Küche Off
+      sequence:
+      - service: light.turn_off
+        data: {}
+        target:
+          area_id: kuche
+      - service: switch.turn_off
+        data: {}
+        target:
+          device_id: d2d23f11b7df2716b0ce4fb7a1acf235
+  mode: single
+- id: '1668932306495'
+  alias: Auto Light - Gang V2
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_gang
+    to: 'on'
+    id: Motion Gang On
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_gang
+    to: 'off'
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 0
+    id: Motion Gang Off
+  - type: opened
+    platform: device
+    device_id: e67f6135517ff05869cc65c93f5d7b4e
+    entity_id: ced64b59c8027ed809a5d8cdaf3f71dd
+    domain: binary_sensor
+    id: Eingangstüre opened
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: or
+        conditions:
+        - condition: trigger
+          id:
+          - Motion Gang On
+        - condition: or
+          conditions:
+          - condition: trigger
+            id:
+            - Eingangstüre opened
+      - condition: state
+        entity_id: input_boolean.nightmode
+        state: 'off'
+      sequence:
+      - service: switch.turn_on
+        data: {}
+        target:
+          area_id: gang
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion Gang Off
+      sequence:
+      - service: switch.turn_off
+        data: {}
+        target:
+          area_id: gang
+  mode: single
+- id: '1668939168038'
+  alias: AutoSwitch - Aquarium CO2 V2
+  description: ''
+  triggers:
+  - at: 09:00:00
+    id: Time - Aquarium 60p - Start
+    trigger: time
+  - at: '19:00:00'
+    id: Time - Aquarium 60p - Stop
+    trigger: time
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: Time - Aquarium 60p - Start
+      sequence:
+      - data: {}
+        target:
+          device_id:
+          - 11fa6727ed7be0a87a976bb9ffbabea3
+          - bfb83bea93282c7862c0c76a4c205db3
+        action: homeassistant.turn_on
+    - conditions:
+      - condition: trigger
+        id: Time - Aquarium 60p - Stop
+      sequence:
+      - data: {}
+        target:
+          device_id:
+          - 11fa6727ed7be0a87a976bb9ffbabea3
+          - bfb83bea93282c7862c0c76a4c205db3
+        action: homeassistant.turn_off
+  mode: single
+- id: '1668939648789'
+  alias: Aquarium - Light
+  description: ''
+  trigger:
+  - platform: time
+    at: 09:00:00
+    id: Time - Aquarium - Start
+  - platform: time
+    at: '19:00:00'
+    id: Time - Aquarium - Stop
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: Time - Aquarium - Start
+      sequence:
+      - service: homeassistant.turn_on
+        data: {}
+        target:
+          entity_id:
+          - switch.sz_joshua_aquarium
+          - switch.sz_julian_aquarium
+    - conditions:
+      - condition: trigger
+        id: Time - Aquarium - Stop
+      sequence:
+      - service: homeassistant.turn_off
+        data: {}
+        target:
+          entity_id:
+          - switch.sz_julian_aquarium
+          - switch.sz_joshua_aquarium
+  mode: single
+- id: '1668945566381'
+  alias: Auto Light - Esstisch V2
+  description: ''
+  triggers:
+  - type: motion
+    device_id: 265b30cca6a252a0611b9ba4c2bdcf18
+    entity_id: a4498947f36d0ca094374067da7bf4c9
+    domain: binary_sensor
+    id: Motion Esstisch On
+    trigger: device
+  - type: no_motion
+    device_id: 265b30cca6a252a0611b9ba4c2bdcf18
+    entity_id: a4498947f36d0ca094374067da7bf4c9
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 4
+      seconds: 0
+    id: Motion Esstisch Off
+    trigger: device
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion Esstisch On
+      - type: is_illuminance
+        condition: device
+        device_id: 265b30cca6a252a0611b9ba4c2bdcf18
+        entity_id: b7f5347381ea4bf7cda34880486f0fa8
+        domain: sensor
+        below: 250
+      sequence:
+      - action: scene.turn_on
+        data: {}
+        target:
+          entity_id: scene.esstisch_on_high_motion_on
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion Esstisch Off
+      sequence:
+      - action: scene.turn_on
+        data: {}
+        target:
+          entity_id: scene.esstisch_on_high_motion_off
+  mode: single
+- id: '1668948534045'
+  alias: Auto Light - Sofa V2
+  description: ''
+  triggers:
+  - entity_id:
+    - binary_sensor.motion_sofa
+    id: Motion Sofa On
+    to: 'on'
+    trigger: state
+  - entity_id:
+    - binary_sensor.motion_sofa
+    id: Motion Sofa Off
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+    to: 'off'
+    trigger: state
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion Sofa On
+      sequence:
+      - data:
+          brightness: 255
+        target:
+          device_id:
+          - be31456f9d9558edd71e8b8a50022e18
+          - 482bd8f596aeb2ef1745a17efc0d5ce6
+        action: light.turn_on
+      - action: light.turn_on
+        target:
+          entity_id: light.sh_sofa_tv_led_rgbw_light_0
+        data:
+          brightness_pct: 13
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion Sofa Off
+      - condition: or
+        conditions:
+        - condition: device
+          device_id: 2d0456d52fa68e75d63f68b94fa5ca8b
+          domain: media_player
+          entity_id: 695de244ff3cd16bd35521a922ef20cd
+          type: is_off
+        - condition: device
+          device_id: 2d0456d52fa68e75d63f68b94fa5ca8b
+          domain: media_player
+          entity_id: 695de244ff3cd16bd35521a922ef20cd
+          type: is_idle
+        - condition: state
+          entity_id: media_player.android_tv_10_0_0_22
+          state: unavailable
+      sequence:
+      - data: {}
+        target:
+          area_id: wohnzimmer
+        action: light.turn_off
+  mode: single
+- id: '1669760776701'
+  alias: Button Büro
+  description: ''
+  triggers:
+  - device_id: 12235c8bebf69aaad3fd31f850dee7f5
+    domain: zha
+    type: remote_button_short_press
+    subtype: turn_off
+    id: Schalter 0
+    trigger: device
+  - device_id: 12235c8bebf69aaad3fd31f850dee7f5
+    domain: zha
+    type: remote_button_short_press
+    subtype: turn_on
+    id: Schalter I
+    trigger: device
+  - device_id: 12235c8bebf69aaad3fd31f850dee7f5
+    domain: zha
+    type: remote_button_long_press
+    subtype: dim_down
+    id: Schalter 0 long
+    trigger: device
+  - device_id: 12235c8bebf69aaad3fd31f850dee7f5
+    domain: zha
+    type: remote_button_long_press
+    subtype: dim_up
+    id: Schalter I long
+    trigger: device
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Schalter I long
+      sequence:
+      - data: {}
+        target:
+          device_id: 29bebceb57edffb25da52febde808a9e
+        action: switch.toggle
+    - conditions:
+      - condition: trigger
+        id:
+        - Schalter 0
+      sequence:
+      - data: {}
+        action: media_player.media_play_pause
+        target:
+          entity_id: media_player.tv
+    - conditions:
+      - condition: trigger
+        id:
+        - Schalter 0 long
+      sequence:
+      - data:
+          group_members:
+          - media_player.stephan
+          - media_player.buro
+        action: media_player.join
+        target:
+          entity_id: media_player.tv
+      - data:
+          volume_level: 0.08
+        action: media_player.volume_set
+        target:
+          entity_id:
+          - media_player.buro
+          - media_player.stephan
+          - media_player.tv
+      - target:
+          entity_id: media_player.tv
+        data:
+          media_content_id: FV:2/60
+          media_content_type: favorite_item_id
+        metadata:
+          title: Button
+          thumbnail: https://yt3.googleusercontent.com/5Y3_lxhYlfZKxr-aHMA35O1BhNM02MRKlz5bIfMH5KVcazLiPkrT-Xa3dvig6MSB700WJTfqTX2Q=s576
+          media_class: playlist
+          children_media_class:
+          navigateIds:
+          - {}
+          - media_content_type: favorites_folder
+            media_content_id: object.container.playlistContainer
+        action: media_player.play_media
+      - data:
+          shuffle: true
+        action: media_player.shuffle_set
+        target:
+          entity_id: media_player.tv
+    - conditions:
+      - condition: trigger
+        id:
+        - Schalter I
+      sequence:
+      - target:
+          device_id: []
+          area_id: []
+          entity_id:
+          - switch.sh_buro_gerate_switch_0
+        data: {}
+        action: switch.toggle
+      - target:
+          device_id: []
+          area_id: []
+          entity_id:
+          - light.buro_tischlampe_links_light
+          - light.buro_tischlampe_rechts_light
+        data: {}
+        action: light.toggle
+      - target:
+          entity_id: light.buro_tisch_licht
+        data: {}
+        action: light.toggle
+  mode: single
+- id: '1675117578452'
+  alias: Notification Bitte lüften
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id: sensor.ms_kuche
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+    above: 45
+  condition: []
+  action:
+  - service: notify.pushover
+    data:
+      message: Die Luftfeuchtigkeit im Raum ist zu hoch, bitte lüften.
+      title: Bitte lüften
+  mode: single
+- id: '1683865344473'
+  alias: Notification Door
+  description: ''
+  trigger:
+  - type: opened
+    platform: device
+    device_id: e67f6135517ff05869cc65c93f5d7b4e
+    entity_id: ced64b59c8027ed809a5d8cdaf3f71dd
+    domain: binary_sensor
+  condition:
+  - condition: state
+    entity_id: input_boolean.alarm_active
+    state: 'on'
+  action:
+  - service: notify.pushover
+    data:
+      message: Door has been opened
+      title: Door
+  mode: single
+- id: '1692819475252'
+  alias: Routine - Morgen - Everyday
+  description: ''
+  triggers:
+  - at: 06:55:00
+    trigger: time
+  conditions:
+  - condition: state
+    entity_id: input_boolean.kids_home
+    state: 'on'
+  actions:
+  - data: {}
+    target:
+      entity_id: input_boolean.nightmode
+    action: input_boolean.turn_off
+  mode: single
+- id: '1692820516847'
+  alias: Routine - Abend - Everyday
+  description: ''
+  trigger:
+  - platform: time
+    at: '23:50:00'
+  condition:
+  - condition: state
+    entity_id: input_boolean.kids_home
+    state: 'on'
+  action:
+  - service: input_boolean.turn_on
+    data: {}
+    target:
+      entity_id: input_boolean.nightmode
+  mode: single
+- id: '1692820704454'
+  alias: Routine - Morgen - Workdays
+  description: ''
+  triggers:
+  - at: 06:55:00
+    trigger: time
+  conditions:
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: input_boolean.kids_home
+      state: 'on'
+    - condition: state
+      entity_id: input_boolean.alarm_active
+      state: 'off'
+    - condition: time
+      before: 07:00:00
+      after: 06:40:00
+      weekday:
+      - mon
+      - wed
+      - thu
+      - fri
+      - tue
+  actions:
+  - data:
+      transition: 19
+    target:
+      area_id:
+      - joshua
+    action: light.turn_on
+  - data:
+      transition: 20
+    action: light.turn_on
+    target:
+      area_id: schlafzimmer
+  - action: switch.turn_on
+    metadata: {}
+    data: {}
+    target:
+      device_id:
+      - 94cc912ee2e36e2b1729915273714518
+      - 29bebceb57edffb25da52febde808a9e
+      - 39c23fb1cbd1d92b9c93780eeed3cfb4
+      - a3e1db2d95ab52e549c92ec4ac6bc0b5
+  - data:
+      volume_level: 0.08
+    action: media_player.volume_set
+    target:
+      entity_id:
+      - media_player.spielzimmer
+      - media_player.buro
+      - media_player.tv
+      - media_player.stephan
+  - data: {}
+    action: media_player.unjoin
+    target:
+      entity_id:
+      - media_player.buro
+      - media_player.stephan
+      - media_player.tv
+  - data:
+      group_members:
+      - media_player.buro
+      - media_player.kinderschlafzimmer
+      - media_player.stephan
+    target:
+      entity_id:
+      - media_player.tv
+    action: media_player.join
+  - data:
+      shuffle: true
+    action: media_player.shuffle_set
+    target:
+      entity_id: media_player.tv
+  - target:
+      entity_id: media_player.tv
+    data:
+      media:
+        media_content_id: FV:2/60
+        media_content_type: favorite_item_id
+        metadata:
+          title: Button
+          thumbnail: https://yt3.googleusercontent.com/5Y3_lxhYlfZKxr-aHMA35O1BhNM02MRKlz5bIfMH5KVcazLiPkrT-Xa3dvig6MSB700WJTfqTX2Q=s576
+          media_class: playlist
+          children_media_class:
+          navigateIds:
+          - {}
+          - media_content_type: favorites_folder
+            media_content_id: object.container.playlistContainer
+    action: media_player.play_media
+  - delay:
+      hours: 0
+      minutes: 5
+      seconds: 0
+      milliseconds: 0
+  - data:
+      volume_level: 0.1
+    action: media_player.volume_set
+    target:
+      entity_id:
+      - media_player.tv
+      - media_player.buro
+      - media_player.stephan
+      - media_player.kinderschlafzimmer
+  - delay:
+      hours: 0
+      minutes: 30
+      seconds: 0
+      milliseconds: 0
+  - action: media_player.unjoin
+    metadata: {}
+    data: {}
+    target:
+      entity_id: media_player.kinderschlafzimmer
+  - action: light.turn_off
+    metadata: {}
+    data: {}
+    target:
+      area_id: wohnzimmer
+  - action: switch.turn_off
+    metadata: {}
+    data: {}
+    target:
+      device_id:
+      - 94cc912ee2e36e2b1729915273714518
+      - 29bebceb57edffb25da52febde808a9e
+      - 39c23fb1cbd1d92b9c93780eeed3cfb4
+      - a3e1db2d95ab52e549c92ec4ac6bc0b5
+  mode: single
+- id: '1692822759848'
+  alias: Routine - Morgen - Workdays II
+  description: ''
+  trigger:
+  - platform: time
+    at: 06:40:00
+  condition:
+  - condition: and
+    conditions:
+    - condition: time
+      before: 08:00:00
+      after: 06:40:00
+      weekday:
+      - mon
+      - wed
+      - thu
+      - fri
+      - tue
+    - condition: state
+      entity_id: input_boolean.alarm_active
+      state: 'off'
+  action:
+  - service: media_player.join
+    data:
+      group_members:
+      - media_player.stephan
+      - media_player.kinderschlafzimmer
+      - media_player.wohnzimmer
+      - media_player.buro
+    target:
+      device_id: 9ba04750d35a4dc510fbe8367105f3d0
+  - service: media_player.volume_set
+    data:
+      volume_level: 0.1
+    target:
+      device_id:
+      - 0d64c5cf5da823510285018fe730bc0d
+      - 1cc747126a8fcb6a653143c1c3961f3b
+      - 5a9698484a657f0f24c75a463803a038
+      - 9ba04750d35a4dc510fbe8367105f3d0
+  - service: media_player.shuffle_set
+    data:
+      shuffle: true
+    target:
+      device_id: 9ba04750d35a4dc510fbe8367105f3d0
+  - service: media_player.play_media
+    target:
+      entity_id: media_player.wohnzimmer
+    data:
+      media_content_id: FV:2/40
+      media_content_type: favorite_item_id
+    metadata:
+      title: Sanftes Piano
+      thumbnail: https://lh3.googleusercontent.com/s2FlwZJihQ0T4tjoYLI_-KABkUymaqmKJh6MsDCXAka6a7AF-8Nx5LI-QSwmViHDby7eNJKk1NWyiRE=w512-h512-l90-rj
+      media_class: playlist
+      children_media_class:
+      navigateIds:
+      - {}
+      - media_content_type: favorites_folder
+        media_content_id: object.container.playlistContainer
+  - service: light.turn_on
+    data: {}
+    target:
+      area_id:
+      - schlafzimmer
+      - joshua
+      - wohnzimmer
+      - essraum
+  mode: single
+- id: '1695326696870'
+  alias: Aquarium Light
+  description: ''
+  triggers:
+  - at: 09:00:00
+    id: Morning
+    trigger: time
+  - at: '19:00:00'
+    id: Evening
+    trigger: time
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Morning
+      sequence:
+      - data:
+          brightness_pct: 5
+        target:
+          entity_id: light.sh_rgbw_aquarium_kinder_channel_4
+        action: light.turn_on
+      - delay:
+          hours: 0
+          minutes: 5
+          seconds: 0
+          milliseconds: 0
+      - data:
+          brightness_pct: 10
+        target:
+          entity_id: light.sh_rgbw_aquarium_kinder_channel_4
+        action: light.turn_on
+      - delay:
+          hours: 0
+          minutes: 5
+          seconds: 0
+          milliseconds: 0
+      - data:
+          brightness_pct: 20
+        target:
+          entity_id: light.sh_rgbw_aquarium_kinder_channel_4
+        action: light.turn_on
+      - delay:
+          hours: 0
+          minutes: 5
+          seconds: 0
+          milliseconds: 0
+      - data:
+          brightness_pct: 35
+        target:
+          entity_id: light.sh_rgbw_aquarium_kinder_channel_4
+        action: light.turn_on
+    - conditions:
+      - condition: trigger
+        id:
+        - Evening
+      sequence:
+      - data:
+          brightness_pct: 30
+        target:
+          entity_id: light.aquarium_joshua
+        action: light.turn_on
+      - delay:
+          hours: 0
+          minutes: 5
+          seconds: 0
+          milliseconds: 0
+      - data:
+          brightness_pct: 20
+        target:
+          entity_id: light.aquarium_joshua
+        action: light.turn_on
+      - delay:
+          hours: 0
+          minutes: 5
+          seconds: 0
+          milliseconds: 0
+      - data:
+          brightness_pct: 10
+        target:
+          entity_id: light.aquarium_joshua
+        action: light.turn_on
+      - delay:
+          hours: 0
+          minutes: 5
+          seconds: 0
+          milliseconds: 0
+      - data:
+          transition: 300
+        target:
+          entity_id: light.sh_rgbw_aquarium_kinder_channel_4
+        action: light.turn_off
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Morning
+      sequence:
+      - data:
+          brightness_pct: 5
+        target:
+          entity_id:
+          - light.sh_rgbw_aquarium_kinder_channel_3
+        action: light.turn_on
+      - delay:
+          hours: 0
+          minutes: 5
+          seconds: 0
+          milliseconds: 0
+      - data:
+          brightness_pct: 10
+        target:
+          entity_id:
+          - light.sh_rgbw_aquarium_kinder_channel_3
+        action: light.turn_on
+      - delay:
+          hours: 0
+          minutes: 5
+          seconds: 0
+          milliseconds: 0
+      - data:
+          brightness_pct: 20
+        action: light.turn_on
+        target:
+          entity_id: light.sh_rgbw_aquarium_kinder_channel_3
+      - delay:
+          hours: 0
+          minutes: 5
+          seconds: 0
+          milliseconds: 0
+      - data:
+          brightness_pct: 35
+        target:
+          entity_id: light.sh_rgbw_aquarium_kinder_channel_3
+        action: light.turn_on
+    - conditions:
+      - condition: trigger
+        id:
+        - Evening
+      sequence:
+      - data:
+          brightness_pct: 40
+        target:
+          entity_id: light.aquarium_julian
+        action: light.turn_on
+      - delay:
+          hours: 0
+          minutes: 5
+          seconds: 0
+          milliseconds: 0
+      - data:
+          brightness_pct: 20
+        target:
+          entity_id: light.aquarium_julian
+        action: light.turn_on
+      - delay:
+          hours: 0
+          minutes: 5
+          seconds: 0
+          milliseconds: 0
+      - data:
+          brightness_pct: 10
+        target:
+          entity_id: light.aquarium_julian
+        action: light.turn_on
+      - delay:
+          hours: 0
+          minutes: 5
+          seconds: 0
+          milliseconds: 0
+      - data: {}
+        target:
+          entity_id: light.sh_rgbw_aquarium_kinder_channel_3
+        action: light.turn_off
+  mode: single
+- id: '1695327230694'
+  alias: AutoOff - V2
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - switch.trolley
+    to: 'on'
+    for:
+      hours: 3
+      minutes: 0
+      seconds: 0
+    id: Trolley on
+  - platform: state
+    entity_id:
+    - switch.kaffeemaschine_switch_0
+    to: 'on'
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+    id: Kaffee on
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Trolley on
+      sequence:
+      - service: switch.turn_off
+        data: {}
+        target:
+          device_id: afa775962b66fe73d9efb36deadc74d1
+    - conditions:
+      - condition: trigger
+        id:
+        - Kaffee on
+      sequence:
+      - service: switch.turn_off
+        data: {}
+        target:
+          device_id: d69a27018dd360b7ad8bb6c1a7b1ae1e
+  mode: single
+- id: '1698705978589'
+  alias: Auto Light - Schlafzimmer Stefan V2
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_schlafzimmer_stefan
+    to: 'on'
+    id: Motion Schlafzimmer Stefan On
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_schlafzimmer_stefan
+    to: 'off'
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+    id: Motion Schlafzimmer Stefan Off
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: or
+        conditions:
+        - condition: trigger
+          id:
+          - Motion Schlafzimmer Stefan On
+      - condition: state
+        entity_id: input_boolean.nightmode
+        state: 'off'
+      sequence:
+      - service: light.turn_on
+        data:
+          brightness_pct: 100
+        target:
+          area_id: schlafzimmer
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion Schlafzimmer Stefan Off
+      sequence:
+      - service: light.turn_off
+        data: {}
+        target:
+          area_id: schlafzimmer
+  mode: single
+- id: '1698874143005'
+  alias: Button Trolley
+  description: ''
+  triggers:
+  - device_id: 0eed94805fadb03c36917a60a6bfb84f
+    domain: zha
+    type: remote_button_short_press
+    subtype: turn_on
+    id: Button I
+    trigger: device
+  - device_id: 0eed94805fadb03c36917a60a6bfb84f
+    domain: zha
+    type: remote_button_short_press
+    subtype: turn_off
+    id: Button O
+    trigger: device
+  - device_id: 0eed94805fadb03c36917a60a6bfb84f
+    domain: zha
+    type: remote_button_long_press
+    subtype: dim_up
+    id: Button I - Lang
+    trigger: device
+  - device_id: 0eed94805fadb03c36917a60a6bfb84f
+    domain: zha
+    type: remote_button_long_press
+    subtype: dim_down
+    id: Button O - Lang
+    trigger: device
+  - type: opened
+    device_id: bd7272d261039ed654820767fab87803
+    entity_id: 6a998dc65d51825dfc61dc2db35db359
+    domain: binary_sensor
+    trigger: device
+    id: Trolley door open
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Button I
+      sequence:
+      - type: turn_on
+        device_id: afa775962b66fe73d9efb36deadc74d1
+        entity_id: 8a43112301dc503a889881e70fb521d9
+        domain: switch
+    - conditions:
+      - condition: trigger
+        id:
+        - Button O
+      sequence:
+      - type: turn_off
+        device_id: afa775962b66fe73d9efb36deadc74d1
+        entity_id: 8a43112301dc503a889881e70fb521d9
+        domain: switch
+    - conditions:
+      - condition: trigger
+        id:
+        - Button I - Lang
+      sequence:
+      - type: toggle
+        device_id: afa775962b66fe73d9efb36deadc74d1
+        entity_id: 8a43112301dc503a889881e70fb521d9
+        domain: switch
+    - conditions:
+      - condition: trigger
+        id:
+        - Button O - Lang
+      sequence:
+      - type: toggle
+        device_id: afa775962b66fe73d9efb36deadc74d1
+        entity_id: 8a43112301dc503a889881e70fb521d9
+        domain: switch
+    - conditions:
+      - condition: trigger
+        id:
+        - Trolley door open
+      sequence:
+      - type: turn_on
+        device_id: afa775962b66fe73d9efb36deadc74d1
+        entity_id: 8a43112301dc503a889881e70fb521d9
+        domain: switch
+  mode: single
+- id: '1698875614104'
+  alias: Button Spielzimmer
+  description: ''
+  trigger:
+  - device_id: 7c03d2ff1e88cd5113d8a6a5a04d1f37
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+    id: Taster I - Spielzimmer
+  - device_id: 7c03d2ff1e88cd5113d8a6a5a04d1f37
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_off
+    id: Taster O - Spielzimmer
+  - device_id: 7c03d2ff1e88cd5113d8a6a5a04d1f37
+    domain: zha
+    platform: device
+    type: remote_button_long_press
+    subtype: dim_up
+    id: Taster I - Spielzimmer - Lang
+  - device_id: 7c03d2ff1e88cd5113d8a6a5a04d1f37
+    domain: zha
+    platform: device
+    type: remote_button_long_press
+    subtype: dim_down
+    id: Taster O - Spielzimmer - Lang
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Taster I - Spielzimmer
+      sequence:
+      - type: toggle
+        device_id: 4744a907fed7a39284952dd53fbef77c
+        entity_id: 47a4e8c3305f48640146a6bf72843b69
+        domain: light
+    - conditions:
+      - condition: trigger
+        id:
+        - Taster O - Spielzimmer
+      sequence:
+      - type: toggle
+        device_id: b647cdc3d04cbc30eb7716c2b4eb4ca2
+        entity_id: fbf16569fb741dce0740b1a176d10636
+        domain: switch
+    - conditions:
+      - condition: trigger
+        id:
+        - Taster I - Werktisch- Lang
+      sequence:
+      - type: toggle
+        device_id: d8cd05abed81ccd27d4bad7da9865254
+        entity_id: 6c92d733f174986fb16826a538dfc341
+        domain: switch
+    - conditions:
+      - condition: trigger
+        id:
+        - Taster O - Werktisch- Lang
+      sequence:
+      - type: toggle
+        device_id: 94cc912ee2e36e2b1729915273714518
+        entity_id: 1e2c0e648decdf58c6e5a35afa069f7c
+        domain: switch
+  mode: single
+- id: '1698876823657'
+  alias: Button Kaffeemaschine
+  description: ''
+  trigger:
+  - device_id: 05a84d8b8c2ba883aeacd7aa16e8d3bc
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+    id: Button I
+  - device_id: 05a84d8b8c2ba883aeacd7aa16e8d3bc
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_off
+    id: Button O
+  - device_id: 05a84d8b8c2ba883aeacd7aa16e8d3bc
+    domain: zha
+    platform: device
+    type: remote_button_long_press
+    subtype: dim_up
+    id: Button I - Lang
+  - device_id: 05a84d8b8c2ba883aeacd7aa16e8d3bc
+    domain: zha
+    platform: device
+    type: remote_button_long_press
+    subtype: dim_down
+    id: Button O - Lang
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Button I
+      sequence:
+      - type: turn_on
+        device_id: d69a27018dd360b7ad8bb6c1a7b1ae1e
+        entity_id: 837c2f54d8c0731fc6350119883636e5
+        domain: switch
+    - conditions:
+      - condition: trigger
+        id:
+        - Button O
+      sequence:
+      - type: turn_off
+        device_id: d69a27018dd360b7ad8bb6c1a7b1ae1e
+        entity_id: 837c2f54d8c0731fc6350119883636e5
+        domain: switch
+    - conditions:
+      - condition: trigger
+        id:
+        - Button I - Lang
+      sequence:
+      - type: turn_on
+        device_id: beeb1b0eee37b68115e7256fe4a817b9
+        entity_id: 2e39e06b4b26c5bcc21eb81381a9d627
+        domain: switch
+    - conditions:
+      - condition: trigger
+        id:
+        - Button O - Lang
+      sequence:
+      - type: turn_off
+        device_id: beeb1b0eee37b68115e7256fe4a817b9
+        entity_id: 2e39e06b4b26c5bcc21eb81381a9d627
+        domain: switch
+  mode: single
+- id: '1698877530586'
+  alias: Button Nachttisch Joshua
+  description: ''
+  trigger:
+  - device_id: 37686e2beb8eb3a62b51f3971685ad74
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+    id: Button I
+  - device_id: 37686e2beb8eb3a62b51f3971685ad74
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_off
+    id: Button O
+  - device_id: 37686e2beb8eb3a62b51f3971685ad74
+    domain: zha
+    platform: device
+    type: remote_button_long_press
+    subtype: dim_up
+    id: Button I - Lang
+  - device_id: 37686e2beb8eb3a62b51f3971685ad74
+    domain: zha
+    platform: device
+    type: remote_button_long_press
+    subtype: dim_down
+    id: Button O - Lang
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Button I
+      sequence:
+      - type: toggle
+        device_id: 63aa61c380a7932519e7479316839d5e
+        entity_id: bb337e6ed39451134f124fd80bb93410
+        domain: light
+    - conditions:
+      - condition: trigger
+        id:
+        - Button O
+      sequence:
+      - type: toggle
+        device_id: a3e1db2d95ab52e549c92ec4ac6bc0b5
+        entity_id: 161a08f2c5a28be82833a2fc7d4d4b25
+        domain: switch
+    - conditions:
+      - condition: trigger
+        id:
+        - Button I - Lang
+      sequence:
+      - device_id: 63aa61c380a7932519e7479316839d5e
+        domain: light
+        entity_id: bb337e6ed39451134f124fd80bb93410
+        type: brightness_increase
+    - conditions:
+      - condition: trigger
+        id:
+        - Button O - Lang
+      sequence:
+      - device_id: 63aa61c380a7932519e7479316839d5e
+        domain: light
+        entity_id: bb337e6ed39451134f124fd80bb93410
+        type: brightness_decrease
+  mode: single
+- id: '1698877723756'
+  alias: Button Nachttisch Julian
+  description: ''
+  trigger:
+  - device_id: 0b6ac1d9ef3f5dc60796d658eab9b08b
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+    id: Button I
+  - device_id: 0b6ac1d9ef3f5dc60796d658eab9b08b
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_off
+    id: Button O
+  - device_id: 0b6ac1d9ef3f5dc60796d658eab9b08b
+    domain: zha
+    platform: device
+    type: remote_button_long_press
+    subtype: dim_up
+    id: Button I - Lang
+  - device_id: 0b6ac1d9ef3f5dc60796d658eab9b08b
+    domain: zha
+    platform: device
+    type: remote_button_long_press
+    subtype: dim_down
+    id: Button O - Lang
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Button I
+      sequence:
+      - type: toggle
+        device_id: 63aa61c380a7932519e7479316839d5e
+        entity_id: bb337e6ed39451134f124fd80bb93410
+        domain: light
+    - conditions:
+      - condition: trigger
+        id:
+        - Button O
+      sequence:
+      - type: toggle
+        device_id: 39c23fb1cbd1d92b9c93780eeed3cfb4
+        entity_id: 98eb3c4ffd5ff01737c760ff654550ec
+        domain: switch
+  mode: single
+- id: '1698878854529'
+  alias: Button Nachttisch Stephan
+  description: ''
+  triggers:
+  - device_id: ba8d2e579b9ff224eab4590c3d54095d
+    domain: zha
+    type: remote_button_short_press
+    subtype: turn_on
+    id: Button I Stephan Rechts
+    trigger: device
+  - device_id: ba8d2e579b9ff224eab4590c3d54095d
+    domain: zha
+    type: remote_button_short_press
+    subtype: turn_off
+    id: Button O Stephan Rechts
+    trigger: device
+  - device_id: ba8d2e579b9ff224eab4590c3d54095d
+    domain: zha
+    type: remote_button_long_press
+    subtype: dim_up
+    id: Button I - Lang Stephan Rechts
+    trigger: device
+  - device_id: ba8d2e579b9ff224eab4590c3d54095d
+    domain: zha
+    type: remote_button_long_press
+    subtype: dim_down
+    id: Button O - Lang Stephan Rechts
+    trigger: device
+  - device_id: ae9fc2892fbb6812212c72a80073c2b6
+    domain: zha
+    type: remote_button_short_press
+    subtype: turn_on
+    trigger: device
+    id: Button I Stephan Links
+  - device_id: ae9fc2892fbb6812212c72a80073c2b6
+    domain: zha
+    type: remote_button_short_press
+    subtype: turn_off
+    trigger: device
+    id: Button O Stephan Links
+  - device_id: ae9fc2892fbb6812212c72a80073c2b6
+    domain: zha
+    type: remote_button_long_press
+    subtype: dim_down
+    trigger: device
+    id: Button O - Lang Stephan Links
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Button O Stephan Rechts
+        - Button O Stephan Links
+      sequence:
+      - type: toggle
+        device_id: 726d2334b69fb77d7e258d9eafdcd083
+        entity_id: d33a19f25272848eddf708e8ef3a7b3c
+        domain: light
+    - conditions:
+      - condition: trigger
+        id:
+        - Button O - Lang Stephan Rechts
+        - Button O - Lang Stephan Links
+      sequence:
+      - action: scene.turn_on
+        metadata: {}
+        target:
+          entity_id: scene.buro_schreibtisch_off
+      - action: scene.turn_on
+        metadata: {}
+        target:
+          entity_id: scene.kuche_off_motion_on
+      - action: scene.turn_on
+        metadata: {}
+        target:
+          entity_id: scene.sofa_off_motion_on
+      - action: scene.turn_on
+        metadata: {}
+        target:
+          entity_id: scene.esstisch_on_high_motion_off
+    - conditions:
+      - condition: trigger
+        id:
+        - Button I - Lang
+      sequence:
+      - action: switch.turn_off
+        metadata: {}
+        data: {}
+        target:
+          device_id:
+          - 94cc912ee2e36e2b1729915273714518
+          - 29bebceb57edffb25da52febde808a9e
+    - conditions:
+      - condition: trigger
+        id:
+        - Button I Stephan Rechts
+      sequence:
+      - action: switch.toggle
+        metadata: {}
+        data: {}
+        target:
+          device_id:
+          - 29bebceb57edffb25da52febde808a9e
+    - conditions:
+      - condition: trigger
+        id:
+        - Button I Stephan Links
+      sequence:
+      - action: switch.toggle
+        metadata: {}
+        data: {}
+        target:
+          device_id:
+          - 94cc912ee2e36e2b1729915273714518
+  mode: single
+- id: '1698879956722'
+  alias: Presence Stephan
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - person.stephan_kreilos
+    to: home
+    id: Stephan home
+  - platform: state
+    entity_id:
+    - person.stephan_kreilos
+    to: not_home
+    id: Stephan away
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Stephan home
+      sequence:
+      - service: input_boolean.turn_off
+        data: {}
+        target:
+          entity_id: input_boolean.alarm_active
+    - conditions:
+      - condition: trigger
+        id:
+        - Stephan leaving home
+        - Stephan away
+      sequence:
+      - service: input_boolean.turn_on
+        data: {}
+        target:
+          entity_id: input_boolean.alarm_active
+  mode: single
+- id: '1699135077811'
+  alias: Set Energy Cost
+  description: ''
+  trigger:
+  - platform: time
+    at: '22:00:00'
+    id: Start niedertarif
+  - platform: time
+    at: 07:00:00
+    id: Start hochtarif
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Start niedertarif
+      sequence:
+      - service: input_number.set_value
+        data:
+          value: 0.28
+        target:
+          entity_id: input_number.ckw_energy_cost
+    - conditions:
+      - condition: trigger
+        id:
+        - Start hochtarif
+      sequence:
+      - service: input_number.set_value
+        data:
+          value: 0.32
+        target:
+          entity_id: input_number.ckw_energy_cost
+  mode: single
+- id: '1699142044381'
+  alias: Auto Lüftung WC
+  description: ''
+  triggers:
+  - entity_id:
+    - sensor.lumi_lumi_weather_humidity_2
+    above: 60
+    id: Above 60
+    trigger: numeric_state
+  - entity_id:
+    - sensor.lumi_lumi_weather_humidity_2
+    id: Below 60
+    below: 60
+    trigger: numeric_state
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Above 52
+      sequence:
+      - data: {}
+        target:
+          entity_id: switch.sh_wc_licht_channel_2
+        action: switch.turn_on
+    - conditions:
+      - condition: trigger
+        id:
+        - Below 52
+      sequence:
+      - data: {}
+        target:
+          entity_id: switch.sh_wc_licht_channel_2
+        action: switch.turn_off
+  mode: single
+- id: '1699386533060'
+  alias: Button Werktisch
+  description: ''
+  trigger:
+  - device_id: 4e17a203dbc17cd16616e13cba2c2af3
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+    id: Button I
+  - device_id: 4e17a203dbc17cd16616e13cba2c2af3
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_off
+    id: Button O
+  - device_id: 4e17a203dbc17cd16616e13cba2c2af3
+    domain: zha
+    platform: device
+    type: remote_button_long_press
+    subtype: dim_up
+    id: Button I - Lang
+  - device_id: 4e17a203dbc17cd16616e13cba2c2af3
+    domain: zha
+    platform: device
+    type: remote_button_long_press
+    subtype: dim_down
+    id: Button O - Lang
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Button I
+      sequence:
+      - type: toggle
+        device_id: d8cd05abed81ccd27d4bad7da9865254
+        entity_id: 6c92d733f174986fb16826a538dfc341
+        domain: switch
+    - conditions:
+      - condition: trigger
+        id:
+        - Button O
+      sequence:
+      - type: toggle
+        device_id: 94cc912ee2e36e2b1729915273714518
+        entity_id: 1e2c0e648decdf58c6e5a35afa069f7c
+        domain: switch
+  mode: single
+- id: '1699386944016'
+  alias: Auto Light - Bad V2
+  description: ''
+  triggers:
+  - type: motion
+    device_id: a2c72d5593d31fa200d7f375e214d88b
+    entity_id: 17d80a1f7e20b551969ab9e2d68f6512
+    domain: binary_sensor
+    trigger: device
+    id: Motion On
+  - type: no_motion
+    device_id: a2c72d5593d31fa200d7f375e214d88b
+    entity_id: 17d80a1f7e20b551969ab9e2d68f6512
+    domain: binary_sensor
+    trigger: device
+    id: Motion Off
+    for:
+      hours: 0
+      minutes: 10
+      seconds: 0
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion On
+      - condition: state
+        entity_id: input_boolean.nightmode
+        state: 'off'
+      sequence:
+      - data: {}
+        target:
+          area_id: bad
+        action: switch.turn_on
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion Off
+      sequence:
+      - data: {}
+        action: switch.turn_off
+        target:
+          area_id: bad
+  mode: single
+- id: '1699647471963'
+  alias: Auto Music - Bad
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: 4308bc8fc7705891ca220cf7d273b612
+    entity_id: ab99860c2a1a2420cb4a011daa5bde0d
+    domain: switch
+    id: Light Bad On
+  - platform: device
+    type: turned_off
+    device_id: 4308bc8fc7705891ca220cf7d273b612
+    entity_id: ab99860c2a1a2420cb4a011daa5bde0d
+    domain: switch
+    id: Licht Bad Off
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 5
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Light Bad On
+      sequence:
+      - service: media_player.select_source
+        data:
+          source: bad
+        target:
+          area_id: bad
+      - service: media_player.shuffle_set
+        data:
+          shuffle: true
+        target:
+          area_id: bad
+      - service: media_player.media_play
+        data: {}
+        target:
+          area_id: bad
+    - conditions:
+      - condition: trigger
+        id:
+        - Licht Bad Off
+      sequence:
+      - service: media_player.media_stop
+        data: {}
+        target:
+          area_id: bad
+  mode: single
+- id: '1699652232789'
+  alias: Dorbell
+  description: ''
+  trigger:
+  - platform: webhook
+    webhook_id: nuki_callback
+    allowed_methods:
+    - POST
+    - PUT
+    local_only: true
+  condition:
+  - condition: template
+    value_template: '{{ trigger.json.ringactionState == true }}'
+  action:
+  - service: notify.pushover
+    data:
+      message: Es hat an der Türe geklingelt
+      title: Türe
+  - service: notify.notify
+    data:
+      message: Es hat an der Türe geklingelt
+      title: Türe
+  mode: single
+- id: '1699654473759'
+  alias: Sound - Auto Group after TV
+  description: ''
+  triggers:
+  - device_id: 2d0456d52fa68e75d63f68b94fa5ca8b
+    domain: media_player
+    entity_id: 695de244ff3cd16bd35521a922ef20cd
+    type: turned_off
+    trigger: device
+  conditions: []
+  actions:
+  - data:
+      volume_level: 0.07
+    action: media_player.volume_set
+    target:
+      device_id:
+      - f5cf1c02cb417dd268c3770a3a4e20be
+      - 6c22b372a67cf23be0d014bf853a300e
+      - ee2c163f604aaac32db5a2ac0b54afe6
+  - data:
+      group_members:
+      - media_player.buro
+      - media_player.stephan
+    action: media_player.join
+    target:
+      device_id: f5cf1c02cb417dd268c3770a3a4e20be
+  - action: input_boolean.turn_on
+    metadata: {}
+    data: {}
+    target:
+      entity_id: input_boolean.tv_is_off
+  mode: single
+- id: '1699657028567'
+  alias: Auto Off - Trolley Low Power usage
+  description: ''
+  triggers:
+  - entity_id:
+    - sensor.trolley_power
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+    below: 2.2
+    trigger: numeric_state
+  conditions: []
+  actions:
+  - data: {}
+    target:
+      device_id: afa775962b66fe73d9efb36deadc74d1
+    action: switch.turn_off
+  mode: single
+- id: '1699657159809'
+  alias: 'Auto Switch - Trolley on '
+  description: ''
+  trigger:
+  - platform: time
+    at: 02:00:00
+  condition: []
+  action:
+  - service: switch.turn_on
+    data: {}
+    target:
+      device_id: afa775962b66fe73d9efb36deadc74d1
+  mode: single
+- id: '1700081489819'
+  alias: Auto Light - WC
+  description: ''
+  triggers:
+  - type: motion
+    device_id: c55a1b89e291b01c7a182936b2aaa3f6
+    entity_id: 6f19420ac931b3f46d7407a4e175f72a
+    domain: binary_sensor
+    id: Motion On
+    trigger: device
+  - type: no_motion
+    device_id: c55a1b89e291b01c7a182936b2aaa3f6
+    entity_id: 6f19420ac931b3f46d7407a4e175f72a
+    domain: binary_sensor
+    id: Motion Off
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+    trigger: device
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion On
+      sequence:
+      - data: {}
+        target:
+          entity_id:
+          - switch.sh_wc_licht_channel_1
+          - switch.sh_wc_licht_channel_2
+        action: switch.turn_on
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion Off
+      sequence:
+      - data: {}
+        target:
+          entity_id:
+          - switch.sh_wc_licht_channel_1
+          - switch.sh_wc_licht_channel_2
+        action: switch.turn_off
+  mode: single
+- id: '1700081600900'
+  alias: Auto Light - Spielzimmer
+  description: ''
+  trigger:
+  - type: motion
+    platform: device
+    device_id: 10f2c28e538678afa87baa50f1a46a60
+    entity_id: 7aeaacf60ef1406495de3e9e1c7fa993
+    domain: binary_sensor
+    id: Motion On
+  - type: no_motion
+    platform: device
+    device_id: 10f2c28e538678afa87baa50f1a46a60
+    entity_id: 7aeaacf60ef1406495de3e9e1c7fa993
+    domain: binary_sensor
+    id: Motion Off
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion On
+      sequence:
+      - service: light.turn_on
+        data: {}
+        target:
+          area_id: julian
+      - service: switch.turn_on
+        data: {}
+        target:
+          device_id: b647cdc3d04cbc30eb7716c2b4eb4ca2
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion Off
+      sequence:
+      - service: light.turn_off
+        data: {}
+        target:
+          area_id: julian
+      - service: switch.turn_off
+        data: {}
+        target:
+          device_id: b647cdc3d04cbc30eb7716c2b4eb4ca2
+  mode: single
+- id: '1700083428473'
+  alias: Auto Light - Schlafzimmer Kinder
+  description: ''
+  trigger:
+  - type: motion
+    platform: device
+    device_id: 30eb2c48b9f016cc0d29c317f0e7868b
+    entity_id: 18e45793cb39f5e3b9c788ee67c10880
+    domain: binary_sensor
+    id: Motion On
+  - type: no_motion
+    platform: device
+    device_id: 30eb2c48b9f016cc0d29c317f0e7868b
+    entity_id: 18e45793cb39f5e3b9c788ee67c10880
+    domain: binary_sensor
+    id: Motion Off
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion On
+      - condition: or
+        conditions:
+        - condition: time
+          after: 08:00:00
+          before: '20:00:00'
+        - condition: state
+          entity_id: input_boolean.kids_home
+          state: 'off'
+      sequence:
+      - service: light.turn_on
+        data: {}
+        target:
+          area_id: joshua
+    - conditions:
+      - condition: trigger
+        id:
+        - Motion Off
+      - condition: or
+        conditions:
+        - condition: state
+          entity_id: input_boolean.kids_home
+          state: 'off'
+        - condition: time
+          after: 08:00:00
+          before: '20:00:00'
+      sequence:
+      - service: light.turn_off
+        data: {}
+        target:
+          area_id: joshua
+  mode: single
+- id: '1700602646090'
+  alias: Auto an Abwaschmaschine
+  description: ''
+  trigger:
+  - platform: time
+    at: 03:00:00
+  condition: []
+  action:
+  - service: switch.turn_on
+    data: {}
+    target:
+      device_id: beeb1b0eee37b68115e7256fe4a817b9
+  - service: automation.turn_off
+    data:
+      stop_actions: true
+    target:
+      entity_id: automation.auto_an_abwaschmaschine
+  - delay:
+      hours: 4
+      minutes: 0
+      seconds: 0
+      milliseconds: 0
+  - service: switch.turn_off
+    data: {}
+    target:
+      device_id: beeb1b0eee37b68115e7256fe4a817b9
+  mode: single
+- id: '1700602793655'
+  alias: Abwaschmaschine Start Auto on Automation
+  description: ''
+  trigger:
+  - platform: device
+    type: turned_on
+    device_id: beeb1b0eee37b68115e7256fe4a817b9
+    entity_id: 2e39e06b4b26c5bcc21eb81381a9d627
+    domain: switch
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 5
+  - platform: device
+    type: turned_off
+    device_id: beeb1b0eee37b68115e7256fe4a817b9
+    entity_id: 2e39e06b4b26c5bcc21eb81381a9d627
+    domain: switch
+  condition:
+  - condition: time
+    after: 07:00:00
+    before: 03:00:00
+  action:
+  - service: automation.turn_on
+    data: {}
+    target:
+      entity_id: automation.auto_an_abwaschmaschine
+  mode: single
+- id: '1707854031647'
+  alias: Auto on TV
+  description: ''
+  trigger:
+  - platform: device
+    device_id: 2d0456d52fa68e75d63f68b94fa5ca8b
+    domain: media_player
+    entity_id: 695de244ff3cd16bd35521a922ef20cd
+    type: turned_on
+  condition:
+  - condition: device
+    type: is_off
+    device_id: dd3e86fb7e0cddbe9b8bef0c3eb13db8
+    entity_id: 8716e509b7d259ef57dce20b208ad292
+    domain: switch
+  action:
+  - service: switch.turn_on
+    target:
+      device_id: dd3e86fb7e0cddbe9b8bef0c3eb13db8
+    data: {}
+  mode: single
+- id: '1728076477515'
+  alias: Scene Change - Wohnraum
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - input_select.wohnraum_scene
+    to: Wohnraum High
+    id: High
+  - trigger: state
+    entity_id:
+    - input_select.wohnraum_scene
+    to: Wohnraum Medium
+    id: Medium
+  - trigger: state
+    entity_id:
+    - input_select.wohnraum_scene
+    to: Wohnraum Off
+    id: 'Off'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - High
+      sequence:
+      - action: scene.turn_on
+        target:
+          entity_id: scene.wohnraum_dimm_high
+        data: {}
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Medium
+      sequence:
+      - action: scene.turn_on
+        target:
+          entity_id:
+          - scene.wohnraum
+        data: {}
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - 'Off'
+      sequence:
+      - action: scene.turn_on
+        data: {}
+        target:
+          entity_id: scene.wohnraum_off
+  mode: single
+- id: '1728080288766'
+  alias: Scene Change - Büro
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - input_select.buro_licht_scene
+    to: Büro On
+    id: 'On'
+  - trigger: state
+    entity_id:
+    - input_select.buro_licht_scene
+    to: Büro Off
+    id: 'Off'
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - 'On'
+      sequence:
+      - action: scene.turn_on
+        target:
+          entity_id: scene.buro_on
+        data: {}
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - 'Off'
+      sequence:
+      - action: scene.turn_on
+        data: {}
+        target:
+          entity_id: scene.buro_off
+  mode: single
+- id: '1728081265698'
+  alias: Scene Change - Esstisch
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - input_select.light_scene_esstisch
+    to: High
+    id: 'On'
+  - trigger: state
+    entity_id:
+    - input_select.light_scene_esstisch
+    to: 'Off'
+    id: 'Off'
+  - trigger: state
+    entity_id:
+    - input_select.light_scene_esstisch
+    to: Medium
+    id: Medium
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - 'On'
+      sequence:
+      - action: scene.turn_on
+        data: {}
+        target:
+          entity_id: scene.esstisch_high
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - 'Off'
+      sequence:
+      - action: scene.turn_on
+        data: {}
+        target:
+          entity_id: scene.esstisch_off_motion_off
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Medium
+      sequence:
+      - action: scene.turn_on
+        data: {}
+        target:
+          entity_id: scene.esstisch_high_duplicate
+  mode: single
+- id: '1731068910506'
+  alias: Auto Lüftung Bad
+  description: ''
+  triggers:
+  - entity_id:
+    - sensor.multisensor_bad_humidity_3
+    above: 50
+    id: Above 55
+    trigger: numeric_state
+  - entity_id:
+    - sensor.multisensor_bad_humidity_3
+    id: Below 55
+    below: 50
+    trigger: numeric_state
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Above 55
+      sequence:
+      - data: {}
+        target:
+          entity_id:
+          - switch.bad_licht_channel_2
+        action: switch.turn_on
+    - conditions:
+      - condition: trigger
+        id:
+        - Below 55
+      sequence:
+      - data: {}
+        action: switch.turn_off
+        target:
+          entity_id: switch.bad_licht_channel_2
+  mode: single
+- id: '1732612725844'
+  alias: Auto Lights - turn all off
+  description: ''
+  triggers: []
+  conditions: []
+  actions:
+  - action: automation.turn_off
+    metadata: {}
+    data:
+      stop_actions: true
+    target:
+      entity_id:
+      - automation.essraum_licht
+      - automation.light_kuche
+      - automation.kuche_test
+      - automation.illuminance_wohnraum_change
+      - automation.autolight_schlafzimmer_stefan_v2
+  - action: light.turn_off
+    metadata: {}
+    data: {}
+    target:
+      area_id:
+      - essraum
+      - kuche
+      - gang
+      - schlafzimmer
+      - wohnzimmer
+  mode: single
+- id: '1732612781561'
+  alias: Auto Lights - turn all on
+  description: ''
+  triggers: []
+  conditions: []
+  actions:
+  - action: automation.turn_on
+    target:
+      entity_id:
+      - automation.essraum_licht
+      - automation.light_kuche
+      - automation.kuche_test
+      - automation.illuminance_wohnraum_change
+      - automation.autolight_schlafzimmer_stefan_v2
+    data: {}
+  mode: single
+- id: '1732632586197'
+  alias: Sound Pause on TV Play
+  description: ''
+  triggers:
+  - device_id: 2d0456d52fa68e75d63f68b94fa5ca8b
+    domain: media_player
+    entity_id: 695de244ff3cd16bd35521a922ef20cd
+    type: idle
+    trigger: device
+  conditions:
+  - condition: state
+    entity_id: input_boolean.tv_is_off
+    state: 'on'
+    for:
+      hours: 0
+      minutes: 1
+      seconds: 0
+  actions:
+  - action: media_player.media_pause
+    data: {}
+    target:
+      device_id:
+      - f5cf1c02cb417dd268c3770a3a4e20be
+      - 6c22b372a67cf23be0d014bf853a300e
+      - ee2c163f604aaac32db5a2ac0b54afe6
+  - action: media_player.unjoin
+    metadata: {}
+    data: {}
+    target:
+      device_id: f5cf1c02cb417dd268c3770a3a4e20be
+  - data:
+      volume_level: 0.19
+    action: media_player.volume_set
+    target:
+      device_id: f5cf1c02cb417dd268c3770a3a4e20be
+  - action: input_boolean.turn_off
+    target:
+      entity_id:
+      - input_boolean.tv_is_off
+    data: {}
+  mode: single
+- id: '1732825117384'
+  alias: Alles Aus - Alarm An
+  description: ''
+  triggers:
+  - device_id: 1cb40930c485eeb5eb388a7c1b4a22a5
+    domain: zha
+    type: remote_button_short_press
+    subtype: remote_button_short_press
+    trigger: device
+    id: Schort Press
+  - device_id: e39a6a9bb01f2a016c770c4678661e5f
+    domain: zha
+    type: remote_button_short_press
+    subtype: turn_on
+    trigger: device
+    id: 'Button on '
+  - device_id: e39a6a9bb01f2a016c770c4678661e5f
+    domain: zha
+    type: remote_button_short_press
+    subtype: turn_off
+    trigger: device
+    id: Button off
+  - trigger: state
+    entity_id:
+    - binary_sensor.motion_wohnung
+    to: 'off'
+    for:
+      hours: 2
+      minutes: 0
+      seconds: 0
+    id: Motion off
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Schort Press
+        - 'Button on '
+        - Button off
+        - Motion off
+      sequence:
+      - action: light.turn_off
+        metadata: {}
+        data: {}
+        target:
+          area_id:
+          - joshua
+          - julian
+          - buro
+          - gang
+          - kuche
+          - schlafzimmer
+          - wohnzimmer
+          - essraum
+      - action: switch.turn_off
+        metadata: {}
+        data: {}
+        target:
+          area_id:
+          - joshua
+          - julian
+          - buro
+          - essraum
+          - gang
+          - kinderschlafzimmer
+          - schlafzimmer
+          - wohnzimmer_2
+          - stephan
+          - spielzimmer
+          - wohnzimmer
+          device_id:
+          - d39e4de071e48c2da70e7efdbe4345da
+          - ab47451e1a7d905d5ad4efe23a990d5b
+          - 52869241f28052b86868e85478035fd3
+          - e07df25121b5a5940676819ffe76b6b8
+      - action: media_player.media_stop
+        metadata: {}
+        data: {}
+        target:
+          area_id:
+          - bad
+          - buro
+          - kinderschlafzimmer
+          - wohnzimmer
+          - spielzimmer
+          - stephan
+          - tv
+          - wc
+          - wohnzimmer_2
+  mode: single
+- id: '1732825801790'
+  alias: Weihnachtsdeko
+  description: ''
+  triggers:
+  - trigger: time
+    at: 07:00:00
+    id: Start
+  - trigger: time
+    at: '23:30:00'
+    id: End
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Start
+      sequence:
+      - type: turn_on
+        device_id: 2eee9c2d99957e91612f1734ee553fc2
+        entity_id: c5cc86dd23a28c620d2c430fad51eb60
+        domain: switch
+      - type: turn_on
+        device_id: ddbf718f8dbd0a7f065c78eccebd0e8e
+        entity_id: a1ab9ebb75328f9a99a6435831de6f69
+        domain: switch
+    - conditions:
+      - condition: trigger
+        id:
+        - End
+      sequence:
+      - type: turn_off
+        device_id: 2eee9c2d99957e91612f1734ee553fc2
+        entity_id: c5cc86dd23a28c620d2c430fad51eb60
+        domain: switch
+      - type: turn_off
+        device_id: ddbf718f8dbd0a7f065c78eccebd0e8e
+        entity_id: a1ab9ebb75328f9a99a6435831de6f69
+        domain: switch
+  mode: single
+- id: '1733217996995'
+  alias: Button Sound Control - Büro
+  description: ''
+  triggers:
+  - device_id: 23f3d7dab64946f776b59768ec6297d2
+    domain: zha
+    type: remote_button_short_press
+    subtype: turn_on
+    trigger: device
+    id: Big Button Power
+  - device_id: 23f3d7dab64946f776b59768ec6297d2
+    domain: zha
+    type: remote_button_short_press
+    subtype: dim_up
+    trigger: device
+    id: Brighter
+  - device_id: 23f3d7dab64946f776b59768ec6297d2
+    domain: zha
+    type: remote_button_short_press
+    subtype: dim_down
+    trigger: device
+    id: Lower
+  - device_id: 23f3d7dab64946f776b59768ec6297d2
+    domain: zha
+    type: remote_button_short_press
+    subtype: left
+    trigger: device
+    id: Left
+  - device_id: 23f3d7dab64946f776b59768ec6297d2
+    domain: zha
+    type: remote_button_short_press
+    subtype: right
+    trigger: device
+    id: Right
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Big Button Power
+      sequence:
+      - action: media_player.media_play_pause
+        metadata: {}
+        data: {}
+        target:
+          entity_id: media_player.tv
+    - conditions:
+      - condition: trigger
+        id:
+        - Brighter
+      sequence:
+      - action: media_player.volume_up
+        target:
+          entity_id:
+          - media_player.wohnzimmer
+          - media_player.stephan
+          - media_player.tv
+          - media_player.buro
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - Lower
+      sequence:
+      - action: media_player.volume_down
+        target:
+          entity_id:
+          - media_player.wohnzimmer
+          - media_player.stephan
+          - media_player.tv
+          - media_player.buro
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - Left
+      sequence:
+      - action: input_select.select_next
+        metadata: {}
+        data:
+          cycle: true
+        target:
+          entity_id: input_select.sound_choice
+    - conditions:
+      - condition: trigger
+        id:
+        - Right
+      sequence:
+      - action: input_select.select_previous
+        target:
+          entity_id: input_select.sound_choice
+        data:
+          cycle: true
+  mode: single
+- id: '1741037913114'
+  alias: Coiffeur Nora
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - sensor.web_scrape_2
+    from: ÜBER
+  conditions: []
+  actions:
+  - action: notify.notify
+    metadata: {}
+    data:
+      message: Website Down
+  - action: notify.pushover
+    metadata: {}
+    data:
+      message: Coiffeur Nora Down
+  mode: single
+- id: '1741823473330'
+  alias: Website Monitor - Offline Notification
+  description: ''
+  triggers:
+  - trigger: state
+    entity_id:
+    - sensor.website_seebadiwollishofen
+    - sensor.website_badiletzigraben
+    - sensor.website_coiffeurnora
+    - sensor.website_massagepraxis
+    - sensor.website_spatzenaescht
+    from: online
+    to: offline
+    for:
+      hours: 0
+      minutes: 5
+      seconds: 0
+  conditions: []
+  actions:
+  - action: notify.pushover
+    metadata: {}
+    data:
+      message: Hompages down
+  - action: notify.notify
+    metadata: {}
+    data:
+      message: Homepage down
+  mode: single
+- id: '1741824341822'
+  alias: Website Monitor Not Updating Alert
+  triggers:
+  - minutes: '1'
+    trigger: time_pattern
+  conditions:
+  - condition: template
+    value_template: '{{ (as_timestamp(now()) - as_timestamp(states.sensor.website_badiletzigraben.last_updated))
+      > 50 }}
+
+      '
+  actions:
+  - data:
+      title: Website Monitor Warning
+      message: Website monitor hasn't updated in over 5 minutes!
+    action: notify.notify
+  - action: notify.pushover
+    metadata: {}
+    data:
+      message: Website monitor hasn't updated in over 5 minutes!
+      title: Website Monitor Warning
+- id: '1759780213297'
+  alias: Bad - Entfeuchter
+  description: ''
+  triggers:
+  - entity_id:
+    - sensor.hombli_smart_socket_2_power
+    for:
+      hours: 0
+      minutes: 2
+      seconds: 0
+    below: 11
+    trigger: numeric_state
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: 9b18d2d8abf4a0c9579ed3bf1a2b3f31
+    entity_id: 14763c050dadd3a7525c4f12f1302a47
+    domain: switch
+  mode: single
+- id: '1761163325034'
+  alias: Auto Music - WC
+  description: ''
+  triggers:
+  - type: turned_on
+    device_id: d39e4de071e48c2da70e7efdbe4345da
+    entity_id: b23c96a3e6a213626880e140e521175a
+    domain: switch
+    trigger: device
+    id: Licht WC On
+  - type: turned_off
+    device_id: d39e4de071e48c2da70e7efdbe4345da
+    entity_id: b23c96a3e6a213626880e140e521175a
+    domain: switch
+    trigger: device
+    id: Licht WC Off
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 30
+  conditions: []
+  actions:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - Licht WC On
+      sequence:
+      - data:
+          source: Indie-Café
+        target:
+          area_id:
+          - wc
+        action: media_player.select_source
+      - data:
+          shuffle: true
+        target:
+          area_id:
+          - wc
+        action: media_player.shuffle_set
+      - data: {}
+        action: media_player.media_play
+        target:
+          area_id: wc
+    - conditions:
+      - condition: trigger
+        id:
+        - Licht WC Off
+      sequence:
+      - data: {}
+        action: media_player.media_stop
+        target:
+          area_id: wc
+  mode: single
+- id: '1761169982360'
+  alias: Turn in TV board
+  description: ''
+  triggers:
+  - device_id: 2d0456d52fa68e75d63f68b94fa5ca8b
+    domain: media_player
+    entity_id: 695de244ff3cd16bd35521a922ef20cd
+    type: idle
+    trigger: device
+  conditions: []
+  actions:
+  - type: turn_on
+    device_id: dd3e86fb7e0cddbe9b8bef0c3eb13db8
+    entity_id: 8716e509b7d259ef57dce20b208ad292
+    domain: switch
+  mode: single
+- id: '1761173283770'
+  alias: Turn Off 3d Printer
+  description: ''
+  triggers:
+  - trigger: numeric_state
+    entity_id:
+    - sensor.3d_printer_switch_0_power
+    for:
+      hours: 0
+      minutes: 15
+      seconds: 0
+    below: 15
+  conditions: []
+  actions:
+  - type: turn_off
+    device_id: be87ed94651627c8d310d32c8216593f
+    entity_id: ddb0c6c3f0bc91dd1ef0845d65d71267
+    domain: switch
+  mode: single

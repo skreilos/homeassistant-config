@@ -1,0 +1,30 @@
+# Secrets
+secrets.yaml
+google_credentials.json
+*.pem
+*.key
+*.crt
+*.p12
+*.der
+
+# HA intern/runtime
+.storage/
+.cloud/
+.HA_VERSION
+.ha_run.lock
+ip_bans.yaml
+
+# Databases / logs
+*.db
+*.db-shm
+*.db-wal
+home-assistant.log*
+*.log
+
+# Editor
+.vscode/
+
+# Corrupt DB artifacts
+*.db.corrupt.*
+*.db-shm.corrupt.*
+*.db-wal.corrupt.*

@@ -1,0 +1,78 @@
+
+- alias: EisbärKleinRot
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id:  sensor.kids_sound
+    to: '351050810'
+  action:
+  - service: media_player.select_source
+    data_template:
+      entity_id: media_player.spielzimmer
+      source: EisbarKleinRot
+  id: c145ghz7H0cc48asb0b1d87c28edsefg
+
+- alias: AffeBlau
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id:  sensor.kids_sound
+    to: '347000650'
+  action:
+  - service: media_player.select_source
+    data_template:
+      entity_id: media_player.spielzimmer
+      source: AffeBlau
+  id: c145ghz7H0cc48asb5r3287c28edsefg
+
+- alias: HaseBlau
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id:  sensor.kids_sound
+    to: '-2091123187'
+  action:
+  - service: media_player.select_source
+    data_template:
+      entity_id: media_player.spielzimmer
+      source: HaseBlau
+  id: c145ghz7H0cGGggsb5r3287c28edsefg
+
+- alias: BärHandpuppe
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id:  sensor.kids_sound
+    to: '-2094137821'
+  action:
+  - service: media_player.select_source
+    data_template:
+      entity_id: media_player.spielzimmer
+      source: BarHandpuppe
+  id: c145ghFFH0cc48asb5r3287c28edsefg
+
+- alias: Glücksschaaf
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id:  sensor.kids_sound
+    to: '351716410'
+  action:
+  - service: media_player.select_source
+    data_template:
+      entity_id: media_player.spielzimmer
+      source: GlucksSchaaf
+  id: c145ghz7H0cc58asb5r3287c28edsefg
+
+- alias: Pingu
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id:  sensor.kids_sound
+    to: '342514522'
+  action:
+  - service: media_player.select_source
+    data_template:
+      entity_id: media_player.spielzimmer
+      source: Pingu
+  id: c145ghz7H0cc58asbDD3287c28edsefg

@@ -1,0 +1,33 @@
+################################################ Storen auf morgens ####
+- alias: Storen auf morgens
+  initial_state: true
+  trigger:
+  - at: '06:30:00'
+    platform: time
+  condition:
+  - condition: state
+    entity_id: binary_sensor.ture_terasse
+    state: 'off'
+  action:
+    - service: cover.open_cover
+      entity_id: cover.fenster_store_links
+    - service: cover.open_cover
+      entity_id: cover.fenster_store_rechts
+  id: '9AA001'
+
+################################################ Storen zu abends ####
+- alias: Storen zu abends
+  initial_state: true
+  trigger:
+  - at: '23:05:00'
+    platform: time
+  condition:
+  - condition: state
+    entity_id: binary_sensor.ture_terasse
+    state: 'off'
+  action:
+    - service: cover.close_cover
+      entity_id: cover.fenster_store_links
+    - service: cover.close_cover
+      entity_id: cover.fenster_store_rechts
+  id: '9AA002'

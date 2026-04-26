@@ -1,0 +1,331 @@
+################################################ Auto Licht Essraum Rest ####
+- alias: Reset Manual Activation
+  trigger:
+    platform: state
+    entity_id: input_select.wohnraum_light_scene
+    to: "scene.wohnraum_aus"
+  action:
+    - service: input_boolean.turn_off
+      target:
+        entity_id: input_boolean.manual_activation_wohnraum
+
+################################################ Auto Licht Wohnraum ####
+- alias: Wohnraum Licht Scene Select
+  trigger:
+    platform: state
+    entity_id: input_select.wohnraum_light_scene
+  action:
+    service: scene.turn_on
+    data_template:
+      entity_id: >
+        {{ states('input_select.wohnraum_light_scene') }}
+
+- alias: Licht Wohnraum an motion
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: group.motion_wohnraum
+      to: 'on'
+  condition:
+#    - condition: numeric_state
+#      entity_id: sensor.essraum
+#      below: 330
+    - condition: state
+      entity_id: input_boolean.manual_activation_essraum
+      state: 'off'
+  action:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.wohnraum_wenig
+
+- alias: Licht Wohnraum aus
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: group.motion_wohnraum
+      to: 'off'
+      for:
+        minutes: 3
+#  condition:
+#    - condition: state
+#      entity_id: light.gruppe_essraumlicht
+#      state: 'on'
+#    - condition: state
+#      entity_id: input_boolean.manual_activation_essraum
+#      state: 'off'
+  action:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.wohnraum_aus
+
+        
+################################################ Auto Licht Essraum ####
+- alias: Licht Essraum an Motion
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.essraum
+      to: 'on'
+  condition:
+    - condition: numeric_state
+      entity_id: sensor.essraum
+      below: 330
+    - condition: state
+      entity_id: input_boolean.manual_activation_essraum
+      state: 'off'
+  action:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.essen_mittel
+
+- alias: Licht Essraum an
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.essraum
+      to: 'on'
+  condition:
+    - condition: state
+      entity_id: light.gruppe_essraumlicht
+      state: 'on'
+    - condition: state
+      entity_id: input_boolean.manual_activation_essraum
+      state: 'off'
+  action:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.essen_an
+
+- alias: Licht EG Essraum aus
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.essraum
+      to: 'off'
+      for:
+        minutes: 3
+  condition:
+    - condition: state
+      entity_id: input_boolean.manual_activation_essraum
+      state: 'off'
+  action:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.essen_aus
+
+################################################ Auto Licht Essraum ####
+- alias: Essraum Licht Scene Select
+  trigger:
+    platform: state
+    entity_id: input_select.essraum_light_scene
+  action:
+    service: scene.turn_on
+    data_template:
+      entity_id: >
+        {{ states('input_select.essraum_light_scene') }}
+
+################################################ Auto Licht Essraum Rest ####
+- alias: Reset Manual Activation
+  trigger:
+    platform: state
+    entity_id: input_select.essraum_light_scene
+    to: "scene.essen_aus"
+  action:
+    - service: input_boolean.turn_off
+      target:
+        entity_id: input_boolean.manual_activation_essraum
+
+################################################ Auto Licht Schlafzimmer Stephan ####
+- alias: Licht Schlafzimmer Stephan an
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: group.motion_schlafzimmer_stephan
+      to: 'on'
+  condition:
+    - condition: state
+      entity_id: input_boolean.manual_activation_schlafzimmer_stephan
+      state: 'off'
+#    - condition: numeric_state
+#      entity_id: group.motion_schlafzimmer_stephan
+#      below: 330
+  action:
+    - alias: "Turn on front lights if motion detected, else turn off"
+      choose:
+        - alias: "Night Mode on"
+          conditions:
+            - condition: state
+              entity_id: input_boolean.night_mode
+              state: 'on'
+        # "{{ input_boolean.night_mode.state == 'on' }}"
+          sequence:
+            - service: scene.turn_on
+              target:
+                entity_id: scene.schlafzimmer_stephan_wenig
+      default:
+        - service: scene.turn_on
+          target:
+            entity_id: scene.schlafzimmer_stephan_mittel
+
+
+
+- alias: Licht Schlafzimmer Stephan an
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: group.motion_schlafzimmer_stephan
+      to: 'on'
+  condition:
+    - condition: state
+      entity_id: light.gruppe_schlafzimmer_stephan_licht
+      state: 'on'
+    - condition: state
+      entity_id: input_boolean.manual_activation_schlafzimmer_stephan
+      state: 'off'
+  action:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.schlafzimmer_stephan_mittel
+
+- alias: Licht Schlafzimmer Stephan aus
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: group.motion_schlafzimmer_stephan
+      to: 'off'
+      for:
+        minutes: 1
+  condition:
+    - condition: state
+      entity_id: light.gruppe_schlafzimmer_stephan_licht
+      state: 'on'
+    - condition: state
+      entity_id: input_boolean.manual_activation_schlafzimmer_stephan
+      state: 'off'
+  action:
+    - service: scene.turn_on
+      target:
+        entity_id: scene.schlafzimmer_stephan_aus
+
+################################################ Auto Licht Schlafzimmer Stephan ####
+- alias: Schlafzimmer Stephan Licht Auswhal
+  trigger:
+    platform: state
+    entity_id: input_select.schlafzimmer_stephan_light_scene
+  action:
+    service: scene.turn_on
+    data_template:
+      entity_id: >
+        {{ states('input_select.schlafzimmer_stephan_light_scene') }}
+
+################################################ Auto Licht Schlafzimmer Stephan ####
+- alias: Reset Manual Activation
+  trigger:
+    platform: state
+    entity_id: input_select.schlafzimmer_stephan_light_scene
+    to: "scene.schlafzimmer_stephan_aus"
+  action:
+    - service: input_boolean.turn_off
+      target:
+        entity_id: input_boolean.manual_activation_schlafzimmer_stephan
+
+################################################ Auto Licht Wohnraum ####
+
+#- alias: Licht Wohnraum an
+#  initial_state: true
+#  trigger:
+#    - platform: state
+#      entity_id: binary_sensor.essraum
+#      to: 'on'
+ #   - platform: state
+ #     entity_id: binary_sensor.kuche
+ #     to: 'on'
+ # action:
+ # - service: light.turn_on
+ #   data_template:
+ #     brightness: >
+ #       {{ states('input_number.brightness_autolight') | int }}
+ #     entity_id: gruppe_wohnraumlicht
+#
+#- alias: Licht Küche aus
+#  initial_state: true
+#  trigger:
+#    - platform: state
+#      entity_id: binary_sensor.essraum
+#      to: 'off'
+#      for:
+#        seconds: 90
+#  action:
+#  - service: homeassistant.turn_off
+#    entity_id: gruppe_wohnraumlicht
+
+################################################ Auto Licht Büro ####
+- alias: Licht Büro an
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.buro
+    to: 'on'
+  action:
+  - service: homeassistant.turn_on
+    entity_id: light.gruppe_buro_decke
+  id: '6AC001'
+
+- alias: Licht Büro aus
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.buro
+    to: 'off'
+    for:
+      seconds: 300
+  action:
+  - service: homeassistant.turn_off
+    entity_id: light.gruppe_buro_decke
+  id: '6AC002'
+
+################################################ Auto Licht Büro Shelly Test ####
+- alias: Licht Büro an Shelly Test
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.shellymotionmqtt_60a423992c8cmotiondetected
+    to: 'on'
+  action:
+  - service: homeassistant.turn_on
+    entity_id: switch.bett_links
+
+- alias: Licht Büro aus Shelly Test
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.shellymotionmqtt_60a423992c8cmotiondetected
+    to: 'off'
+    for:
+      minutes: 60
+  action:
+  - service: homeassistant.turn_off
+    entity_id: switch.bett_links
+
+
+- alias: 'MS-OG-EZ-Bett-Links-Ein-Einzeln2'
+  initial_state: true
+  trigger:
+    - platform: state
+      entity_id: switch.bett_links
+      to: 'off'
+    - platform: state
+      entity_id: switch.bett_rechts
+      to: 'off'
+    - platform: state
+      entity_id: media_player.samsungtv
+      to: 'on'
+  condition:
+    condition: state
+    entity_id: light.gruppe_wohnzimmerlicht
+    state: 'on'
+  action:
+    - service: input_select.select_option
+      data:
+        entity_id: input_select.wohnraum_light_scene
+        option: scene.wenig

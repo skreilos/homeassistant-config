@@ -1,0 +1,510 @@
+- alias: Night Mode by time on
+  initial_state: 'on'
+  trigger:
+  - at: '22:00:00'
+    platform: time
+  action:
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.night_mode
+
+- alias: Night Mode by time off
+  initial_state: 'on'
+  trigger:
+  - at: '06:00:00'
+    platform: time
+  action:
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.night_mode
+
+- alias: Lautstärkenänderung_sonos_volume_set_eg_sound_all
+  initial_state: 'on'
+  trigger:
+    - platform: state
+      entity_id: input_number.eg_sound_all
+  action:
+    service: script.turn_on
+    entity_id: script.sonos_volume_set_eg_sound_all
+
+- alias: Lautstärkenänderung_sonos_volume_set_eg_sound_spielzimmer
+  initial_state: 'on'
+  trigger:
+    - platform: state
+      entity_id: input_number.eg_sound_spielzimmer
+  action:
+    service: script.turn_on
+    entity_id: script.sonos_volume_set_eg_sound_spielzimmer
+
+- alias: Lautstärkenänderung_sonos_volume_set_eg_sound_esszimmer
+  initial_state: 'on'
+  trigger:
+    - platform: state
+      entity_id: input_number.eg_sound_esszimmer
+  action:
+    service: script.turn_on
+    entity_id: script.sonos_volume_set_eg_sound_esszimmer
+
+- alias: Lautstärkenänderung_sonos_volume_set_eg_sound_wohnzimmer
+  initial_state: 'on'
+  trigger:
+    - platform: state
+      entity_id: input_number.eg_sound_wohnzimmer
+  action:
+    service: script.turn_on
+    entity_id: script.sonos_volume_set_eg_sound_wohnzimmer
+
+- alias: Sound EG aus
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: input_boolean.soundeg
+    to: 'off'
+  action:
+    service: script.turn_on
+    entity_id: script.sonos_stop_all_eg
+  id: e646a505a2af48a99a501f5719553f62
+
+- alias: Sound EG an
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: input_boolean.soundeg
+    to: 'on'
+  action:
+    service: script.turn_on
+    entity_id: script.sonos_play_all_eg
+  id: b03fe6488e5743c5aef61fe34be1f787
+
+- alias: Sound_Source_Select
+  trigger:
+    platform: homeassistant
+    event: start
+  action:
+    - service: input_select.set_options
+      data_template:
+        entity_id: input_select.sound_source
+        options:
+          - Select
+          - Brussels, Belgium
+          - Berlin, Germany
+          - Bayreuth, Germany
+          - Paris, France
+          #- '{{ states("input_text.travel_destination") }}'
+          #- {{ states.media_player.esszimmer.attributes.source_list }}
+            
+#    - delay: 00:30
+#    - service: input_select.set_options
+#      entity_id: input_select.c
+#      data_template:
+        #options: "{{ states.media_player.esszimmer.attributes.source_list }}"
+#        options:
+##          - "Eins"#
+#          - "Zwei"
+
+- alias: Definiere Tageslicht aus
+  initial_state: 'on'
+  trigger:
+    platform: sun
+    event: sunset
+    offset: "00:10:00"
+  action:
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.tageslicht
+    - service: input_number.set_value
+      data:
+        entity_id: input_number.brightness_autoLight
+        value: 150
+  id: 323e900sf45fffb7871a18750297c69f
+
+- alias: Definiere Tageslicht an
+  initial_state: 'on'
+  trigger:
+    platform: sun
+    event: sunrise
+    offset: "-00:10:00"
+  action:
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.tageslicht
+    - service: input_number.set_value
+      data:
+        entity_id: input_number.brightness_autoLight
+        value: 255
+  id: 323e9a4df45fffb7871a18750297c69f
+
+
+- alias: SMS Alarm Wohnraum Temperatur
+  initial_state: 'on'
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.eg_temp_wohnraum_tv
+    above: 35
+    below: 99
+  action:
+  - service: rest_command.sms_twilio
+    data:
+      message: Achtung Wohnraum Temperatur stimmt nicht
+      target: '+41795862755'
+  id: c7e79599fca14153b276abed2fb1b3b0
+
+
+
+- alias: Set theme at startup
+  initial_state: 'on'
+  trigger:
+  - platform: homeassistant
+    event: start
+  action:
+    service: frontend.set_theme
+    data:
+      name: theme-lion
+  id: bf372ab629c746dea7388710ba2df012
+
+- alias: Alarm on
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: group.anwesenheit
+    to: 'not_home'
+  action:
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.alarm_active
+  id: 7bd4b9dc69c94e0fa763f648a874b217
+
+
+- alias: Alarm on by time
+  initial_state: 'on'
+  trigger:
+  - at: '21:00:00'
+    platform: time
+  action:
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.alarm_active
+  id: 7bd4b9ddfghjk12fa763f648a874b217
+
+- alias: Alarm off by time
+  initial_state: 'on'
+  trigger:
+  - at: 07:00:00
+    platform: time
+  condition:
+    condition: state
+    entity_id: group.anwesenheit
+    state: 'home'
+  action:
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.alarm_active
+  id: 7bd4b9ddfghjk12fa763f612a3456217
+
+- alias: Alarm off
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: group.anwesenheit
+    to: 'home'
+  action:
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.alarm_active
+    - service: script.turn_off
+      entity_id: script.auto_licht_wohnzimmer
+    - service: script.turn_off
+      entity_id: script.auto_licht_schlafzimmer
+  id: 7bd4b9ec64c94e0fa321f648a874b217
+
+- alias: EG Sound Ungroup
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: input_boolean.sound_eg_groued
+    to: 'on'
+  action:
+    - service: script.turn_on
+      entity_id: script.sonos_group_speakers_all
+  id: 7bd4b1ec14c14e0fa121f648a874b217
+
+- alias: EG Sound Ungroup
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: input_boolean.sound_eg_groued
+    to: 'off'
+  action:
+    - service: script.turn_on
+      entity_id: script.sonos_group_speakers_living
+  id: 7bd4b9ec64f94e0FF3211122a874b217
+
+- alias: PlayEssenSoundIfOff
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id:  light.gruppe_essenlicht
+    to: 'on'
+  condition:
+    condition: state
+    entity_id: media_player.wohnzimmertv
+    state: 'paused'
+  action:
+  - service: media_player.select_source
+    data_template:
+      entity_id: media_player.wohnzimmertv
+      source: POP
+  - service: media_player.volume_set
+    data_template:
+      entity_id: 
+      - media_player.wohnzimmertv
+      volume_level: 0.04
+  - service: media_player.volume_set
+    data_template:
+      entity_id: 
+      - media_player.esszimmer
+      volume_level: 0.02
+  id: c145ghz7H0cc567sb0b1d87c28edsefg
+
+- alias: PlaySofaSoundIfOff
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id:  light.gruppe_wohnzimmerlicht
+    to: 'on'
+  condition:
+    condition: state
+    entity_id: media_player.wohnzimmertv
+    state: 'paused'
+  action:
+  - service: media_player.select_source
+    data_template:
+      entity_id: media_player.wohnzimmertv
+      source: JAZZ
+  - service: media_player.volume_set
+    data_template:
+      entity_id: 
+      - media_player.esszimmer
+      volume_level: 0.05
+  - service: media_player.volume_set
+    data_template:
+      entity_id: 
+      - media_player.wohnzimmertv
+      volume_level: 0.04
+  id: c145ghz7H0cc48asb0b1d87c28edsefg
+
+
+- alias: Gerät nicht verfügbar
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: 
+      - binary_sensor.cameramotion
+      - binary_sensor.eg_fenster_wohnzimmer_gartenrechts
+      - binary_sensor.eg_sensor_kueche_waschtisch
+      - binary_sensor.elektrotisch
+      - binary_sensor.kellereingang
+      - binary_sensor.openclose_2
+      - binary_sensor.openclose_3
+      - binary_sensor.eg_eingang_decke
+      - binary_sensor.schrank
+      - binary_sensor.tradfri_motion_sensor
+      - binary_sensor.bewegung_og_gang
+      - binary_sensor.ug_fenster_sauna_fenster
+      - binary_sensor.ug_tuere_sauna_eingangstuere
+      - binary_sensor.eg_sensor_keller_elektrotisch
+      - binary_sensor.eg_sensor_keller_elektrotisch2
+      - binary_sensor.eg_sensor_bewegung_1
+      - binary_sensor.eg_sensor_bewegung_2
+      - binary_sensor.ug_keller_eingang_bewegung
+      - binary_sensor.eg_kueche_eingang_bewegung
+      - binary_sensor.ug_sauna_raum_bewegung
+      
+      - light.aquarium_taglicht
+      - light.eg_eingang_deckenlicht_1
+      - light.eg_eingang_deckenlicht_2
+      - light.eg_eingang_deckenlicht_3
+      - light.eg_licht_kueche_unterbaulichtlinks
+      - light.eg_licht_kueche_waschtisch
+      - light.eg_licht_wohnraum_durchgang
+      - light.eg_licht_wohnraum_fensterlinks
+      - light.eg_licht_wohnraum_tv
+      - light.eltern_og
+      - light.eltern_og_2
+      - light.gruppe_kuecheLicht
+      - light.gruppe_og_gang_decke
+      - light.licht_decke_eltern_schlafzimmer
+      - light.gruppe_og_gang_decke
+      - light.wohnzimmer_sofa
+      - light.treppe
+      - light.gruppe_wohnzimmerlicht
+      - light.light_13
+
+      - switch.strom_saison
+
+    to: 'unavailable'
+    for:
+      hours: 0
+      minutes: 4
+      seconds: 0
+  action:
+  - service: notify.pushovernotification
+    data_template:
+      title: "Gerät nicht verfügbar"
+      message: >
+        "{{ trigger.from_state.name }}" ist nicht mehr verfügbar!
+      data:
+        #url: "https://www.home-assistant.io/"
+        sound: pianobar
+        priority: 0
+  id: dd4444b1ec054a9d85101df43c3c38a4
+
+
+
+- alias: Gerät wieder verfügbar
+  initial_state: 'on'
+  trigger:
+    platform: state
+    entity_id: 
+      - binary_sensor.cameramotion
+      - binary_sensor.eg_fenster_wohnzimmer_gartenrechts
+      - binary_sensor.eg_sensor_kueche_waschtisch
+      - binary_sensor.elektrotisch
+      - binary_sensor.kellereingang
+      - binary_sensor.openclose_2
+      - binary_sensor.openclose_3
+      - binary_sensor.eg_eingang_decke
+      - binary_sensor.schrank
+      - binary_sensor.tradfri_motion_sensor
+      - binary_sensor.bewegung_og_gang
+      - binary_sensor.ug_fenster_sauna_fenster
+      - binary_sensor.ug_tuere_sauna_eingangstuere
+      - binary_sensor.eg_sensor_keller_elektrotisch
+      - binary_sensor.eg_sensor_keller_elektrotisch2
+      - binary_sensor.eg_sensor_bewegung_1
+      - binary_sensor.eg_sensor_bewegung_2
+      - binary_sensor.ug_keller_eingang_bewegung
+      - binary_sensor.eg_kueche_eingang_bewegung
+      - binary_sensor.ug_sauna_raum_bewegung
+      
+      - light.aquarium_taglicht
+      - light.eg_eingang_deckenlicht_1
+      - light.eg_eingang_deckenlicht_2
+      - light.eg_eingang_deckenlicht_3
+      - light.eg_licht_kueche_unterbaulichtlinks
+      - light.eg_licht_kueche_waschtisch
+      - light.eg_licht_wohnraum_durchgang
+      - light.eg_licht_wohnraum_fensterlinks
+      - light.eg_licht_wohnraum_tv
+      - light.eltern_og
+      - light.eltern_og_2
+      - light.gruppe_kuecheLicht
+      - light.gruppe_og_gang_decke
+      - light.licht_decke_eltern_schlafzimmer
+      - light.gruppe_og_gang_decke
+      - light.wohnzimmer_sofa
+      - light.treppe
+      - light.gruppe_wohnzimmerlicht
+      - light.light_13
+
+      - switch.strom_saison
+
+    from: 'unavailable'
+  action:
+  - service: notify.pushovernotification
+    data_template:
+      title: "Gerät wieder verfügbar"
+      message: >
+        "{{ trigger.from_state.name }}" ist wieder verfügbar!
+      data:
+        #url: "https://www.home-assistant.io/"
+        sound: pianobar
+        priority: 0
+  id: dd4444b1ec054a9d85101df43c3c38a4
+
+- alias: Licht Wohnaurm gedimmt Zeit
+  initial_state: true
+  trigger:
+  - at: '21:00:00'
+    platform: time
+  action:
+    - service: input_select.select_option
+      data:
+        entity_id: input_select.wohnraum_light_scene
+        option: scene.gedimmt
+
+######## Aquarium Julian ###############3
+- alias: Aquarium Julian an
+  initial_state: true
+  trigger:
+  - at: '09:00:00'
+    platform: time
+  action:
+    - service: homeassistant.turn_on
+      entity_id: switch.nachttisch_julian
+ 
+- alias: Aquarium Julian aus
+  initial_state: true
+  trigger:
+  - at: '19:00:00'
+    platform: time
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.nachttisch_julian
+
+######## Aquarium Joshua ###############3
+- alias: Aquarium Joshua an
+  initial_state: true
+  trigger:
+  - at: '09:00:00'
+    platform: time
+  action:
+    - service: homeassistant.turn_on
+      entity_id: switch.nachttisch_Joshua
+ 
+- alias: Aquarium Joshua aus
+  initial_state: true
+  trigger:
+  - at: '19:00:00'
+    platform: time
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.nachttisch_Joshua
+
+######## Aquarium Iwagumi ###############3
+- alias: CO2 Aquarium Iwagumi an
+  initial_state: true
+  trigger:
+  - at: '09:00:00'
+    platform: time
+  action:
+    - service: homeassistant.turn_on
+      entity_id: switch.aquarium_45p_co2
+ 
+- alias: CO2 Aquarium Iwagumi aus
+  initial_state: true
+  trigger:
+  - at: '19:00:00'
+    platform: time
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.aquarium_45p_co2
+
+######## Aquarium Betta ###############3
+- alias: CO2 Aquarium Betta an
+  initial_state: true
+  trigger:
+  - at: '09:00:00'
+    platform: time
+  action:
+    - service: homeassistant.turn_on
+      entity_id: switch.aquarium_60p_co2
+ 
+- alias: Co2 Aquarium Betta aus
+  initial_state: true
+  trigger:
+  - at: '19:00:00'
+    platform: time
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.aquarium_60p_co2

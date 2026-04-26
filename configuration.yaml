@@ -1,0 +1,68 @@
+
+# Enables configuration UI
+config:
+
+system_health:
+
+api:
+mobile_app:
+
+http:
+  ip_ban_enabled: true
+  login_attempts_threshold: 5
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 10.0.0.2
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+#map:
+
+energy:
+# Track the sun
+sun:
+
+# Example configuration.yaml entry
+logger:
+  default: info
+
+sonos:
+  media_player:
+    hosts:
+      - 10.0.0.7
+      - 10.0.0.105
+      - 10.0.0.130
+      - 10.0.0.20
+      - 10.0.0.202
+      - 10.0.0.146
+      - 10.0.0.203
+      - 10.0.0.126
+      - 10.0.0.19
+      - 10.0.0.51
+
+automation: !include automations.yaml
+input_boolean:  !include input_boolean.yaml
+scene: !include scenes.yaml
+
+google_assistant: !include google_assistant.yaml 
+
+frontend:
+  themes:
+    theme-lion: !include theme-lion.yaml
+
+template:
+  - binary_sensor:
+      - name: "Schlafzimmer Stefan Bewegung"
+        unique_id: schlafzimmer_stefan_motion
+        device_class: motion
+        state: >
+          {% set sensors = area_entities('schlafzimmer_stefan') | select('match', 'binary_sensor') | list %}
+          {{ expand(sensors) | selectattr('state', 'eq', 'on') | list | count > 0 }}

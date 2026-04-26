@@ -1,0 +1,435 @@
+################################################ Schalter Bett Einzeln ####
+- alias: 'MS-SS-Bett-Ein-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 08:6b:d7:ff:fe:3c:57:37
+      event: 1002
+  condition:
+    - condition: state
+      entity_id: input_boolean.manual_activation_schlafzimmer_stephan
+      state: 'off'
+  action:
+    - service: input_select.select_next
+      entity_id: input_select.schlafzimmer_stephan_light_scene
+    - service: input_boolean.turn_on
+      target:
+        entity_id: input_boolean.manual_activation_schlafzimmer_stephan
+
+- alias: 'MS-SS-Bett-Ein-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 08:6b:d7:ff:fe:3c:57:37
+      event: 1002
+  condition:
+    - condition: state
+      entity_id: input_boolean.manual_activation_schlafzimmer_stephan
+      state: 'on'
+  action:
+    - service: input_select.select_next
+      entity_id: input_select.schlafzimmer_stephan_light_scene
+
+- alias: 'MS-SS-Bett-Aus-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 08:6b:d7:ff:fe:3c:57:37
+      event: 2002
+  action:
+    - service: switch.toggle
+      data_template:
+        entity_id: switch.office_desk
+      
+  ################################################ Schalter Bett Lange Gedrückt ####
+- alias: 'MS-SS-Bett-Ein-Lange'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 08:6b:d7:ff:fe:3c:57:37
+      event: 1003
+  action:
+    - service: light.toggle
+      data_template:
+        entity_id: light.gruppe_buro_decke
+        brightness: 20
+
+################################################ Schalter Julian Bett Einzeln ####
+- alias: 'MS-JU-Bett-Ein-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 0c:43:14:ff:fe:18:b0:1c
+      event: 1002
+  action:
+    - service: light.toggle
+      data_template:
+        entity_id: light.licht_schlafzimmer_julian
+    - service: input_boolean.toggle
+      target:
+        entity_id: input_boolean.manual_activation_licht_julian
+
+- alias: 'MS-JU-Bett-Aus-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 0c:43:14:ff:fe:18:b0:1c
+      event: 2002
+  action:
+    - service: switch.toggle
+      data_template:
+        entity_id: switch.nachttisch_julian
+
+################################################ Schalter Joshua Bett Einzeln ####
+- alias: 'MS-JO-Bett-Ein-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 0c:43:14:ff:fe:18:ad:86
+      event: 1002
+  action:
+    - service: light.toggle
+      data_template:
+        entity_id: light.licht_schlafzimmer_joshua
+
+- alias: 'MS-JO-Bett-Aus-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 0c:43:14:ff:fe:18:ad:86
+      event: 2002
+  action:
+    - service: switch.toggle
+      data_template:
+        entity_id: switch.nachttisch_joshua
+
+################################################ Schalter Büro Einzeln ####
+- alias: 'MS-BU-Office-Desk-Ein-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 08:6b:d7:ff:fe:41:29:3f
+      event: 1002
+  condition:
+    - condition: state
+      entity_id: input_boolean.manual_activation_schlafzimmer_stephan
+      state: 'off'
+  action:
+    - service: input_select.select_next
+      entity_id: input_select.schlafzimmer_stephan_light_scene
+    - service: input_boolean.turn_on
+      target:
+        entity_id: input_boolean.manual_activation_schlafzimmer_stephan
+
+- alias: 'MS-BU-Office-Desk-Ein-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 08:6b:d7:ff:fe:41:29:3f
+      event: 1002
+  condition:
+    - condition: state
+      entity_id: input_boolean.manual_activation_schlafzimmer_stephan
+      state: 'on'
+  action:
+    - service: input_select.select_next
+      entity_id: input_select.schlafzimmer_stephan_light_scene
+
+- alias: 'MS-SS-Bett-Rechts-Aus-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 08:6b:d7:ff:fe:41:29:3f
+      event: 2002
+  action:
+    - service: switch.toggle
+      data_template:
+        entity_id: switch.office_desk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+
+
+
+
+
+
+################################################ Schalter switch_ikea_2_button_reserve Einzeln ####
+- alias: 'MS-SS-switch_ikea_2_button_reserve-Ein-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 08:6b:d7:ff:fe:5f:7f:64
+      event: 1002
+  action:
+    - service: light.toggle
+      data_template:
+        entity_id: light.gruppe_schlafzimmer_decke
+        brightness: 255
+
+- alias: 'MS-SS-switch_ikea_2_button_reserve-Aus-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 08:6b:d7:ff:fe:5f:7f:64
+      event: 2002
+  action:
+    - service: light.toggle
+      data_template:
+        entity_id: light.gruppe_schlafzimmer_decke
+        brightness: 20
+
+        
+################################################ Schalter switch_ikea_2_button_reserve Lange ####
+- alias: 'MS-SS-switch_ikea_2_button_reserve-Ein-Lange'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 08:6b:d7:ff:fe:5f:7f:64
+      event: 1003
+  action:
+    - service: switch.toggle
+      data_template:
+        entity_id: switch.bett_links
+
+- alias: 'MS-SS-switch_ikea_2_button_reserve-Aus-Lange'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 08:6b:d7:ff:fe:5f:7f:64
+      event: 2003
+  action:
+    - service: switch.toggle
+      data_template:
+        entity_id: switch.bett_rechts
+
+################################################ Schalter Kaffeemaschine klein Einzeln ####
+- alias: 'MS-SS-Kaffeemaschine-klein-Ein-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 00:15:8d:00:02:3d:b1:29
+      event: 1002
+  action:
+    - service: switch.toggle
+      data_template:
+        entity_id: switch.kuche_kaffeemaschiene
+
+#doppelt = 1004
+#dreifach = 1005
+#vierfach = 1006
+
+
+################################################ Schalter Kaffeemaschine klein Einzeln ####
+- alias: 'MS-SS-Kaffeemaschine-klein-Ein-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 00:15:8d:00:02:39:dd:bc
+      event: 1002
+  action:
+    - service: switch.toggle
+      data_template:
+        entity_id: switch.steckdose_reserve_1
+
+#doppelt = 1004
+#dreifach = 1005
+#vierfach = 1006
+
+
+################################################ Dimmer Kinderzimmer ####
+- alias: 'MS-OG-KZ-Dimmer-Power'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: ec:1b:bd:ff:fe:2c:3a:e6
+      event: 1002
+  action:
+    - service: light.toggle
+      data_template:
+        entity_id: light.kinderzimmer_hochbett_licht
+
+- alias: 'MS-OG-KZ-Dimmer-Dim-Up'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: ec:1b:bd:ff:fe:2c:3a:e6
+      event: 2002
+  action:
+    - service: light.turn_on
+      data_template:
+        entity_id: light.kinderzimmer_hochbett_licht
+        brightness: '{{states.light.kinderzimmer_hochbett_licht.attributes.brightness + 40}}'
+
+- alias: 'MS-OG-KZ-Dimmer-Dim-Down'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: ec:1b:bd:ff:fe:2c:3a:e6
+      event: 3002
+  action:
+    - service: light.turn_on
+      data_template:
+        entity_id: light.kinderzimmer_hochbett_licht
+        brightness: '{{states.light.kinderzimmer_hochbett_licht.attributes.brightness - 40}}'
+
+- alias: 'MS-OG-KZ-Dimmer-Color-Down'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: ec:1b:bd:ff:fe:2c:3a:e6
+      event: 4002
+  action:
+    - service: light.turn_on
+      data_template:
+        entity_id: light.kinderzimmer_hochbett_licht
+        color_name:  >
+          {% if states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (255,0,0) %} orange 
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (255,166,0) %} blue
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (10,0,255) %} yellow
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (254,255,0) %} purple
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (253,11,255) %} green
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (0,255,0) %} pink
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (255,191,201) %} white
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (255,254,254) %} red
+          {% else %} red
+          {% endif %}
+#255,0,0    = red
+#10,0,255   = blue
+#254,255,0  = green
+#253,11,255 = purple
+#255,166,0  = orange
+#255,254,254 = white
+#255,191,201 = pink
+
+- alias: 'MS-OG-KZ-Dimmer-Color-Up'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: ec:1b:bd:ff:fe:2c:3a:e6
+      event: 5002
+  action:
+    - service: light.turn_on
+      data_template:
+        entity_id: light.kinderzimmer_hochbett_licht
+        color_name:  >
+          {% if states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (255,0,0) %} white  
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (255,166,0) %} red
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (10,0,255) %} orange
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (254,255,0) %} blue
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (253,11,255) %} yellow
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (0,255,0) %} purple
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (255,191,201) %} green
+          {% elif states.light.kinderzimmer_hochbett_licht.attributes.rgb_color == (255,254,254) %} pink 
+          {% else %} red
+          {% endif %}
+
+#vor 5002
+#zurück 4002
+#Dimm hoch 2002
+#          
+
+#Dimm runter 3002
+
+#doppelt = 1004
+#dreifach = 1005
+#vierfach = 1006
+
+
+
+
+#doppelt = 1004
+#dreifach = 1005
+#vierfach = 1006
+
+
+################################################ Schalter Terassen Storen ####
+- alias: 'MS-EG-WZ-Ein-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 08:6b:d7:ff:fe:5f:75:ad
+      event: 1002
+  action:
+    - service: cover.open_cover
+      data_template:
+        entity_id: cover.terassen_store
+
+- alias: 'MS-EG-WZ-Aus-Einzeln'
+  initial_state: 'on'
+  trigger:
+    platform: event
+    event_type: deconz_event
+    event_data:
+      unique_id: 08:6b:d7:ff:fe:5f:75:ad
+      event: 2002
+  action:
+    - service: cover.close_cover
+      data_template:
+        entity_id: cover.terassen_store
+

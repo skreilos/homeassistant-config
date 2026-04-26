@@ -1,0 +1,63 @@
+- alias: Bewässerung Gewächshaus aus
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: switch.strom_saison
+    to: 'on'
+    for:
+      seconds: 90
+  action:
+  - service: homeassistant.turn_off
+    entity_id: switch.strom_saison
+  id: ff9553bf8asf4dr43629aef3b80603bc
+
+
+- alias: Auto aus Kaffeemaschine
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: switch.kuche_kaffeemaschiene
+    to: 'on'
+    for:
+      minutes: 15
+  action:
+  - service: homeassistant.turn_off
+    entity_id: switch.kuche_kaffeemaschiene
+  id: ff9553bfdesf4dr43629aef3b80603bc
+
+- alias: Auto aus Drucker   
+  initial_state: true
+  trigger:
+    platform: state
+    entity_id: binary_sensor.ender3_printing
+    to: 'off'
+    for:
+      minutes: 5
+  action:
+  - service: homeassistant.turn_off
+    entity_id: switch.strom_saison_2
+
+#- alias: Auto aus Kaffeemaschine
+#  initial_state: 'on'
+#  trigger:
+#    - platform: state
+#      entity_id: switch.bett_rechts
+#      to: 'off'
+#      for:
+#        seconds: 1
+#    - platform: state
+#      entity_id: switch.bett_rechts
+#      to: 'on'
+#      for:
+#        seconds: 1
+#    - platform: state
+#      entity_id: switch.bett_rechts
+#      to: 'off'
+#      for:
+#        seconds: 1
+#  action:
+#  - service: homeassistant.turn_on
+#    entity_id: scene.wohnen
+#  - service: homeassistant.turn_on
+#    entity_id: scene.essen
+#  id: ff9553bfdesf4dr43629aef3b80603bc

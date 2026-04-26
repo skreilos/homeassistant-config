@@ -1,0 +1,65 @@
+kids_home:
+  name: Kinder zuhause
+  icon: mdi:Ball
+  initial: off
+
+manual_activation_wohnraum:
+  name: Manual Activation Wohnraum
+  icon: mdi:kettle
+  initial: off
+
+manual_activation_essraum:
+  name: Manual Activation Essraum
+  icon: mdi:kettle
+  initial: off
+
+manual_activation_licht_julian:
+  name: Manual Activation Licht Julian
+  icon: mdi:kettle
+  initial: off
+
+manual_activation_schlafzimmer_stephan:
+  name: Manual Activation Schlafzimmer Stephan
+  icon: mdi:kettle
+  initial: off
+
+night_mode:
+  name: Night Mode
+  icon: mdi:Light
+  initial: off
+
+soundeg:
+  name: EG Sound 
+  initial: off
+  icon: mdi:music-note
+
+sound_eg_groued:
+  name: Sonos EG gruppiert
+  initial: off
+  icon: mdi:music-note
+
+alarm_active:
+  name: Alarm active
+  icon: mdi:alarm-light
+  initial: off
+
+tageslicht:
+  name: tageslicht
+  icon: mdi:sun
+  initial: off
+
+show_additional_functionality:
+  name: Show additional functionality
+  icon: mdi:gear
+  initial: off
+
+motion_wohnraum:
+  name: motion Wohnraum
+  icon: mdi:kettle
+  initial: off
+
+motion_essraum:
+  name: motion Essraum
+  icon: mdi:kettle
+  initial: off
+

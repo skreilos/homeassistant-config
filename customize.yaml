@@ -1,0 +1,3 @@
+#script.sonos_group_speakers_all:
+#  friendly_name: Gruppiere alle Sonos
+#  icon: mdi:home-variant

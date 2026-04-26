@@ -284,6 +284,40 @@ Outputs:
 
 Use the markdown report as primary checklist for cleanup priorities.
 
+## Lovelace dashboard entity audit (critical for "unknown entities")
+
+When cards show `Unbekannt` / inactive entities, audit the live Lovelace storage file against the active entity registry:
+
+```bash
+cd "/data/home-assistant"
+python3 scripts/audit_lovelace_entities.py \
+  --lovelace "/data/home-assistant/.storage/lovelace.dashboard_tedt" \
+  --entity-registry "/data/home-assistant/.storage/core.entity_registry" \
+  --rename-map "/data/home-assistant/entity_id_rename_map.yaml" \
+  --json-out "/data/home-assistant/inventory/lovelace_entity_audit.json"
+```
+
+Interpretation:
+
+- Lines with `-> suggest:` are safe rename-map replacements.
+- Lines without suggestion are usually truly missing/deleted devices and must be replaced or removed manually.
+
+Before any `.storage` Lovelace edit:
+
+```bash
+cd "/data/home-assistant/.storage"
+sudo cp lovelace.dashboard_tedt "lovelace.dashboard_tedt.bak_$(date +%F_%H%M%S)"
+```
+
+Important grep note:
+
+- `grep lovelace*` also matches `.bak` files.  
+  Validate active file only with:
+
+```bash
+grep -niE "pattern" "/data/home-assistant/.storage/lovelace.dashboard_tedt"
+```
+
 ## Category B consistency pass (safe mode)
 
 For diagnostics entities (battery/LQI/RSSI), keep `entity_id` stable and improve naming/areas:
@@ -483,6 +517,11 @@ No legacy entity IDs should remain with these tokens:
 Cause: file owned by `root:root`.
 Fix: run migration scripts with `sudo` on server.
 
+### Permission denied for `.storage/lovelace.dashboard_tedt`
+
+Cause: `.storage` file not writable as normal user.
+Fix: edit with `sudo` and keep timestamped backup before write.
+
 ### Missing area in registry
 
 Cause: mapping uses area display name that does not exist in `core.area_registry`.
@@ -504,3 +543,42 @@ Use:
 ```bash
 grep -E "pattern" inventory/entities_snapshot.yaml
 ```
+
+### Developer Tools "Services" missing
+
+In newer HA versions, "Services" is now "Actions" (`Aktionen`).
+Use `action:` syntax instead of `service:` in manual test calls.
+
+### `select.select_option` rejects lowercase values
+
+Some entities use case-sensitive option names.
+Example valid values:
+
+- `Off`
+- `On`
+- `Toggle`
+- `PreviousValue`
+
+If `on` fails, retry with `On`.
+
+### `MAC_NO_ACK` when setting ZHA start-up options
+
+Cause: Zigbee device did not acknowledge command (often lamp has no power because Shelly is off, or weak mesh).
+
+Recovery order:
+
+1. Turn Shelly output on.
+2. Wait 2-3 seconds.
+3. Retry action.
+4. If still failing: ZHA "Reconfigure", then retry.
+
+### Shelly-controlled room lights flash to 100% before dimming
+
+If Shelly physically powers Zigbee bulbs, automation dimming can only run after power-on.
+To reduce initial flash, configure bulb startup attributes on the bulb entities:
+
+- `select.*_start_up_behavior` (use valid option names like `On` or `PreviousValue`)
+- `number.*_start_up_current_level`
+- optionally `number.*_on_off_transition_time`
+
+This behavior cannot be fully solved in automation alone when bulbs are power-cycled by Shelly.

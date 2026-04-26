@@ -19,3 +19,63 @@ switch.schalter_zimmer_joshua_nachttisch:
 
 light.licht_zimmer_joshua_hochbett:
   friendly_name: Licht Zimmer Joshua Hochbett
+
+sensor.button_spielzimmer_battery_6:
+  friendly_name: Sensor Button Zimmer Julian Batterie
+
+sensor.button_werktisch_battery_6:
+  friendly_name: Sensor Button Schreibtisch Julian Batterie
+
+sensor.button_werktisch_lqi_7:
+  friendly_name: Sensor Button Schreibtisch Julian LQI
+
+sensor.button_werktisch_rssi_7:
+  friendly_name: Sensor Button Schreibtisch Julian RSSI
+
+sensor.ikea_of_sweden_jetstrom_40100_lqi:
+  friendly_name: Sensor Deckenlicht Zimmer Julian LQI
+
+sensor.ikea_of_sweden_jetstrom_40100_rssi:
+  friendly_name: Sensor Deckenlicht Zimmer Julian RSSI
+
+sensor.ikea_of_sweden_tradfri_control_outlet_lqi_2:
+  friendly_name: Sensor Schreibtisch Licht Zimmer Julian LQI
+
+sensor.ikea_of_sweden_tradfri_control_outlet_rssi_2:
+  friendly_name: Sensor Schreibtisch Licht Zimmer Julian RSSI
+
+sensor.ikea_of_sweden_tradfri_on_off_switch_lqi_6:
+  friendly_name: Sensor Button Zimmer Julian LQI
+
+sensor.ikea_of_sweden_tradfri_on_off_switch_rssi_6:
+  friendly_name: Sensor Button Zimmer Julian RSSI
+
+sensor.lumi_lumi_weather_battery_5:
+  friendly_name: Sensor MultiSensor Zimmer Julian Batterie
+
+sensor.lumi_lumi_weather_humidity_5:
+  friendly_name: Sensor MultiSensor Zimmer Julian Luftfeuchte
+
+sensor.lumi_lumi_weather_lqi_5:
+  friendly_name: Sensor MultiSensor Zimmer Julian LQI
+
+sensor.lumi_lumi_weather_pressure_5:
+  friendly_name: Sensor MultiSensor Zimmer Julian Luftdruck
+
+sensor.lumi_lumi_weather_rssi_5:
+  friendly_name: Sensor MultiSensor Zimmer Julian RSSI
+
+sensor.lumi_lumi_weather_temperature_5:
+  friendly_name: Sensor MultiSensor Zimmer Julian Temperatur
+
+sensor.philips_lwv001_lqi:
+  friendly_name: Sensor Deckenlicht Zimmer Julian LQI
+
+sensor.philips_lwv001_rssi:
+  friendly_name: Sensor Deckenlicht Zimmer Julian RSSI
+
+sensor.zimmer_julian_spot_lqi_6:
+  friendly_name: Sensor Spot Zimmer Julian LQI
+
+sensor.zimmer_julian_spot_rssi_6:
+  friendly_name: Sensor Spot Zimmer Julian RSSI

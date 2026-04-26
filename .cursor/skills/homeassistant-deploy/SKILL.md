@@ -225,6 +225,25 @@ python3 scripts/export_entity_snapshot.py \
 
 Commit `inventory/entities_snapshot.yaml` to git. Use this file as the source of truth for future naming consistency checks.
 
+## Category B consistency pass (safe mode)
+
+For diagnostics entities (battery/LQI/RSSI), keep `entity_id` stable and improve naming/areas:
+
+- Friendly names in `customize.yaml`
+- Area assignment map in `entity_area_assignment_map.yaml`
+- Server script: `scripts/migrate_entity_areas.py`
+
+Run order:
+
+1. Dry run:
+   - `python3 scripts/migrate_entity_areas.py --config-dir "/data/home-assistant" --map "/data/home-assistant/entity_area_assignment_map.yaml"`
+2. Apply:
+   - `sudo python3 scripts/migrate_entity_areas.py --config-dir "/data/home-assistant" --map "/data/home-assistant/entity_area_assignment_map.yaml" --apply`
+3. Restart:
+   - `docker restart home-assistant_2026_2_3`
+4. Re-export snapshot:
+   - `python3 scripts/export_entity_snapshot.py --config-dir "/data/home-assistant" --out "/data/home-assistant/inventory/entities_snapshot.yaml"`
+
 ## Notes
 
 - HTTPS and SSH remotes are both fine if they reference the same GitHub repo.

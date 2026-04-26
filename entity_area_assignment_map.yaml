@@ -17,5 +17,5 @@ entity_area_assignments:
   sensor.lumi_lumi_weather_temperature_5: julian
   sensor.philips_lwv001_lqi: julian
   sensor.philips_lwv001_rssi: julian
-  sensor.zimmer_julian_spot_lqi_6: julian
-  sensor.zimmer_julian_spot_rssi_6: julian
+  sensor.spielzimmer_spot_lqi_6: julian
+  sensor.spielzimmer_spot_rssi_6: julian

@@ -21805,7 +21805,7 @@ entities:
     domain: "sensor"
     platform: "energy"
     name: null
-    original_name: "SH_Pro3_EM Energy Cost"
+    original_name: "sensor Cost"
     area_id: null
     area_name: null
     device_id: null
@@ -23002,8 +23002,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "LQI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
     device_name: "Spielzimmer Spot"
     disabled_by: "integration"
@@ -23015,8 +23015,8 @@ entities:
     platform: "zha"
     name: null
     original_name: "RSSI"
-    area_id: null
-    area_name: null
+    area_id: "julian"
+    area_name: "Spielzimmer Kinder"
     device_id: "b647cdc3d04cbc30eb7716c2b4eb4ca2"
     device_name: "Spielzimmer Spot"
     disabled_by: "integration"

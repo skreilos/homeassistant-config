@@ -12,6 +12,8 @@ views:
             name: Nachtmodus Start
           - entity: input_datetime.night_auto_light_end
             name: Nachtmodus Ende
+          - entity: input_boolean.night_special_dimming_enabled
+            name: Spezial-Dimmung aktiv
       - type: entities
         title: Helligkeit je Bereich
         show_header_toggle: false
@@ -22,3 +24,13 @@ views:
             name: Essraum
           - entity: input_number.night_brightness_kuche
             name: Küche
+      - type: entities
+        title: Nacht Helligkeit Deckenlichter
+        show_header_toggle: false
+        entities:
+          - entity: input_number.night_brightness_decke_stephan
+            name: Zimmer Stephan
+          - entity: input_number.night_brightness_decke_julian
+            name: Zimmer Julian
+          - entity: input_number.night_brightness_decke_joshua
+            name: Zimmer Joshua

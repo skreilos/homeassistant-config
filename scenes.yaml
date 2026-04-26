@@ -368,7 +368,7 @@
       friendly_name: Büro Tisch Licht
       supported_features: 32
       state: 'on'
-    switch.schreibtisch_switch_0:
+    switch.schalter_zimmer_julian_schreibtisch:
       friendly_name: SH_Schreibtisch Switch 0
       state: 'on'
     light.buro_tischlampe_links_light:
@@ -427,7 +427,7 @@
   metadata:
     light.buro_tisch_licht:
       entity_only: true
-    switch.schreibtisch_switch_0:
+    switch.schalter_zimmer_julian_schreibtisch:
       entity_only: true
     light.buro_tischlampe_links_light:
       entity_only: true
@@ -444,7 +444,7 @@
       friendly_name: Büro Tisch Licht
       supported_features: 32
       state: 'on'
-    switch.schreibtisch_switch_0:
+    switch.schalter_zimmer_julian_schreibtisch:
       friendly_name: SH_Schreibtisch Switch 0
       state: 'on'
     light.buro_tischlampe_links_light:
@@ -503,7 +503,7 @@
   metadata:
     light.buro_tisch_licht:
       entity_only: true
-    switch.schreibtisch_switch_0:
+    switch.schalter_zimmer_julian_schreibtisch:
       entity_only: true
     light.buro_tischlampe_links_light:
       entity_only: true
@@ -520,7 +520,7 @@
       friendly_name: Büro Tisch Licht
       supported_features: 32
       state: 'off'
-    switch.schreibtisch_switch_0:
+    switch.schalter_zimmer_julian_schreibtisch:
       friendly_name: SH_Schreibtisch Switch 0
       state: 'off'
     light.buro_tischlampe_links_light:
@@ -565,7 +565,7 @@
   metadata:
     light.buro_tisch_licht:
       entity_only: true
-    switch.schreibtisch_switch_0:
+    switch.schalter_zimmer_julian_schreibtisch:
       entity_only: true
     light.buro_tischlampe_links_light:
       entity_only: true

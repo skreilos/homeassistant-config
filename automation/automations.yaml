@@ -441,7 +441,7 @@
     platform: time
   action:
     - service: homeassistant.turn_on
-      entity_id: switch.nachttisch_julian
+      entity_id: switch.schalter_zimmer_julian_nachttisch
  
 - alias: Aquarium Julian aus
   initial_state: true
@@ -450,7 +450,7 @@
     platform: time
   action:
     - service: homeassistant.turn_off
-      entity_id: switch.nachttisch_julian
+      entity_id: switch.schalter_zimmer_julian_nachttisch
 
 ######## Aquarium Joshua ###############3
 - alias: Aquarium Joshua an
@@ -460,7 +460,7 @@
     platform: time
   action:
     - service: homeassistant.turn_on
-      entity_id: switch.nachttisch_Joshua
+      entity_id: switch.schalter_zimmer_joshua_nachttisch
  
 - alias: Aquarium Joshua aus
   initial_state: true
@@ -469,7 +469,7 @@
     platform: time
   action:
     - service: homeassistant.turn_off
-      entity_id: switch.nachttisch_Joshua
+      entity_id: switch.schalter_zimmer_joshua_nachttisch
 
 ######## Aquarium Iwagumi ###############3
 - alias: CO2 Aquarium Iwagumi an

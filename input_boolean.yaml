@@ -1,25 +1,25 @@
 kids_home:
-  name: Kinder zuhause
+  name: Kinder Zuhause
   icon: mdi:Ball
   initial: off
 
 manual_activation_wohnraum:
-  name: Manual Activation Wohnraum
+  name: Manuelle Aktivierung Wohnraum
   icon: mdi:kettle
   initial: off
 
 manual_activation_essraum:
-  name: Manual Activation Essraum
+  name: Manuelle Aktivierung Essraum
   icon: mdi:kettle
   initial: off
 
 manual_activation_licht_julian:
-  name: Manual Activation Zimmer Julian
+  name: Manuelle Aktivierung Zimmer Julian
   icon: mdi:kettle
   initial: off
 
 manual_activation_schlafzimmer_stephan:
-  name: Manual Activation Schlafzimmer Stephan
+  name: Manuelle Aktivierung Schlafzimmer Stephan
   icon: mdi:kettle
   initial: off
 
@@ -39,27 +39,27 @@ sound_eg_groued:
   icon: mdi:music-note
 
 alarm_active:
-  name: Alarm active
+  name: Alarm Aktiv
   icon: mdi:alarm-light
   initial: off
 
 tageslicht:
-  name: tageslicht
+  name: Tageslicht
   icon: mdi:sun
   initial: off
 
 show_additional_functionality:
-  name: Show additional functionality
+  name: Zusätzliche Funktionen Anzeigen
   icon: mdi:gear
   initial: off
 
 motion_wohnraum:
-  name: motion Wohnraum
+  name: Bewegung Wohnraum
   icon: mdi:kettle
   initial: off
 
 motion_essraum:
-  name: motion Essraum
+  name: Bewegung Essraum
   icon: mdi:kettle
   initial: off
 

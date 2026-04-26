@@ -2,20 +2,20 @@
 #  friendly_name: Gruppiere alle Sonos
 #  icon: mdi:home-variant
 
-light.deckenlicht_kinderspielzimmer_light:
-  friendly_name: Deckenlicht Zimmer Julian
+light.licht_zimmer_julian_decke:
+  friendly_name: Licht Zimmer Julian Decke
 
-light.licht_schlafzimmer_julian:
-  friendly_name: Licht Zimmer Julian
+light.licht_zimmer_julian_hauptlicht:
+  friendly_name: Licht Zimmer Julian Hauptlicht
 
-switch.nachttisch_julian:
-  friendly_name: Nachttisch Zimmer Julian
+switch.schalter_zimmer_julian_nachttisch:
+  friendly_name: Schalter Zimmer Julian Nachttisch
 
-light.licht_schlafzimmer_joshua:
-  friendly_name: Licht Zimmer Joshua
+light.licht_zimmer_joshua_hauptlicht:
+  friendly_name: Licht Zimmer Joshua Hauptlicht
 
-switch.nachttisch_joshua:
-  friendly_name: Nachttisch Zimmer Joshua
+switch.schalter_zimmer_joshua_nachttisch:
+  friendly_name: Schalter Zimmer Joshua Nachttisch
 
-light.kinderzimmer_hochbett_licht:
-  friendly_name: Hochbett Licht Zimmer Joshua
+light.licht_zimmer_joshua_hochbett:
+  friendly_name: Licht Zimmer Joshua Hochbett

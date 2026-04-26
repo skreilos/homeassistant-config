@@ -1,0 +1,87 @@
+# Entity Rename Plan (Audit)
+
+- Total entities scanned: 2155
+- A (safe entity_id renames): 19
+- B (only friendly_name/area/device): 22
+- C (manual check): 34
+
+## A - Entity ID Rename (IST -> SOLL)
+- `automation.auto_light_spielzimmer` -> `automation.auto_light_zimmer_julian`
+- `automation.button_arbeitstisch` -> `automation.button_zimmer_julian_schreibtisch`
+- `automation.mobile_schalter_spielzimmer_v2` -> `automation.mobile_schalter_zimmer_julian_v2`
+- `automation.mobiler_schalter_werktisch` -> `automation.mobiler_schalter_zimmer_julian_schreibtisch`
+- `light.deckenlicht_kinderspielzimmer_light` -> `light.deckenlicht_zimmer_julian_light`
+- `light.spielzimmer_deckenlicht_light` -> `light.zimmer_julian_deckenlicht_light`
+- `script.sonos_play_spielzimmer` -> `script.sonos_play_zimmer_julian`
+- `script.sonos_stop_spielzimmer` -> `script.sonos_stop_zimmer_julian`
+- `script.sonos_volume_set_eg_sound_spielzimmer` -> `script.sonos_volume_set_eg_sound_zimmer_julian`
+- `switch.kinderschlafzimmer_crossfade` -> `switch.zimmer_joshua_crossfade`
+- `switch.kinderschlafzimmer_loudness` -> `switch.zimmer_joshua_loudness`
+- `switch.kinderschlafzimmer_status_light` -> `switch.zimmer_joshua_status_light`
+- `switch.kinderschlafzimmer_touch_controls` -> `switch.zimmer_joshua_touch_controls`
+- `switch.spielzimmer_crossfade` -> `switch.zimmer_julian_crossfade`
+- `switch.spielzimmer_loudness` -> `switch.zimmer_julian_loudness`
+- `switch.spielzimmer_spot_switch_6` -> `switch.zimmer_julian_spot_switch_6`
+- `switch.spielzimmer_status_light` -> `switch.zimmer_julian_status_light`
+- `switch.spielzimmer_touch_controls` -> `switch.zimmer_julian_touch_controls`
+- `switch.werktisch_licht_switch` -> `switch.zimmer_julian_schreibtisch_licht_switch`
+
+## B - Keep entity_id, update Name/Area/Device
+- `sensor.button_kinderzimmer_lqi_4` (name: `MISSING`, area: `MISSING`, device: `Button Eingangstüre`)
+- `sensor.button_kinderzimmer_rssi_4` (name: `MISSING`, area: `MISSING`, device: `Button Eingangstüre`)
+- `sensor.button_spielzimmer_battery_6` (name: `Button Spielzimmer Battery`, area: `MISSING`, device: `Button Spielzimmer`)
+- `sensor.button_werktisch_battery_6` (name: `MISSING`, area: `MISSING`, device: `Button Werktisch`)
+- `sensor.button_werktisch_lqi_7` (name: `MISSING`, area: `MISSING`, device: `Button Werktisch`)
+- `sensor.button_werktisch_rssi_7` (name: `MISSING`, area: `MISSING`, device: `Button Werktisch`)
+- `sensor.ikea_of_sweden_jetstrom_40100_lqi` (name: `MISSING`, area: `MISSING`, device: `Deckenlicht Kinderspielzimmer`)
+- `sensor.ikea_of_sweden_jetstrom_40100_rssi` (name: `MISSING`, area: `MISSING`, device: `Deckenlicht Kinderspielzimmer`)
+- `sensor.ikea_of_sweden_tradfri_control_outlet_lqi_2` (name: `MISSING`, area: `MISSING`, device: `Werktisch Licht`)
+- `sensor.ikea_of_sweden_tradfri_control_outlet_rssi_2` (name: `MISSING`, area: `MISSING`, device: `Werktisch Licht`)
+- `sensor.ikea_of_sweden_tradfri_on_off_switch_lqi_6` (name: `MISSING`, area: `MISSING`, device: `Button Spielzimmer`)
+- `sensor.ikea_of_sweden_tradfri_on_off_switch_rssi_6` (name: `MISSING`, area: `MISSING`, device: `Button Spielzimmer`)
+- `sensor.lumi_lumi_weather_battery_5` (name: `MultiSensor Spielzimmer Battery`, area: `MISSING`, device: `MultiSensor Spielzimmer`)
+- `sensor.lumi_lumi_weather_humidity_5` (name: `MultiSensor Spielzimmer Humidity`, area: `MISSING`, device: `MultiSensor Spielzimmer`)
+- `sensor.lumi_lumi_weather_lqi_5` (name: `MISSING`, area: `MISSING`, device: `MultiSensor Spielzimmer`)
+- `sensor.lumi_lumi_weather_pressure_5` (name: `MultiSensor Spielzimmer Pressure`, area: `MISSING`, device: `MultiSensor Spielzimmer`)
+- `sensor.lumi_lumi_weather_rssi_5` (name: `MISSING`, area: `MISSING`, device: `MultiSensor Spielzimmer`)
+- `sensor.lumi_lumi_weather_temperature_5` (name: `MultiSensor Spielzimmer Temperature`, area: `MISSING`, device: `MultiSensor Spielzimmer`)
+- `sensor.philips_lwv001_lqi` (name: `MISSING`, area: `MISSING`, device: `Spielzimmer Deckenlicht`)
+- `sensor.philips_lwv001_rssi` (name: `MISSING`, area: `MISSING`, device: `Spielzimmer Deckenlicht`)
+- `sensor.spielzimmer_spot_lqi_6` (name: `MISSING`, area: `MISSING`, device: `Spielzimmer Spot`)
+- `sensor.spielzimmer_spot_rssi_6` (name: `MISSING`, area: `MISSING`, device: `Spielzimmer Spot`)
+
+## C - Manual Check
+- `button.button_spielzimmer_identify_6` (name: `Button Spielzimmer Identify`)
+- `button.button_werktisch_identify_6` (name: `MISSING`)
+- `button.deckenlicht_kinderspielzimmer_identify` (name: `Deckenlicht Kinderspielzimmer Identify`)
+- `button.lumi_lumi_weather_identify_5` (name: `MultiSensor Spielzimmer Identify`)
+- `button.spielzimmer_deckenlicht_identify` (name: `Spielzimmer Deckenlicht Identify`)
+- `button.spielzimmer_spot_identify_6` (name: `MISSING`)
+- `button.werktisch_licht_identify_2` (name: `Werktisch Licht Identify`)
+- `input_number.eg_sound_spielzimmer` (name: `MISSING`)
+- `media_player.kinderschlafzimmer` (name: `MISSING`)
+- `media_player.spielzimmer` (name: `MISSING`)
+- `number.deckenlicht_kinderspielzimmer_on_level` (name: `Deckenlicht Kinderspielzimmer On level`)
+- `number.deckenlicht_kinderspielzimmer_on_off_transition_time` (name: `Deckenlicht Kinderspielzimmer On/Off transition time`)
+- `number.deckenlicht_kinderspielzimmer_start_up_color_temperature` (name: `Deckenlicht Kinderspielzimmer Start-up color temperature`)
+- `number.deckenlicht_kinderspielzimmer_start_up_current_level` (name: `Deckenlicht Kinderspielzimmer Start-up current level`)
+- `number.kinderschlafzimmer_balance` (name: `MISSING`)
+- `number.kinderschlafzimmer_bass` (name: `MISSING`)
+- `number.kinderschlafzimmer_treble` (name: `MISSING`)
+- `number.spielzimmer_balance` (name: `MISSING`)
+- `number.spielzimmer_bass` (name: `MISSING`)
+- `number.spielzimmer_deckenlicht_start_up_current_level` (name: `Spielzimmer Deckenlicht Start-up current level`)
+- `number.spielzimmer_treble` (name: `MISSING`)
+- `number.werktisch_licht_on_level_2` (name: `Werktisch Licht On level`)
+- `number.werktisch_licht_on_off_transition_time_2` (name: `Werktisch Licht On/Off transition time`)
+- `number.werktisch_licht_start_up_current_level_2` (name: `Werktisch Licht Start-up current level`)
+- `select.deckenlicht_kinderspielzimmer_start_up_behavior` (name: `Deckenlicht Kinderspielzimmer Start-up behavior`)
+- `select.spielzimmer_deckenlicht_start_up_behavior` (name: `Spielzimmer Deckenlicht Start-up behavior`)
+- `select.spielzimmer_spot_start_up_behavior_5` (name: `MISSING`)
+- `select.werktisch_licht_start_up_behavior_2` (name: `Werktisch Licht Start-up behavior`)
+- `update.button_spielzimmer_firmware` (name: `MISSING`)
+- `update.button_werktisch_firmware` (name: `MISSING`)
+- `update.deckenlicht_kinderspielzimmer_firmware` (name: `Deckenlicht Kinderspielzimmer Firmware`)
+- `update.spielzimmer_deckenlicht_firmware` (name: `MISSING`)
+- `update.spielzimmer_spot_firmware` (name: `MISSING`)
+- `update.werktisch_licht_firmware` (name: `MISSING`)

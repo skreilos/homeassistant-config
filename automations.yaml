@@ -1073,7 +1073,7 @@
     - conditions:
       - condition: trigger
         id:
-        - Taster I - Werktisch- Lang
+        - Taster I - Zimmer Julian - Lang
       sequence:
       - type: toggle
         device_id: d8cd05abed81ccd27d4bad7da9865254
@@ -1082,7 +1082,7 @@
     - conditions:
       - condition: trigger
         id:
-        - Taster O - Werktisch- Lang
+        - Taster O - Zimmer Julian - Lang
       sequence:
       - type: toggle
         device_id: 94cc912ee2e36e2b1729915273714518
@@ -1158,7 +1158,7 @@
         domain: switch
   mode: single
 - id: '1698877530586'
-  alias: Button Nachttisch Joshua
+  alias: Button Zimmer Joshua Nachttisch
   description: ''
   trigger:
   - device_id: 37686e2beb8eb3a62b51f3971685ad74
@@ -1226,7 +1226,7 @@
         type: brightness_decrease
   mode: single
 - id: '1698877723756'
-  alias: Button Nachttisch Julian
+  alias: Button Zimmer Julian Nachttisch
   description: ''
   trigger:
   - device_id: 0b6ac1d9ef3f5dc60796d658eab9b08b
@@ -1263,7 +1263,7 @@
       sequence:
       - service: light.toggle
         target:
-          entity_id: light.deckenlicht_kinderspielzimmer_light
+          entity_id: light.licht_zimmer_julian_decke
     - conditions:
       - condition: trigger
         id:
@@ -1498,7 +1498,7 @@
         action: switch.turn_off
   mode: single
 - id: '1699386533060'
-  alias: Button Werktisch
+  alias: Button Zimmer Julian Schreibtisch
   description: ''
   trigger:
   - device_id: 4e17a203dbc17cd16616e13cba2c2af3
@@ -1533,19 +1533,17 @@
         id:
         - Button I
       sequence:
-      - type: toggle
-        device_id: d8cd05abed81ccd27d4bad7da9865254
-        entity_id: 6c92d733f174986fb16826a538dfc341
-        domain: switch
+      - service: light.toggle
+        target:
+          entity_id: light.licht_zimmer_julian_decke
     - conditions:
       - condition: trigger
         id:
         - Button O
       sequence:
-      - type: toggle
-        device_id: 94cc912ee2e36e2b1729915273714518
-        entity_id: 1e2c0e648decdf58c6e5a35afa069f7c
-        domain: switch
+      - service: switch.toggle
+        target:
+          entity_id: switch.schalter_zimmer_julian_schreibtisch
   mode: single
 - id: '1699386944016'
   alias: Auto Light - Bad V2

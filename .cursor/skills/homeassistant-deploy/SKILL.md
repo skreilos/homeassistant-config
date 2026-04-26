@@ -255,3 +255,139 @@ Run order:
 - HTTPS and SSH remotes are both fine if they reference the same GitHub repo.
 - Prefer repo-local git identity on servers (`git config`, not `--global`).
 - Keep commands copy/paste friendly and avoid placeholders in final user instructions.
+
+## Full operational runbook (this project)
+
+Use this exact sequence whenever naming/entity consistency work is done.
+
+### 1) Local prepare and push
+
+```bash
+cd "/home/stephanprivat/Dokumente/Development/homeassistant-config"
+git status
+git add .
+git commit -m "Describe config/naming update."
+git push origin main
+```
+
+### 2) Server sync
+
+```bash
+cd "/data/home-assistant"
+git pull origin main
+```
+
+### 3) Category A (entity_id migration) on server
+
+Dry run:
+
+```bash
+python3 scripts/migrate_entity_registry_ids.py \
+  --registry "/data/home-assistant/.storage/core.entity_registry" \
+  --map "/data/home-assistant/entity_id_rename_map.yaml"
+```
+
+Apply:
+
+```bash
+sudo python3 scripts/migrate_entity_registry_ids.py \
+  --registry "/data/home-assistant/.storage/core.entity_registry" \
+  --map "/data/home-assistant/entity_id_rename_map.yaml" \
+  --apply
+```
+
+### 4) Category B (diagnostics naming/area consistency) on server
+
+Dry run:
+
+```bash
+python3 scripts/migrate_entity_areas.py \
+  --config-dir "/data/home-assistant" \
+  --map "/data/home-assistant/entity_area_assignment_map.yaml"
+```
+
+Apply:
+
+```bash
+sudo python3 scripts/migrate_entity_areas.py \
+  --config-dir "/data/home-assistant" \
+  --map "/data/home-assistant/entity_area_assignment_map.yaml" \
+  --apply
+```
+
+### 5) Restart Home Assistant
+
+```bash
+docker restart home-assistant_2026_2_3
+```
+
+### 6) Export full inventory snapshots
+
+```bash
+python3 scripts/export_entity_snapshot.py \
+  --config-dir "/data/home-assistant" \
+  --out "/data/home-assistant/inventory/entities_snapshot.yaml"
+```
+
+Expected output files:
+
+- `inventory/entities_snapshot.yaml`
+- `inventory/areas_snapshot.yaml`
+- `inventory/devices_snapshot.yaml`
+
+### 7) Server commit and push snapshots
+
+```bash
+git add inventory/entities_snapshot.yaml inventory/areas_snapshot.yaml inventory/devices_snapshot.yaml
+git commit -m "Update entity/area/device snapshots after migration."
+git push origin main
+```
+
+### 8) Local pull after server push
+
+```bash
+cd "/home/stephanprivat/Dokumente/Development/homeassistant-config"
+git pull origin main
+```
+
+## Validation checks
+
+### A migration success
+
+- Compare `inventory/entity_rename_plan.md` against `inventory/entities_snapshot.yaml`.
+- For each `old -> new`, `new` exists and `old` no longer exists.
+
+### B migration success
+
+- Every key in `entity_area_assignment_map.yaml` has non-null `area_name` in `inventory/entities_snapshot.yaml`.
+
+### Legacy token check
+
+No legacy entity IDs should remain with these tokens:
+
+- `spielzimmer`
+- `kinderschlafzimmer`
+- `kinderzimmer`
+- `kinderspielzimmer`
+- `werktisch`
+- `arbeitstisch`
+
+## Known pitfalls and fixes
+
+### Permission denied for `.storage/core.entity_registry`
+
+Cause: file owned by `root:root`.
+Fix: run migration scripts with `sudo` on server.
+
+### Missing area in registry
+
+Cause: mapping uses area display name that does not exist in `core.area_registry`.
+Fix: prefer stable area IDs in `entity_area_assignment_map.yaml` (for example `julian`).
+
+### `rg` not available on server
+
+Use:
+
+```bash
+grep -E "pattern" inventory/entities_snapshot.yaml
+```

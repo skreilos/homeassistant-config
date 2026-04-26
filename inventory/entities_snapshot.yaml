@@ -65,11 +65,11 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: null
-  - entity_id: "automation.auto_light_schlafzimmer_kinder"
+  - entity_id: "automation.auto_light_wc"
     domain: "automation"
     platform: "automation"
     name: null
-    original_name: "Auto Light - Zimmer Joshua"
+    original_name: "Auto Light - WC"
     area_id: null
     area_name: null
     device_id: null
@@ -78,11 +78,11 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: null
-  - entity_id: "automation.auto_light_wc"
+  - entity_id: "automation.auto_light_zimmer_joshua"
     domain: "automation"
     platform: "automation"
     name: null
-    original_name: "Auto Light - WC"
+    original_name: "Auto Light - Zimmer Joshua"
     area_id: null
     area_name: null
     device_id: null
@@ -2249,19 +2249,6 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "binary_sensor.motion_schlafzimmer_kinder_motion_9"
-    domain: "binary_sensor"
-    platform: "zha"
-    name: "Motion Schlafzimmer Kinder Motion"
-    original_name: null
-    area_id: null
-    area_name: null
-    device_id: "30eb2c48b9f016cc0d29c317f0e7868b"
-    device_name: "Motion Schlafzimmer Kinder"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
   - entity_id: "binary_sensor.motion_schlafzimmer_kinder_occupancy_9"
     domain: "binary_sensor"
     platform: "zha"
@@ -2313,6 +2300,19 @@ entities:
     disabled_by: null
     hidden_by: null
     has_entity_name: false
+    original_icon: null
+  - entity_id: "binary_sensor.motion_zimmer_joshua_motion_9"
+    domain: "binary_sensor"
+    platform: "zha"
+    name: "Motion Schlafzimmer Kinder Motion"
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "30eb2c48b9f016cc0d29c317f0e7868b"
+    device_name: "Motion Schlafzimmer Kinder"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
     original_icon: null
   - entity_id: "binary_sensor.motionsensor_bad_motion_4"
     domain: "binary_sensor"
@@ -9182,7 +9182,7 @@ entities:
     domain: "input_number"
     platform: "input_number"
     name: null
-    original_name: "Nacht Helligkeit Decke Stephan"
+    original_name: "Nacht Helligkeit Decke Schlafzimmer Stephan"
     area_id: null
     area_name: null
     device_id: null
@@ -9542,15 +9542,28 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "light.schlafzimmer_kinder_deckenlicht_light"
+  - entity_id: "light.sh_rgbw_aquarium_joshua_channel_3"
     domain: "light"
-    platform: "zha"
+    platform: "shelly"
     name: null
     original_name: null
     area_id: null
     area_name: null
-    device_id: "63aa61c380a7932519e7479316839d5e"
-    device_name: "Schlafzimmer Kinder Deckenlicht"
+    device_id: "c1246413be89e5e706d62e007329b523"
+    device_name: "SH_RGBW_Aquarium_Kinder Channel 3"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "light.sh_rgbw_aquarium_joshua_channel_4"
+    domain: "light"
+    platform: "shelly"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "7b98aaee8c1f1b544f4ca52b752bb9fe"
+    device_name: "SH_RGBW_Aquarium_Kinder Channel 4"
     disabled_by: null
     hidden_by: null
     has_entity_name: true
@@ -9577,32 +9590,6 @@ entities:
     area_name: null
     device_id: "0c5dc4ad055fab67986581bd13d92576"
     device_name: "SH_RGBW_Aquarium_Kinder Channel 2"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
-  - entity_id: "light.sh_rgbw_aquarium_kinder_channel_3"
-    domain: "light"
-    platform: "shelly"
-    name: null
-    original_name: null
-    area_id: null
-    area_name: null
-    device_id: "c1246413be89e5e706d62e007329b523"
-    device_name: "SH_RGBW_Aquarium_Kinder Channel 3"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
-  - entity_id: "light.sh_rgbw_aquarium_kinder_channel_4"
-    domain: "light"
-    platform: "shelly"
-    name: null
-    original_name: null
-    area_id: null
-    area_name: null
-    device_id: "7b98aaee8c1f1b544f4ca52b752bb9fe"
-    device_name: "SH_RGBW_Aquarium_Kinder Channel 4"
     disabled_by: null
     hidden_by: null
     has_entity_name: true
@@ -9698,6 +9685,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "light.zimmer_joshua_deckenlicht_light"
+    domain: "light"
+    platform: "zha"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "63aa61c380a7932519e7479316839d5e"
+    device_name: "Schlafzimmer Kinder Deckenlicht"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
   - entity_id: "light.zimmer_julian_deckenlicht_light"
     domain: "light"
     platform: "zha"
@@ -9789,19 +9789,6 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "media_player.kinderschlafzimmer"
-    domain: "media_player"
-    platform: "sonos"
-    name: null
-    original_name: null
-    area_id: null
-    area_name: null
-    device_id: "a918949a76462c059190e5b92729bdf7"
-    device_name: "Zimmer Joshua"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
   - entity_id: "media_player.sonos_roam"
     domain: "media_player"
     platform: "sonos"
@@ -9811,19 +9798,6 @@ entities:
     area_name: null
     device_id: "14f799102b1d0c01eae80914b52ff48d"
     device_name: "Sonos Roam"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
-  - entity_id: "media_player.spielzimmer"
-    domain: "media_player"
-    platform: "sonos"
-    name: null
-    original_name: null
-    area_id: null
-    area_name: null
-    device_id: "2abcb02850b538c31cb323b1e9aa537e"
-    device_name: "Zimmer Julian"
     disabled_by: null
     hidden_by: null
     has_entity_name: true
@@ -9876,6 +9850,32 @@ entities:
     area_name: null
     device_id: "75afa4f51216b93ddde803ad4bb4203a"
     device_name: "Wohnzimmer"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "media_player.zimmer_joshua"
+    domain: "media_player"
+    platform: "sonos"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "a918949a76462c059190e5b92729bdf7"
+    device_name: "Zimmer Joshua"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "media_player.zimmer_julian"
+    domain: "media_player"
+    platform: "sonos"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "2abcb02850b538c31cb323b1e9aa537e"
+    device_name: "Zimmer Julian"
     disabled_by: null
     hidden_by: null
     has_entity_name: true

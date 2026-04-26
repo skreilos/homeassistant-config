@@ -923,20 +923,17 @@
         entity_id: input_boolean.nightmode
         state: 'off'
       sequence:
-      - service: light.turn_on
-        data:
-          brightness_pct: 100
+      - service: switch.turn_on
         target:
-          area_id: schlafzimmer
+          entity_id: switch.sh_schlafzimmer_stephan_switch_0
     - conditions:
       - condition: trigger
         id:
         - Motion Schlafzimmer Stefan Off
       sequence:
-      - service: light.turn_off
-        data: {}
+      - service: switch.turn_off
         target:
-          area_id: schlafzimmer
+          entity_id: switch.sh_schlafzimmer_stephan_switch_0
   mode: single
 - id: '1698874143005'
   alias: Button Trolley
@@ -1841,26 +1838,22 @@
         - Motion On
       sequence:
       - service: light.turn_on
-        data: {}
         target:
-          area_id: julian
+          entity_id: light.deckenlicht_zimmer_julian_light
       - service: switch.turn_on
-        data: {}
         target:
-          device_id: b647cdc3d04cbc30eb7716c2b4eb4ca2
+          entity_id: switch.zimmer_julian_schreibtisch_licht_switch
     - conditions:
       - condition: trigger
         id:
         - Motion Off
       sequence:
       - service: light.turn_off
-        data: {}
         target:
-          area_id: julian
+          entity_id: light.deckenlicht_zimmer_julian_light
       - service: switch.turn_off
-        data: {}
         target:
-          device_id: b647cdc3d04cbc30eb7716c2b4eb4ca2
+          entity_id: switch.zimmer_julian_schreibtisch_licht_switch
   mode: single
 - id: '1700083428473'
   alias: Auto Light - Zimmer Joshua
@@ -1894,10 +1887,9 @@
           entity_id: input_boolean.kids_home
           state: 'off'
       sequence:
-      - service: light.turn_on
-        data: {}
+      - service: switch.turn_on
         target:
-          area_id: joshua
+          entity_id: switch.sh_schlafzimmer_kinder_switch_0
     - conditions:
       - condition: trigger
         id:
@@ -1911,10 +1903,9 @@
           after: 08:00:00
           before: '20:00:00'
       sequence:
-      - service: light.turn_off
-        data: {}
+      - service: switch.turn_off
         target:
-          area_id: joshua
+          entity_id: switch.sh_schlafzimmer_kinder_switch_0
   mode: single
 - id: '1700602646090'
   alias: Auto an Abwaschmaschine

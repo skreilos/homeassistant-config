@@ -1,0 +1,179 @@
+{
+  "summary": {
+    "entity_count": 2160,
+    "missing_reference_count": 21,
+    "legacy_entity_id_count": 36,
+    "stale_customize_count": 0
+  },
+  "missing_references": [
+    [
+      "automations.yaml",
+      169,
+      "switch.sz_joshua_aquarium"
+    ],
+    [
+      "automations.yaml",
+      170,
+      "switch.sz_julian_aquarium"
+    ],
+    [
+      "automations.yaml",
+      285,
+      "media_player.android_tv_10_0_0_22"
+    ],
+    [
+      "automations.yaml",
+      412,
+      "sensor.ms_kuche"
+    ],
+    [
+      "automations.yaml",
+      736,
+      "light.aquarium_joshua"
+    ],
+    [
+      "automations.yaml",
+      819,
+      "light.aquarium_julian"
+    ],
+    [
+      "automations.yaml",
+      2015,
+      "scene.wohnraum_dimm_high"
+    ],
+    [
+      "automations.yaml",
+      2026,
+      "scene.wohnraum"
+    ],
+    [
+      "automations.yaml",
+      2037,
+      "scene.wohnraum_off"
+    ],
+    [
+      "automations.yaml",
+      2063,
+      "scene.buro_on"
+    ],
+    [
+      "automations.yaml",
+      2074,
+      "scene.buro_off"
+    ],
+    [
+      "automations.yaml",
+      2106,
+      "scene.esstisch_high"
+    ],
+    [
+      "automations.yaml",
+      2116,
+      "scene.esstisch_off_motion_off"
+    ],
+    [
+      "automations.yaml",
+      2126,
+      "scene.esstisch_high_duplicate"
+    ],
+    [
+      "automations.yaml",
+      2486,
+      "sensor.web_scrape_2"
+    ],
+    [
+      "automations.yaml",
+      2505,
+      "sensor.website_seebadiwollishofen"
+    ],
+    [
+      "automations.yaml",
+      2506,
+      "sensor.website_badiletzigraben"
+    ],
+    [
+      "automations.yaml",
+      2507,
+      "sensor.website_coiffeurnora"
+    ],
+    [
+      "automations.yaml",
+      2508,
+      "sensor.website_massagepraxis"
+    ],
+    [
+      "automations.yaml",
+      2509,
+      "sensor.website_spatzenaescht"
+    ],
+    [
+      "scenes.yaml",
+      430,
+      "switch.schalter_zimmer_julian_schreibtisch"
+    ]
+  ],
+  "legacy_entity_ids": [
+    "button.button_spielzimmer_identify_6",
+    "button.button_werktisch_identify_6",
+    "button.deckenlicht_kinderspielzimmer_identify",
+    "button.spielzimmer_deckenlicht_identify",
+    "button.werktisch_licht_identify_2",
+    "input_number.eg_sound_spielzimmer",
+    "media_player.kinderschlafzimmer",
+    "media_player.spielzimmer",
+    "number.deckenlicht_kinderspielzimmer_on_level",
+    "number.deckenlicht_kinderspielzimmer_on_off_transition_time",
+    "number.deckenlicht_kinderspielzimmer_start_up_color_temperature",
+    "number.deckenlicht_kinderspielzimmer_start_up_current_level",
+    "number.kinderschlafzimmer_balance",
+    "number.kinderschlafzimmer_bass",
+    "number.kinderschlafzimmer_treble",
+    "number.spielzimmer_balance",
+    "number.spielzimmer_bass",
+    "number.spielzimmer_deckenlicht_start_up_current_level",
+    "number.spielzimmer_treble",
+    "number.werktisch_licht_on_level_2",
+    "number.werktisch_licht_on_off_transition_time_2",
+    "number.werktisch_licht_start_up_current_level_2",
+    "select.deckenlicht_kinderspielzimmer_start_up_behavior",
+    "select.spielzimmer_deckenlicht_start_up_behavior",
+    "select.werktisch_licht_start_up_behavior_2",
+    "sensor.button_kinderzimmer_lqi_4",
+    "sensor.button_kinderzimmer_rssi_4",
+    "sensor.button_spielzimmer_battery_6",
+    "sensor.button_werktisch_battery_6",
+    "sensor.button_werktisch_lqi_7",
+    "sensor.button_werktisch_rssi_7",
+    "update.button_spielzimmer_firmware",
+    "update.button_werktisch_firmware",
+    "update.deckenlicht_kinderspielzimmer_firmware",
+    "update.spielzimmer_deckenlicht_firmware",
+    "update.werktisch_licht_firmware"
+  ],
+  "stale_customize_keys": [],
+  "area_names": [
+    "Aquarien",
+    "Bad",
+    "Bad (Stay On)",
+    "Büro",
+    "Esstisch",
+    "Gang",
+    "Kinderschlafzimmer",
+    "Küche",
+    "Sofa",
+    "Sonos Roam",
+    "TV",
+    "Trolley",
+    "WC",
+    "Wohnzimmer",
+    "Zimmer Joshua",
+    "Zimmer Julian",
+    "Zimmer Julian",
+    "Zimmer Stephan"
+  ],
+  "recommendations": [
+    "Fix missing entity references in active files (`automations.yaml`, `scenes.yaml`, `customize.yaml`).",
+    "Consider consolidating duplicate area names (`Zimmer Julian`) into one canonical area.",
+    "Run export scripts after each device/rename change and commit snapshots."
+  ]
+}

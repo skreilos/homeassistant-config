@@ -5,20 +5,17 @@
 light.deckenlicht_zimmer_julian_light:
   friendly_name: Licht Zimmer Julian Decke
 
-light.licht_zimmer_julian_hauptlicht:
+light.zimmer_julian_deckenlicht_light:
   friendly_name: Licht Zimmer Julian Hauptlicht
 
-switch.schalter_zimmer_julian_nachttisch:
+switch.julian_nachttisch_switch:
   friendly_name: Schalter Zimmer Julian Nachttisch
 
-light.licht_zimmer_joshua_hauptlicht:
+light.schlafzimmer_kinder_deckenlicht_light:
   friendly_name: Licht Zimmer Joshua Hauptlicht
 
-switch.schalter_zimmer_joshua_nachttisch:
+switch.joshua_nachttisch_switch_2:
   friendly_name: Schalter Zimmer Joshua Nachttisch
-
-light.licht_zimmer_joshua_hochbett:
-  friendly_name: Licht Zimmer Joshua Hochbett
 
 sensor.button_spielzimmer_battery_6:
   friendly_name: Sensor Button Zimmer Julian Batterie
@@ -73,9 +70,3 @@ sensor.philips_lwv001_lqi:
 
 sensor.philips_lwv001_rssi:
   friendly_name: Sensor Deckenlicht Zimmer Julian RSSI
-
-sensor.zimmer_julian_spot_lqi_6:
-  friendly_name: Sensor Spot Zimmer Julian LQI
-
-sensor.zimmer_julian_spot_rssi_6:
-  friendly_name: Sensor Spot Zimmer Julian RSSI

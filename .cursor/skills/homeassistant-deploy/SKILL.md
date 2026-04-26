@@ -252,6 +252,22 @@ git push origin main
 
 This gives the agent visibility into non-YAML registry/runtime metadata.
 
+## Consistency audit command
+
+Run after snapshot/context export:
+
+```bash
+cd "/home/stephanprivat/Dokumente/Development/homeassistant-config"
+python3 scripts/audit_ha_consistency.py
+```
+
+Outputs:
+
+- `inventory/consistency_audit.json`
+- `inventory/consistency_audit.md`
+
+Use the markdown report as primary checklist for cleanup priorities.
+
 ## Category B consistency pass (safe mode)
 
 For diagnostics entities (battery/LQI/RSSI), keep `entity_id` stable and improve naming/areas:

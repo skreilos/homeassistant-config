@@ -1305,7 +1305,7 @@
       sequence:
       - service: light.toggle
         target:
-          entity_id: light.zimmer_julian_deckenlicht_light
+          entity_id: light.deckenlicht_zimmer_julian_light
     - conditions:
       - condition: trigger
         id:

@@ -231,6 +231,27 @@ The export also writes:
 
 Use all three files as source of truth for naming and assignment audits.
 
+## Full HA context export (beyond YAML)
+
+When runtime/integration state is needed, export context bundle from `.storage`:
+
+```bash
+cd "/data/home-assistant"
+python3 scripts/export_ha_context_bundle.py \
+  --config-dir "/data/home-assistant" \
+  --out-dir "/data/home-assistant/inventory/context_bundle"
+```
+
+Then commit:
+
+```bash
+git add inventory/context_bundle
+git commit -m "Update HA context bundle."
+git push origin main
+```
+
+This gives the agent visibility into non-YAML registry/runtime metadata.
+
 ## Category B consistency pass (safe mode)
 
 For diagnostics entities (battery/LQI/RSSI), keep `entity_id` stable and improve naming/areas:

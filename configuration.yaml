@@ -53,6 +53,12 @@ input_boolean:  !include input_boolean.yaml
 input_number: !include input_number.yaml
 input_datetime: !include input_datetime.yaml
 scene: !include scenes.yaml
+binary_sensor:
+  - platform: ping
+    host: 10.0.0.201
+    name: Julian Tablet IP
+    count: 2
+    scan_interval: 30
 
 google_assistant: !include google_assistant.yaml 
 

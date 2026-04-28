@@ -1779,6 +1779,47 @@
         target:
           entity_id: input_boolean.alarm_active
   mode: single
+- id: '1761693000001'
+  alias: Presence Kids Home Julian
+  description: Setzt Kinder Zuhause auf Basis von Tablet Tracker und IP-Ping
+  trigger:
+  - platform: state
+    entity_id:
+    - device_tracker.tablet_sk_i
+    - binary_sensor.julian_tablet_ip
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: or
+        conditions:
+        - condition: state
+          entity_id: device_tracker.tablet_sk_i
+          state: home
+        - condition: state
+          entity_id: binary_sensor.julian_tablet_ip
+          state: 'on'
+      sequence:
+      - service: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.kids_home
+        data: {}
+    default:
+    - delay:
+        minutes: 5
+    - condition: and
+      conditions:
+      - condition: state
+        entity_id: device_tracker.tablet_sk_i
+        state: not_home
+      - condition: state
+        entity_id: binary_sensor.julian_tablet_ip
+        state: 'off'
+    - service: input_boolean.turn_off
+      target:
+        entity_id: input_boolean.kids_home
+      data: {}
+  mode: restart
 - id: '1699135077811'
   alias: Set Energy Cost
   description: ''

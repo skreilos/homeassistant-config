@@ -274,11 +274,11 @@
         "id": "e39a6a9bb01f2a016c770c4678661e5f",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "90:ab:96:ff:fe:37:ad:4f"
           ],
           [
-            "zha",
+            "deconz",
             "90:ab:96:ff:fe:37:ad:4f"
           ]
         ],
@@ -494,11 +494,11 @@
         "id": "2ca0200f1899b85ef94427d2286d18e6",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "00:15:8d:00:04:05:4e:9a"
           ],
           [
-            "zha",
+            "deconz",
             "00:15:8d:00:04:05:4e:9a"
           ]
         ],
@@ -582,11 +582,11 @@
         "id": "aa9260cd45b06cc5a54848fc36a01dc8",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "00:15:8d:00:04:4d:00:eb"
           ],
           [
-            "zha",
+            "deconz",
             "00:15:8d:00:04:4d:00:eb"
           ]
         ],
@@ -670,11 +670,11 @@
         "id": "5ed17d30e78159f88e8eb93388744446",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "00:15:8d:00:05:3f:80:6e"
           ],
           [
-            "zha",
+            "deconz",
             "00:15:8d:00:05:3f:80:6e"
           ]
         ],
@@ -714,11 +714,11 @@
         "id": "482bd8f596aeb2ef1745a17efc0d5ce6",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "dc:8e:95:ff:fe:2d:d0:5b"
           ],
           [
-            "zha",
+            "deconz",
             "dc:8e:95:ff:fe:2d:d0:5b"
           ]
         ],
@@ -758,11 +758,11 @@
         "id": "726d2334b69fb77d7e258d9eafdcd083",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "00:17:88:01:0b:04:ed:c6"
           ],
           [
-            "zha",
+            "deconz",
             "00:17:88:01:0b:04:ed:c6"
           ]
         ],
@@ -802,11 +802,11 @@
         "id": "4744a907fed7a39284952dd53fbef77c",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "00:17:88:01:0b:05:2e:ac"
           ],
           [
-            "zha",
+            "deconz",
             "00:17:88:01:0b:05:2e:ac"
           ]
         ],
@@ -846,11 +846,11 @@
         "id": "63aa61c380a7932519e7479316839d5e",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "00:17:88:01:09:9c:28:ae"
           ],
           [
-            "zha",
+            "deconz",
             "00:17:88:01:09:9c:28:ae"
           ]
         ],
@@ -978,11 +978,11 @@
         "id": "c9da57d8155ebf844f55f2206b7c7f86",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "00:17:88:01:0b:07:92:10"
           ],
           [
-            "zha",
+            "deconz",
             "00:17:88:01:0b:07:92:10"
           ]
         ],
@@ -1078,7 +1078,7 @@
         "manufacturer": "dresden elektronik",
         "model": "Conbee II",
         "model_id": null,
-        "modified_at": "2026-04-26T15:26:39.036333+00:00",
+        "modified_at": "2026-04-28T20:59:27.173749+00:00",
         "name_by_user": null,
         "name": "dresden elektronik Conbee II",
         "primary_config_entry": "ef27fe088aeeb3cd12f9b9b5db7e8fcc",
@@ -1110,11 +1110,11 @@
         "id": "b072ee5522f7b80870e21a7234d874ff",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "00:15:8d:00:09:1c:7e:ea"
           ],
           [
-            "zha",
+            "deconz",
             "00:15:8d:00:09:1c:7e:ea"
           ]
         ],
@@ -1154,11 +1154,11 @@
         "id": "3c8b53c2969c5a3e50931fa191890088",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "00:15:8d:00:09:1c:81:5a"
           ],
           [
-            "zha",
+            "deconz",
             "00:15:8d:00:09:1c:81:5a"
           ]
         ],
@@ -1198,11 +1198,11 @@
         "id": "709ca4cbacfbbee4f21c56ae2e4b33f1",
         "identifiers": [
           [
-            "zha",
+            "deconz",
             "00:15:8d:00:09:1b:56:c7"
           ],
           [
-            "deconz",
+            "zha",
             "00:15:8d:00:09:1b:56:c7"
           ]
         ],
@@ -1242,11 +1242,11 @@
         "id": "4bad305e69673bc35f3b6d64b5589c38",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "00:15:8d:00:09:1b:56:8a"
           ],
           [
-            "zha",
+            "deconz",
             "00:15:8d:00:09:1b:56:8a"
           ]
         ],
@@ -1286,11 +1286,11 @@
         "id": "39c23fb1cbd1d92b9c93780eeed3cfb4",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "cc:86:ec:ff:fe:91:29:07"
           ],
           [
-            "zha",
+            "deconz",
             "cc:86:ec:ff:fe:91:29:07"
           ]
         ],
@@ -1374,11 +1374,11 @@
         "id": "a3e1db2d95ab52e549c92ec4ac6bc0b5",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "08:6b:d7:ff:fe:5d:aa:74"
           ],
           [
-            "zha",
+            "deconz",
             "08:6b:d7:ff:fe:5d:aa:74"
           ]
         ],
@@ -1462,11 +1462,11 @@
         "id": "c794f7612318dc4e64c4d94fb93d547d",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "34:25:b4:ff:fe:ed:5d:30"
           ],
           [
-            "zha",
+            "deconz",
             "34:25:b4:ff:fe:ed:5d:30"
           ]
         ],
@@ -1550,11 +1550,11 @@
         "id": "11fa6727ed7be0a87a976bb9ffbabea3",
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "b4:e3:f9:ff:fe:83:45:32"
           ],
           [
-            "zha",
+            "deconz",
             "b4:e3:f9:ff:fe:83:45:32"
           ]
         ],
@@ -1597,7 +1597,7 @@
         "manufacturer": "Google",
         "model": "Google Assistant",
         "model_id": null,
-        "modified_at": "2026-04-26T15:26:35.964787+00:00",
+        "modified_at": "2026-04-28T20:59:24.581218+00:00",
         "name_by_user": null,
         "name": "Google Assistant",
         "primary_config_entry": "3f7212cfc0066a309adbc5e43c829a82",
@@ -3638,12 +3638,12 @@
         "configuration_url": "http://10.0.0.105:1400/support/review",
         "connections": [
           [
-            "mac",
-            "54:2a:1b:5d:80:4e"
-          ],
-          [
             "upnp",
             "uuid:RINCON_542A1B5D804E01400"
+          ],
+          [
+            "mac",
+            "54:2a:1b:5d:80:4e"
           ]
         ],
         "created_at": "2024-11-14T15:37:19.474605+00:00",
@@ -3726,12 +3726,12 @@
         "configuration_url": "http://10.0.0.20:1400/support/review",
         "connections": [
           [
-            "mac",
-            "54:2a:1b:63:48:08"
-          ],
-          [
             "upnp",
             "uuid:RINCON_542A1B63480801400"
+          ],
+          [
+            "mac",
+            "54:2a:1b:63:48:08"
           ]
         ],
         "created_at": "2024-11-14T15:37:19.835738+00:00",
@@ -3814,12 +3814,12 @@
         "configuration_url": "http://10.0.0.126:1400/support/review",
         "connections": [
           [
-            "mac",
-            "5c:aa:fd:11:f9:47"
-          ],
-          [
             "upnp",
             "uuid:RINCON_5CAAFD11F94701400"
+          ],
+          [
+            "mac",
+            "5c:aa:fd:11:f9:47"
           ]
         ],
         "created_at": "2024-11-14T15:37:20.140720+00:00",
@@ -3946,12 +3946,12 @@
         "configuration_url": "http://10.0.0.145:1400/support/review",
         "connections": [
           [
-            "mac",
-            "b8:e9:37:e1:46:d6"
-          ],
-          [
             "upnp",
             "uuid:RINCON_B8E937E146D601400"
+          ],
+          [
+            "mac",
+            "b8:e9:37:e1:46:d6"
           ]
         ],
         "created_at": "2024-11-14T15:37:20.589401+00:00",
@@ -4260,12 +4260,12 @@
         "configuration_url": "http://10.0.0.125:1400/support/review",
         "connections": [
           [
-            "mac",
-            "c4:38:75:ec:58:60"
-          ],
-          [
             "upnp",
             "uuid:RINCON_C43875EC586001400"
+          ],
+          [
+            "mac",
+            "c4:38:75:ec:58:60"
           ]
         ],
         "created_at": "2025-01-21T09:32:35.020631+00:00",
@@ -4393,12 +4393,12 @@
         "manufacturer": "Home Assistant",
         "model": "Home Assistant Backup",
         "model_id": null,
-        "modified_at": "2026-03-04T09:20:32.408253+00:00",
+        "modified_at": "2026-04-26T19:08:58.757412+00:00",
         "name_by_user": null,
         "name": "Backup",
         "primary_config_entry": "01JR6MAFVHYGRRPPVBGJBX94HQ",
         "serial_number": null,
-        "sw_version": "2026.2.3",
+        "sw_version": "2026.4.4",
         "via_device_id": null
       },
       {
@@ -4543,12 +4543,12 @@
         "manufacturer": "Nuki Home Solutions GmbH",
         "model": "Nuki opener",
         "model_id": null,
-        "modified_at": "2026-04-26T13:31:10.901162+00:00",
+        "modified_at": "2026-04-26T15:49:44.123976+00:00",
         "name_by_user": null,
         "name": "Hauseingang Mühle 5 ",
         "primary_config_entry": "01JT0MB60YJ7RDK32AS94S2AAN",
         "serial_number": "346A3A4A",
-        "sw_version": null,
+        "sw_version": "1.11.0",
         "via_device_id": "6938083bd12bfeab74fc171de5e52724"
       },
       {
@@ -4578,12 +4578,12 @@
         "manufacturer": "Nuki Home Solutions GmbH",
         "model": "Nuki smart lock 3.0 (pro)",
         "model_id": null,
-        "modified_at": "2026-04-26T13:31:10.900422+00:00",
+        "modified_at": "2026-04-26T15:49:44.123129+00:00",
         "name_by_user": null,
         "name": "Wohnung Eingang ",
         "primary_config_entry": "01JT0MB60YJ7RDK32AS94S2AAN",
         "serial_number": "3A63607C",
-        "sw_version": null,
+        "sw_version": "4.9.6",
         "via_device_id": "6938083bd12bfeab74fc171de5e52724"
       },
       {
@@ -5218,7 +5218,7 @@
         "manufacturer": "Tuya",
         "model": "Hombli Smart Socket",
         "model_id": "a6m8imppq00pydi9",
-        "modified_at": "2026-04-26T15:26:36.249729+00:00",
+        "modified_at": "2026-04-28T20:59:24.558275+00:00",
         "name_by_user": null,
         "name": "Hombli Reserve 2",
         "primary_config_entry": "01K6XG7WXN9TQ6ZXKNRSN8TZR7",
@@ -5253,7 +5253,7 @@
         "manufacturer": "Tuya",
         "model": "Hombli Smart Socket",
         "model_id": "a6m8imppq00pydi9",
-        "modified_at": "2026-04-26T15:26:36.249964+00:00",
+        "modified_at": "2026-04-28T20:59:24.558406+00:00",
         "name_by_user": null,
         "name": "Hombli Bad",
         "primary_config_entry": "01K6XG7WXN9TQ6ZXKNRSN8TZR7",
@@ -5288,7 +5288,7 @@
         "manufacturer": "Tuya",
         "model": "Hombli Smart Socket",
         "model_id": "a6m8imppq00pydi9",
-        "modified_at": "2026-04-26T15:26:36.249523+00:00",
+        "modified_at": "2026-04-28T20:59:24.558026+00:00",
         "name_by_user": null,
         "name": "Hombli Reserve 1",
         "primary_config_entry": "01K6XG7WXN9TQ6ZXKNRSN8TZR7",
@@ -5464,11 +5464,11 @@
         "disabled_by_undefined": true,
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "00:17:88:01:0b:85:21:85"
           ],
           [
-            "zha",
+            "deconz",
             "00:17:88:01:0b:85:21:85"
           ]
         ],
@@ -5716,11 +5716,11 @@
         "disabled_by_undefined": true,
         "identifiers": [
           [
-            "deconz",
+            "zha",
             "4c:5b:b3:ff:fe:13:b8:a5"
           ],
           [
-            "zha",
+            "deconz",
             "4c:5b:b3:ff:fe:13:b8:a5"
           ]
         ],

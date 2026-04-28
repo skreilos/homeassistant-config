@@ -60017,7 +60017,7 @@
         "device_id": null,
         "disabled_by": null,
         "entity_category": null,
-        "entity_id": "automation.alles_aus_alarm_an",
+        "entity_id": "automation.alarm_wohnung_alles_aus",
         "hidden_by": null,
         "icon": null,
         "id": "0423d19a8001419b833f5d2131524626",

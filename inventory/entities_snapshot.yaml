@@ -1,6 +1,6 @@
 generated_by: export_entity_snapshot.py
 entities:
-  - entity_id: "automation.alles_aus_alarm_an"
+  - entity_id: "automation.alarm_wohnung_alles_aus"
     domain: "automation"
     platform: "automation"
     name: "Alles aus alarm an"

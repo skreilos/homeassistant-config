@@ -694,7 +694,9 @@
           transition: 8
       - action: switch.turn_on
         target:
-          entity_id: switch.sh_schlafzimmer_stephan_switch_0
+          entity_id:
+          - switch.light_bed_stephan_links_switch
+          - switch.light_bed_stephan_rechts_switch
         data: {}
     - conditions:
       - condition: trigger
@@ -717,7 +719,9 @@
         data: {}
       - action: switch.turn_off
         target:
-          entity_id: switch.sh_schlafzimmer_stephan_switch_0
+          entity_id:
+          - switch.light_bed_stephan_links_switch
+          - switch.light_bed_stephan_rechts_switch
         data: {}
     - conditions:
       - condition: trigger
@@ -739,7 +743,9 @@
           transition: 8
       - action: switch.turn_on
         target:
-          entity_id: switch.sh_schlafzimmer_stephan_switch_0
+          entity_id:
+          - switch.light_bed_stephan_links_switch
+          - switch.light_bed_stephan_rechts_switch
         data: {}
     - conditions:
       - condition: trigger
@@ -759,7 +765,9 @@
         data: {}
       - action: switch.turn_off
         target:
-          entity_id: switch.sh_schlafzimmer_stephan_switch_0
+          entity_id:
+          - switch.light_bed_stephan_links_switch
+          - switch.light_bed_stephan_rechts_switch
         data: {}
     - conditions:
       - condition: trigger

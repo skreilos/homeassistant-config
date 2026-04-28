@@ -1226,6 +1226,27 @@
         "title": "Motion Wohnung",
         "unique_id": null,
         "version": 1
+      },
+      {
+        "created_at": "2026-04-28T22:43:15.815025+00:00",
+        "data": {
+          "token": "***REDACTED***",
+          "url": "http://10.0.0.2:8095"
+        },
+        "disabled_by": null,
+        "discovery_keys": {},
+        "domain": "music_assistant",
+        "entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "minor_version": 1,
+        "modified_at": "2026-04-28T22:43:15.815030+00:00",
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "subentries": [],
+        "title": "Music Assistant",
+        "unique_id": "13e4b39feaa4427faef3d393cb7bdceb",
+        "version": 1
       }
     ]
   }

@@ -2252,7 +2252,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.314451+00:00",
-        "name": "automation.light_kuche",
+        "name": null,
         "object_id_base": "Licht Küche Auto",
         "options": {
           "conversation": {
@@ -2294,7 +2294,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.314962+00:00",
-        "name": "automation.kuche_test",
+        "name": null,
         "object_id_base": "Licht Gang Auto",
         "options": {
           "conversation": {
@@ -2336,7 +2336,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.315068+00:00",
-        "name": "automation.aquarium_60p_co2",
+        "name": null,
         "object_id_base": "Schalter Aquarium CO2 Auto",
         "options": {
           "conversation": {
@@ -2378,7 +2378,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.315172+00:00",
-        "name": "automation.aquarium_light",
+        "name": null,
         "object_id_base": "Licht Aquarium Zeit",
         "options": {
           "conversation": {
@@ -2420,7 +2420,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.315271+00:00",
-        "name": "automation.essraum_licht",
+        "name": null,
         "object_id_base": "Licht Essraum Auto",
         "options": {
           "conversation": {
@@ -2462,7 +2462,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.315365+00:00",
-        "name": "automation.illuminance_wohnraum_change",
+        "name": null,
         "object_id_base": "Licht Wohnzimmer Sofa Auto",
         "options": {
           "conversation": {
@@ -2544,7 +2544,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.315459+00:00",
-        "name": "automation.schalter_buro_i",
+        "name": null,
         "object_id_base": "Button Büro Stephan",
         "options": {
           "conversation": {
@@ -3026,7 +3026,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.315554+00:00",
-        "name": "automation.bitte_luften",
+        "name": null,
         "object_id_base": "Benachrichtigung Küche Lüften",
         "options": {
           "conversation": {
@@ -3068,7 +3068,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.315651+00:00",
-        "name": "automation.no_one_home",
+        "name": null,
         "object_id_base": "Benachrichtigung Eingang Türe",
         "options": {
           "conversation": {
@@ -3150,7 +3150,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "1970-01-01T00:00:00+00:00",
-        "name": "automation.licht_nach_zeit_kinder_sz",
+        "name": null,
         "object_id_base": "Routine - Morgen - Everyday",
         "options": {
           "conversation": {
@@ -3192,7 +3192,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.315754+00:00",
-        "name": "automation.new_automationlicht_nach_zeit_kinder_sz_abend",
+        "name": null,
         "object_id_base": "Routine Wohnung Abend",
         "options": {
           "conversation": {
@@ -3234,7 +3234,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "1970-01-01T00:00:00+00:00",
-        "name": "automation.new_automationlicht_nach_zeit_kinder_sz_morgen_workdays",
+        "name": null,
         "object_id_base": "Routine - Morgen - Workdays",
         "options": {
           "conversation": {
@@ -3276,7 +3276,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "1970-01-01T00:00:00+00:00",
-        "name": "automation.routine_morgen_workdays_ii",
+        "name": null,
         "object_id_base": "Routine - Morgen - Workdays II",
         "options": {
           "conversation": {
@@ -3642,7 +3642,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.315955+00:00",
-        "name": "automation.aquarium_light_2",
+        "name": null,
         "object_id_base": "Licht Aquarium Verlauf",
         "options": {
           "conversation": {
@@ -3684,7 +3684,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.316054+00:00",
-        "name": "automation.auto_off",
+        "name": null,
         "object_id_base": "Schalter Wohnung Auto Aus",
         "options": {
           "conversation": {
@@ -10538,7 +10538,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.316156+00:00",
-        "name": "automation.autolight_schlafzimmer_stefan_v2",
+        "name": null,
         "object_id_base": "Licht Schlafzimmer Stephan Auto",
         "options": {
           "conversation": {
@@ -10591,7 +10591,7 @@
         "id": "0a1f9d1ee2e43871542bb9bcba766ed6",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T21:27:28.342399+00:00",
+        "modified_at": "2026-04-28T22:35:36.043243+00:00",
         "name": "light.dresden_elektronik_raspbee_ii_no_name_group_0xfff0",
         "object_id_base": "No name group 0xFFF0",
         "options": {
@@ -11564,7 +11564,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.316255+00:00",
-        "name": "automation.mobiler_schalter_zimmer_julian_schreibtisch",
+        "name": null,
         "object_id_base": "Button Küche Trolley",
         "options": {
           "conversation": {
@@ -11777,7 +11777,7 @@
         "id": "4a6fcad1e7f83ddef97606cc40055e4e",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T21:27:28.374931+00:00",
+        "modified_at": "2026-04-28T22:35:36.077231+00:00",
         "name": "switch.dresden_elektronik_raspbee_ii_no_name_group_0xfff0",
         "object_id_base": "No name group 0xFFF0",
         "options": {
@@ -11860,7 +11860,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-26T13:24:10.202757+00:00",
-        "name": "automation.mobile_schalter_zimmer_julian_v2",
+        "name": null,
         "object_id_base": "Button Zimmer Julian",
         "options": {
           "conversation": {
@@ -12784,7 +12784,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.316457+00:00",
-        "name": "automation.button_kaffeemaschine",
+        "name": null,
         "object_id_base": "Button Küche Kaffeemaschine",
         "options": {
           "conversation": {
@@ -13086,7 +13086,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-26T14:20:38.875546+00:00",
-        "name": "automation.button_bett_joshua",
+        "name": null,
         "object_id_base": "Button Zimmer Joshua Nachttisch",
         "options": {
           "conversation": {
@@ -13466,7 +13466,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-26T14:20:38.875671+00:00",
-        "name": "automation.button_nachttisch_julian",
+        "name": null,
         "object_id_base": "Button Zimmer Julian Nachttisch",
         "options": {
           "conversation": {
@@ -13508,7 +13508,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.316732+00:00",
-        "name": "automation.button_stephan",
+        "name": null,
         "object_id_base": "Button Schlafzimmer Stephan Nachttisch",
         "options": {
           "conversation": {
@@ -13550,7 +13550,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.316830+00:00",
-        "name": "automation.presence_stephan",
+        "name": null,
         "object_id_base": "Präsenz Stephan",
         "options": {
           "conversation": {
@@ -13594,7 +13594,7 @@
         "id": "16872a04566215bec1ab79c6555b726b",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T21:27:28.375206+00:00",
+        "modified_at": "2026-04-28T22:35:36.077615+00:00",
         "name": "switch.dresden_elektronik_raspbee_ii_no_name_group_0x001e",
         "object_id_base": "No name group 0x001E",
         "options": {
@@ -14656,12 +14656,12 @@
         "categories": {},
         "capabilities": {
           "event_types": [
-            "double_push",
             "long_push",
-            "btn_down",
-            "single_push",
             "triple_push",
-            "btn_up"
+            "btn_up",
+            "double_push",
+            "single_push",
+            "btn_down"
           ]
         },
         "config_entry_id": "023392263c304cef8b730e8dc3c7dd04",
@@ -14677,7 +14677,7 @@
         "id": "a1dfc3f931e29d4ba0c36904e4a4bd1e",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T21:27:25.424529+00:00",
+        "modified_at": "2026-04-28T22:35:33.157270+00:00",
         "name": "event.gang_licht_input_0",
         "object_id_base": "Input ",
         "options": {
@@ -15223,7 +15223,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.317029+00:00",
-        "name": "automation.set_energy_cost",
+        "name": null,
         "object_id_base": "Energie Tarif Kosten",
         "options": {
           "conversation": {
@@ -15517,7 +15517,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.317150+00:00",
-        "name": "automation.wc_luftung",
+        "name": null,
         "object_id_base": "Lüftung WC Auto",
         "options": {
           "conversation": {
@@ -16351,7 +16351,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-26T14:20:38.875958+00:00",
-        "name": "automation.button_zimmer_julian_schreibtisch",
+        "name": null,
         "object_id_base": "Button Zimmer Julian Schreibtisch",
         "options": {
           "conversation": {
@@ -16393,7 +16393,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.317314+00:00",
-        "name": "automation.autolight_bad",
+        "name": null,
         "object_id_base": "Licht Bad Auto",
         "options": {
           "conversation": {
@@ -17434,7 +17434,7 @@
         "id": "e71c189c2ebedf7d35a9572b4aee1188",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T21:27:28.342730+00:00",
+        "modified_at": "2026-04-28T22:35:36.043632+00:00",
         "name": "light.dresden_elektronik_raspbee_ii_no_name_group_0x000f",
         "object_id_base": "No name group 0x000F",
         "options": {
@@ -17605,7 +17605,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.317411+00:00",
-        "name": "automation.auto_music_bad",
+        "name": null,
         "object_id_base": "Musik Bad Auto",
         "options": {
           "conversation": {
@@ -17647,7 +17647,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.317514+00:00",
-        "name": "automation.dorbell",
+        "name": null,
         "object_id_base": "Benachrichtigung Eingang Klingel",
         "options": {
           "conversation": {
@@ -21537,7 +21537,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.317608+00:00",
-        "name": "automation.sound_auto_group_after_tv",
+        "name": null,
         "object_id_base": "Sound Wohnzimmer Gruppe TV Aus",
         "options": {
           "conversation": {
@@ -21663,7 +21663,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.317703+00:00",
-        "name": "automation.auto_off_trolley_low_power_usage",
+        "name": null,
         "object_id_base": "Schalter Trolley Auto Aus Leistung",
         "options": {
           "conversation": {
@@ -21705,7 +21705,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.317796+00:00",
-        "name": "automation.auto_switch_trolley_on",
+        "name": null,
         "object_id_base": "Schalter Trolley Auto Ein",
         "options": {
           "conversation": {
@@ -23139,7 +23139,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.317891+00:00",
-        "name": "automation.auto_light_wc",
+        "name": null,
         "object_id_base": "Licht WC Auto",
         "options": {
           "conversation": {
@@ -23181,7 +23181,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.317986+00:00",
-        "name": "automation.auto_light_zimmer_julian",
+        "name": null,
         "object_id_base": "Licht Zimmer Julian Auto",
         "options": {
           "conversation": {
@@ -24059,7 +24059,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.318086+00:00",
-        "name": "automation.auto_light_zimmer_joshua",
+        "name": null,
         "object_id_base": "Licht Zimmer Joshua Auto",
         "options": {
           "conversation": {
@@ -24231,7 +24231,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.318182+00:00",
-        "name": "automation.auto_an_abwaschmaschine",
+        "name": null,
         "object_id_base": "Schalter Küche Abwaschmaschine Auto Ein",
         "options": {
           "conversation": {
@@ -24273,7 +24273,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.318275+00:00",
-        "name": "automation.new_automation",
+        "name": null,
         "object_id_base": "Automation Abwaschmaschine Auto Ein Aktivierung",
         "options": {
           "conversation": {
@@ -31562,7 +31562,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.318371+00:00",
-        "name": "automation.auto_on_tv",
+        "name": null,
         "object_id_base": "Schalter Wohnzimmer TV Auto Ein",
         "options": {
           "conversation": {
@@ -39721,7 +39721,7 @@
         "id": "8a7bdc10f62bafa7d05159479a4ba08d",
         "has_entity_name": false,
         "labels": [],
-        "modified_at": "2026-04-28T21:27:24.351413+00:00",
+        "modified_at": "2026-04-28T22:35:32.076383+00:00",
         "name": "sensor.sh_pro3_em_total_active_energy_cost",
         "object_id_base": null,
         "options": {
@@ -39957,7 +39957,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.318465+00:00",
-        "name": "automation.wohnraum_scene_change",
+        "name": null,
         "object_id_base": "Szene Wohnraum Auswahl",
         "options": {
           "conversation": {
@@ -40000,7 +40000,7 @@
         "id": "a94bd29d20c44dae5d81d7230dbda193",
         "has_entity_name": false,
         "labels": [],
-        "modified_at": "2026-04-28T21:27:42.566903+00:00",
+        "modified_at": "2026-04-28T22:35:50.279621+00:00",
         "name": "light.esstisch_2",
         "object_id_base": "Esstisch",
         "options": {
@@ -40259,7 +40259,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.318561+00:00",
-        "name": "automation.scene_change_buro",
+        "name": null,
         "object_id_base": "Szene Büro Auswahl",
         "options": {
           "conversation": {
@@ -40347,7 +40347,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.318659+00:00",
-        "name": "automation.scene_change_esstisch",
+        "name": null,
         "object_id_base": "Szene Essraum Auswahl",
         "options": {
           "conversation": {
@@ -49056,12 +49056,12 @@
         "categories": {},
         "capabilities": {
           "event_types": [
-            "double_push",
             "long_push",
-            "btn_down",
-            "single_push",
             "triple_push",
-            "btn_up"
+            "btn_up",
+            "double_push",
+            "single_push",
+            "btn_down"
           ]
         },
         "config_entry_id": "01JAXMMMSYS45DJN1VR0C7YNCS",
@@ -49077,7 +49077,7 @@
         "id": "7e408951cc5a35c75f95efa48245963a",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T21:27:25.433499+00:00",
+        "modified_at": "2026-04-28T22:35:33.170655+00:00",
         "name": "event.sh_sofa_tv_led_input_0",
         "object_id_base": "Input 0",
         "options": {
@@ -49105,12 +49105,12 @@
         "categories": {},
         "capabilities": {
           "event_types": [
-            "double_push",
             "long_push",
-            "btn_down",
-            "single_push",
             "triple_push",
-            "btn_up"
+            "btn_up",
+            "double_push",
+            "single_push",
+            "btn_down"
           ]
         },
         "config_entry_id": "01JAXMMMSYS45DJN1VR0C7YNCS",
@@ -49126,7 +49126,7 @@
         "id": "ced54e311dea35ece8e32020ad788410",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T21:27:25.433658+00:00",
+        "modified_at": "2026-04-28T22:35:33.170854+00:00",
         "name": "event.sh_sofa_tv_led_input_1",
         "object_id_base": "Input 1",
         "options": {
@@ -49154,12 +49154,12 @@
         "categories": {},
         "capabilities": {
           "event_types": [
-            "double_push",
             "long_push",
-            "btn_down",
-            "single_push",
             "triple_push",
-            "btn_up"
+            "btn_up",
+            "double_push",
+            "single_push",
+            "btn_down"
           ]
         },
         "config_entry_id": "01JAXMMMSYS45DJN1VR0C7YNCS",
@@ -49175,7 +49175,7 @@
         "id": "61375f2a4ed3210e18b32829680335a1",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T21:27:25.433767+00:00",
+        "modified_at": "2026-04-28T22:35:33.171009+00:00",
         "name": "event.sh_sofa_tv_led_input_2",
         "object_id_base": "Input 2",
         "options": {
@@ -49203,12 +49203,12 @@
         "categories": {},
         "capabilities": {
           "event_types": [
-            "double_push",
             "long_push",
-            "btn_down",
-            "single_push",
             "triple_push",
-            "btn_up"
+            "btn_up",
+            "double_push",
+            "single_push",
+            "btn_down"
           ]
         },
         "config_entry_id": "01JAXMMMSYS45DJN1VR0C7YNCS",
@@ -49224,7 +49224,7 @@
         "id": "60318c6b841cf8154f07ffeabf194c58",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T21:27:25.433870+00:00",
+        "modified_at": "2026-04-28T22:35:33.171137+00:00",
         "name": "event.sh_sofa_tv_led_input_3",
         "object_id_base": "Input 3",
         "options": {
@@ -53122,7 +53122,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.318758+00:00",
-        "name": "automation.auto_luftung_bad",
+        "name": null,
         "object_id_base": "Lüftung Bad Auto",
         "options": {
           "conversation": {
@@ -59575,7 +59575,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.318953+00:00",
-        "name": "automation.auto_lights_turn_off",
+        "name": null,
         "object_id_base": "Licht Wohnung Alles Aus",
         "options": {
           "conversation": {
@@ -59617,7 +59617,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.319083+00:00",
-        "name": "automation.auto_lights_turn_on",
+        "name": null,
         "object_id_base": "Licht Wohnung Alles Ein",
         "options": {
           "conversation": {
@@ -59659,7 +59659,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.319185+00:00",
-        "name": "automation.sound_pause_on_tv_play",
+        "name": null,
         "object_id_base": "Sound Wohnung Pause TV",
         "options": {
           "conversation": {
@@ -60106,7 +60106,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.319373+00:00",
-        "name": "automation.weihnachtsdeko",
+        "name": null,
         "object_id_base": "Schalter Wohnung Weihnachtsdeko",
         "options": {
           "conversation": {
@@ -60555,7 +60555,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.319467+00:00",
-        "name": "automation.button_sound_control_buro",
+        "name": null,
         "object_id_base": "Button Büro Sound Steuerung",
         "options": {
           "conversation": {
@@ -69228,7 +69228,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.319571+00:00",
-        "name": "automation.coiffeur_nora",
+        "name": null,
         "object_id_base": "Benachrichtigung Website Coiffeur Nora",
         "options": {
           "conversation": {
@@ -69270,7 +69270,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.319669+00:00",
-        "name": "automation.monitoring_webpages",
+        "name": null,
         "object_id_base": "Benachrichtigung Website Offline",
         "options": {
           "conversation": {
@@ -69312,7 +69312,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.319758+00:00",
-        "name": "automation.website_monitoring_sensor_update",
+        "name": null,
         "object_id_base": "Benachrichtigung Website Monitor Störung",
         "options": {
           "conversation": {
@@ -84174,7 +84174,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.319850+00:00",
-        "name": "automation.bad_entfeuchter",
+        "name": null,
         "object_id_base": "Schalter Bad Entfeuchter",
         "options": {
           "conversation": {
@@ -84462,7 +84462,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.319944+00:00",
-        "name": "automation.music_wc",
+        "name": null,
         "object_id_base": "Musik WC Auto",
         "options": {
           "conversation": {
@@ -84544,7 +84544,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.320043+00:00",
-        "name": "automation.turn_in_tv_board",
+        "name": null,
         "object_id_base": "Schalter Wohnzimmer TV Board Ein",
         "options": {
           "conversation": {
@@ -84586,7 +84586,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.320135+00:00",
-        "name": "automation.turn_off_3d_printer",
+        "name": null,
         "object_id_base": "Schalter Büro 3D Drucker Aus",
         "options": {
           "conversation": {
@@ -86186,7 +86186,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-26T15:07:49.608835+00:00",
-        "name": "automation.button_zimmer_joshua_schreibtisch",
+        "name": null,
         "object_id_base": "Button Zimmer Joshua Schreibtisch",
         "options": {
           "conversation": {
@@ -86594,7 +86594,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.314702+00:00",
-        "name": "automation.nachtlimit_deckenlicht_zimmer",
+        "name": null,
         "object_id_base": "Licht Zimmer Nachtlimit Decke",
         "options": {
           "conversation": {
@@ -86636,7 +86636,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.314844+00:00",
-        "name": "automation.nacht_spezial_dimmung_auto_reaktivieren",
+        "name": null,
         "object_id_base": "Modus Nacht Gast Auto Aus",
         "options": {
           "conversation": {
@@ -87732,7 +87732,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.315855+00:00",
-        "name": "automation.weckfunktion_zimmer",
+        "name": null,
         "object_id_base": "Wecker Zimmer Familie",
         "options": {
           "conversation": {
@@ -87774,7 +87774,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T20:59:27.316924+00:00",
-        "name": "automation.presence_kids_home_julian",
+        "name": null,
         "object_id_base": "Präsenz Julian Kinder Zuhause",
         "options": {
           "conversation": {

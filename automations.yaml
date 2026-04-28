@@ -2073,17 +2073,17 @@
       volume_level: 0.07
     action: media_player.volume_set
     target:
-      device_id:
-      - f5cf1c02cb417dd268c3770a3a4e20be
-      - 6c22b372a67cf23be0d014bf853a300e
-      - ee2c163f604aaac32db5a2ac0b54afe6
+      entity_id:
+      - media_player.wohnraum
+      - media_player.essraum
+      - media_player.schlafzimmer_stephan
   - data:
       group_members:
-      - media_player.buro
-      - media_player.stephan
+      - media_player.essraum
+      - media_player.schlafzimmer_stephan
     action: media_player.join
     target:
-      device_id: f5cf1c02cb417dd268c3770a3a4e20be
+      entity_id: media_player.wohnraum
   - action: input_boolean.turn_on
     metadata: {}
     data: {}
@@ -2586,20 +2586,20 @@
   - action: media_player.media_pause
     data: {}
     target:
-      device_id:
-      - f5cf1c02cb417dd268c3770a3a4e20be
-      - 6c22b372a67cf23be0d014bf853a300e
-      - ee2c163f604aaac32db5a2ac0b54afe6
+      entity_id:
+      - media_player.wohnraum
+      - media_player.essraum
+      - media_player.schlafzimmer_stephan
   - action: media_player.unjoin
     metadata: {}
     data: {}
     target:
-      device_id: f5cf1c02cb417dd268c3770a3a4e20be
+      entity_id: media_player.wohnraum
   - data:
       volume_level: 0.19
     action: media_player.volume_set
     target:
-      device_id: f5cf1c02cb417dd268c3770a3a4e20be
+      entity_id: media_player.wohnraum
   - action: input_boolean.turn_off
     target:
       entity_id:

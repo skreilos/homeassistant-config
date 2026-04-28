@@ -68,3 +68,18 @@ guest_mode:
   icon: mdi:account-group
   initial: off
 
+wakeup_enabled_stephan:
+  name: Weckfunktion Stephan Aktiv
+  icon: mdi:alarm-check
+  initial: on
+
+wakeup_enabled_julian:
+  name: Weckfunktion Julian Aktiv
+  icon: mdi:alarm-check
+  initial: on
+
+wakeup_enabled_joshua:
+  name: Weckfunktion Joshua Aktiv
+  icon: mdi:alarm-check
+  initial: on
+

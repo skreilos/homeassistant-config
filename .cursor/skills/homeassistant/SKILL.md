@@ -48,6 +48,18 @@ When the user asks for deploy help, always provide:
 3. A short "verify" step with expected outcome.
 4. A fallback path if one command fails.
 
+## Default execution mode for this project
+
+If the user requests ongoing implementation work in this Home Assistant repo, default to:
+
+1. Apply the requested config/code changes.
+2. Run a quick sanity check on touched files.
+3. Commit immediately.
+4. Push immediately to `main`.
+5. Return the commit hash and required server pull/restart commands.
+
+Only skip commit/push if the user explicitly says not to commit yet.
+
 When the user asks for `commit` + `push` (or equivalent):
 
 1. First provide a short summary of commit hash + push result.

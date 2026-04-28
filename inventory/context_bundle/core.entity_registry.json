@@ -10591,7 +10591,7 @@
         "id": "0a1f9d1ee2e43871542bb9bcba766ed6",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T20:59:27.238832+00:00",
+        "modified_at": "2026-04-28T21:27:28.342399+00:00",
         "name": "light.dresden_elektronik_raspbee_ii_no_name_group_0xfff0",
         "object_id_base": "No name group 0xFFF0",
         "options": {
@@ -11777,7 +11777,7 @@
         "id": "4a6fcad1e7f83ddef97606cc40055e4e",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T20:59:27.272684+00:00",
+        "modified_at": "2026-04-28T21:27:28.374931+00:00",
         "name": "switch.dresden_elektronik_raspbee_ii_no_name_group_0xfff0",
         "object_id_base": "No name group 0xFFF0",
         "options": {
@@ -13594,7 +13594,7 @@
         "id": "16872a04566215bec1ab79c6555b726b",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T20:59:27.273008+00:00",
+        "modified_at": "2026-04-28T21:27:28.375206+00:00",
         "name": "switch.dresden_elektronik_raspbee_ii_no_name_group_0x001e",
         "object_id_base": "No name group 0x001E",
         "options": {
@@ -14660,8 +14660,8 @@
             "long_push",
             "btn_down",
             "single_push",
-            "btn_up",
-            "triple_push"
+            "triple_push",
+            "btn_up"
           ]
         },
         "config_entry_id": "023392263c304cef8b730e8dc3c7dd04",
@@ -14677,7 +14677,7 @@
         "id": "a1dfc3f931e29d4ba0c36904e4a4bd1e",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T20:59:24.343875+00:00",
+        "modified_at": "2026-04-28T21:27:25.424529+00:00",
         "name": "event.gang_licht_input_0",
         "object_id_base": "Input ",
         "options": {
@@ -17434,7 +17434,7 @@
         "id": "e71c189c2ebedf7d35a9572b4aee1188",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T20:59:27.239224+00:00",
+        "modified_at": "2026-04-28T21:27:28.342730+00:00",
         "name": "light.dresden_elektronik_raspbee_ii_no_name_group_0x000f",
         "object_id_base": "No name group 0x000F",
         "options": {
@@ -39721,7 +39721,7 @@
         "id": "8a7bdc10f62bafa7d05159479a4ba08d",
         "has_entity_name": false,
         "labels": [],
-        "modified_at": "2026-04-28T20:59:24.230946+00:00",
+        "modified_at": "2026-04-28T21:27:24.351413+00:00",
         "name": "sensor.sh_pro3_em_total_active_energy_cost",
         "object_id_base": null,
         "options": {
@@ -40000,7 +40000,7 @@
         "id": "a94bd29d20c44dae5d81d7230dbda193",
         "has_entity_name": false,
         "labels": [],
-        "modified_at": "2026-04-28T20:59:45.372291+00:00",
+        "modified_at": "2026-04-28T21:27:42.566903+00:00",
         "name": "light.esstisch_2",
         "object_id_base": "Esstisch",
         "options": {
@@ -49060,8 +49060,8 @@
             "long_push",
             "btn_down",
             "single_push",
-            "btn_up",
-            "triple_push"
+            "triple_push",
+            "btn_up"
           ]
         },
         "config_entry_id": "01JAXMMMSYS45DJN1VR0C7YNCS",
@@ -49077,7 +49077,7 @@
         "id": "7e408951cc5a35c75f95efa48245963a",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T20:59:24.346889+00:00",
+        "modified_at": "2026-04-28T21:27:25.433499+00:00",
         "name": "event.sh_sofa_tv_led_input_0",
         "object_id_base": "Input 0",
         "options": {
@@ -49109,8 +49109,8 @@
             "long_push",
             "btn_down",
             "single_push",
-            "btn_up",
-            "triple_push"
+            "triple_push",
+            "btn_up"
           ]
         },
         "config_entry_id": "01JAXMMMSYS45DJN1VR0C7YNCS",
@@ -49126,7 +49126,7 @@
         "id": "ced54e311dea35ece8e32020ad788410",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T20:59:24.347073+00:00",
+        "modified_at": "2026-04-28T21:27:25.433658+00:00",
         "name": "event.sh_sofa_tv_led_input_1",
         "object_id_base": "Input 1",
         "options": {
@@ -49158,8 +49158,8 @@
             "long_push",
             "btn_down",
             "single_push",
-            "btn_up",
-            "triple_push"
+            "triple_push",
+            "btn_up"
           ]
         },
         "config_entry_id": "01JAXMMMSYS45DJN1VR0C7YNCS",
@@ -49175,7 +49175,7 @@
         "id": "61375f2a4ed3210e18b32829680335a1",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T20:59:24.347209+00:00",
+        "modified_at": "2026-04-28T21:27:25.433767+00:00",
         "name": "event.sh_sofa_tv_led_input_2",
         "object_id_base": "Input 2",
         "options": {
@@ -49207,8 +49207,8 @@
             "long_push",
             "btn_down",
             "single_push",
-            "btn_up",
-            "triple_push"
+            "triple_push",
+            "btn_up"
           ]
         },
         "config_entry_id": "01JAXMMMSYS45DJN1VR0C7YNCS",
@@ -49224,7 +49224,7 @@
         "id": "60318c6b841cf8154f07ffeabf194c58",
         "has_entity_name": true,
         "labels": [],
-        "modified_at": "2026-04-28T20:59:24.347337+00:00",
+        "modified_at": "2026-04-28T21:27:25.433870+00:00",
         "name": "event.sh_sofa_tv_led_input_3",
         "object_id_base": "Input 3",
         "options": {
@@ -60024,7 +60024,7 @@
         "has_entity_name": false,
         "labels": [],
         "modified_at": "2026-04-28T21:07:53.010935+00:00",
-        "name": "Alles aus alarm an",
+        "name": "Alarm Wohnung Alles Aus",
         "object_id_base": "Alarm Wohnung Alles Aus",
         "options": {
           "conversation": {

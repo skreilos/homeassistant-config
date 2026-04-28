@@ -3,7 +3,7 @@ entities:
   - entity_id: "automation.alarm_wohnung_alles_aus"
     domain: "automation"
     platform: "automation"
-    name: "Alles aus alarm an"
+    name: "Alarm Wohnung Alles Aus"
     original_name: "Alarm Wohnung Alles Aus"
     area_id: null
     area_name: null

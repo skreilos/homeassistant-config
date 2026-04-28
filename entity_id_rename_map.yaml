@@ -1,4 +1,5 @@
 entity_id_renames:
+  automation.alles_aus_alarm_an: automation.alarm_wohnung_alles_aus
   automation.auto_light_spielzimmer: automation.auto_light_zimmer_julian
   automation.button_arbeitstisch: automation.button_zimmer_julian_schreibtisch
   automation.mobile_schalter_spielzimmer_v2: automation.mobile_schalter_zimmer_julian_v2

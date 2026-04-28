@@ -35,19 +35,41 @@
       - service: light.turn_on
         data:
           brightness_pct: >
-            {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
-            {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-            {% set in_night = (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') %}
-            {{ states('input_number.night_brightness_kuche') | int if in_night else 100 }}
+            {% set start_s = states('input_datetime.night_auto_light_start') %}
+            {% set end_s = states('input_datetime.night_auto_light_end') %}
+            {% set invalid = ['unknown', 'unavailable', 'none', ''] %}
+            {% if start_s in invalid or end_s in invalid %}
+              {% set in_night = false %}
+            {% else %}
+              {% set start = today_at(start_s) %}
+              {% set end = today_at(end_s) %}
+              {% if end <= start %}
+                {% set in_night = now() >= start or now() < end %}
+              {% else %}
+                {% set in_night = now() >= start and now() < end %}
+              {% endif %}
+            {% endif %}
+            {{ states('input_number.night_brightness_kuche') | int if (in_night and is_state('input_boolean.guest_mode', 'off')) else 100 }}
         target:
           area_id: kuche
       - choose:
         - conditions:
           - condition: template
             value_template: >
-              {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
-              {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-              {% set in_night = now() >= start or now() < end %}
+              {% set start_s = states('input_datetime.night_auto_light_start') %}
+              {% set end_s = states('input_datetime.night_auto_light_end') %}
+              {% set invalid = ['unknown', 'unavailable', 'none', ''] %}
+              {% if start_s in invalid or end_s in invalid %}
+                {% set in_night = false %}
+              {% else %}
+                {% set start = today_at(start_s) %}
+                {% set end = today_at(end_s) %}
+                {% if end <= start %}
+                  {% set in_night = now() >= start or now() < end %}
+                {% else %}
+                  {% set in_night = now() >= start and now() < end %}
+                {% endif %}
+              {% endif %}
               {{ (not in_night) or is_state('input_boolean.guest_mode', 'on') }}
           sequence:
           - service: switch.turn_on
@@ -80,12 +102,7 @@
     - switch.sh_schlafzimmer_kinder_switch_0
     to: 'on'
     trigger: state
-  conditions:
-  - condition: template
-    value_template: >
-      {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
-      {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-      {{ (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') }}
+  conditions: []
   actions:
   - variables:
       target_light: >
@@ -106,12 +123,52 @@
         {% else %}
           20
         {% endif %}
-  - target:
-      entity_id: "{{ target_light }}"
-    data:
-      brightness_pct: "{{ night_pct | int }}"
-      transition: 1
-    action: light.turn_on
+      start_entity: >
+        {% if target_light == 'light.stefan_deckenlicht_light_3' %}
+          input_datetime.night_auto_light_start_stephan
+        {% elif target_light == 'light.deckenlicht_zimmer_julian_light' %}
+          input_datetime.night_auto_light_start_julian
+        {% elif target_light == 'light.zimmer_joshua_deckenlicht_light' %}
+          input_datetime.night_auto_light_start_joshua
+        {% else %}
+          input_datetime.night_auto_light_start
+        {% endif %}
+      end_entity: >
+        {% if target_light == 'light.stefan_deckenlicht_light_3' %}
+          input_datetime.night_auto_light_end_stephan
+        {% elif target_light == 'light.deckenlicht_zimmer_julian_light' %}
+          input_datetime.night_auto_light_end_julian
+        {% elif target_light == 'light.zimmer_joshua_deckenlicht_light' %}
+          input_datetime.night_auto_light_end_joshua
+        {% else %}
+          input_datetime.night_auto_light_end
+        {% endif %}
+      in_night: >
+        {% set start_s = states(start_entity | trim) %}
+        {% set end_s = states(end_entity | trim) %}
+        {% set invalid = ['unknown', 'unavailable', 'none', ''] %}
+        {% if start_s in invalid or end_s in invalid %}
+          false
+        {% else %}
+          {% set start = today_at(start_s) %}
+          {% set end = today_at(end_s) %}
+          {% if end <= start %}
+            {{ now() >= start or now() < end }}
+          {% else %}
+            {{ now() >= start and now() < end }}
+          {% endif %}
+        {% endif %}
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: "{{ in_night | bool and is_state('input_boolean.guest_mode', 'off') }}"
+      sequence:
+      - target:
+          entity_id: "{{ target_light }}"
+        data:
+          brightness_pct: "{{ night_pct | int }}"
+          transition: 1
+        action: light.turn_on
   mode: queued
   max: 10
 - id: '1761513800002'
@@ -289,9 +346,20 @@
         - conditions:
           - condition: template
             value_template: >
-              {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
-              {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-              {{ (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') }}
+              {% set start_s = states('input_datetime.night_auto_light_start') %}
+              {% set end_s = states('input_datetime.night_auto_light_end') %}
+              {% set invalid = ['unknown', 'unavailable', 'none', ''] %}
+              {% if start_s in invalid or end_s in invalid %}
+                false
+              {% else %}
+                {% set start = today_at(start_s) %}
+                {% set end = today_at(end_s) %}
+                {% if end <= start %}
+                  {{ (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') }}
+                {% else %}
+                  {{ (now() >= start and now() < end) and is_state('input_boolean.guest_mode', 'off') }}
+                {% endif %}
+              {% endif %}
           sequence:
           - action: light.turn_on
             data:
@@ -341,10 +409,21 @@
       sequence:
       - data:
           brightness_pct: >
-            {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
-            {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-            {% set in_night = (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') %}
-            {{ states('input_number.night_brightness_sofa') | int if in_night else 100 }}
+            {% set start_s = states('input_datetime.night_auto_light_start') %}
+            {% set end_s = states('input_datetime.night_auto_light_end') %}
+            {% set invalid = ['unknown', 'unavailable', 'none', ''] %}
+            {% if start_s in invalid or end_s in invalid %}
+              {% set in_night = false %}
+            {% else %}
+              {% set start = today_at(start_s) %}
+              {% set end = today_at(end_s) %}
+              {% if end <= start %}
+                {% set in_night = now() >= start or now() < end %}
+              {% else %}
+                {% set in_night = now() >= start and now() < end %}
+              {% endif %}
+            {% endif %}
+            {{ states('input_number.night_brightness_sofa') | int if (in_night and is_state('input_boolean.guest_mode', 'off')) else 100 }}
         target:
           device_id:
           - be31456f9d9558edd71e8b8a50022e18
@@ -361,18 +440,17 @@
         - Motion Sofa Off
       - condition: or
         conditions:
-        - condition: device
-          device_id: 2d0456d52fa68e75d63f68b94fa5ca8b
-          domain: media_player
-          entity_id: 695de244ff3cd16bd35521a922ef20cd
-          type: is_off
-        - condition: device
-          device_id: 2d0456d52fa68e75d63f68b94fa5ca8b
-          domain: media_player
-          entity_id: 695de244ff3cd16bd35521a922ef20cd
-          type: is_idle
         - condition: state
-          entity_id: media_player.android_tv_10_0_0_22
+          entity_id: media_player.tv
+          state: 'off'
+        - condition: state
+          entity_id: media_player.tv
+          state: idle
+        - condition: state
+          entity_id: media_player.tv
+          state: unavailable
+        - condition: state
+          entity_id: media_player.android_tv_10_0_0_220
           state: unavailable
       sequence:
       - data: {}
@@ -531,22 +609,6 @@
       message: Door has been opened
       title: Door
   mode: single
-- id: '1692819475252'
-  alias: Routine - Morgen - Everyday
-  description: ''
-  triggers:
-  - at: 06:55:00
-    trigger: time
-  conditions:
-  - condition: state
-    entity_id: input_boolean.kids_home
-    state: 'on'
-  actions:
-  - data: {}
-    target:
-      entity_id: input_boolean.nightmode
-    action: input_boolean.turn_off
-  mode: single
 - id: '1692820516847'
   alias: Routine - Abend - Everyday
   description: ''
@@ -563,204 +625,346 @@
     target:
       entity_id: input_boolean.nightmode
   mode: single
-- id: '1692820704454'
-  alias: Routine - Morgen - Workdays
-  description: ''
+- id: '1761684000001'
+  alias: Weckfunktion Zimmer
+  description: Schaltet pro Zimmer Deckenlicht und Nachttisch zu konfigurierter Weckzeit
   triggers:
-  - at: 06:55:00
+  - at: input_datetime.wakeup_weekday_time_stephan
+    id: stephan_weekday_on
+    trigger: time
+  - at: input_datetime.wakeup_weekend_time_stephan
+    id: stephan_weekend_on
+    trigger: time
+  - at: input_datetime.wakeup_weekday_end_time_stephan
+    id: stephan_weekday_off
+    trigger: time
+  - at: input_datetime.wakeup_weekend_end_time_stephan
+    id: stephan_weekend_off
+    trigger: time
+  - at: input_datetime.wakeup_weekday_time_julian
+    id: julian_weekday_on
+    trigger: time
+  - at: input_datetime.wakeup_weekend_time_julian
+    id: julian_weekend_on
+    trigger: time
+  - at: input_datetime.wakeup_weekday_end_time_julian
+    id: julian_weekday_off
+    trigger: time
+  - at: input_datetime.wakeup_weekend_end_time_julian
+    id: julian_weekend_off
+    trigger: time
+  - at: input_datetime.wakeup_weekday_time_joshua
+    id: joshua_weekday_on
+    trigger: time
+  - at: input_datetime.wakeup_weekend_time_joshua
+    id: joshua_weekend_on
+    trigger: time
+  - at: input_datetime.wakeup_weekday_end_time_joshua
+    id: joshua_weekday_off
+    trigger: time
+  - at: input_datetime.wakeup_weekend_end_time_joshua
+    id: joshua_weekend_off
     trigger: time
   conditions:
-  - condition: and
-    conditions:
-    - condition: state
-      entity_id: input_boolean.kids_home
-      state: 'on'
-    - condition: state
-      entity_id: input_boolean.alarm_active
-      state: 'off'
-    - condition: time
-      before: 07:00:00
-      after: 06:40:00
-      weekday:
-      - mon
-      - wed
-      - thu
-      - fri
-      - tue
+  - condition: state
+    entity_id: input_boolean.alarm_active
+    state: 'off'
   actions:
-  - data:
-      transition: 19
-    target:
-      area_id:
-      - joshua
-    action: light.turn_on
-  - data:
-      transition: 20
-    action: light.turn_on
-    target:
-      area_id: schlafzimmer
-  - action: switch.turn_on
-    metadata: {}
-    data: {}
-    target:
-      device_id:
-      - 94cc912ee2e36e2b1729915273714518
-      - 29bebceb57edffb25da52febde808a9e
-      - 39c23fb1cbd1d92b9c93780eeed3cfb4
-      - a3e1db2d95ab52e549c92ec4ac6bc0b5
-  - data:
-      volume_level: 0.08
-    action: media_player.volume_set
-    target:
-      entity_id:
-      - media_player.zimmer_julian
-      - media_player.buro
-      - media_player.tv
-      - media_player.stephan
-  - data: {}
-    action: media_player.unjoin
-    target:
-      entity_id:
-      - media_player.buro
-      - media_player.stephan
-      - media_player.tv
-  - data:
-      group_members:
-      - media_player.buro
-      - media_player.zimmer_joshua
-      - media_player.stephan
-    target:
-      entity_id:
-      - media_player.tv
-    action: media_player.join
-  - data:
-      shuffle: true
-    action: media_player.shuffle_set
-    target:
-      entity_id: media_player.tv
-  - target:
-      entity_id: media_player.tv
-    data:
-      media:
-        media_content_id: FV:2/60
-        media_content_type: favorite_item_id
-        metadata:
-          title: Button
-          thumbnail: https://yt3.googleusercontent.com/5Y3_lxhYlfZKxr-aHMA35O1BhNM02MRKlz5bIfMH5KVcazLiPkrT-Xa3dvig6MSB700WJTfqTX2Q=s576
-          media_class: playlist
-          children_media_class:
-          navigateIds:
-          - {}
-          - media_content_type: favorites_folder
-            media_content_id: object.container.playlistContainer
-    action: media_player.play_media
-  - delay:
-      hours: 0
-      minutes: 5
-      seconds: 0
-      milliseconds: 0
-  - data:
-      volume_level: 0.1
-    action: media_player.volume_set
-    target:
-      entity_id:
-      - media_player.tv
-      - media_player.buro
-      - media_player.stephan
-      - media_player.zimmer_joshua
-  - delay:
-      hours: 0
-      minutes: 30
-      seconds: 0
-      milliseconds: 0
-  - action: media_player.unjoin
-    metadata: {}
-    data: {}
-    target:
-      entity_id: media_player.zimmer_joshua
-  - action: light.turn_off
-    metadata: {}
-    data: {}
-    target:
-      area_id: wohnzimmer
-  - action: switch.turn_off
-    metadata: {}
-    data: {}
-    target:
-      device_id:
-      - 94cc912ee2e36e2b1729915273714518
-      - 29bebceb57edffb25da52febde808a9e
-      - 39c23fb1cbd1d92b9c93780eeed3cfb4
-      - a3e1db2d95ab52e549c92ec4ac6bc0b5
-  mode: single
-- id: '1692822759848'
-  alias: Routine - Morgen - Workdays II
-  description: ''
-  trigger:
-  - platform: time
-    at: 06:40:00
-  condition:
-  - condition: and
-    conditions:
-    - condition: time
-      before: 08:00:00
-      after: 06:40:00
-      weekday:
-      - mon
-      - wed
-      - thu
-      - fri
-      - tue
-    - condition: state
-      entity_id: input_boolean.alarm_active
-      state: 'off'
-  action:
-  - service: media_player.join
-    data:
-      group_members:
-      - media_player.stephan
-      - media_player.zimmer_joshua
-      - media_player.wohnzimmer
-      - media_player.buro
-    target:
-      device_id: 9ba04750d35a4dc510fbe8367105f3d0
-  - service: media_player.volume_set
-    data:
-      volume_level: 0.1
-    target:
-      device_id:
-      - 0d64c5cf5da823510285018fe730bc0d
-      - 1cc747126a8fcb6a653143c1c3961f3b
-      - 5a9698484a657f0f24c75a463803a038
-      - 9ba04750d35a4dc510fbe8367105f3d0
-  - service: media_player.shuffle_set
-    data:
-      shuffle: true
-    target:
-      device_id: 9ba04750d35a4dc510fbe8367105f3d0
-  - service: media_player.play_media
-    target:
-      entity_id: media_player.wohnzimmer
-    data:
-      media_content_id: FV:2/40
-      media_content_type: favorite_item_id
-    metadata:
-      title: Sanftes Piano
-      thumbnail: https://lh3.googleusercontent.com/s2FlwZJihQ0T4tjoYLI_-KABkUymaqmKJh6MsDCXAka6a7AF-8Nx5LI-QSwmViHDby7eNJKk1NWyiRE=w512-h512-l90-rj
-      media_class: playlist
-      children_media_class:
-      navigateIds:
-      - {}
-      - media_content_type: favorites_folder
-        media_content_id: object.container.playlistContainer
-  - service: light.turn_on
-    data: {}
-    target:
-      area_id:
-      - schlafzimmer
-      - joshua
-      - wohnzimmer
-      - essraum
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - stephan_weekday_on
+      - condition: time
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+      - condition: state
+        entity_id: input_boolean.wakeup_enabled_stephan
+        state: 'on'
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.stefan_deckenlicht_light_3
+        data:
+          brightness_pct: "{{ states('input_number.wakeup_brightness_stephan') | int(35) }}"
+          transition: 8
+      - action: switch.turn_on
+        target:
+          entity_id: switch.sh_schlafzimmer_stephan_switch_0
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - stephan_weekend_on
+      - condition: time
+        weekday:
+        - sat
+        - sun
+      - condition: state
+        entity_id: input_boolean.wakeup_enabled_stephan
+        state: 'on'
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.stefan_deckenlicht_light_3
+        data:
+          brightness_pct: "{{ states('input_number.wakeup_brightness_stephan') | int(35) }}"
+          transition: 8
+      - action: switch.turn_on
+        target:
+          entity_id: switch.sh_schlafzimmer_stephan_switch_0
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - stephan_weekday_off
+      - condition: time
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+      - condition: state
+        entity_id: input_boolean.wakeup_enabled_stephan
+        state: 'on'
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.stefan_deckenlicht_light_3
+        data: {}
+      - action: switch.turn_off
+        target:
+          entity_id: switch.sh_schlafzimmer_stephan_switch_0
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - stephan_weekend_off
+      - condition: time
+        weekday:
+        - sat
+        - sun
+      - condition: state
+        entity_id: input_boolean.wakeup_enabled_stephan
+        state: 'on'
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.stefan_deckenlicht_light_3
+        data: {}
+      - action: switch.turn_off
+        target:
+          entity_id: switch.sh_schlafzimmer_stephan_switch_0
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - julian_weekday_on
+      - condition: time
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+      - condition: state
+        entity_id: input_boolean.wakeup_enabled_julian
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.kids_home
+        state: 'on'
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.deckenlicht_zimmer_julian_light
+        data:
+          brightness_pct: "{{ states('input_number.wakeup_brightness_julian') | int(35) }}"
+          transition: 8
+      - action: switch.turn_on
+        target:
+          entity_id: switch.julian_nachttisch_switch
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - julian_weekend_on
+      - condition: time
+        weekday:
+        - sat
+        - sun
+      - condition: state
+        entity_id: input_boolean.wakeup_enabled_julian
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.kids_home
+        state: 'on'
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.deckenlicht_zimmer_julian_light
+        data:
+          brightness_pct: "{{ states('input_number.wakeup_brightness_julian') | int(35) }}"
+          transition: 8
+      - action: switch.turn_on
+        target:
+          entity_id: switch.julian_nachttisch_switch
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - julian_weekday_off
+      - condition: time
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+      - condition: state
+        entity_id: input_boolean.wakeup_enabled_julian
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.kids_home
+        state: 'on'
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.deckenlicht_zimmer_julian_light
+        data: {}
+      - action: switch.turn_off
+        target:
+          entity_id: switch.julian_nachttisch_switch
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - julian_weekend_off
+      - condition: time
+        weekday:
+        - sat
+        - sun
+      - condition: state
+        entity_id: input_boolean.wakeup_enabled_julian
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.kids_home
+        state: 'on'
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.deckenlicht_zimmer_julian_light
+        data: {}
+      - action: switch.turn_off
+        target:
+          entity_id: switch.julian_nachttisch_switch
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - joshua_weekday_on
+      - condition: time
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+      - condition: state
+        entity_id: input_boolean.wakeup_enabled_joshua
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.kids_home
+        state: 'on'
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.zimmer_joshua_deckenlicht_light
+        data:
+          brightness_pct: "{{ states('input_number.wakeup_brightness_joshua') | int(35) }}"
+          transition: 8
+      - action: switch.turn_on
+        target:
+          entity_id: switch.joshua_nachttisch_switch_2
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - joshua_weekend_on
+      - condition: time
+        weekday:
+        - sat
+        - sun
+      - condition: state
+        entity_id: input_boolean.wakeup_enabled_joshua
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.kids_home
+        state: 'on'
+      sequence:
+      - action: light.turn_on
+        target:
+          entity_id: light.zimmer_joshua_deckenlicht_light
+        data:
+          brightness_pct: "{{ states('input_number.wakeup_brightness_joshua') | int(35) }}"
+          transition: 8
+      - action: switch.turn_on
+        target:
+          entity_id: switch.joshua_nachttisch_switch_2
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - joshua_weekday_off
+      - condition: time
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+      - condition: state
+        entity_id: input_boolean.wakeup_enabled_joshua
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.kids_home
+        state: 'on'
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.zimmer_joshua_deckenlicht_light
+        data: {}
+      - action: switch.turn_off
+        target:
+          entity_id: switch.joshua_nachttisch_switch_2
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - joshua_weekend_off
+      - condition: time
+        weekday:
+        - sat
+        - sun
+      - condition: state
+        entity_id: input_boolean.wakeup_enabled_joshua
+        state: 'on'
+      - condition: state
+        entity_id: input_boolean.kids_home
+        state: 'on'
+      sequence:
+      - action: light.turn_off
+        target:
+          entity_id: light.zimmer_joshua_deckenlicht_light
+        data: {}
+      - action: switch.turn_off
+        target:
+          entity_id: switch.joshua_nachttisch_switch_2
+        data: {}
   mode: single
 - id: '1695326696870'
   alias: Aquarium Light

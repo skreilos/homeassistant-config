@@ -57,3 +57,33 @@ night_brightness_decke_joshua:
   unit_of_measurement: "%"
   icon: mdi:brightness-6
   initial: 20
+
+wakeup_brightness_stephan:
+  name: Weckfunktion Helligkeit Stephan
+  min: 1
+  max: 100
+  step: 1
+  mode: slider
+  unit_of_measurement: "%"
+  icon: mdi:weather-sunset-up
+  initial: 35
+
+wakeup_brightness_julian:
+  name: Weckfunktion Helligkeit Julian
+  min: 1
+  max: 100
+  step: 1
+  mode: slider
+  unit_of_measurement: "%"
+  icon: mdi:weather-sunset-up
+  initial: 35
+
+wakeup_brightness_joshua:
+  name: Weckfunktion Helligkeit Joshua
+  min: 1
+  max: 100
+  step: 1
+  mode: slider
+  unit_of_measurement: "%"
+  icon: mdi:weather-sunset-up
+  initial: 35

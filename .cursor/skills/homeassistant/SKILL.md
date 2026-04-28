@@ -94,6 +94,31 @@ After any commit+push in this project, return **only** this server step first:
 Then wait for user confirmation that config check passed.
 Only after explicit user confirmation, provide restart commands.
 
+### Mandatory output templates (use exactly this flow)
+
+After each local commit+push, output only this block:
+
+```bash
+cd "/data/home-assistant"
+git pull origin main
+```
+
+After user confirms config validation passed, output this full server block:
+
+```bash
+docker restart home-assistant
+python3 scripts/export_entity_snapshot.py --config-dir "/data/home-assistant" --out "/data/home-assistant/inventory/entities_snapshot.yaml"
+git add inventory/entities_snapshot.yaml inventory/areas_snapshot.yaml inventory/devices_snapshot.yaml
+git commit -m "Update entity/area/device snapshots."
+git push origin main
+```
+
+Then output this local sync command:
+
+```bash
+cd "/home/stephanprivat/Dokumente/Development/homeassistant-config" && git pull origin main
+```
+
 When the user asks for `commit` + `push` (or equivalent):
 
 1. First provide a short summary of commit hash + push result.

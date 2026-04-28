@@ -68,7 +68,7 @@ lovelace:
       icon: mdi:lightbulb-auto
       show_in_sidebar: true
       filename: dashboard-light-settings.yaml
-    weckfunktion:
+    weck-funktion:
       mode: yaml
       title: Weckfunktion
       icon: mdi:alarm

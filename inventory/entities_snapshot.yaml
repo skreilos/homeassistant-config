@@ -728,6 +728,19 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: null
+  - entity_id: "automation.weckfunktion_zimmer"
+    domain: "automation"
+    platform: "automation"
+    name: null
+    original_name: "Weckfunktion Zimmer"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: null
   - entity_id: "automation.weihnachtsdeko"
     domain: "automation"
     platform: "automation"
@@ -9035,6 +9048,45 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: "mdi:remote-tv-off"
+  - entity_id: "input_boolean.wakeup_enabled_joshua"
+    domain: "input_boolean"
+    platform: "input_boolean"
+    name: null
+    original_name: "Weckfunktion Joshua Aktiv"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:alarm-check"
+  - entity_id: "input_boolean.wakeup_enabled_julian"
+    domain: "input_boolean"
+    platform: "input_boolean"
+    name: null
+    original_name: "Weckfunktion Julian Aktiv"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:alarm-check"
+  - entity_id: "input_boolean.wakeup_enabled_stephan"
+    domain: "input_boolean"
+    platform: "input_boolean"
+    name: null
+    original_name: "Weckfunktion Stephan Aktiv"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:alarm-check"
   - entity_id: "input_datetime.aquarium_45p_wasserwechsel"
     domain: "input_datetime"
     platform: "input_datetime"
@@ -9074,6 +9126,45 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: "mdi:clock-end"
+  - entity_id: "input_datetime.night_auto_light_end_joshua"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Nachtmodus Ende Joshua"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-end"
+  - entity_id: "input_datetime.night_auto_light_end_julian"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Nachtmodus Ende Julian"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-end"
+  - entity_id: "input_datetime.night_auto_light_end_stephan"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Nachtmodus Ende Stephan"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-end"
   - entity_id: "input_datetime.night_auto_light_start"
     domain: "input_datetime"
     platform: "input_datetime"
@@ -9087,6 +9178,201 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: "mdi:clock-start"
+  - entity_id: "input_datetime.night_auto_light_start_joshua"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Nachtmodus Start Joshua"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-start"
+  - entity_id: "input_datetime.night_auto_light_start_julian"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Nachtmodus Start Julian"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-start"
+  - entity_id: "input_datetime.night_auto_light_start_stephan"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Nachtmodus Start Stephan"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-start"
+  - entity_id: "input_datetime.wakeup_weekday_end_time_joshua"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Weckzeit Ende Wochentag Joshua"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:calendar-week"
+  - entity_id: "input_datetime.wakeup_weekday_end_time_julian"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Weckzeit Ende Wochentag Julian"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:calendar-week"
+  - entity_id: "input_datetime.wakeup_weekday_end_time_stephan"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Weckzeit Ende Wochentag Stephan"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:calendar-week"
+  - entity_id: "input_datetime.wakeup_weekday_time_joshua"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Weckzeit Wochentag Joshua"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:calendar-week"
+  - entity_id: "input_datetime.wakeup_weekday_time_julian"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Weckzeit Wochentag Julian"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:calendar-week"
+  - entity_id: "input_datetime.wakeup_weekday_time_stephan"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Weckzeit Wochentag Stephan"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:calendar-week"
+  - entity_id: "input_datetime.wakeup_weekend_end_time_joshua"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Weckzeit Ende Wochenende Joshua"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:calendar-weekend"
+  - entity_id: "input_datetime.wakeup_weekend_end_time_julian"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Weckzeit Ende Wochenende Julian"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:calendar-weekend"
+  - entity_id: "input_datetime.wakeup_weekend_end_time_stephan"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Weckzeit Ende Wochenende Stephan"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:calendar-weekend"
+  - entity_id: "input_datetime.wakeup_weekend_time_joshua"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Weckzeit Wochenende Joshua"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:calendar-weekend"
+  - entity_id: "input_datetime.wakeup_weekend_time_julian"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Weckzeit Wochenende Julian"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:calendar-weekend"
+  - entity_id: "input_datetime.wakeup_weekend_time_stephan"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Weckzeit Wochenende Stephan"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:calendar-weekend"
   - entity_id: "input_number.ckw_energy_cost"
     domain: "input_number"
     platform: "input_number"
@@ -9230,6 +9516,45 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: "mdi:brightness-6"
+  - entity_id: "input_number.wakeup_brightness_joshua"
+    domain: "input_number"
+    platform: "input_number"
+    name: null
+    original_name: "Weckfunktion Helligkeit Joshua"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:weather-sunset-up"
+  - entity_id: "input_number.wakeup_brightness_julian"
+    domain: "input_number"
+    platform: "input_number"
+    name: null
+    original_name: "Weckfunktion Helligkeit Julian"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:weather-sunset-up"
+  - entity_id: "input_number.wakeup_brightness_stephan"
+    domain: "input_number"
+    platform: "input_number"
+    name: null
+    original_name: "Weckfunktion Helligkeit Stephan"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:weather-sunset-up"
   - entity_id: "input_select.buro_licht_scene"
     domain: "input_select"
     platform: "input_select"

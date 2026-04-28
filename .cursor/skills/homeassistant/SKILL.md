@@ -11,9 +11,9 @@ Use this workflow for this project.
 
 Use these patterns consistently:
 
-- Automation alias: `<Typ> <Zimmer> <Person> [<Funktion>]`
-- Entity friendly name: `<Typ> <Zimmer> <Person> [<Funktion>]`
-- Trigger IDs inside one automation should follow the same room/person token as that automation.
+- Automation alias: `<Typ> <Bereich> [<Person>] [<Funktion>]`
+- Entity friendly name: `<Typ> <Bereich> [<Person>] [<Funktion>]`
+- Trigger IDs inside one automation should follow the same area/person token as that automation.
 
 Project examples:
 
@@ -26,9 +26,33 @@ Project examples:
 
 Normalization rules:
 
-- Keep order fixed (`Typ` -> `Zimmer` -> `Person` -> optional function).
+- Keep order fixed (`Typ` -> `Bereich` -> optional `Person` -> optional function).
 - Prefer `Zimmer Julian` / `Zimmer Joshua` over older room labels.
 - Do not rename technical `entity_id` values unless the user explicitly asks for entity migration.
+
+### Automation naming concept (mandatory)
+
+Use these `Typ` prefixes:
+
+- `Licht` for light automations
+- `Schalter` for switch/power automations
+- `Button` for physical button/remotes
+- `Wecker` for wake-up routines
+- `Routine` for household routines
+- `Präsenz` for presence/occupancy
+- `Benachrichtigung` for notifications
+- `Szene` for scene selectors
+- `Musik` / `Sound` for audio behavior
+- `Lüftung` for fan/dehumidifier logic
+- `Energie` for tariff/cost logic
+- `Alarm` for security/all-off actions
+
+Rules:
+
+1. Use German names.
+2. Avoid separators like `-`, `_`, `V2`, `II`, `Everyday`.
+3. Keep aliases concise and human-readable.
+4. Do not include technical IDs in aliases.
 
 ## Setup
 

@@ -1,5 +1,5 @@
 - id: '1668931799898'
-  alias: Auto Light - Küche V2
+  alias: Licht Küche Auto
   description: ''
   trigger:
   - type: motion
@@ -91,7 +91,7 @@
           device_id: d2d23f11b7df2716b0ce4fb7a1acf235
   mode: single
 - id: '1761513800001'
-  alias: Nachtlimit Deckenlicht Zimmer
+  alias: Licht Zimmer Nachtlimit Decke
   description: Begrenze manuell eingeschaltete Deckenlichter nachts auf definierte Helligkeit
   triggers:
   - entity_id:
@@ -172,7 +172,7 @@
   mode: queued
   max: 10
 - id: '1761513800002'
-  alias: Nacht Gästemodus Auto Aus
+  alias: Modus Nacht Gast Auto Aus
   description: Schaltet den Gästemodus nach Nachtende automatisch wieder aus
   triggers:
   - at: input_datetime.night_auto_light_end
@@ -185,7 +185,7 @@
     data: {}
   mode: single
 - id: '1668932306495'
-  alias: Auto Light - Gang V2
+  alias: Licht Gang Auto
   description: ''
   trigger:
   - platform: state
@@ -241,7 +241,7 @@
           area_id: gang
   mode: single
 - id: '1668939168038'
-  alias: AutoSwitch - Aquarium CO2 V2
+  alias: Schalter Aquarium CO2 Auto
   description: ''
   triggers:
   - at: 09:00:00
@@ -275,7 +275,7 @@
         action: homeassistant.turn_off
   mode: single
 - id: '1668939648789'
-  alias: Aquarium - Light
+  alias: Licht Aquarium Zeit
   description: ''
   trigger:
   - platform: time
@@ -309,7 +309,7 @@
           - switch.sz_joshua_aquarium
   mode: single
 - id: '1668945566381'
-  alias: Auto Light - Esstisch V2
+  alias: Licht Essraum Auto
   description: ''
   triggers:
   - type: motion
@@ -382,7 +382,7 @@
           entity_id: scene.esstisch_on_high_motion_off
   mode: single
 - id: '1668948534045'
-  alias: Auto Light - Sofa V2
+  alias: Licht Wohnzimmer Sofa Auto
   description: ''
   triggers:
   - entity_id:
@@ -459,7 +459,7 @@
         action: light.turn_off
   mode: single
 - id: '1669760776701'
-  alias: Button Büro
+  alias: Button Büro Stephan
   description: ''
   triggers:
   - device_id: 12235c8bebf69aaad3fd31f850dee7f5
@@ -573,7 +573,7 @@
         action: light.toggle
   mode: single
 - id: '1675117578452'
-  alias: Notification Bitte lüften
+  alias: Benachrichtigung Küche Lüften
   description: ''
   trigger:
   - platform: numeric_state
@@ -591,7 +591,7 @@
       title: Bitte lüften
   mode: single
 - id: '1683865344473'
-  alias: Notification Door
+  alias: Benachrichtigung Eingang Türe
   description: ''
   trigger:
   - type: opened
@@ -610,7 +610,7 @@
       title: Door
   mode: single
 - id: '1692820516847'
-  alias: Routine - Abend - Everyday
+  alias: Routine Wohnung Abend
   description: ''
   trigger:
   - platform: time
@@ -626,7 +626,7 @@
       entity_id: input_boolean.night_mode
   mode: single
 - id: '1761684000001'
-  alias: Weckfunktion Zimmer
+  alias: Wecker Zimmer Familie
   description: Schaltet pro Zimmer Deckenlicht und Nachttisch zu konfigurierter Weckzeit
   trigger:
   - platform: time
@@ -987,7 +987,7 @@
         data: {}
   mode: single
 - id: '1695326696870'
-  alias: Aquarium Light
+  alias: Licht Aquarium Verlauf
   description: ''
   triggers:
   - at: 09:00:00
@@ -1163,7 +1163,7 @@
         action: light.turn_off
   mode: single
 - id: '1695327230694'
-  alias: AutoOff - V2
+  alias: Schalter Wohnung Auto Aus
   description: ''
   trigger:
   - platform: state
@@ -1207,7 +1207,7 @@
           device_id: d69a27018dd360b7ad8bb6c1a7b1ae1e
   mode: single
 - id: '1698705978589'
-  alias: Auto Light - Schlafzimmer Stefan V2
+  alias: Licht Schlafzimmer Stephan Auto
   description: ''
   trigger:
   - platform: state
@@ -1250,7 +1250,7 @@
           entity_id: switch.sh_schlafzimmer_stephan_switch_0
   mode: single
 - id: '1698874143005'
-  alias: Button Trolley
+  alias: Button Küche Trolley
   description: ''
   triggers:
   - device_id: 0eed94805fadb03c36917a60a6bfb84f
@@ -1401,7 +1401,7 @@
         domain: switch
   mode: single
 - id: '1698876823657'
-  alias: Button Kaffeemaschine
+  alias: Button Küche Kaffeemaschine
   description: ''
   trigger:
   - device_id: 05a84d8b8c2ba883aeacd7aa16e8d3bc
@@ -1628,7 +1628,7 @@
         domain: switch
   mode: single
 - id: '1698878854529'
-  alias: Button Nachttisch Stephan
+  alias: Button Schlafzimmer Stephan Nachttisch
   description: ''
   triggers:
   - device_id: ba8d2e579b9ff224eab4590c3d54095d
@@ -1743,7 +1743,7 @@
           - 94cc912ee2e36e2b1729915273714518
   mode: single
 - id: '1698879956722'
-  alias: Presence Stephan
+  alias: Präsenz Stephan
   description: ''
   trigger:
   - platform: state
@@ -1780,7 +1780,7 @@
           entity_id: input_boolean.alarm_active
   mode: single
 - id: '1761693000001'
-  alias: Presence Kids Home Julian
+  alias: Präsenz Julian Kinder Zuhause
   description: Setzt Kinder Zuhause auf Basis von Tablet Tracker und IP-Ping
   trigger:
   - platform: state
@@ -1821,7 +1821,7 @@
       data: {}
   mode: restart
 - id: '1699135077811'
-  alias: Set Energy Cost
+  alias: Energie Tarif Kosten
   description: ''
   trigger:
   - platform: time
@@ -1855,7 +1855,7 @@
           entity_id: input_number.ckw_energy_cost
   mode: single
 - id: '1699142044381'
-  alias: Auto Lüftung WC
+  alias: Lüftung WC Auto
   description: ''
   triggers:
   - entity_id:
@@ -1939,7 +1939,7 @@
           entity_id: switch.zimmer_julian_schreibtisch_licht_switch
   mode: single
 - id: '1699386944016'
-  alias: Auto Light - Bad V2
+  alias: Licht Bad Auto
   description: ''
   triggers:
   - type: motion
@@ -1984,7 +1984,7 @@
           area_id: bad
   mode: single
 - id: '1699647471963'
-  alias: Auto Music - Bad
+  alias: Musik Bad Auto
   description: ''
   trigger:
   - platform: device
@@ -2036,7 +2036,7 @@
           area_id: bad
   mode: single
 - id: '1699652232789'
-  alias: Dorbell
+  alias: Benachrichtigung Eingang Klingel
   description: ''
   trigger:
   - platform: webhook
@@ -2059,7 +2059,7 @@
       title: Türe
   mode: single
 - id: '1699654473759'
-  alias: Sound - Auto Group after TV
+  alias: Sound Wohnzimmer Gruppe TV Aus
   description: ''
   triggers:
   - device_id: 2d0456d52fa68e75d63f68b94fa5ca8b
@@ -2091,7 +2091,7 @@
       entity_id: input_boolean.tv_is_off
   mode: single
 - id: '1699657028567'
-  alias: Auto Off - Trolley Low Power usage
+  alias: Schalter Trolley Auto Aus Leistung
   description: ''
   triggers:
   - entity_id:
@@ -2110,7 +2110,7 @@
     action: switch.turn_off
   mode: single
 - id: '1699657159809'
-  alias: 'Auto Switch - Trolley on '
+  alias: Schalter Trolley Auto Ein
   description: ''
   trigger:
   - platform: time
@@ -2123,7 +2123,7 @@
       device_id: afa775962b66fe73d9efb36deadc74d1
   mode: single
 - id: '1700081489819'
-  alias: Auto Light - WC
+  alias: Licht WC Auto
   description: ''
   triggers:
   - type: motion
@@ -2169,7 +2169,7 @@
         action: switch.turn_off
   mode: single
 - id: '1700081600900'
-  alias: Auto Light - Zimmer Julian
+  alias: Licht Zimmer Julian Auto
   description: ''
   trigger:
   - type: motion
@@ -2211,7 +2211,7 @@
           entity_id: switch.zimmer_julian_schreibtisch_licht_switch
   mode: single
 - id: '1700083428473'
-  alias: Auto Light - Zimmer Joshua
+  alias: Licht Zimmer Joshua Auto
   description: ''
   trigger:
   - type: motion
@@ -2263,7 +2263,7 @@
           entity_id: switch.sh_schlafzimmer_kinder_switch_0
   mode: single
 - id: '1700602646090'
-  alias: Auto an Abwaschmaschine
+  alias: Schalter Küche Abwaschmaschine Auto Ein
   description: ''
   trigger:
   - platform: time
@@ -2290,7 +2290,7 @@
       device_id: beeb1b0eee37b68115e7256fe4a817b9
   mode: single
 - id: '1700602793655'
-  alias: Abwaschmaschine Start Auto on Automation
+  alias: Automation Abwaschmaschine Auto Ein Aktivierung
   description: ''
   trigger:
   - platform: device
@@ -2318,7 +2318,7 @@
       entity_id: automation.auto_an_abwaschmaschine
   mode: single
 - id: '1707854031647'
-  alias: Auto on TV
+  alias: Schalter Wohnzimmer TV Auto Ein
   description: ''
   trigger:
   - platform: device
@@ -2339,7 +2339,7 @@
     data: {}
   mode: single
 - id: '1728076477515'
-  alias: Scene Change - Wohnraum
+  alias: Szene Wohnraum Auswahl
   description: ''
   triggers:
   - trigger: state
@@ -2392,7 +2392,7 @@
           entity_id: scene.wohnraum_off
   mode: single
 - id: '1728080288766'
-  alias: Scene Change - Büro
+  alias: Szene Büro Auswahl
   description: ''
   triggers:
   - trigger: state
@@ -2429,7 +2429,7 @@
           entity_id: scene.buro_off
   mode: single
 - id: '1728081265698'
-  alias: Scene Change - Esstisch
+  alias: Szene Essraum Auswahl
   description: ''
   triggers:
   - trigger: state
@@ -2481,7 +2481,7 @@
           entity_id: scene.esstisch_high_duplicate
   mode: single
 - id: '1731068910506'
-  alias: Auto Lüftung Bad
+  alias: Lüftung Bad Auto
   description: ''
   triggers:
   - entity_id:
@@ -2522,7 +2522,7 @@
           entity_id: switch.bad_licht_channel_2
   mode: single
 - id: '1732612725844'
-  alias: Auto Lights - turn all off
+  alias: Licht Wohnung Alles Aus
   description: ''
   triggers: []
   conditions: []
@@ -2550,7 +2550,7 @@
       - wohnzimmer
   mode: single
 - id: '1732612781561'
-  alias: Auto Lights - turn all on
+  alias: Licht Wohnung Alles Ein
   description: ''
   triggers: []
   conditions: []
@@ -2566,7 +2566,7 @@
     data: {}
   mode: single
 - id: '1732632586197'
-  alias: Sound Pause on TV Play
+  alias: Sound Wohnung Pause TV
   description: ''
   triggers:
   - device_id: 2d0456d52fa68e75d63f68b94fa5ca8b
@@ -2607,7 +2607,7 @@
     data: {}
   mode: single
 - id: '1732825117384'
-  alias: Alles Aus - Alarm An
+  alias: Alarm Wohnung Alles Aus
   description: ''
   triggers:
   - device_id: 1cb40930c485eeb5eb388a7c1b4a22a5
@@ -2698,7 +2698,7 @@
           - wohnzimmer_2
   mode: single
 - id: '1732825801790'
-  alias: Weihnachtsdeko
+  alias: Schalter Wohnung Weihnachtsdeko
   description: ''
   triggers:
   - trigger: time
@@ -2738,7 +2738,7 @@
         domain: switch
   mode: single
 - id: '1733217996995'
-  alias: Button Sound Control - Büro
+  alias: Button Büro Sound Steuerung
   description: ''
   triggers:
   - device_id: 23f3d7dab64946f776b59768ec6297d2
@@ -2833,7 +2833,7 @@
           cycle: true
   mode: single
 - id: '1741037913114'
-  alias: Coiffeur Nora
+  alias: Benachrichtigung Website Coiffeur Nora
   description: ''
   triggers:
   - trigger: state
@@ -2852,7 +2852,7 @@
       message: Coiffeur Nora Down
   mode: single
 - id: '1741823473330'
-  alias: Website Monitor - Offline Notification
+  alias: Benachrichtigung Website Offline
   description: ''
   triggers:
   - trigger: state
@@ -2880,7 +2880,7 @@
       message: Homepage down
   mode: single
 - id: '1741824341822'
-  alias: Website Monitor Not Updating Alert
+  alias: Benachrichtigung Website Monitor Störung
   triggers:
   - minutes: '1'
     trigger: time_pattern
@@ -2901,7 +2901,7 @@
       message: Website monitor hasn't updated in over 5 minutes!
       title: Website Monitor Warning
 - id: '1759780213297'
-  alias: Bad - Entfeuchter
+  alias: Schalter Bad Entfeuchter
   description: ''
   triggers:
   - entity_id:
@@ -2920,7 +2920,7 @@
     domain: switch
   mode: single
 - id: '1761163325034'
-  alias: Auto Music - WC
+  alias: Musik WC Auto
   description: ''
   triggers:
   - type: turned_on
@@ -2974,7 +2974,7 @@
           area_id: wc
   mode: single
 - id: '1761169982360'
-  alias: Turn in TV board
+  alias: Schalter Wohnzimmer TV Board Ein
   description: ''
   triggers:
   - device_id: 2d0456d52fa68e75d63f68b94fa5ca8b
@@ -2990,7 +2990,7 @@
     domain: switch
   mode: single
 - id: '1761173283770'
-  alias: Turn Off 3d Printer
+  alias: Schalter Büro 3D Drucker Aus
   description: ''
   triggers:
   - trigger: numeric_state

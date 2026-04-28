@@ -60,20 +60,26 @@ If the user requests ongoing implementation work in this Home Assistant repo, de
 
 Only skip commit/push if the user explicitly says not to commit yet.
 
+### Deploy handshake override (mandatory)
+
+After any commit+push in this project, return **only** this server step first:
+
+- `cd "/data/home-assistant"`
+- `git pull origin main`
+
+Then wait for user confirmation that config check passed.
+Only after explicit user confirmation, provide restart commands.
+
 When the user asks for `commit` + `push` (or equivalent):
 
 1. First provide a short summary of commit hash + push result.
-2. Immediately after the summary, always output a copy/paste ready **Server Script** block.
-3. The default server script must include:
+2. Immediately after the summary, provide only:
    - `cd "/data/home-assistant"`
    - `git pull origin main`
-   - `docker restart home-assistant`
-   - `python3 scripts/export_entity_snapshot.py --config-dir "/data/home-assistant" --out "/data/home-assistant/inventory/entities_snapshot.yaml"`
-   - `git add inventory/entities_snapshot.yaml inventory/areas_snapshot.yaml inventory/devices_snapshot.yaml`
-   - `git commit -m "Update entity/area/device snapshots."`
-   - `git push origin main`
-4. If compose/image changes are part of the commit, use `docker compose pull && docker compose up -d` instead of simple restart.
-5. After the server script, also provide the local sync command:
+3. Do not include restart in the same response.
+4. Wait for user confirmation that config validation passed, then provide restart/export steps.
+5. If compose/image changes are part of the commit, use `docker compose pull && docker compose up -d` only after confirmation.
+6. After restart/export is complete, provide local sync command:
    - `cd "/home/stephanprivat/Dokumente/Development/homeassistant-config" && git pull origin main`
 
 Use German by default when the user writes in German.

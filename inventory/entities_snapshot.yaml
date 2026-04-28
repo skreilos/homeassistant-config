@@ -5109,6 +5109,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "button.essraum_favorite_current_song"
+    domain: "button"
+    platform: "music_assistant"
+    name: null
+    original_name: "Favorite current song"
+    area_id: null
+    area_name: null
+    device_id: "2782074cb49df492341bcdb3de18b186"
+    device_name: "Essraum"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
   - entity_id: "button.esstisch_l_identify"
     domain: "button"
     platform: "zha"
@@ -8294,6 +8307,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "button.schlafzimmer_stephan_favorite_current_song"
+    domain: "button"
+    platform: "music_assistant"
+    name: null
+    original_name: "Favorite current song"
+    area_id: null
+    area_name: null
+    device_id: "c6474e5c186b23a20c37c4a4c56042b7"
+    device_name: "Schlafzimmer Stephan"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
   - entity_id: "button.sensorair_buro_identify"
     domain: "button"
     platform: "zha"
@@ -8437,6 +8463,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "button.shield_favorite_current_song"
+    domain: "button"
+    platform: "music_assistant"
+    name: null
+    original_name: "Favorite current song"
+    area_id: null
+    area_name: null
+    device_id: "de22b868c43b4e9fb2bfa893d344770b"
+    device_name: "SHIELD"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
   - entity_id: "button.sofa_deckenlicht_identify"
     domain: "button"
     platform: "zha"
@@ -8459,6 +8498,19 @@ entities:
     area_name: null
     device_id: "482bd8f596aeb2ef1745a17efc0d5ce6"
     device_name: "Sofa Spot"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "button.sonos_roam_favorite_current_song"
+    domain: "button"
+    platform: "music_assistant"
+    name: null
+    original_name: "Favorite current song"
+    area_id: null
+    area_name: null
+    device_id: "83c876e1a56e8b0c21658eb616370391"
+    device_name: "Sonos Roam"
     disabled_by: null
     hidden_by: null
     has_entity_name: true
@@ -8593,6 +8645,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "button.wohnraum_favorite_current_song"
+    domain: "button"
+    platform: "music_assistant"
+    name: null
+    original_name: "Favorite current song"
+    area_id: null
+    area_name: null
+    device_id: "033ab8deb651d056b2caa7957c19d38e"
+    device_name: "Wohnraum"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
   - entity_id: "button.wohnraum_store_reboot"
     domain: "button"
     platform: "shelly"
@@ -8602,6 +8667,32 @@ entities:
     area_name: null
     device_id: "02025aec51e9ccad504a27797c95aeed"
     device_name: "SH_Wohnraum_Store"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "button.zimmer_joshua_favorite_current_song"
+    domain: "button"
+    platform: "music_assistant"
+    name: null
+    original_name: "Favorite current song"
+    area_id: null
+    area_name: null
+    device_id: "f8658ff9ea0e9e5a72e9ce0da9bf4977"
+    device_name: "Zimmer Joshua"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "button.zimmer_julian_favorite_current_song"
+    domain: "button"
+    platform: "music_assistant"
+    name: null
+    original_name: "Favorite current song"
+    area_id: null
+    area_name: null
+    device_id: "a25872534da0e81afe18b175a507d61b"
+    device_name: "Zimmer Julian"
     disabled_by: null
     hidden_by: null
     has_entity_name: true
@@ -10127,6 +10218,45 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "media_player.essraum"
+    domain: "media_player"
+    platform: "music_assistant"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "2782074cb49df492341bcdb3de18b186"
+    device_name: "Essraum"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: "mdi:speaker"
+  - entity_id: "media_player.schlafzimmer_stephan"
+    domain: "media_player"
+    platform: "music_assistant"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "c6474e5c186b23a20c37c4a4c56042b7"
+    device_name: "Schlafzimmer Stephan"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: "mdi:speaker"
+  - entity_id: "media_player.shield"
+    domain: "media_player"
+    platform: "music_assistant"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "de22b868c43b4e9fb2bfa893d344770b"
+    device_name: "SHIELD"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: "mdi:speaker"
   - entity_id: "media_player.sonos_roam"
     domain: "media_player"
     platform: "sonos"
@@ -10140,6 +10270,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "media_player.sonos_roam_2"
+    domain: "media_player"
+    platform: "music_assistant"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "83c876e1a56e8b0c21658eb616370391"
+    device_name: "Sonos Roam"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: "mdi:speaker"
   - entity_id: "media_player.stephan"
     domain: "media_player"
     platform: "sonos"
@@ -10166,6 +10309,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "media_player.wohnraum"
+    domain: "media_player"
+    platform: "music_assistant"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "033ab8deb651d056b2caa7957c19d38e"
+    device_name: "Wohnraum"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: "mdi:speaker"
   - entity_id: "media_player.wohnzimmer"
     domain: "media_player"
     platform: "sonos"
@@ -10205,6 +10361,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "media_player.zimmer_joshua_2"
+    domain: "media_player"
+    platform: "music_assistant"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "f8658ff9ea0e9e5a72e9ce0da9bf4977"
+    device_name: "Zimmer Joshua"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: "mdi:speaker"
   - entity_id: "media_player.zimmer_julian"
     domain: "media_player"
     platform: "sonos"
@@ -10218,6 +10387,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "media_player.zimmer_julian_2"
+    domain: "media_player"
+    platform: "music_assistant"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "a25872534da0e81afe18b175a507d61b"
+    device_name: "Zimmer Julian"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: "mdi:speaker"
   - entity_id: "number.bad_balance"
     domain: "number"
     platform: "sonos"

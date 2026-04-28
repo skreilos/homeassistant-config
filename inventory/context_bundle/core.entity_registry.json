@@ -87791,6 +87791,592 @@
         "unique_id": "1761693000001",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": null,
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:49:15.561788+00:00",
+        "device_class": null,
+        "device_id": "83c876e1a56e8b0c21658eb616370391",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.sonos_roam_favorite_current_song",
+        "hidden_by": null,
+        "icon": null,
+        "id": "007bda3ca7e7f5b327777f759237d178",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:32.658780+00:00",
+        "name": null,
+        "object_id_base": "Favorite current song",
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Favorite current song",
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 0,
+        "translation_key": "favorite_now_playing",
+        "unique_id": "RINCON_542A1BB3C8BE01400_favorite_now_playing",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": {
+          "source_list": [
+            "Music Assistant Queue"
+          ]
+        },
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:49:15.563102+00:00",
+        "device_class": null,
+        "device_id": "83c876e1a56e8b0c21658eb616370391",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "media_player.sonos_roam_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7cfce2e7b34adcb5657609d724be6b8e",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:32.659916+00:00",
+        "name": null,
+        "object_id_base": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "speaker",
+        "original_icon": "mdi:speaker",
+        "original_name": null,
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 8322623,
+        "translation_key": null,
+        "unique_id": "RINCON_542A1BB3C8BE01400",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": null,
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:49:15.890241+00:00",
+        "device_class": null,
+        "device_id": "2782074cb49df492341bcdb3de18b186",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.essraum_favorite_current_song",
+        "hidden_by": null,
+        "icon": null,
+        "id": "900f228a1bbc64cb7ed07be73fd58d56",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:32.694565+00:00",
+        "name": null,
+        "object_id_base": "Favorite current song",
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Favorite current song",
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 0,
+        "translation_key": "favorite_now_playing",
+        "unique_id": "RINCON_C43875932C3A01400_favorite_now_playing",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": {
+          "source_list": [
+            "Line-in",
+            "Music Assistant Queue"
+          ]
+        },
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:49:15.891584+00:00",
+        "device_class": null,
+        "device_id": "2782074cb49df492341bcdb3de18b186",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "media_player.essraum",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0e3c208af6a245659e3a09394cc39d71",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:32.695629+00:00",
+        "name": null,
+        "object_id_base": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "speaker",
+        "original_icon": "mdi:speaker",
+        "original_name": null,
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 8322623,
+        "translation_key": null,
+        "unique_id": "RINCON_C43875932C3A01400",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": null,
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:49:15.665443+00:00",
+        "device_class": null,
+        "device_id": "033ab8deb651d056b2caa7957c19d38e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.wohnraum_favorite_current_song",
+        "hidden_by": null,
+        "icon": null,
+        "id": "70c74dd25ea82ae450418d5922fd3c60",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:33.029763+00:00",
+        "name": null,
+        "object_id_base": "Favorite current song",
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Favorite current song",
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 0,
+        "translation_key": "favorite_now_playing",
+        "unique_id": "RINCON_5CAAFD11F94701400_favorite_now_playing",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": {
+          "source_list": [
+            "TV",
+            "Music Assistant Queue"
+          ]
+        },
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:49:15.666718+00:00",
+        "device_class": null,
+        "device_id": "033ab8deb651d056b2caa7957c19d38e",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "media_player.wohnraum",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c01eb2546178e18ba4536536c0c2f10c",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:33.030931+00:00",
+        "name": null,
+        "object_id_base": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "speaker",
+        "original_icon": "mdi:speaker",
+        "original_name": null,
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 8322623,
+        "translation_key": null,
+        "unique_id": "RINCON_5CAAFD11F94701400",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": null,
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:49:16.018857+00:00",
+        "device_class": null,
+        "device_id": "a25872534da0e81afe18b175a507d61b",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.zimmer_julian_favorite_current_song",
+        "hidden_by": null,
+        "icon": null,
+        "id": "84a65dc1a20176ad35082288d69a74d7",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:33.106469+00:00",
+        "name": null,
+        "object_id_base": "Favorite current song",
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Favorite current song",
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 0,
+        "translation_key": "favorite_now_playing",
+        "unique_id": "RINCON_38420B96079A01400_favorite_now_playing",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": {
+          "source_list": [
+            "Music Assistant Queue"
+          ]
+        },
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:49:16.020128+00:00",
+        "device_class": null,
+        "device_id": "a25872534da0e81afe18b175a507d61b",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "media_player.zimmer_julian_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6f1fbfaaeb55fadd5c82b918ecb254d8",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:33.107591+00:00",
+        "name": null,
+        "object_id_base": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "speaker",
+        "original_icon": "mdi:speaker",
+        "original_name": null,
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 8322623,
+        "translation_key": null,
+        "unique_id": "RINCON_38420B96079A01400",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": null,
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:49:15.275323+00:00",
+        "device_class": null,
+        "device_id": "f8658ff9ea0e9e5a72e9ce0da9bf4977",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.zimmer_joshua_favorite_current_song",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3b157eeb4701ef385b48afeb92be7cd4",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:33.132339+00:00",
+        "name": null,
+        "object_id_base": "Favorite current song",
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Favorite current song",
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 0,
+        "translation_key": "favorite_now_playing",
+        "unique_id": "RINCON_542A1B5D804E01400_favorite_now_playing",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": {
+          "source_list": [
+            "Music Assistant Queue"
+          ]
+        },
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:49:15.276877+00:00",
+        "device_class": null,
+        "device_id": "f8658ff9ea0e9e5a72e9ce0da9bf4977",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "media_player.zimmer_joshua_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "453d90fee3375fc5c20bb462f165ad3d",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:33.133061+00:00",
+        "name": null,
+        "object_id_base": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "speaker",
+        "original_icon": "mdi:speaker",
+        "original_name": null,
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 8322623,
+        "translation_key": null,
+        "unique_id": "RINCON_542A1B5D804E01400",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": null,
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:49:15.408899+00:00",
+        "device_class": null,
+        "device_id": "c6474e5c186b23a20c37c4a4c56042b7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.schlafzimmer_stephan_favorite_current_song",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c5f4fc2fb56a0600ca055ce23aa6e8bb",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:35.956016+00:00",
+        "name": null,
+        "object_id_base": "Favorite current song",
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Favorite current song",
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 0,
+        "translation_key": "favorite_now_playing",
+        "unique_id": "RINCON_B8E937E146D601400_favorite_now_playing",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": {
+          "source_list": [
+            "Music Assistant Queue"
+          ]
+        },
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:49:15.410147+00:00",
+        "device_class": null,
+        "device_id": "c6474e5c186b23a20c37c4a4c56042b7",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "media_player.schlafzimmer_stephan",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6106bc4856b894cc709776a446ac8596",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:35.957897+00:00",
+        "name": null,
+        "object_id_base": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "speaker",
+        "original_icon": "mdi:speaker",
+        "original_name": null,
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 8322623,
+        "translation_key": null,
+        "unique_id": "RINCON_B8E937E146D601400",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": null,
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:51:42.484791+00:00",
+        "device_class": null,
+        "device_id": "de22b868c43b4e9fb2bfa893d344770b",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.shield_favorite_current_song",
+        "hidden_by": null,
+        "icon": null,
+        "id": "06252012edf4982d0d7263c278d22dc5",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:42.485159+00:00",
+        "name": null,
+        "object_id_base": "Favorite current song",
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Favorite current song",
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 0,
+        "translation_key": "favorite_now_playing",
+        "unique_id": "up48b02d588011_favorite_now_playing",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "aliases_v2": [
+          null
+        ],
+        "area_id": null,
+        "categories": {},
+        "capabilities": {},
+        "config_entry_id": "01KQB45KQ62FH0MR0QXDH414N9",
+        "config_subentry_id": null,
+        "created_at": "2026-04-28T22:51:42.485602+00:00",
+        "device_class": null,
+        "device_id": "de22b868c43b4e9fb2bfa893d344770b",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "media_player.shield",
+        "hidden_by": null,
+        "icon": null,
+        "id": "05dd894e9c1dcb59cd49eb4fc8aa7536",
+        "has_entity_name": true,
+        "labels": [],
+        "modified_at": "2026-04-28T22:51:42.486403+00:00",
+        "name": null,
+        "object_id_base": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "speaker",
+        "original_icon": "mdi:speaker",
+        "original_name": null,
+        "platform": "music_assistant",
+        "suggested_object_id": null,
+        "supported_features": 8320575,
+        "translation_key": null,
+        "unique_id": "up48b02d588011",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
       }
     ],
     "deleted_entities": [

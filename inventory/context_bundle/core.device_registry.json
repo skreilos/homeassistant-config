@@ -5415,6 +5415,251 @@
         "serial_number": null,
         "sw_version": null,
         "via_device_id": "217561ab421863b1321f8c046c338ede"
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01KQB45KQ62FH0MR0QXDH414N9"
+        ],
+        "config_entries_subentries": {
+          "01KQB45KQ62FH0MR0QXDH414N9": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.2:8095/#/settings/editplayer/RINCON_542A1BB3C8BE01400",
+        "connections": [],
+        "created_at": "2026-04-28T22:49:15.561359+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "83c876e1a56e8b0c21658eb616370391",
+        "identifiers": [
+          [
+            "music_assistant",
+            "RINCON_542A1BB3C8BE01400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "SONOS",
+        "model": "Roam",
+        "model_id": null,
+        "modified_at": "2026-04-28T22:51:32.658570+00:00",
+        "name_by_user": null,
+        "name": "Sonos Roam",
+        "primary_config_entry": "01KQB45KQ62FH0MR0QXDH414N9",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01KQB45KQ62FH0MR0QXDH414N9"
+        ],
+        "config_entries_subentries": {
+          "01KQB45KQ62FH0MR0QXDH414N9": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.2:8095/#/settings/editplayer/RINCON_C43875932C3A01400",
+        "connections": [],
+        "created_at": "2026-04-28T22:49:15.889837+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "2782074cb49df492341bcdb3de18b186",
+        "identifiers": [
+          [
+            "music_assistant",
+            "RINCON_C43875932C3A01400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "SONOS",
+        "model": "Era 100",
+        "model_id": null,
+        "modified_at": "2026-04-28T22:51:32.694381+00:00",
+        "name_by_user": null,
+        "name": "Essraum",
+        "primary_config_entry": "01KQB45KQ62FH0MR0QXDH414N9",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01KQB45KQ62FH0MR0QXDH414N9"
+        ],
+        "config_entries_subentries": {
+          "01KQB45KQ62FH0MR0QXDH414N9": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.2:8095/#/settings/editplayer/RINCON_5CAAFD11F94701400",
+        "connections": [],
+        "created_at": "2026-04-28T22:49:15.665110+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "033ab8deb651d056b2caa7957c19d38e",
+        "identifiers": [
+          [
+            "music_assistant",
+            "RINCON_5CAAFD11F94701400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "SONOS",
+        "model": "Playbar",
+        "model_id": null,
+        "modified_at": "2026-04-28T22:51:33.029563+00:00",
+        "name_by_user": null,
+        "name": "Wohnraum",
+        "primary_config_entry": "01KQB45KQ62FH0MR0QXDH414N9",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01KQB45KQ62FH0MR0QXDH414N9"
+        ],
+        "config_entries_subentries": {
+          "01KQB45KQ62FH0MR0QXDH414N9": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.2:8095/#/settings/editplayer/RINCON_38420B96079A01400",
+        "connections": [],
+        "created_at": "2026-04-28T22:49:16.018536+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "a25872534da0e81afe18b175a507d61b",
+        "identifiers": [
+          [
+            "music_assistant",
+            "RINCON_38420B96079A01400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "SONOS",
+        "model": "Bookshelf",
+        "model_id": null,
+        "modified_at": "2026-04-28T22:51:33.106284+00:00",
+        "name_by_user": null,
+        "name": "Zimmer Julian",
+        "primary_config_entry": "01KQB45KQ62FH0MR0QXDH414N9",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01KQB45KQ62FH0MR0QXDH414N9"
+        ],
+        "config_entries_subentries": {
+          "01KQB45KQ62FH0MR0QXDH414N9": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.2:8095/#/settings/editplayer/RINCON_542A1B5D804E01400",
+        "connections": [],
+        "created_at": "2026-04-28T22:49:15.274827+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f8658ff9ea0e9e5a72e9ce0da9bf4977",
+        "identifiers": [
+          [
+            "music_assistant",
+            "RINCON_542A1B5D804E01400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "SONOS",
+        "model": "Bookshelf",
+        "model_id": null,
+        "modified_at": "2026-04-28T22:51:33.132180+00:00",
+        "name_by_user": null,
+        "name": "Zimmer Joshua",
+        "primary_config_entry": "01KQB45KQ62FH0MR0QXDH414N9",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01KQB45KQ62FH0MR0QXDH414N9"
+        ],
+        "config_entries_subentries": {
+          "01KQB45KQ62FH0MR0QXDH414N9": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.2:8095/#/settings/editplayer/RINCON_B8E937E146D601400",
+        "connections": [],
+        "created_at": "2026-04-28T22:49:15.408572+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "c6474e5c186b23a20c37c4a4c56042b7",
+        "identifiers": [
+          [
+            "music_assistant",
+            "RINCON_B8E937E146D601400"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "SONOS",
+        "model": "Play:1",
+        "model_id": null,
+        "modified_at": "2026-04-28T22:51:35.955682+00:00",
+        "name_by_user": null,
+        "name": "Schlafzimmer Stephan",
+        "primary_config_entry": "01KQB45KQ62FH0MR0QXDH414N9",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "01KQB45KQ62FH0MR0QXDH414N9"
+        ],
+        "config_entries_subentries": {
+          "01KQB45KQ62FH0MR0QXDH414N9": [
+            null
+          ]
+        },
+        "configuration_url": "http://10.0.0.2:8095/#/settings/editplayer/up48b02d588011",
+        "connections": [],
+        "created_at": "2026-04-28T22:51:42.484640+00:00",
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "de22b868c43b4e9fb2bfa893d344770b",
+        "identifiers": [
+          [
+            "music_assistant",
+            "up48b02d588011"
+          ]
+        ],
+        "labels": [],
+        "manufacturer": "NVIDIA",
+        "model": "SHIELD Android TV",
+        "model_id": null,
+        "modified_at": "2026-04-28T22:51:42.484680+00:00",
+        "name_by_user": null,
+        "name": "SHIELD",
+        "primary_config_entry": "01KQB45KQ62FH0MR0QXDH414N9",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
       }
     ],
     "deleted_devices": [

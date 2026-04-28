@@ -203,6 +203,13 @@ devices:
     manufacturer: "Sonos"
     model: "Era 100"
     via_device_id: null
+  - device_id: "2782074cb49df492341bcdb3de18b186"
+    name: "Essraum"
+    name_by_user: null
+    area_id: null
+    manufacturer: "SONOS"
+    model: "Era 100"
+    via_device_id: null
   - device_id: "45f719483464d3d450bbeb7e000d5233"
     name: "Signify Netherlands B.V. LWV005"
     name_by_user: "Esstisch L"
@@ -546,6 +553,13 @@ devices:
     manufacturer: "Shelly"
     model: "Shelly Plus H&T"
     via_device_id: null
+  - device_id: "de22b868c43b4e9fb2bfa893d344770b"
+    name: "SHIELD"
+    name_by_user: null
+    area_id: null
+    manufacturer: "NVIDIA"
+    model: "SHIELD Android TV"
+    via_device_id: null
   - device_id: "be87ed94651627c8d310d32c8216593f"
     name: "SH_3D_Printer"
     name_by_user: null
@@ -777,6 +791,13 @@ devices:
     manufacturer: "Sonos"
     model: "Play:1"
     via_device_id: null
+  - device_id: "c6474e5c186b23a20c37c4a4c56042b7"
+    name: "Schlafzimmer Stephan"
+    name_by_user: null
+    area_id: null
+    manufacturer: "SONOS"
+    model: "Play:1"
+    via_device_id: null
   - device_id: "61061956e512e545398109636de7040a"
     name: "IKEA of Sweden VINDSTYRKA"
     name_by_user: "SensorAir Büro"
@@ -803,6 +824,13 @@ devices:
     name_by_user: null
     area_id: "wc"
     manufacturer: "Sonos"
+    model: "Roam"
+    via_device_id: null
+  - device_id: "83c876e1a56e8b0c21658eb616370391"
+    name: "Sonos Roam"
+    name_by_user: null
+    area_id: null
+    manufacturer: "SONOS"
     model: "Roam"
     via_device_id: null
   - device_id: "4744a907fed7a39284952dd53fbef77c"
@@ -903,6 +931,13 @@ devices:
     manufacturer: "Sonos"
     model: "Playbar"
     via_device_id: null
+  - device_id: "033ab8deb651d056b2caa7957c19d38e"
+    name: "Wohnraum"
+    name_by_user: null
+    area_id: null
+    manufacturer: "SONOS"
+    model: "Playbar"
+    via_device_id: null
   - device_id: "719a3c0327936653254a784c7282015c"
     name: "Wohnung Eingang "
     name_by_user: null
@@ -931,12 +966,26 @@ devices:
     manufacturer: "Sonos"
     model: "SYMFONISK Bookshelf"
     via_device_id: null
+  - device_id: "f8658ff9ea0e9e5a72e9ce0da9bf4977"
+    name: "Zimmer Joshua"
+    name_by_user: null
+    area_id: null
+    manufacturer: "SONOS"
+    model: "Bookshelf"
+    via_device_id: null
   - device_id: "2abcb02850b538c31cb323b1e9aa537e"
     name: "Zimmer Julian"
     name_by_user: null
     area_id: "spielzimmer"
     manufacturer: "Sonos"
     model: "SYMFONISK Bookshelf"
+    via_device_id: null
+  - device_id: "a25872534da0e81afe18b175a507d61b"
+    name: "Zimmer Julian"
+    name_by_user: null
+    area_id: null
+    manufacturer: "SONOS"
+    model: "Bookshelf"
     via_device_id: null
   - device_id: "c1d6fedc6929e282414721875127f949"
     name: "button-card"

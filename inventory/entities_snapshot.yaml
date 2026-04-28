@@ -3,8 +3,8 @@ entities:
   - entity_id: "automation.alles_aus_alarm_an"
     domain: "automation"
     platform: "automation"
-    name: "automation.alles_aus_alarm_an"
-    original_name: "Alles Aus - Alarm An"
+    name: "Alles aus alarm an"
+    original_name: "Alarm Wohnung Alles Aus"
     area_id: null
     area_name: null
     device_id: null
@@ -17,7 +17,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.aquarium_60p_co2"
-    original_name: "AutoSwitch - Aquarium CO2 V2"
+    original_name: "Schalter Aquarium CO2 Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -30,7 +30,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.aquarium_light"
-    original_name: "Aquarium - Light"
+    original_name: "Licht Aquarium Zeit"
     area_id: null
     area_name: null
     device_id: null
@@ -43,7 +43,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.aquarium_light_2"
-    original_name: "Aquarium Light"
+    original_name: "Licht Aquarium Verlauf"
     area_id: null
     area_name: null
     device_id: null
@@ -56,7 +56,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.auto_an_abwaschmaschine"
-    original_name: "Auto an Abwaschmaschine"
+    original_name: "Schalter Küche Abwaschmaschine Auto Ein"
     area_id: null
     area_name: null
     device_id: null
@@ -69,7 +69,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.auto_light_wc"
-    original_name: "Auto Light - WC"
+    original_name: "Licht WC Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -82,7 +82,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.auto_light_zimmer_joshua"
-    original_name: "Auto Light - Zimmer Joshua"
+    original_name: "Licht Zimmer Joshua Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -95,7 +95,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.auto_light_zimmer_julian"
-    original_name: "Auto Light - Zimmer Julian"
+    original_name: "Licht Zimmer Julian Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -108,7 +108,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.auto_lights_turn_off"
-    original_name: "Auto Lights - turn all off"
+    original_name: "Licht Wohnung Alles Aus"
     area_id: null
     area_name: null
     device_id: null
@@ -121,7 +121,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.auto_lights_turn_on"
-    original_name: "Auto Lights - turn all on"
+    original_name: "Licht Wohnung Alles Ein"
     area_id: null
     area_name: null
     device_id: null
@@ -134,7 +134,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.auto_luftung_bad"
-    original_name: "Auto Lüftung Bad"
+    original_name: "Lüftung Bad Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -147,7 +147,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.auto_music_bad"
-    original_name: "Auto Music - Bad"
+    original_name: "Musik Bad Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -160,7 +160,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.auto_off"
-    original_name: "AutoOff - V2"
+    original_name: "Schalter Wohnung Auto Aus"
     area_id: null
     area_name: null
     device_id: null
@@ -173,7 +173,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.auto_off_trolley_low_power_usage"
-    original_name: "Auto Off - Trolley Low Power usage"
+    original_name: "Schalter Trolley Auto Aus Leistung"
     area_id: null
     area_name: null
     device_id: null
@@ -186,7 +186,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.auto_on_tv"
-    original_name: "Auto on TV"
+    original_name: "Schalter Wohnzimmer TV Auto Ein"
     area_id: null
     area_name: null
     device_id: null
@@ -199,7 +199,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.auto_switch_trolley_on"
-    original_name: "Auto Switch - Trolley on "
+    original_name: "Schalter Trolley Auto Ein"
     area_id: null
     area_name: null
     device_id: null
@@ -212,7 +212,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.autolight_bad"
-    original_name: "Auto Light - Bad V2"
+    original_name: "Licht Bad Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -225,7 +225,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.autolight_schlafzimmer_stefan_v2"
-    original_name: "Auto Light - Schlafzimmer Stefan V2"
+    original_name: "Licht Schlafzimmer Stephan Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -238,7 +238,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.bad_entfeuchter"
-    original_name: "Bad - Entfeuchter"
+    original_name: "Schalter Bad Entfeuchter"
     area_id: null
     area_name: null
     device_id: null
@@ -251,7 +251,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.bitte_luften"
-    original_name: "Notification Bitte lüften"
+    original_name: "Benachrichtigung Küche Lüften"
     area_id: null
     area_name: null
     device_id: null
@@ -277,7 +277,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.button_kaffeemaschine"
-    original_name: "Button Kaffeemaschine"
+    original_name: "Button Küche Kaffeemaschine"
     area_id: null
     area_name: null
     device_id: null
@@ -303,7 +303,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.button_sound_control_buro"
-    original_name: "Button Sound Control - Büro"
+    original_name: "Button Büro Sound Steuerung"
     area_id: null
     area_name: null
     device_id: null
@@ -316,7 +316,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.button_stephan"
-    original_name: "Button Nachttisch Stephan"
+    original_name: "Button Schlafzimmer Stephan Nachttisch"
     area_id: null
     area_name: null
     device_id: null
@@ -355,7 +355,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.coiffeur_nora"
-    original_name: "Coiffeur Nora"
+    original_name: "Benachrichtigung Website Coiffeur Nora"
     area_id: null
     area_name: null
     device_id: null
@@ -368,7 +368,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.dorbell"
-    original_name: "Dorbell"
+    original_name: "Benachrichtigung Eingang Klingel"
     area_id: null
     area_name: null
     device_id: null
@@ -381,7 +381,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.essraum_licht"
-    original_name: "Auto Light - Esstisch V2"
+    original_name: "Licht Essraum Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -394,7 +394,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.illuminance_wohnraum_change"
-    original_name: "Auto Light - Sofa V2"
+    original_name: "Licht Wohnzimmer Sofa Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -407,7 +407,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.kuche_test"
-    original_name: "Auto Light - Gang V2"
+    original_name: "Licht Gang Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -433,7 +433,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.light_kuche"
-    original_name: "Auto Light - Küche V2"
+    original_name: "Licht Küche Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -459,7 +459,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.mobiler_schalter_zimmer_julian_schreibtisch"
-    original_name: "Button Trolley"
+    original_name: "Button Küche Trolley"
     area_id: null
     area_name: null
     device_id: null
@@ -472,7 +472,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.monitoring_webpages"
-    original_name: "Website Monitor - Offline Notification"
+    original_name: "Benachrichtigung Website Offline"
     area_id: null
     area_name: null
     device_id: null
@@ -485,7 +485,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.music_wc"
-    original_name: "Auto Music - WC"
+    original_name: "Musik WC Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -498,7 +498,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.nacht_spezial_dimmung_auto_reaktivieren"
-    original_name: "Nacht Gästemodus Auto Aus"
+    original_name: "Modus Nacht Gast Auto Aus"
     area_id: null
     area_name: null
     device_id: null
@@ -511,7 +511,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.nachtlimit_deckenlicht_zimmer"
-    original_name: "Nachtlimit Deckenlicht Zimmer"
+    original_name: "Licht Zimmer Nachtlimit Decke"
     area_id: null
     area_name: null
     device_id: null
@@ -524,7 +524,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.new_automation"
-    original_name: "Abwaschmaschine Start Auto on Automation"
+    original_name: "Automation Abwaschmaschine Auto Ein Aktivierung"
     area_id: null
     area_name: null
     device_id: null
@@ -537,7 +537,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.new_automationlicht_nach_zeit_kinder_sz_abend"
-    original_name: "Routine - Abend - Everyday"
+    original_name: "Routine Wohnung Abend"
     area_id: null
     area_name: null
     device_id: null
@@ -563,7 +563,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.no_one_home"
-    original_name: "Notification Door"
+    original_name: "Benachrichtigung Eingang Türe"
     area_id: null
     area_name: null
     device_id: null
@@ -576,7 +576,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.presence_kids_home_julian"
-    original_name: "Presence Kids Home Julian"
+    original_name: "Präsenz Julian Kinder Zuhause"
     area_id: null
     area_name: null
     device_id: null
@@ -589,7 +589,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.presence_stephan"
-    original_name: "Presence Stephan"
+    original_name: "Präsenz Stephan"
     area_id: null
     area_name: null
     device_id: null
@@ -615,7 +615,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.scene_change_buro"
-    original_name: "Scene Change - Büro"
+    original_name: "Szene Büro Auswahl"
     area_id: null
     area_name: null
     device_id: null
@@ -628,7 +628,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.scene_change_esstisch"
-    original_name: "Scene Change - Esstisch"
+    original_name: "Szene Essraum Auswahl"
     area_id: null
     area_name: null
     device_id: null
@@ -641,7 +641,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.schalter_buro_i"
-    original_name: "Button Büro"
+    original_name: "Button Büro Stephan"
     area_id: null
     area_name: null
     device_id: null
@@ -654,7 +654,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.set_energy_cost"
-    original_name: "Set Energy Cost"
+    original_name: "Energie Tarif Kosten"
     area_id: null
     area_name: null
     device_id: null
@@ -667,7 +667,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.sound_auto_group_after_tv"
-    original_name: "Sound - Auto Group after TV"
+    original_name: "Sound Wohnzimmer Gruppe TV Aus"
     area_id: null
     area_name: null
     device_id: null
@@ -680,7 +680,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.sound_pause_on_tv_play"
-    original_name: "Sound Pause on TV Play"
+    original_name: "Sound Wohnung Pause TV"
     area_id: null
     area_name: null
     device_id: null
@@ -693,7 +693,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.turn_in_tv_board"
-    original_name: "Turn in TV board"
+    original_name: "Schalter Wohnzimmer TV Board Ein"
     area_id: null
     area_name: null
     device_id: null
@@ -706,7 +706,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.turn_off_3d_printer"
-    original_name: "Turn Off 3d Printer"
+    original_name: "Schalter Büro 3D Drucker Aus"
     area_id: null
     area_name: null
     device_id: null
@@ -719,7 +719,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.wc_luftung"
-    original_name: "Auto Lüftung WC"
+    original_name: "Lüftung WC Auto"
     area_id: null
     area_name: null
     device_id: null
@@ -732,7 +732,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.website_monitoring_sensor_update"
-    original_name: "Website Monitor Not Updating Alert"
+    original_name: "Benachrichtigung Website Monitor Störung"
     area_id: null
     area_name: null
     device_id: null
@@ -745,7 +745,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.weckfunktion_zimmer"
-    original_name: "Weckfunktion Zimmer"
+    original_name: "Wecker Zimmer Familie"
     area_id: null
     area_name: null
     device_id: null
@@ -758,7 +758,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.weihnachtsdeko"
-    original_name: "Weihnachtsdeko"
+    original_name: "Schalter Wohnung Weihnachtsdeko"
     area_id: null
     area_name: null
     device_id: null
@@ -771,7 +771,7 @@ entities:
     domain: "automation"
     platform: "automation"
     name: "automation.wohnraum_scene_change"
-    original_name: "Scene Change - Wohnraum"
+    original_name: "Szene Wohnraum Auswahl"
     area_id: null
     area_name: null
     device_id: null

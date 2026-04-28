@@ -550,55 +550,60 @@
 - id: '1761684000001'
   alias: Weckfunktion Zimmer
   description: Schaltet pro Zimmer Deckenlicht und Nachttisch zu konfigurierter Weckzeit
-  triggers:
-  - trigger: time
+  trigger:
+  - platform: time
     at: input_datetime.wakeup_weekday_time_stephan
     id: stephan_weekday_on
-  - trigger: time
+  - platform: time
     at: input_datetime.wakeup_weekday_end_time_stephan
     id: stephan_weekday_off
-  - trigger: time
+  - platform: time
     at: input_datetime.wakeup_weekend_time_stephan
     id: stephan_weekend_on
-  - trigger: time
+  - platform: time
     at: input_datetime.wakeup_weekend_end_time_stephan
     id: stephan_weekend_off
-  - trigger: time
+  - platform: time
     at: input_datetime.wakeup_weekday_time_julian
     id: julian_weekday_on
-  - trigger: time
+  - platform: time
     at: input_datetime.wakeup_weekday_end_time_julian
     id: julian_weekday_off
-  - trigger: time
+  - platform: time
     at: input_datetime.wakeup_weekend_time_julian
     id: julian_weekend_on
-  - trigger: time
+  - platform: time
     at: input_datetime.wakeup_weekend_end_time_julian
     id: julian_weekend_off
-  - trigger: time
+  - platform: time
     at: input_datetime.wakeup_weekday_time_joshua
     id: joshua_weekday_on
-  - trigger: time
+  - platform: time
     at: input_datetime.wakeup_weekday_end_time_joshua
     id: joshua_weekday_off
-  - trigger: time
+  - platform: time
     at: input_datetime.wakeup_weekend_time_joshua
     id: joshua_weekend_on
-  - trigger: time
+  - platform: time
     at: input_datetime.wakeup_weekend_end_time_joshua
     id: joshua_weekend_off
-  conditions:
+  condition:
   - condition: state
     entity_id: input_boolean.alarm_active
     state: 'off'
-  actions:
+  action:
   - choose:
     - conditions:
       - condition: trigger
         id:
         - stephan_weekday_on
       - condition: time
-        weekday: [mon, tue, wed, thu, fri]
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
       - condition: state
         entity_id: input_boolean.wakeup_enabled_stephan
         state: 'on'
@@ -618,7 +623,12 @@
         id:
         - stephan_weekday_off
       - condition: time
-        weekday: [mon, tue, wed, thu, fri]
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
       - condition: state
         entity_id: input_boolean.wakeup_enabled_stephan
         state: 'on'
@@ -636,7 +646,9 @@
         id:
         - stephan_weekend_on
       - condition: time
-        weekday: [sat, sun]
+        weekday:
+        - sat
+        - sun
       - condition: state
         entity_id: input_boolean.wakeup_enabled_stephan
         state: 'on'
@@ -656,7 +668,9 @@
         id:
         - stephan_weekend_off
       - condition: time
-        weekday: [sat, sun]
+        weekday:
+        - sat
+        - sun
       - condition: state
         entity_id: input_boolean.wakeup_enabled_stephan
         state: 'on'
@@ -674,7 +688,12 @@
         id:
         - julian_weekday_on
       - condition: time
-        weekday: [mon, tue, wed, thu, fri]
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
       - condition: state
         entity_id: input_boolean.wakeup_enabled_julian
         state: 'on'
@@ -697,7 +716,12 @@
         id:
         - julian_weekday_off
       - condition: time
-        weekday: [mon, tue, wed, thu, fri]
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
       - condition: state
         entity_id: input_boolean.wakeup_enabled_julian
         state: 'on'
@@ -718,7 +742,9 @@
         id:
         - julian_weekend_on
       - condition: time
-        weekday: [sat, sun]
+        weekday:
+        - sat
+        - sun
       - condition: state
         entity_id: input_boolean.wakeup_enabled_julian
         state: 'on'
@@ -741,7 +767,9 @@
         id:
         - julian_weekend_off
       - condition: time
-        weekday: [sat, sun]
+        weekday:
+        - sat
+        - sun
       - condition: state
         entity_id: input_boolean.wakeup_enabled_julian
         state: 'on'
@@ -762,7 +790,12 @@
         id:
         - joshua_weekday_on
       - condition: time
-        weekday: [mon, tue, wed, thu, fri]
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
       - condition: state
         entity_id: input_boolean.wakeup_enabled_joshua
         state: 'on'
@@ -785,7 +818,12 @@
         id:
         - joshua_weekday_off
       - condition: time
-        weekday: [mon, tue, wed, thu, fri]
+        weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
       - condition: state
         entity_id: input_boolean.wakeup_enabled_joshua
         state: 'on'
@@ -806,7 +844,9 @@
         id:
         - joshua_weekend_on
       - condition: time
-        weekday: [sat, sun]
+        weekday:
+        - sat
+        - sun
       - condition: state
         entity_id: input_boolean.wakeup_enabled_joshua
         state: 'on'
@@ -829,7 +869,9 @@
         id:
         - joshua_weekend_off
       - condition: time
-        weekday: [sat, sun]
+        weekday:
+        - sat
+        - sun
       - condition: state
         entity_id: input_boolean.wakeup_enabled_joshua
         state: 'on'

@@ -36,8 +36,6 @@ views:
             name: Wochenende Ende
           - entity: input_number.wakeup_brightness_julian
             name: Helligkeit
-          - entity: input_boolean.kids_home
-            name: Kinder Zuhause (muss an sein)
       - type: entities
         title: Weckfunktion Zimmer Joshua
         show_header_toggle: false
@@ -54,5 +52,3 @@ views:
             name: Wochenende Ende
           - entity: input_number.wakeup_brightness_joshua
             name: Helligkeit
-          - entity: input_boolean.kids_home
-            name: Kinder Zuhause (muss an sein)

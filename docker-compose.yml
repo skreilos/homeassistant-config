@@ -1,6 +1,6 @@
 services:
   home-assistant:
-    image: homeassistant/home-assistant:2026.4.4
+    image: homeassistant/home-assistant:latest
     container_name: home-assistant
     restart: always
     ports:

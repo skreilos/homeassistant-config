@@ -695,6 +695,7 @@
       - action: switch.turn_on
         target:
           entity_id:
+          - switch.sh_schlafzimmer_stephan_switch_0
           - switch.light_bed_stephan_links_switch
           - switch.light_bed_stephan_rechts_switch
         data: {}
@@ -720,6 +721,7 @@
       - action: switch.turn_off
         target:
           entity_id:
+          - switch.sh_schlafzimmer_stephan_switch_0
           - switch.light_bed_stephan_links_switch
           - switch.light_bed_stephan_rechts_switch
         data: {}
@@ -744,6 +746,7 @@
       - action: switch.turn_on
         target:
           entity_id:
+          - switch.sh_schlafzimmer_stephan_switch_0
           - switch.light_bed_stephan_links_switch
           - switch.light_bed_stephan_rechts_switch
         data: {}
@@ -766,6 +769,7 @@
       - action: switch.turn_off
         target:
           entity_id:
+          - switch.sh_schlafzimmer_stephan_switch_0
           - switch.light_bed_stephan_links_switch
           - switch.light_bed_stephan_rechts_switch
         data: {}

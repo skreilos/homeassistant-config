@@ -5,13 +5,21 @@ views:
     icon: mdi:lightbulb-auto
     cards:
       - type: entities
-        title: Nacht Auto-Licht
+        title: Nachtzeiten Deckenlicht Zimmer
         show_header_toggle: false
         entities:
-          - entity: input_datetime.night_auto_light_start
-            name: Auto Licht Nacht Start
-          - entity: input_datetime.night_auto_light_end
-            name: Auto Licht Nacht Ende
+          - entity: input_datetime.night_auto_light_start_stephan
+            name: Nacht Start Stephan
+          - entity: input_datetime.night_auto_light_end_stephan
+            name: Nacht Ende Stephan
+          - entity: input_datetime.night_auto_light_start_julian
+            name: Nacht Start Julian
+          - entity: input_datetime.night_auto_light_end_julian
+            name: Nacht Ende Julian
+          - entity: input_datetime.night_auto_light_start_joshua
+            name: Nacht Start Joshua
+          - entity: input_datetime.night_auto_light_end_joshua
+            name: Nacht Ende Joshua
           - entity: input_boolean.guest_mode
             name: Gästemodus
       - type: entities

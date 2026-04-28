@@ -12,6 +12,48 @@ night_auto_light_end:
   icon: mdi:clock-end
   initial: "06:00:00"
 
+night_auto_light_start_stephan:
+  name: Nachtmodus Start Stephan
+  has_date: false
+  has_time: true
+  icon: mdi:clock-start
+  initial: "22:00:00"
+
+night_auto_light_end_stephan:
+  name: Nachtmodus Ende Stephan
+  has_date: false
+  has_time: true
+  icon: mdi:clock-end
+  initial: "06:00:00"
+
+night_auto_light_start_julian:
+  name: Nachtmodus Start Julian
+  has_date: false
+  has_time: true
+  icon: mdi:clock-start
+  initial: "22:00:00"
+
+night_auto_light_end_julian:
+  name: Nachtmodus Ende Julian
+  has_date: false
+  has_time: true
+  icon: mdi:clock-end
+  initial: "06:00:00"
+
+night_auto_light_start_joshua:
+  name: Nachtmodus Start Joshua
+  has_date: false
+  has_time: true
+  icon: mdi:clock-start
+  initial: "22:00:00"
+
+night_auto_light_end_joshua:
+  name: Nachtmodus Ende Joshua
+  has_date: false
+  has_time: true
+  icon: mdi:clock-end
+  initial: "06:00:00"
+
 wakeup_weekday_time_stephan:
   name: Weckzeit Wochentag Stephan
   has_date: false

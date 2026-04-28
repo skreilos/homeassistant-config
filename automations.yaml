@@ -35,19 +35,41 @@
       - service: light.turn_on
         data:
           brightness_pct: >
-            {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
-            {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-            {% set in_night = (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') %}
-            {{ states('input_number.night_brightness_kuche') | int if in_night else 100 }}
+            {% set start_s = states('input_datetime.night_auto_light_start') %}
+            {% set end_s = states('input_datetime.night_auto_light_end') %}
+            {% set invalid = ['unknown', 'unavailable', 'none', ''] %}
+            {% if start_s in invalid or end_s in invalid %}
+              {% set in_night = false %}
+            {% else %}
+              {% set start = today_at(start_s) %}
+              {% set end = today_at(end_s) %}
+              {% if end <= start %}
+                {% set in_night = now() >= start or now() < end %}
+              {% else %}
+                {% set in_night = now() >= start and now() < end %}
+              {% endif %}
+            {% endif %}
+            {{ states('input_number.night_brightness_kuche') | int if (in_night and is_state('input_boolean.guest_mode', 'off')) else 100 }}
         target:
           area_id: kuche
       - choose:
         - conditions:
           - condition: template
             value_template: >
-              {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
-              {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-              {% set in_night = now() >= start or now() < end %}
+              {% set start_s = states('input_datetime.night_auto_light_start') %}
+              {% set end_s = states('input_datetime.night_auto_light_end') %}
+              {% set invalid = ['unknown', 'unavailable', 'none', ''] %}
+              {% if start_s in invalid or end_s in invalid %}
+                {% set in_night = false %}
+              {% else %}
+                {% set start = today_at(start_s) %}
+                {% set end = today_at(end_s) %}
+                {% if end <= start %}
+                  {% set in_night = now() >= start or now() < end %}
+                {% else %}
+                  {% set in_night = now() >= start and now() < end %}
+                {% endif %}
+              {% endif %}
               {{ (not in_night) or is_state('input_boolean.guest_mode', 'on') }}
           sequence:
           - service: switch.turn_on
@@ -80,12 +102,7 @@
     - switch.sh_schlafzimmer_kinder_switch_0
     to: 'on'
     trigger: state
-  conditions:
-  - condition: template
-    value_template: >
-      {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
-      {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-      {{ (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') }}
+  conditions: []
   actions:
   - variables:
       target_light: >
@@ -106,12 +123,52 @@
         {% else %}
           20
         {% endif %}
-  - target:
-      entity_id: "{{ target_light }}"
-    data:
-      brightness_pct: "{{ night_pct | int }}"
-      transition: 1
-    action: light.turn_on
+      start_entity: >
+        {% if target_light == 'light.stefan_deckenlicht_light_3' %}
+          input_datetime.night_auto_light_start_stephan
+        {% elif target_light == 'light.deckenlicht_zimmer_julian_light' %}
+          input_datetime.night_auto_light_start_julian
+        {% elif target_light == 'light.zimmer_joshua_deckenlicht_light' %}
+          input_datetime.night_auto_light_start_joshua
+        {% else %}
+          input_datetime.night_auto_light_start
+        {% endif %}
+      end_entity: >
+        {% if target_light == 'light.stefan_deckenlicht_light_3' %}
+          input_datetime.night_auto_light_end_stephan
+        {% elif target_light == 'light.deckenlicht_zimmer_julian_light' %}
+          input_datetime.night_auto_light_end_julian
+        {% elif target_light == 'light.zimmer_joshua_deckenlicht_light' %}
+          input_datetime.night_auto_light_end_joshua
+        {% else %}
+          input_datetime.night_auto_light_end
+        {% endif %}
+      in_night: >
+        {% set start_s = states(start_entity | trim) %}
+        {% set end_s = states(end_entity | trim) %}
+        {% set invalid = ['unknown', 'unavailable', 'none', ''] %}
+        {% if start_s in invalid or end_s in invalid %}
+          false
+        {% else %}
+          {% set start = today_at(start_s) %}
+          {% set end = today_at(end_s) %}
+          {% if end <= start %}
+            {{ now() >= start or now() < end }}
+          {% else %}
+            {{ now() >= start and now() < end }}
+          {% endif %}
+        {% endif %}
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: "{{ in_night | bool and is_state('input_boolean.guest_mode', 'off') }}"
+      sequence:
+      - target:
+          entity_id: "{{ target_light }}"
+        data:
+          brightness_pct: "{{ night_pct | int }}"
+          transition: 1
+        action: light.turn_on
   mode: queued
   max: 10
 - id: '1761513800002'
@@ -289,9 +346,20 @@
         - conditions:
           - condition: template
             value_template: >
-              {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
-              {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-              {{ (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') }}
+              {% set start_s = states('input_datetime.night_auto_light_start') %}
+              {% set end_s = states('input_datetime.night_auto_light_end') %}
+              {% set invalid = ['unknown', 'unavailable', 'none', ''] %}
+              {% if start_s in invalid or end_s in invalid %}
+                false
+              {% else %}
+                {% set start = today_at(start_s) %}
+                {% set end = today_at(end_s) %}
+                {% if end <= start %}
+                  {{ (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') }}
+                {% else %}
+                  {{ (now() >= start and now() < end) and is_state('input_boolean.guest_mode', 'off') }}
+                {% endif %}
+              {% endif %}
           sequence:
           - action: light.turn_on
             data:
@@ -341,10 +409,21 @@
       sequence:
       - data:
           brightness_pct: >
-            {% set start = today_at(states('input_datetime.night_auto_light_start')) %}
-            {% set end = today_at(states('input_datetime.night_auto_light_end')) %}
-            {% set in_night = (now() >= start or now() < end) and is_state('input_boolean.guest_mode', 'off') %}
-            {{ states('input_number.night_brightness_sofa') | int if in_night else 100 }}
+            {% set start_s = states('input_datetime.night_auto_light_start') %}
+            {% set end_s = states('input_datetime.night_auto_light_end') %}
+            {% set invalid = ['unknown', 'unavailable', 'none', ''] %}
+            {% if start_s in invalid or end_s in invalid %}
+              {% set in_night = false %}
+            {% else %}
+              {% set start = today_at(start_s) %}
+              {% set end = today_at(end_s) %}
+              {% if end <= start %}
+                {% set in_night = now() >= start or now() < end %}
+              {% else %}
+                {% set in_night = now() >= start and now() < end %}
+              {% endif %}
+            {% endif %}
+            {{ states('input_number.night_brightness_sofa') | int if (in_night and is_state('input_boolean.guest_mode', 'off')) else 100 }}
         target:
           device_id:
           - be31456f9d9558edd71e8b8a50022e18
@@ -361,18 +440,17 @@
         - Motion Sofa Off
       - condition: or
         conditions:
-        - condition: device
-          device_id: 2d0456d52fa68e75d63f68b94fa5ca8b
-          domain: media_player
-          entity_id: 695de244ff3cd16bd35521a922ef20cd
-          type: is_off
-        - condition: device
-          device_id: 2d0456d52fa68e75d63f68b94fa5ca8b
-          domain: media_player
-          entity_id: 695de244ff3cd16bd35521a922ef20cd
-          type: is_idle
         - condition: state
-          entity_id: media_player.android_tv_10_0_0_22
+          entity_id: media_player.tv
+          state: 'off'
+        - condition: state
+          entity_id: media_player.tv
+          state: idle
+        - condition: state
+          entity_id: media_player.tv
+          state: unavailable
+        - condition: state
+          entity_id: media_player.android_tv_10_0_0_220
           state: unavailable
       sequence:
       - data: {}

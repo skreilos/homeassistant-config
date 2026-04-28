@@ -223,7 +223,7 @@
             id:
             - Eingangstüre opened
       - condition: state
-        entity_id: input_boolean.nightmode
+        entity_id: input_boolean.night_mode
         state: 'off'
       sequence:
       - service: switch.turn_on
@@ -623,7 +623,7 @@
   - service: input_boolean.turn_on
     data: {}
     target:
-      entity_id: input_boolean.nightmode
+      entity_id: input_boolean.night_mode
   mode: single
 - id: '1761684000001'
   alias: Weckfunktion Zimmer
@@ -1234,7 +1234,7 @@
           id:
           - Motion Schlafzimmer Stefan On
       - condition: state
-        entity_id: input_boolean.nightmode
+        entity_id: input_boolean.night_mode
         state: 'off'
       sequence:
       - service: switch.turn_on
@@ -1966,7 +1966,7 @@
         id:
         - Motion On
       - condition: state
-        entity_id: input_boolean.nightmode
+        entity_id: input_boolean.night_mode
         state: 'off'
       sequence:
       - data: {}

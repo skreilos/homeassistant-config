@@ -901,7 +901,9 @@
           transition: 8
       - action: switch.turn_on
         target:
-          entity_id: switch.joshua_nachttisch_switch_2
+          entity_id:
+          - switch.sh_schlafzimmer_kinder_switch_0
+          - switch.joshua_nachttisch_switch_2
         data: {}
     - conditions:
       - condition: trigger
@@ -927,7 +929,9 @@
         data: {}
       - action: switch.turn_off
         target:
-          entity_id: switch.joshua_nachttisch_switch_2
+          entity_id:
+          - switch.sh_schlafzimmer_kinder_switch_0
+          - switch.joshua_nachttisch_switch_2
         data: {}
     - conditions:
       - condition: trigger
@@ -952,7 +956,9 @@
           transition: 8
       - action: switch.turn_on
         target:
-          entity_id: switch.joshua_nachttisch_switch_2
+          entity_id:
+          - switch.sh_schlafzimmer_kinder_switch_0
+          - switch.joshua_nachttisch_switch_2
         data: {}
     - conditions:
       - condition: trigger
@@ -975,7 +981,9 @@
         data: {}
       - action: switch.turn_off
         target:
-          entity_id: switch.joshua_nachttisch_switch_2
+          entity_id:
+          - switch.sh_schlafzimmer_kinder_switch_0
+          - switch.joshua_nachttisch_switch_2
         data: {}
   mode: single
 - id: '1695326696870'

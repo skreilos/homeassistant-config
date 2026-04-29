@@ -441,13 +441,13 @@
       - condition: or
         conditions:
         - condition: state
-          entity_id: media_player.tv
+          entity_id: media_player.wohnraum
           state: 'off'
         - condition: state
-          entity_id: media_player.tv
+          entity_id: media_player.wohnraum
           state: idle
         - condition: state
-          entity_id: media_player.tv
+          entity_id: media_player.wohnraum
           state: unavailable
         - condition: state
           entity_id: media_player.android_tv_10_0_0_220
@@ -506,7 +506,7 @@
       - data: {}
         action: media_player.media_play_pause
         target:
-          entity_id: media_player.tv
+          entity_id: media_player.wohnraum
     - conditions:
       - condition: trigger
         id:
@@ -514,21 +514,21 @@
       sequence:
       - data:
           group_members:
-          - media_player.stephan
-          - media_player.buro
+          - media_player.schlafzimmer_stephan
+          - media_player.essraum
         action: media_player.join
         target:
-          entity_id: media_player.tv
+          entity_id: media_player.wohnraum
       - data:
           volume_level: 0.08
         action: media_player.volume_set
         target:
           entity_id:
-          - media_player.buro
-          - media_player.stephan
-          - media_player.tv
+          - media_player.essraum
+          - media_player.schlafzimmer_stephan
+          - media_player.wohnraum
       - target:
-          entity_id: media_player.tv
+          entity_id: media_player.wohnraum
         data:
           media_content_id: FV:2/60
           media_content_type: favorite_item_id
@@ -546,7 +546,7 @@
           shuffle: true
         action: media_player.shuffle_set
         target:
-          entity_id: media_player.tv
+          entity_id: media_player.wohnraum
     - conditions:
       - condition: trigger
         id:
@@ -2790,7 +2790,7 @@
         metadata: {}
         data: {}
         target:
-          entity_id: media_player.tv
+          entity_id: media_player.wohnraum
     - conditions:
       - condition: trigger
         id:
@@ -2800,9 +2800,9 @@
         target:
           entity_id:
           - media_player.wohnzimmer
-          - media_player.stephan
-          - media_player.tv
-          - media_player.buro
+          - media_player.schlafzimmer_stephan
+          - media_player.wohnraum
+          - media_player.essraum
         data: {}
     - conditions:
       - condition: trigger
@@ -2813,9 +2813,9 @@
         target:
           entity_id:
           - media_player.wohnzimmer
-          - media_player.stephan
-          - media_player.tv
-          - media_player.buro
+          - media_player.schlafzimmer_stephan
+          - media_player.wohnraum
+          - media_player.essraum
         data: {}
     - conditions:
       - condition: trigger

@@ -45,7 +45,7 @@
   action:
     - service: switch.toggle
       data_template:
-        entity_id: switch.office_desk
+        entity_id: switch.ikea_of_sweden_tradfri_control_outlet_switch
       
   ################################################ Schalter Bett Lange Gedrückt ####
 - alias: 'MS-SS-Bett-Ein-Lange'
@@ -166,7 +166,7 @@
   action:
     - service: switch.toggle
       data_template:
-        entity_id: switch.office_desk
+        entity_id: switch.ikea_of_sweden_tradfri_control_outlet_switch
 
 
 

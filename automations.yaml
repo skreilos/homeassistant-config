@@ -556,7 +556,7 @@
           device_id: []
           area_id: []
           entity_id:
-          - switch.sh_buro_gerate_switch_0
+          - switch.ikea_of_sweden_tradfri_control_outlet_switch
         data: {}
         action: switch.toggle
       - target:

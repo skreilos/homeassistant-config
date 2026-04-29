@@ -1233,9 +1233,14 @@
         - condition: trigger
           id:
           - Motion Schlafzimmer Stefan On
-      - condition: state
-        entity_id: input_boolean.night_mode
-        state: 'off'
+      - condition: or
+        conditions:
+        - condition: state
+          entity_id: input_boolean.night_mode
+          state: 'off'
+        - condition: state
+          entity_id: input_boolean.kids_home
+          state: 'off'
       sequence:
       - service: switch.turn_on
         target:

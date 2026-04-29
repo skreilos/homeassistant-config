@@ -1780,13 +1780,14 @@
           entity_id: input_boolean.alarm_active
   mode: single
 - id: '1761693000001'
-  alias: Präsenz Julian Kinder Zuhause
-  description: Setzt Kinder Zuhause auf Basis von Tablet Tracker und IP-Ping
+  alias: Präsenz Kinder Zuhause
+  description: Setzt Kinder Zuhause auf Basis von Tablet Tracker und IP-Ping (Julian/Joshua)
   trigger:
   - platform: state
     entity_id:
     - device_tracker.tablet_sk_i
     - binary_sensor.julian_tablet_ip
+    - binary_sensor.joshua_tablet_ip
   condition: []
   action:
   - choose:
@@ -1798,6 +1799,9 @@
           state: home
         - condition: state
           entity_id: binary_sensor.julian_tablet_ip
+          state: 'on'
+        - condition: state
+          entity_id: binary_sensor.joshua_tablet_ip
           state: 'on'
       sequence:
       - service: input_boolean.turn_on
@@ -1814,6 +1818,9 @@
         state: not_home
       - condition: state
         entity_id: binary_sensor.julian_tablet_ip
+        state: 'off'
+      - condition: state
+        entity_id: binary_sensor.joshua_tablet_ip
         state: 'off'
     - service: input_boolean.turn_off
       target:

@@ -61,6 +61,12 @@ command_line:
       payload_on: "ON"
       payload_off: "OFF"
       scan_interval: 30
+  - binary_sensor:
+      name: Joshua Tablet IP
+      command: "ping -c 1 -W 1 10.0.0.146 > /dev/null 2>&1 && echo ON || echo OFF"
+      payload_on: "ON"
+      payload_off: "OFF"
+      scan_interval: 30
 
 google_assistant: !include google_assistant.yaml 
 

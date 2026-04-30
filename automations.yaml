@@ -1788,6 +1788,9 @@
   alias: Präsenz Kinder Zuhause
   description: Setzt Kinder Zuhause auf Basis von Tablet Tracker und IP-Ping (Julian/Joshua)
   trigger:
+  - platform: homeassistant
+    event: start
+    id: HA Start
   - platform: state
     entity_id:
     - device_tracker.tablet_sk_i

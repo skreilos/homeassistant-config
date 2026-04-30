@@ -28,6 +28,16 @@ night_brightness_sofa:
   icon: mdi:brightness-6
   initial: 15
 
+day_brightness_sofa:
+  name: Tag Helligkeit Sofa
+  min: 1
+  max: 100
+  step: 1
+  mode: slider
+  unit_of_measurement: "%"
+  icon: mdi:white-balance-sunny
+  initial: 100
+
 night_brightness_decke_stephan:
   name: Nacht Helligkeit Decke Schlafzimmer Stephan
   min: 1
@@ -37,6 +47,16 @@ night_brightness_decke_stephan:
   unit_of_measurement: "%"
   icon: mdi:brightness-6
   initial: 20
+
+day_brightness_decke_stephan:
+  name: Tag Helligkeit Decke Schlafzimmer Stephan
+  min: 1
+  max: 100
+  step: 1
+  mode: slider
+  unit_of_measurement: "%"
+  icon: mdi:white-balance-sunny
+  initial: 100
 
 night_brightness_decke_julian:
   name: Nacht Helligkeit Decke Julian

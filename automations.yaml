@@ -406,6 +406,9 @@
       - condition: trigger
         id:
         - Motion Sofa On
+      - condition: numeric_state
+        entity_id: sensor.lumi_lumi_sensor_motion_aq2_illuminance_2
+        below: 250
       sequence:
       - data:
           brightness_pct: >
@@ -423,7 +426,7 @@
                 {% set in_night = now() >= start and now() < end %}
               {% endif %}
             {% endif %}
-            {{ states('input_number.night_brightness_sofa') | int if (in_night and is_state('input_boolean.guest_mode', 'off')) else 100 }}
+            {{ states('input_number.night_brightness_sofa') | int if (in_night and is_state('input_boolean.guest_mode', 'off')) else states('input_number.day_brightness_sofa') | int }}
         target:
           device_id:
           - be31456f9d9558edd71e8b8a50022e18
@@ -614,13 +617,29 @@
   description: ''
   trigger:
   - platform: time
-    at: '23:50:00'
+    at: input_datetime.night_mode_kids_start
   condition:
   - condition: state
     entity_id: input_boolean.kids_home
     state: 'on'
   action:
   - service: input_boolean.turn_on
+    data: {}
+    target:
+      entity_id: input_boolean.night_mode
+  mode: single
+- id: '1761799200001'
+  alias: Routine Wohnung Morgen
+  description: ''
+  trigger:
+  - platform: time
+    at: input_datetime.night_mode_kids_end
+  condition:
+  - condition: state
+    entity_id: input_boolean.kids_home
+    state: 'on'
+  action:
+  - service: input_boolean.turn_off
     data: {}
     target:
       entity_id: input_boolean.night_mode
@@ -1233,6 +1252,11 @@
         - condition: trigger
           id:
           - Motion Schlafzimmer Stefan On
+      - condition: template
+        value_template: >
+          {% set lux_r = states('sensor.lumi_lumi_sensor_motion_aq2_illuminance') | float(9999) %}
+          {% set lux_l = states('sensor.lumi_lumi_sensor_motion_aq2_illuminance_8') | float(9999) %}
+          {{ lux_r < 250 or lux_l < 250 }}
       - condition: or
         conditions:
         - condition: state
@@ -1242,6 +1266,26 @@
           entity_id: input_boolean.kids_home
           state: 'off'
       sequence:
+      - service: light.turn_on
+        data:
+          brightness_pct: >
+            {% set start_s = states('input_datetime.night_auto_light_start_stephan') %}
+            {% set end_s = states('input_datetime.night_auto_light_end_stephan') %}
+            {% set invalid = ['unknown', 'unavailable', 'none', ''] %}
+            {% if start_s in invalid or end_s in invalid %}
+              {% set in_night = false %}
+            {% else %}
+              {% set start = today_at(start_s) %}
+              {% set end = today_at(end_s) %}
+              {% if end <= start %}
+                {% set in_night = now() >= start or now() < end %}
+              {% else %}
+                {% set in_night = now() >= start and now() < end %}
+              {% endif %}
+            {% endif %}
+            {{ states('input_number.night_brightness_decke_stephan') | int if (in_night and is_state('input_boolean.guest_mode', 'off')) else states('input_number.day_brightness_decke_stephan') | int }}
+        target:
+          entity_id: light.stefan_deckenlicht_light_3
       - service: switch.turn_on
         target:
           entity_id: switch.sh_schlafzimmer_stephan_switch_0

@@ -12,6 +12,20 @@ night_auto_light_end:
   icon: mdi:clock-end
   initial: "06:00:00"
 
+night_mode_kids_start:
+  name: Night Mode Kinder Start
+  has_date: false
+  has_time: true
+  icon: mdi:clock-start
+  initial: "23:50:00"
+
+night_mode_kids_end:
+  name: Night Mode Kinder Ende
+  has_date: false
+  has_time: true
+  icon: mdi:clock-end
+  initial: "06:00:00"
+
 night_auto_light_start_stephan:
   name: Nachtmodus Start Stephan
   has_date: false

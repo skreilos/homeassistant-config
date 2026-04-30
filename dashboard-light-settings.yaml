@@ -8,6 +8,10 @@ views:
         title: Nachtzeiten Deckenlicht Zimmer
         show_header_toggle: false
         entities:
+          - entity: input_datetime.night_mode_kids_start
+            name: Night Mode Kinder Ein
+          - entity: input_datetime.night_mode_kids_end
+            name: Night Mode Kinder Aus
           - entity: input_datetime.night_auto_light_start_stephan
             name: Nacht Start Stephan
           - entity: input_datetime.night_auto_light_end_stephan
@@ -26,6 +30,10 @@ views:
         title: Helligkeit je Bereich
         show_header_toggle: false
         entities:
+          - entity: input_number.day_brightness_sofa
+            name: Licht Wohnzimmer Sofa Tag
+          - entity: input_number.day_brightness_decke_stephan
+            name: Licht Schlafzimmer Stephan Decke Tag
           - entity: input_number.night_brightness_sofa
             name: Licht Wohnzimmer Sofa Nacht
           - entity: input_number.night_brightness_esstisch

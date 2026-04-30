@@ -66,7 +66,7 @@ wakeup_brightness_stephan:
   mode: slider
   unit_of_measurement: "%"
   icon: mdi:weather-sunset-up
-  initial: 35
+  initial: 100
 
 wakeup_brightness_julian:
   name: Weckfunktion Helligkeit Julian
@@ -76,7 +76,7 @@ wakeup_brightness_julian:
   mode: slider
   unit_of_measurement: "%"
   icon: mdi:weather-sunset-up
-  initial: 35
+  initial: 100
 
 wakeup_brightness_joshua:
   name: Weckfunktion Helligkeit Joshua
@@ -86,4 +86,4 @@ wakeup_brightness_joshua:
   mode: slider
   unit_of_measurement: "%"
   icon: mdi:weather-sunset-up
-  initial: 35
+  initial: 100

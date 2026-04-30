@@ -611,6 +611,19 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: null
+  - entity_id: "automation.routine_wohnung_morgen"
+    domain: "automation"
+    platform: "automation"
+    name: null
+    original_name: "Routine Wohnung Morgen"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: null
   - entity_id: "automation.scene_change_buro"
     domain: "automation"
     platform: "automation"
@@ -9308,6 +9321,32 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: "mdi:clock-start"
+  - entity_id: "input_datetime.night_mode_kids_end"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Night Mode Kinder Ende"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-end"
+  - entity_id: "input_datetime.night_mode_kids_start"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Night Mode Kinder Start"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-start"
   - entity_id: "input_datetime.wakeup_weekday_end_time_joshua"
     domain: "input_datetime"
     platform: "input_datetime"
@@ -9477,6 +9516,32 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: null
+  - entity_id: "input_number.day_brightness_decke_stephan"
+    domain: "input_number"
+    platform: "input_number"
+    name: null
+    original_name: "Tag Helligkeit Decke Schlafzimmer Stephan"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:white-balance-sunny"
+  - entity_id: "input_number.day_brightness_sofa"
+    domain: "input_number"
+    platform: "input_number"
+    name: null
+    original_name: "Tag Helligkeit Sofa"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:white-balance-sunny"
   - entity_id: "input_number.eg_sound_esszimmer"
     domain: "input_number"
     platform: "input_number"

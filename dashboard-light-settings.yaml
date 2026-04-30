@@ -20,8 +20,6 @@ views:
             name: Nacht Start Joshua
           - entity: input_datetime.night_auto_light_end_joshua
             name: Nacht Ende Joshua
-          - entity: input_boolean.night_mode
-            name: Night Mode
           - entity: input_boolean.guest_mode
             name: Gästemodus
       - type: entities

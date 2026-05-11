@@ -116,7 +116,7 @@ auto_light_lux_threshold_kuche:
   mode: slider
   unit_of_measurement: "lx"
   icon: mdi:brightness-5
-  initial: 180
+  initial: 210
 
 auto_light_lux_threshold_essraum:
   name: Licht Essraum Lux Schwelle
@@ -126,7 +126,7 @@ auto_light_lux_threshold_essraum:
   mode: slider
   unit_of_measurement: "lx"
   icon: mdi:brightness-5
-  initial: 250
+  initial: 210
 
 auto_light_lux_threshold_sofa:
   name: Licht Wohnzimmer Sofa Lux Schwelle
@@ -136,7 +136,7 @@ auto_light_lux_threshold_sofa:
   mode: slider
   unit_of_measurement: "lx"
   icon: mdi:brightness-5
-  initial: 250
+  initial: 210
 
 auto_light_lux_threshold_schlafzimmer_stephan:
   name: Licht Schlafzimmer Stephan Lux Schwelle
@@ -146,7 +146,7 @@ auto_light_lux_threshold_schlafzimmer_stephan:
   mode: slider
   unit_of_measurement: "lx"
   icon: mdi:brightness-5
-  initial: 250
+  initial: 210
 
 auto_light_lux_threshold_julian:
   name: Licht Zimmer Julian Lux Schwelle
@@ -156,7 +156,7 @@ auto_light_lux_threshold_julian:
   mode: slider
   unit_of_measurement: "lx"
   icon: mdi:brightness-5
-  initial: 120
+  initial: 210
 
 auto_light_lux_threshold_joshua:
   name: Licht Zimmer Joshua Lux Schwelle
@@ -166,4 +166,4 @@ auto_light_lux_threshold_joshua:
   mode: slider
   unit_of_measurement: "lx"
   icon: mdi:brightness-5
-  initial: 120
+  initial: 210

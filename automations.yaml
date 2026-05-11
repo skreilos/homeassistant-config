@@ -29,7 +29,7 @@
         value_template: >
           {% set v = states('sensor.motion_gang_kuche_illuminance_9') %}
           {% set lux = v | float(9999) if v not in ['unknown','unavailable','none',''] else 9999 %}
-          {% set th = states('input_number.auto_light_lux_threshold_kuche') | float(180) %}
+          {% set th = states('input_number.auto_light_lux_threshold_kuche') | float(210) %}
           {{ lux < th }}
       sequence:
       - service: light.turn_on
@@ -339,7 +339,7 @@
         value_template: >
           {% set v = states('sensor.motion_esstisch_illuminance_4') %}
           {% set lux = v | float(9999) if v not in ['unknown','unavailable','none',''] else 9999 %}
-          {% set th = states('input_number.auto_light_lux_threshold_essraum') | float(250) %}
+          {% set th = states('input_number.auto_light_lux_threshold_essraum') | float(210) %}
           {{ lux < th }}
       sequence:
       - choose:
@@ -410,7 +410,7 @@
         value_template: >
           {% set v = states('sensor.lumi_lumi_sensor_motion_aq2_illuminance_2') %}
           {% set lux = v | float(9999) if v not in ['unknown','unavailable','none',''] else 9999 %}
-          {% set th = states('input_number.auto_light_lux_threshold_sofa') | float(250) %}
+          {% set th = states('input_number.auto_light_lux_threshold_sofa') | float(210) %}
           {{ lux < th }}
       sequence:
       - data:
@@ -1259,7 +1259,7 @@
         value_template: >
           {% set lux_r = states('sensor.lumi_lumi_sensor_motion_aq2_illuminance') | float(9999) %}
           {% set lux_l = states('sensor.lumi_lumi_sensor_motion_aq2_illuminance_8') | float(9999) %}
-          {% set th = states('input_number.auto_light_lux_threshold_schlafzimmer_stephan') | float(250) %}
+          {% set th = states('input_number.auto_light_lux_threshold_schlafzimmer_stephan') | float(210) %}
           {{ lux_r < th or lux_l < th }}
       - condition: or
         conditions:
@@ -2254,7 +2254,7 @@
         {% set v = states('sensor.lumi_lumi_sensor_motion_aq2_illuminance_9') %}
         {{ v | float(9999) if v not in ['unknown','unavailable','none',''] else 9999 }}
       lux_threshold: >
-        {{ states('input_number.auto_light_lux_threshold_julian') | float(120) }}
+        {{ states('input_number.auto_light_lux_threshold_julian') | float(210) }}
       day_window: >
         {% set s = states('input_datetime.kids_home_auto_light_start_julian') %}
         {% set e = states('input_datetime.kids_home_auto_light_end_julian') %}
@@ -2346,7 +2346,7 @@
         {% set v = states('sensor.motion_schlafzimmer_kinder_illuminance_9') %}
         {{ v | float(9999) if v not in ['unknown','unavailable','none',''] else 9999 }}
       lux_threshold: >
-        {{ states('input_number.auto_light_lux_threshold_joshua') | float(120) }}
+        {{ states('input_number.auto_light_lux_threshold_joshua') | float(210) }}
       day_window: >
         {% set s = states('input_datetime.kids_home_auto_light_start_joshua') %}
         {% set e = states('input_datetime.kids_home_auto_light_end_joshua') %}

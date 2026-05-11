@@ -1270,9 +1270,8 @@
           entity_id: input_boolean.kids_home
           state: 'off'
       sequence:
-      - service: light.turn_on
-        data:
-          brightness_pct: >
+      - variables:
+          target_pct_stephan: >
             {% set start_s = states('input_datetime.night_auto_light_start_stephan') %}
             {% set end_s = states('input_datetime.night_auto_light_end_stephan') %}
             {% set invalid = ['unknown', 'unavailable', 'none', ''] %}
@@ -1288,11 +1287,21 @@
               {% endif %}
             {% endif %}
             {{ states('input_number.night_brightness_decke_stephan') | int if (in_night and is_state('input_boolean.guest_mode', 'off')) else states('input_number.day_brightness_decke_stephan') | int }}
-        target:
-          entity_id: light.stefan_deckenlicht_light_3
       - service: switch.turn_on
         target:
           entity_id: switch.sh_schlafzimmer_stephan_switch_0
+      - wait_template: >
+          {{ states('light.stefan_deckenlicht_light_3') not in ['unavailable','unknown'] }}
+        timeout: '00:00:08'
+        continue_on_timeout: true
+      - delay:
+          milliseconds: 800
+      - service: light.turn_on
+        data:
+          brightness_pct: "{{ target_pct_stephan | int }}"
+          transition: 1
+        target:
+          entity_id: light.stefan_deckenlicht_light_3
     - conditions:
       - condition: trigger
         id:

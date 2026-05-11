@@ -1,85 +1,85 @@
 kids_home:
-  name: Kinder Zuhause
+  name: Präsenz Kinder Zuhause
   icon: mdi:Ball
   initial: off
 
 manual_activation_wohnraum:
-  name: Manuelle Aktivierung Wohnraum
+  name: Schalter Wohnraum Manuell
   icon: mdi:kettle
   initial: off
 
 manual_activation_essraum:
-  name: Manuelle Aktivierung Essraum
+  name: Schalter Essraum Manuell
   icon: mdi:kettle
   initial: off
 
 manual_activation_licht_julian:
-  name: Manuelle Aktivierung Zimmer Julian
+  name: Schalter Zimmer Julian Manuell
   icon: mdi:kettle
   initial: off
 
 manual_activation_schlafzimmer_stephan:
-  name: Manuelle Aktivierung Schlafzimmer Stephan
+  name: Schalter Zimmer Stephan Manuell
   icon: mdi:kettle
   initial: off
 
 night_mode:
-  name: Night Mode
+  name: Schalter Modus Nacht
   icon: mdi:Light
   initial: off
 
 soundeg:
-  name: EG Sound 
+  name: Sound EG Aktiv
   initial: off
   icon: mdi:music-note
 
 sound_eg_groued:
-  name: Sonos EG gruppiert
+  name: Sound EG Gruppiert
   initial: off
   icon: mdi:music-note
 
 alarm_active:
-  name: Alarm Aktiv
+  name: Alarm Wohnung Aktiv
   icon: mdi:alarm-light
   initial: off
 
 tageslicht:
-  name: Tageslicht
+  name: Schalter Tageslicht
   icon: mdi:sun
   initial: off
 
 show_additional_functionality:
-  name: Zusätzliche Funktionen Anzeigen
+  name: Schalter Zusätzliche Funktionen
   icon: mdi:gear
   initial: off
 
 motion_wohnraum:
-  name: Bewegung Wohnraum
+  name: Sensor Bewegung Wohnraum
   icon: mdi:kettle
   initial: off
 
 motion_essraum:
-  name: Bewegung Essraum
+  name: Sensor Bewegung Essraum
   icon: mdi:kettle
   initial: off
 
 guest_mode:
-  name: Gästemodus
+  name: Präsenz Gast Aktiv
   icon: mdi:account-group
   initial: off
 
 wakeup_enabled_stephan:
-  name: Weckfunktion Stephan Aktiv
+  name: Wecker Stephan Aktiv
   icon: mdi:alarm-check
   initial: on
 
 wakeup_enabled_julian:
-  name: Weckfunktion Julian Aktiv
+  name: Wecker Julian Aktiv
   icon: mdi:alarm-check
   initial: on
 
 wakeup_enabled_joshua:
-  name: Weckfunktion Joshua Aktiv
+  name: Wecker Joshua Aktiv
   icon: mdi:alarm-check
   initial: on
 

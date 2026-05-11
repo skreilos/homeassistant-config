@@ -24,6 +24,13 @@ home-assistant.log*
 # Editor
 .vscode/
 
+# Python
+__pycache__/
+*.pyc
+
+# .storage backups created by apply scripts
+*.bak.*
+
 # Corrupt DB artifacts
 *.db.corrupt.*
 *.db-shm.corrupt.*

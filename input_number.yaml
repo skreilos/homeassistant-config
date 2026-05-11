@@ -1,5 +1,5 @@
 night_brightness_kuche:
-  name: Nacht Helligkeit Küche
+  name: Licht Küche Nacht Helligkeit
   min: 1
   max: 100
   step: 1
@@ -9,7 +9,7 @@ night_brightness_kuche:
   initial: 15
 
 night_brightness_esstisch:
-  name: Nacht Helligkeit Esstisch
+  name: Licht Esstisch Nacht Helligkeit
   min: 1
   max: 100
   step: 1
@@ -19,7 +19,7 @@ night_brightness_esstisch:
   initial: 15
 
 night_brightness_sofa:
-  name: Nacht Helligkeit Sofa
+  name: Licht Sofa Nacht Helligkeit
   min: 1
   max: 100
   step: 1
@@ -29,7 +29,7 @@ night_brightness_sofa:
   initial: 15
 
 day_brightness_sofa:
-  name: Tag Helligkeit Sofa
+  name: Licht Sofa Tag Helligkeit
   min: 1
   max: 100
   step: 1
@@ -39,7 +39,7 @@ day_brightness_sofa:
   initial: 100
 
 night_brightness_decke_stephan:
-  name: Nacht Helligkeit Decke Schlafzimmer Stephan
+  name: Licht Zimmer Stephan Decke Nacht Helligkeit
   min: 1
   max: 100
   step: 1
@@ -49,7 +49,7 @@ night_brightness_decke_stephan:
   initial: 20
 
 day_brightness_decke_stephan:
-  name: Tag Helligkeit Decke Schlafzimmer Stephan
+  name: Licht Zimmer Stephan Decke Tag Helligkeit
   min: 1
   max: 100
   step: 1
@@ -59,7 +59,7 @@ day_brightness_decke_stephan:
   initial: 100
 
 night_brightness_decke_julian:
-  name: Nacht Helligkeit Decke Julian
+  name: Licht Zimmer Julian Decke Nacht Helligkeit
   min: 1
   max: 100
   step: 1
@@ -69,7 +69,7 @@ night_brightness_decke_julian:
   initial: 20
 
 night_brightness_decke_joshua:
-  name: Nacht Helligkeit Decke Joshua
+  name: Licht Zimmer Joshua Decke Nacht Helligkeit
   min: 1
   max: 100
   step: 1
@@ -79,7 +79,7 @@ night_brightness_decke_joshua:
   initial: 20
 
 wakeup_brightness_stephan:
-  name: Weckfunktion Helligkeit Stephan
+  name: Wecker Stephan Helligkeit
   min: 1
   max: 100
   step: 1
@@ -89,7 +89,7 @@ wakeup_brightness_stephan:
   initial: 100
 
 wakeup_brightness_julian:
-  name: Weckfunktion Helligkeit Julian
+  name: Wecker Julian Helligkeit
   min: 1
   max: 100
   step: 1
@@ -99,7 +99,7 @@ wakeup_brightness_julian:
   initial: 100
 
 wakeup_brightness_joshua:
-  name: Weckfunktion Helligkeit Joshua
+  name: Wecker Joshua Helligkeit
   min: 1
   max: 100
   step: 1

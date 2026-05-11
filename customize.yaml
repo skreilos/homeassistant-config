@@ -1,99 +1,17 @@
-#script.sonos_group_speakers_all:
-#  friendly_name: Gruppiere alle Sonos
-#  icon: mdi:home-variant
-
-light.deckenlicht_zimmer_julian_light:
-  friendly_name: Licht Zimmer Julian Decke
-
-light.zimmer_julian_deckenlicht_light:
-  friendly_name: Licht Zimmer Julian Hauptlicht
-
-switch.julian_nachttisch_switch:
-  friendly_name: Schalter Zimmer Julian Nachttisch
-
-light.zimmer_joshua_deckenlicht_light:
-  friendly_name: Licht Zimmer Joshua Hauptlicht
-
-switch.joshua_nachttisch_switch_2:
-  friendly_name: Schalter Zimmer Joshua Nachttisch
-
-sensor.button_spielzimmer_battery_6:
-  friendly_name: Sensor Button Zimmer Julian Batterie
-
-sensor.button_werktisch_battery_6:
-  friendly_name: Sensor Button Schreibtisch Julian Batterie
-
-sensor.button_werktisch_lqi_7:
-  friendly_name: Sensor Button Schreibtisch Julian LQI
-
-sensor.button_werktisch_rssi_7:
-  friendly_name: Sensor Button Schreibtisch Julian RSSI
-
-sensor.ikea_of_sweden_jetstrom_40100_lqi:
-  friendly_name: Sensor Deckenlicht Zimmer Julian LQI
-
-sensor.ikea_of_sweden_jetstrom_40100_rssi:
-  friendly_name: Sensor Deckenlicht Zimmer Julian RSSI
-
-sensor.ikea_of_sweden_tradfri_control_outlet_lqi_2:
-  friendly_name: Sensor Schreibtisch Licht Zimmer Julian LQI
-
-sensor.ikea_of_sweden_tradfri_control_outlet_rssi_2:
-  friendly_name: Sensor Schreibtisch Licht Zimmer Julian RSSI
-
-sensor.ikea_of_sweden_tradfri_on_off_switch_lqi_6:
-  friendly_name: Sensor Button Zimmer Julian LQI
-
-sensor.ikea_of_sweden_tradfri_on_off_switch_rssi_6:
-  friendly_name: Sensor Button Zimmer Julian RSSI
-
-sensor.lumi_lumi_weather_battery_5:
-  friendly_name: Sensor MultiSensor Zimmer Julian Batterie
-
-sensor.lumi_lumi_weather_humidity_5:
-  friendly_name: Sensor MultiSensor Zimmer Julian Luftfeuchte
-
-sensor.lumi_lumi_weather_lqi_5:
-  friendly_name: Sensor MultiSensor Zimmer Julian LQI
-
-sensor.lumi_lumi_weather_pressure_5:
-  friendly_name: Sensor MultiSensor Zimmer Julian Luftdruck
-
-sensor.lumi_lumi_weather_rssi_5:
-  friendly_name: Sensor MultiSensor Zimmer Julian RSSI
-
-sensor.lumi_lumi_weather_temperature_5:
-  friendly_name: Sensor MultiSensor Zimmer Julian Temperatur
-
-sensor.philips_lwv001_lqi:
-  friendly_name: Sensor Deckenlicht Zimmer Julian LQI
-
-sensor.philips_lwv001_rssi:
-  friendly_name: Sensor Deckenlicht Zimmer Julian RSSI
-
-media_player.zimmer_julian:
-  friendly_name: MediaPlayer Zimmer Julian
-
-media_player.zimmer_joshua:
-  friendly_name: MediaPlayer Zimmer Joshua
-
-light.deckenlicht_zimmer_julian_light:
-  friendly_name: Licht Zimmer Julian Decke
-
-light.zimmer_julian_deckenlicht_light:
-  friendly_name: Licht Zimmer Julian Hauptlicht
-
-switch.zimmer_julian_spot_switch_6:
-  friendly_name: Schalter Zimmer Julian Spot
-
-binary_sensor.motion_zimmer_joshua_motion_9:
-  friendly_name: Sensor Bewegung Zimmer Joshua
-
-light.sh_rgbw_aquarium_joshua_channel_3:
-  friendly_name: Licht Aquarium Zimmer Joshua Kanal 3
-
-light.sh_rgbw_aquarium_joshua_channel_4:
-  friendly_name: Licht Aquarium Zimmer Joshua Kanal 4
-
-automation.auto_light_zimmer_joshua:
-  friendly_name: Auto Licht Zimmer Joshua
+# DEPRECATED: customize.yaml is no longer used in this project.
+#
+# Background:
+# - This file was historically used to override `friendly_name`.
+# - It was never loaded by `configuration.yaml` (no
+#   `homeassistant: { customize: !include customize.yaml }` block).
+# - In Home Assistant 2026 the entity registry is the single source of truth
+#   for display names; `friendly_name` overrides from `customize.yaml` are
+#   ignored by many frontend dialogs.
+#
+# All historic overrides have been migrated to
+#   ./entity_friendly_name_map.yaml
+# and are applied to the entity/device registry via:
+#   scripts/apply_entity_friendly_names.py
+#   scripts/apply_device_names.py
+#
+# Keep this file empty so existing references in older docs don't crash.

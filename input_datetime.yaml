@@ -1,152 +1,152 @@
 night_auto_light_start:
-  name: Nachtmodus Start
+  name: Wecker Modus Nacht Start
   has_date: false
   has_time: true
   icon: mdi:clock-start
   initial: "22:00:00"
 
 night_auto_light_end:
-  name: Nachtmodus Ende
+  name: Wecker Modus Nacht Ende
   has_date: false
   has_time: true
   icon: mdi:clock-end
   initial: "06:00:00"
 
 night_mode_kids_start:
-  name: Night Mode Kinder Start
+  name: Wecker Modus Nacht Kinder Start
   has_date: false
   has_time: true
   icon: mdi:clock-start
   initial: "23:50:00"
 
 night_mode_kids_end:
-  name: Night Mode Kinder Ende
+  name: Wecker Modus Nacht Kinder Ende
   has_date: false
   has_time: true
   icon: mdi:clock-end
   initial: "06:00:00"
 
 night_auto_light_start_stephan:
-  name: Nachtmodus Start Stephan
+  name: Wecker Modus Nacht Stephan Start
   has_date: false
   has_time: true
   icon: mdi:clock-start
   initial: "22:00:00"
 
 night_auto_light_end_stephan:
-  name: Nachtmodus Ende Stephan
+  name: Wecker Modus Nacht Stephan Ende
   has_date: false
   has_time: true
   icon: mdi:clock-end
   initial: "06:00:00"
 
 night_auto_light_start_julian:
-  name: Nachtmodus Start Julian
+  name: Wecker Modus Nacht Julian Start
   has_date: false
   has_time: true
   icon: mdi:clock-start
   initial: "22:00:00"
 
 night_auto_light_end_julian:
-  name: Nachtmodus Ende Julian
+  name: Wecker Modus Nacht Julian Ende
   has_date: false
   has_time: true
   icon: mdi:clock-end
   initial: "06:00:00"
 
 night_auto_light_start_joshua:
-  name: Nachtmodus Start Joshua
+  name: Wecker Modus Nacht Joshua Start
   has_date: false
   has_time: true
   icon: mdi:clock-start
   initial: "22:00:00"
 
 night_auto_light_end_joshua:
-  name: Nachtmodus Ende Joshua
+  name: Wecker Modus Nacht Joshua Ende
   has_date: false
   has_time: true
   icon: mdi:clock-end
   initial: "06:00:00"
 
 wakeup_weekday_time_stephan:
-  name: Weckzeit Wochentag Stephan
+  name: Wecker Stephan Wochentag Start
   has_date: false
   has_time: true
   icon: mdi:calendar-week
   initial: "06:00:00"
 
 wakeup_weekday_end_time_stephan:
-  name: Weckzeit Ende Wochentag Stephan
+  name: Wecker Stephan Wochentag Ende
   has_date: false
   has_time: true
   icon: mdi:calendar-week
   initial: "08:00:00"
 
 wakeup_weekend_time_stephan:
-  name: Weckzeit Wochenende Stephan
+  name: Wecker Stephan Wochenende Start
   has_date: false
   has_time: true
   icon: mdi:calendar-weekend
   initial: "07:15:00"
 
 wakeup_weekend_end_time_stephan:
-  name: Weckzeit Ende Wochenende Stephan
+  name: Wecker Stephan Wochenende Ende
   has_date: false
   has_time: true
   icon: mdi:calendar-weekend
   initial: "09:00:00"
 
 wakeup_weekday_time_julian:
-  name: Weckzeit Wochentag Julian
+  name: Wecker Julian Wochentag Start
   has_date: false
   has_time: true
   icon: mdi:calendar-week
   initial: "06:20:00"
 
 wakeup_weekday_end_time_julian:
-  name: Weckzeit Ende Wochentag Julian
+  name: Wecker Julian Wochentag Ende
   has_date: false
   has_time: true
   icon: mdi:calendar-week
   initial: "08:00:00"
 
 wakeup_weekend_time_julian:
-  name: Weckzeit Wochenende Julian
+  name: Wecker Julian Wochenende Start
   has_date: false
   has_time: true
   icon: mdi:calendar-weekend
   initial: "07:15:00"
 
 wakeup_weekend_end_time_julian:
-  name: Weckzeit Ende Wochenende Julian
+  name: Wecker Julian Wochenende Ende
   has_date: false
   has_time: true
   icon: mdi:calendar-weekend
   initial: "09:00:00"
 
 wakeup_weekday_time_joshua:
-  name: Weckzeit Wochentag Joshua
+  name: Wecker Joshua Wochentag Start
   has_date: false
   has_time: true
   icon: mdi:calendar-week
   initial: "06:30:00"
 
 wakeup_weekday_end_time_joshua:
-  name: Weckzeit Ende Wochentag Joshua
+  name: Wecker Joshua Wochentag Ende
   has_date: false
   has_time: true
   icon: mdi:calendar-week
   initial: "08:00:00"
 
 wakeup_weekend_time_joshua:
-  name: Weckzeit Wochenende Joshua
+  name: Wecker Joshua Wochenende Start
   has_date: false
   has_time: true
   icon: mdi:calendar-weekend
   initial: "07:15:00"
 
 wakeup_weekend_end_time_joshua:
-  name: Weckzeit Ende Wochenende Joshua
+  name: Wecker Joshua Wochenende Ende
   has_date: false
   has_time: true
   icon: mdi:calendar-weekend

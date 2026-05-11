@@ -1,0 +1,4318 @@
+# Friendly-Name-Map (Single Source of Truth)
+#
+# Diese Datei steuert die im Lovelace sichtbaren Anzeigenamen.
+# Werte: konkreter String -> setzt `name` in core.entity_registry.
+#         ~ oder null    -> löscht den Override; HA berechnet den Namen
+#                          aus `original_name` und `device.name_by_user`.
+#
+# Generiert/aktualisiert durch scripts/audit_entity_names.py.
+# Wende auf dem Server an mit:
+#   sudo python3 scripts/apply_entity_friendly_names.py \
+#     --registry /data/home-assistant/.storage/core.entity_registry \
+#     --map entity_friendly_name_map.yaml --apply
+
+entities:
+  # source: customize
+  automation.auto_light_zimmer_joshua: "Auto Licht Zimmer Joshua"
+  # source: audit
+  automation.nacht_spezial_dimmung_auto_reaktivieren: "Auto Modus Nacht Gast Aus"
+  # source: audit
+  binary_sensor.3d_printer_cloud: ~
+  # source: audit
+  binary_sensor.3d_printer_input_0_input: ~
+  # source: audit
+  binary_sensor.3d_printer_switch_0_overheating: ~
+  # source: audit
+  binary_sensor.3d_printer_switch_0_overpowering: ~
+  # source: audit
+  binary_sensor.3d_printer_switch_0_overvoltage: ~
+  # source: audit
+  binary_sensor.abwaschmaschine_cloud: ~
+  # source: audit
+  binary_sensor.abwaschmaschine_input_0_input: ~
+  # source: audit
+  binary_sensor.abwaschmaschine_restart_required: ~
+  # source: audit
+  binary_sensor.abwaschmaschine_switch_0_overcurrent: ~
+  # source: audit
+  binary_sensor.abwaschmaschine_switch_0_overheating: ~
+  # source: audit
+  binary_sensor.abwaschmaschine_switch_0_overpowering: ~
+  # source: audit
+  binary_sensor.abwaschmaschine_switch_0_overvoltage: ~
+  # source: audit
+  binary_sensor.aquarium_hauptschalter_cloud: ~
+  # source: audit
+  binary_sensor.aquarium_hauptschalter_input_0_input: ~
+  # source: audit
+  binary_sensor.aquarium_hauptschalter_switch_0_overheating: ~
+  # source: audit
+  binary_sensor.aquarium_hauptschalter_switch_0_overpowering: ~
+  # source: audit
+  binary_sensor.aquarium_hauptschalter_switch_0_overvoltage: ~
+  # source: audit
+  binary_sensor.bad_licht_channel_1_input: ~
+  # source: audit
+  binary_sensor.bad_licht_channel_1_overpowering: ~
+  # source: audit
+  binary_sensor.bad_licht_channel_2_input: ~
+  # source: audit
+  binary_sensor.bad_licht_channel_2_overpowering: ~
+  # source: audit
+  binary_sensor.bad_licht_cloud: ~
+  # source: audit
+  binary_sensor.bad_licht_overheating: ~
+  # source: audit
+  binary_sensor.buro_store_cloud: ~
+  # source: audit
+  binary_sensor.buro_store_input_0_input: ~
+  # source: audit
+  binary_sensor.buro_store_input_1_input: ~
+  # source: audit
+  binary_sensor.buro_store_overcurrent: ~
+  # source: audit
+  binary_sensor.buro_store_overheating: ~
+  # source: audit
+  binary_sensor.buro_store_overpowering: ~
+  # source: audit
+  binary_sensor.buro_store_overvoltage: ~
+  # source: audit
+  binary_sensor.buro_store_restart_required: ~
+  # source: audit
+  binary_sensor.gang_licht_cloud: ~
+  # source: audit
+  binary_sensor.gang_licht_switch_0_overheating: ~
+  # source: audit
+  binary_sensor.gang_licht_switch_0_overpowering: ~
+  # source: audit
+  binary_sensor.gang_licht_switch_0_overvoltage: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_app_inactive: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_bedtime_mode: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_bluetooth_state: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_device_locked: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_device_secure: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_doze_mode: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_headphones: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_interactive: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_is_charging: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_keyguard_locked: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_keyguard_secure: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_mic_muted: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_music_active: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_nfc_state: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_on_body_sensor: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_power_save: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_speakerphone: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_theater_mode: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_wet_mode: ~
+  # source: audit
+  binary_sensor.google_pixel_watch_2_wifi_state: ~
+  # source: audit
+  binary_sensor.hauseingang_muhle_5_battery: ~
+  # source: audit
+  binary_sensor.hauseingang_muhle_5_ring_action: ~
+  # source: audit
+  binary_sensor.k1_05f2_filament_sensor: ~
+  # source: audit
+  binary_sensor.k1_05f2_filament_sensor_2: ~
+  # source: audit
+  binary_sensor.k1_05f2_update_available: ~
+  # source: audit
+  binary_sensor.kaffeemaschine_cloud: ~
+  # source: audit
+  binary_sensor.kaffeemaschine_input_0_input: ~
+  # source: audit
+  binary_sensor.kaffeemaschine_switch_0_overheating: ~
+  # source: audit
+  binary_sensor.kaffeemaschine_switch_0_overpowering: ~
+  # source: audit
+  binary_sensor.kaffeemaschine_switch_0_overvoltage: ~
+  # source: audit
+  binary_sensor.kuchespot_cloud: ~
+  # source: audit
+  binary_sensor.kuchespot_input_0_input: ~
+  # source: audit
+  binary_sensor.kuchespot_switch_0_overheating: ~
+  # source: audit
+  binary_sensor.kuchespot_switch_0_overpowering: ~
+  # source: audit
+  binary_sensor.kuchespot_switch_0_overvoltage: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_android_auto: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_app_inactive: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_bluetooth_state: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_device_locked: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_device_secure: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_doze_mode: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_headphones: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_high_accuracy_mode: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_hotspot_state: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_interactive: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_is_charging: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_keyguard_locked: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_keyguard_secure: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_mic_muted: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_mobile_data: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_mobile_data_roaming: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_music_active: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_power_save: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_speakerphone: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_wi_fi_state: ~
+  # source: audit
+  binary_sensor.lenovo_tb_j616x_work_profile: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_magnet_aq2_opening: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_magnet_aq2_opening_2: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_motion: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_motion_2: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_motion_3: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_motion_5: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_motion_6: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_motion_7: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_motion_8: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_motion_9: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_occupancy: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_occupancy_2: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_occupancy_3: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_occupancy_5: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_occupancy_6: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_occupancy_7: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_occupancy_8: ~
+  # source: audit
+  binary_sensor.lumi_lumi_sensor_motion_aq2_occupancy_9: ~
+  # source: audit
+  binary_sensor.lumi_lumi_vibration_aq1_vibration: ~
+  # source: audit
+  binary_sensor.motion_esstisch_motion_4: ~
+  # source: audit
+  binary_sensor.motion_esstisch_occupancy_4: ~
+  # source: audit
+  binary_sensor.motion_gang: ~
+  # source: audit
+  binary_sensor.motion_gang_kuche_motion_9: ~
+  # source: audit
+  binary_sensor.motion_gang_kuche_occupancy_9: ~
+  # source: audit
+  binary_sensor.motion_schlafzimmer_kinder_occupancy_9: ~
+  # source: audit
+  binary_sensor.motion_schlafzimmer_stefan: ~
+  # source: audit
+  binary_sensor.motion_sofa: ~
+  # source: audit
+  binary_sensor.motion_wohnung: ~
+  # source: customize
+  binary_sensor.motion_zimmer_joshua_motion_9: "Sensor Bewegung Zimmer Joshua"
+  # source: audit
+  binary_sensor.motionsensor_bad_motion_4: ~
+  # source: audit
+  binary_sensor.motionsensor_bad_occupancy_4: ~
+  # source: audit
+  binary_sensor.motionsensor_wc_motion_9: ~
+  # source: audit
+  binary_sensor.motionsensor_wc_occupancy_9: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_android_auto: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_app_inactive: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_bluetooth_state: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_device_locked: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_device_secure: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_doze_mode: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_headphones: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_high_accuracy_mode: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_hotspot_state: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_interactive: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_is_charging: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_keyguard_locked: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_keyguard_secure: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_mic_muted: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_mobile_data: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_mobile_data_roaming: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_music_active: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_nfc_state: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_power_save: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_speakerphone: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_wifi_state: ~
+  # source: audit
+  binary_sensor.pixel_8_pro_work_profile: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_android_auto: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_app_inactive: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_bluetooth_state: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_device_locked: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_device_secure: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_doze_mode: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_headphones: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_high_accuracy_mode: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_hotspot_state: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_interactive: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_is_charging: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_keyguard_locked: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_keyguard_secure: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_mic_muted: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_mobile_data: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_mobile_data_roaming: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_music_active: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_nfc_state: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_power_save: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_speakerphone: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_wifi_state: ~
+  # source: audit
+  binary_sensor.pixel_9_pro_work_profile: ~
+  # source: audit
+  binary_sensor.pw_stephan_app_inactive: ~
+  # source: audit
+  binary_sensor.pw_stephan_bedtime_mode: ~
+  # source: audit
+  binary_sensor.pw_stephan_bluetooth_state: ~
+  # source: audit
+  binary_sensor.pw_stephan_device_locked: ~
+  # source: audit
+  binary_sensor.pw_stephan_device_secure: ~
+  # source: audit
+  binary_sensor.pw_stephan_doze_mode: ~
+  # source: audit
+  binary_sensor.pw_stephan_headphones: ~
+  # source: audit
+  binary_sensor.pw_stephan_interactive: ~
+  # source: audit
+  binary_sensor.pw_stephan_is_charging: ~
+  # source: audit
+  binary_sensor.pw_stephan_keyguard_locked: ~
+  # source: audit
+  binary_sensor.pw_stephan_keyguard_secure: ~
+  # source: audit
+  binary_sensor.pw_stephan_mic_muted: ~
+  # source: audit
+  binary_sensor.pw_stephan_music_active: ~
+  # source: audit
+  binary_sensor.pw_stephan_nfc_state: ~
+  # source: audit
+  binary_sensor.pw_stephan_on_body_sensor: ~
+  # source: audit
+  binary_sensor.pw_stephan_power_save: ~
+  # source: audit
+  binary_sensor.pw_stephan_speakerphone: ~
+  # source: audit
+  binary_sensor.pw_stephan_theater_mode: ~
+  # source: audit
+  binary_sensor.pw_stephan_wet_mode: ~
+  # source: audit
+  binary_sensor.pw_stephan_wifi_state: ~
+  # source: audit
+  binary_sensor.schlafzimmer_stefan_bewegung: ~
+  # source: audit
+  binary_sensor.sh_3d_printer_restart_required: ~
+  # source: audit
+  binary_sensor.sh_3d_printer_switch_0_overcurrent: ~
+  # source: audit
+  binary_sensor.sh_aquarium_hs_restart_required: ~
+  # source: audit
+  binary_sensor.sh_aquarium_hs_switch_0_overcurrent: ~
+  # source: audit
+  binary_sensor.sh_buro_gerate_cloud: ~
+  # source: audit
+  binary_sensor.sh_buro_gerate_input_0_input: ~
+  # source: audit
+  binary_sensor.sh_buro_gerate_restart_required: ~
+  # source: audit
+  binary_sensor.sh_buro_gerate_switch_0_overcurrent: ~
+  # source: audit
+  binary_sensor.sh_buro_gerate_switch_0_overheating: ~
+  # source: audit
+  binary_sensor.sh_buro_gerate_switch_0_overpowering: ~
+  # source: audit
+  binary_sensor.sh_buro_gerate_switch_0_overvoltage: ~
+  # source: audit
+  binary_sensor.sh_gang_licht_restart_required: ~
+  # source: audit
+  binary_sensor.sh_gang_licht_switch_0_overcurrent: ~
+  # source: audit
+  binary_sensor.sh_kaffeemaschine_restart_required: ~
+  # source: audit
+  binary_sensor.sh_kaffeemaschine_switch_0_overcurrent: ~
+  # source: audit
+  binary_sensor.sh_kuche_spot_restart_required: ~
+  # source: audit
+  binary_sensor.sh_kuche_spot_switch_0_overcurrent: ~
+  # source: audit
+  binary_sensor.sh_pro3_em_cloud: ~
+  # source: audit
+  binary_sensor.sh_pro3_em_restart_required: ~
+  # source: audit
+  binary_sensor.sh_reserve_cloud: ~
+  # source: audit
+  binary_sensor.sh_reserve_input_0_input: ~
+  # source: audit
+  binary_sensor.sh_reserve_restart_required: ~
+  # source: audit
+  binary_sensor.sh_reserve_switch_0_overcurrent: ~
+  # source: audit
+  binary_sensor.sh_reserve_switch_0_overheating: ~
+  # source: audit
+  binary_sensor.sh_reserve_switch_0_overpowering: ~
+  # source: audit
+  binary_sensor.sh_reserve_switch_0_overvoltage: ~
+  # source: audit
+  binary_sensor.sh_rgbw_aquarium_kinder_cloud: ~
+  # source: audit
+  binary_sensor.sh_rgbw_aquarium_kinder_input: ~
+  # source: audit
+  binary_sensor.sh_rgbw_aquarium_kinder_overpowering: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_kinder_cloud: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_kinder_input_0_input: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_kinder_restart_required: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_kinder_switch_0_overcurrent: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_kinder_switch_0_overheating: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_kinder_switch_0_overpowering: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_kinder_switch_0_overvoltage: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_stephan_cloud: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_stephan_input_0_input: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_stephan_restart_required: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_stephan_switch_0_overcurrent: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_stephan_switch_0_overheating: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_stephan_switch_0_overpowering: ~
+  # source: audit
+  binary_sensor.sh_schlafzimmer_stephan_switch_0_overvoltage: ~
+  # source: audit
+  binary_sensor.sh_schreibtisch_licht_cloud: ~
+  # source: audit
+  binary_sensor.sh_schreibtisch_licht_input: ~
+  # source: audit
+  binary_sensor.sh_schreibtisch_licht_overpowering: ~
+  # source: audit
+  binary_sensor.sh_sofa_tv_led_cloud: ~
+  # source: audit
+  binary_sensor.sh_sofa_tv_led_restart_required: ~
+  # source: audit
+  binary_sensor.sh_th_wohnraum_cloud: ~
+  # source: audit
+  binary_sensor.sh_th_wohnraum_external_power: ~
+  # source: audit
+  binary_sensor.sh_tv_board_cloud: ~
+  # source: audit
+  binary_sensor.sh_tv_board_input_0_input: ~
+  # source: audit
+  binary_sensor.sh_tv_board_restart_required: ~
+  # source: audit
+  binary_sensor.sh_tv_board_switch_0_overcurrent: ~
+  # source: audit
+  binary_sensor.sh_tv_board_switch_0_overheating: ~
+  # source: audit
+  binary_sensor.sh_tv_board_switch_0_overpowering: ~
+  # source: audit
+  binary_sensor.sh_tv_board_switch_0_overvoltage: ~
+  # source: audit
+  binary_sensor.sh_wc_licht_channel_1_input: ~
+  # source: audit
+  binary_sensor.sh_wc_licht_channel_1_overpowering: ~
+  # source: audit
+  binary_sensor.sh_wc_licht_channel_2_input: ~
+  # source: audit
+  binary_sensor.sh_wc_licht_channel_2_overpowering: ~
+  # source: audit
+  binary_sensor.sh_wc_licht_cloud: ~
+  # source: audit
+  binary_sensor.sh_wc_licht_overheating: ~
+  # source: audit
+  binary_sensor.sh_wohnraum_store_restart_required: ~
+  # source: audit
+  binary_sensor.sonos_roam_charging: ~
+  # source: audit
+  binary_sensor.sun_solar_rising: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_android_auto: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_app_inactive: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_bluetooth_state: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_device_locked: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_device_secure: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_doze_mode: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_headphones: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_high_accuracy_mode: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_hotspot_state: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_interactive: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_is_charging: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_keyguard_locked: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_keyguard_secure: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_mic_muted: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_mobile_data: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_mobile_data_roaming: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_music_active: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_power_save: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_speakerphone: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_wifi_state: ~
+  # source: audit
+  binary_sensor.tablet_sk_i_work_profile: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_android_auto: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_app_inactive: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_bluetooth_state: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_device_locked: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_device_secure: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_doze_mode: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_headphones: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_high_accuracy_mode: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_hotspot_state: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_interactive: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_is_charging: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_keyguard_locked: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_keyguard_secure: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_mic_muted: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_mobile_data: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_mobile_data_roaming: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_music_active: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_power_save: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_speakerphone: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_wi_fi_state: ~
+  # source: audit
+  binary_sensor.tablet_stephan_8_work_profile: ~
+  # source: audit
+  binary_sensor.trolley_cloud: ~
+  # source: audit
+  binary_sensor.trolley_door_opener_opening_3: ~
+  # source: audit
+  binary_sensor.trolley_input: ~
+  # source: audit
+  binary_sensor.trolley_overheating: ~
+  # source: audit
+  binary_sensor.trolley_overpowering: ~
+  # source: audit
+  binary_sensor.updater: ~
+  # source: audit
+  binary_sensor.wohnraum_store_cloud: ~
+  # source: audit
+  binary_sensor.wohnraum_store_input_0_input: ~
+  # source: audit
+  binary_sensor.wohnraum_store_input_1_input: ~
+  # source: audit
+  binary_sensor.wohnraum_store_overcurrent: ~
+  # source: audit
+  binary_sensor.wohnraum_store_overheating: ~
+  # source: audit
+  binary_sensor.wohnraum_store_overpowering: ~
+  # source: audit
+  binary_sensor.wohnraum_store_overvoltage: ~
+  # source: audit
+  binary_sensor.wohnung_eingang_battery: ~
+  # source: audit
+  binary_sensor.wohnung_eingang_charging: ~
+  # source: audit
+  button.3d_printer_reboot: ~
+  # source: audit
+  button.45p_co2_identify: ~
+  # source: audit
+  button.65p_co2_identify_5: ~
+  # source: audit
+  button.abwaschmaschine_reboot: ~
+  # source: audit
+  button.aquarium_hauptschalter_reboot: ~
+  # source: audit
+  button.bad_licht_reboot: ~
+  # source: audit
+  button.buro_store_reboot: ~
+  # source: audit
+  button.buro_tischlampe_links_identify: ~
+  # source: audit
+  button.buro_tischlampe_rechts_identify: ~
+  # source: audit
+  button.button_eingangsture_identify_4: ~
+  # source: audit
+  button.button_kaffeemaschine_identify_3: ~
+  # source: audit
+  button.button_nachttisch_joshua_identify_5: ~
+  # source: audit
+  button.button_nachttisch_julian_identify_2: ~
+  # source: audit
+  button.button_nachttisch_stephan_links_identify: ~
+  # source: audit
+  button.button_nachttisch_stephan_rechts_identify: ~
+  # source: audit
+  button.button_schreibtisch_identify_6: ~
+  # source: audit
+  button.button_sound_control_buro_identify: ~
+  # source: audit
+  button.button_spielzimmer_identify_6: ~
+  # source: audit
+  button.button_trolley_identify_4: ~
+  # source: audit
+  button.button_werktisch_identify_6: ~
+  # source: audit
+  button.deckenlicht_kinderspielzimmer_identify: ~
+  # source: audit
+  button.esstisch_l_identify: ~
+  # source: audit
+  button.esstisch_ml_identify: ~
+  # source: audit
+  button.esstisch_mr_identify_2: ~
+  # source: audit
+  button.esstisch_r_identify_4: ~
+  # source: audit
+  button.gang_licht_reboot: ~
+  # source: audit
+  button.google_assistant_synchronize_devices: ~
+  # source: audit
+  button.ikea_of_sweden_tradfri_bulb_gu10_ww_400lm_identify: ~
+  # source: audit
+  button.ikea_of_sweden_tradfri_control_outlet_identify: ~
+  # source: audit
+  button.ikea_of_sweden_tradfri_on_off_switch_identify: ~
+  # source: audit
+  button.joshua_nachttisch_identify_2: ~
+  # source: audit
+  button.julian_nachttisch_identify: ~
+  # source: audit
+  button.k1_05f2_cancel_print: ~
+  # source: audit
+  button.k1_05f2_emergency_stop: ~
+  # source: audit
+  button.k1_05f2_firmware_restart: ~
+  # source: audit
+  button.k1_05f2_host_restart: ~
+  # source: audit
+  button.k1_05f2_host_shutdown: ~
+  # source: audit
+  button.k1_05f2_machine_update_refresh: ~
+  # source: audit
+  button.k1_05f2_macro_accelerometer_debug_read: ~
+  # source: audit
+  button.k1_05f2_macro_accelerometer_debug_write: ~
+  # source: audit
+  button.k1_05f2_macro_accelerometer_measure: ~
+  # source: audit
+  button.k1_05f2_macro_accelerometer_query: ~
+  # source: audit
+  button.k1_05f2_macro_accurate_g28: ~
+  # source: audit
+  button.k1_05f2_macro_accurate_home_z: ~
+  # source: audit
+  button.k1_05f2_macro_activate_extruder: ~
+  # source: audit
+  button.k1_05f2_macro_adaptive_bed_mesh_on: ~
+  # source: audit
+  button.k1_05f2_macro_adaptive_purge_line_off: ~
+  # source: audit
+  button.k1_05f2_macro_adaptive_purge_line_on: ~
+  # source: audit
+  button.k1_05f2_macro_autotune_shapers: ~
+  # source: audit
+  button.k1_05f2_macro_bed_leveling: ~
+  # source: audit
+  button.k1_05f2_macro_bed_mesh_calibrate: ~
+  # source: audit
+  button.k1_05f2_macro_bed_mesh_calibrate_2: ~
+  # source: audit
+  button.k1_05f2_macro_bed_mesh_clear: ~
+  # source: audit
+  button.k1_05f2_macro_bed_mesh_map: ~
+  # source: audit
+  button.k1_05f2_macro_bed_mesh_off: ~
+  # source: audit
+  button.k1_05f2_macro_bed_mesh_offset: ~
+  # source: audit
+  button.k1_05f2_macro_bed_mesh_output: ~
+  # source: audit
+  button.k1_05f2_macro_bed_mesh_profile: ~
+  # source: audit
+  button.k1_05f2_macro_bed_mesh_restore: ~
+  # source: audit
+  button.k1_05f2_macro_bed_mesh_save: ~
+  # source: audit
+  button.k1_05f2_macro_bed_mesh_set_disable: ~
+  # source: audit
+  button.k1_05f2_macro_bed_mesh_set_enable: ~
+  # source: audit
+  button.k1_05f2_macro_bedpid: ~
+  # source: audit
+  button.k1_05f2_macro_belts_shaper_calibration: ~
+  # source: audit
+  button.k1_05f2_macro_cancel_print: ~
+  # source: audit
+  button.k1_05f2_macro_cancel_print_base: ~
+  # source: audit
+  button.k1_05f2_macro_check_bed_mesh: ~
+  # source: audit
+  button.k1_05f2_macro_clear_pause: ~
+  # source: audit
+  button.k1_05f2_macro_cx_clean_calibration_flags: ~
+  # source: audit
+  button.k1_05f2_macro_cx_nozzle_clear: ~
+  # source: audit
+  button.k1_05f2_macro_cx_print_draw_one_line: ~
+  # source: audit
+  button.k1_05f2_macro_cx_print_leveling_calibration: ~
+  # source: audit
+  button.k1_05f2_macro_cx_rough_g28: ~
+  # source: audit
+  button.k1_05f2_macro_cxsave_config: ~
+  # source: audit
+  button.k1_05f2_macro_deal_avgs: ~
+  # source: audit
+  button.k1_05f2_macro_define_object: ~
+  # source: audit
+  button.k1_05f2_macro_dump_tmc: ~
+  # source: audit
+  button.k1_05f2_macro_eeprom_debug_read: ~
+  # source: audit
+  button.k1_05f2_macro_eeprom_debug_write_byte: ~
+  # source: audit
+  button.k1_05f2_macro_eeprom_debug_write_float: ~
+  # source: audit
+  button.k1_05f2_macro_eeprom_debug_write_int: ~
+  # source: audit
+  button.k1_05f2_macro_eeprom_read: ~
+  # source: audit
+  button.k1_05f2_macro_eeprom_write_byte: ~
+  # source: audit
+  button.k1_05f2_macro_eeprom_write_float: ~
+  # source: audit
+  button.k1_05f2_macro_eeprom_write_int: ~
+  # source: audit
+  button.k1_05f2_macro_end_current_object: ~
+  # source: audit
+  button.k1_05f2_macro_end_print: ~
+  # source: audit
+  button.k1_05f2_macro_end_print_point: ~
+  # source: audit
+  button.k1_05f2_macro_end_print_point_without_lifting: ~
+  # source: audit
+  button.k1_05f2_macro_excitate_axis_at_freq: ~
+  # source: audit
+  button.k1_05f2_macro_exclude_object: ~
+  # source: audit
+  button.k1_05f2_macro_exclude_object_define: ~
+  # source: audit
+  button.k1_05f2_macro_exclude_object_end: ~
+  # source: audit
+  button.k1_05f2_macro_exclude_object_start: ~
+  # source: audit
+  button.k1_05f2_macro_firmware_restart: ~
+  # source: audit
+  button.k1_05f2_macro_first_floor_pause: ~
+  # source: audit
+  button.k1_05f2_macro_first_floor_pause_position: ~
+  # source: audit
+  button.k1_05f2_macro_first_floor_resume: ~
+  # source: audit
+  button.k1_05f2_macro_force_move: ~
+  # source: audit
+  button.k1_05f2_macro_full_bed_mesh_on: ~
+  # source: audit
+  button.k1_05f2_macro_g29: ~
+  # source: audit
+  button.k1_05f2_macro_get_position: ~
+  # source: audit
+  button.k1_05f2_macro_get_timelapse_setup: ~
+  # source: audit
+  button.k1_05f2_macro_help: ~
+  # source: audit
+  button.k1_05f2_macro_home_x: ~
+  # source: audit
+  button.k1_05f2_macro_home_y: ~
+  # source: audit
+  button.k1_05f2_macro_home_z: ~
+  # source: audit
+  button.k1_05f2_macro_hyperlapse: ~
+  # source: audit
+  button.k1_05f2_macro_if_home_z: ~
+  # source: audit
+  button.k1_05f2_macro_if_move_xy: ~
+  # source: audit
+  button.k1_05f2_macro_init_tmc: ~
+  # source: audit
+  button.k1_05f2_macro_input_shaper_calibration: ~
+  # source: audit
+  button.k1_05f2_macro_inputshaper: ~
+  # source: audit
+  button.k1_05f2_macro_kamp_bed_mesh_settings: ~
+  # source: audit
+  button.k1_05f2_macro_kamp_purge_line_settings: ~
+  # source: audit
+  button.k1_05f2_macro_kamp_settings: ~
+  # source: audit
+  button.k1_05f2_macro_klipper_backup: ~
+  # source: audit
+  button.k1_05f2_macro_klipper_backup_config: ~
+  # source: audit
+  button.k1_05f2_macro_klipper_restore: ~
+  # source: audit
+  button.k1_05f2_macro_klipper_restore_config: ~
+  # source: audit
+  button.k1_05f2_macro_line_purge: ~
+  # source: audit
+  button.k1_05f2_macro_list_excluded_objects: ~
+  # source: audit
+  button.k1_05f2_macro_list_objects: ~
+  # source: audit
+  button.k1_05f2_macro_load_material: ~
+  # source: audit
+  button.k1_05f2_macro_load_material_close_fan2: ~
+  # source: audit
+  button.k1_05f2_macro_load_material_restore_fan2: ~
+  # source: audit
+  button.k1_05f2_macro_m106: ~
+  # source: audit
+  button.k1_05f2_macro_m107: ~
+  # source: audit
+  button.k1_05f2_macro_m141: ~
+  # source: audit
+  button.k1_05f2_macro_m191: ~
+  # source: audit
+  button.k1_05f2_macro_m204: ~
+  # source: audit
+  button.k1_05f2_macro_m204_1: ~
+  # source: audit
+  button.k1_05f2_macro_m205: ~
+  # source: audit
+  button.k1_05f2_macro_m900: ~
+  # source: audit
+  button.k1_05f2_macro_manual_probe: ~
+  # source: audit
+  button.k1_05f2_macro_measure_axes_noise: ~
+  # source: audit
+  button.k1_05f2_macro_moonraker_backup: ~
+  # source: audit
+  button.k1_05f2_macro_moonraker_backup_database: ~
+  # source: audit
+  button.k1_05f2_macro_moonraker_restore: ~
+  # source: audit
+  button.k1_05f2_macro_moonraker_restore_database: ~
+  # source: audit
+  button.k1_05f2_macro_nozzle_clear: ~
+  # source: audit
+  button.k1_05f2_macro_pause: ~
+  # source: audit
+  button.k1_05f2_macro_pause_base: ~
+  # source: audit
+  button.k1_05f2_macro_pid_bed: ~
+  # source: audit
+  button.k1_05f2_macro_pid_calibrate: ~
+  # source: audit
+  button.k1_05f2_macro_pid_hotend: ~
+  # source: audit
+  button.k1_05f2_macro_print_calibration: ~
+  # source: audit
+  button.k1_05f2_macro_print_prepare_clear: ~
+  # source: audit
+  button.k1_05f2_macro_print_prepared: ~
+  # source: audit
+  button.k1_05f2_macro_printer_param: ~
+  # source: audit
+  button.k1_05f2_macro_probe: ~
+  # source: audit
+  button.k1_05f2_macro_probe_accuracy: ~
+  # source: audit
+  button.k1_05f2_macro_probe_calibrate: ~
+  # source: audit
+  button.k1_05f2_macro_product_param: ~
+  # source: audit
+  button.k1_05f2_macro_prtouch_ready: ~
+  # source: audit
+  button.k1_05f2_macro_qmode: ~
+  # source: audit
+  button.k1_05f2_macro_qmode_exit: ~
+  # source: audit
+  button.k1_05f2_macro_query_adc: ~
+  # source: audit
+  button.k1_05f2_macro_query_endstops: ~
+  # source: audit
+  button.k1_05f2_macro_query_fan_check: ~
+  # source: audit
+  button.k1_05f2_macro_query_filament_sensor: ~
+  # source: audit
+  button.k1_05f2_macro_query_probe: ~
+  # source: audit
+  button.k1_05f2_macro_quit_material: ~
+  # source: audit
+  button.k1_05f2_macro_read_pres: ~
+  # source: audit
+  button.k1_05f2_macro_reload_camera: ~
+  # source: audit
+  button.k1_05f2_macro_remove_all_excluded: ~
+  # source: audit
+  button.k1_05f2_macro_respond: ~
+  # source: audit
+  button.k1_05f2_macro_restart: ~
+  # source: audit
+  button.k1_05f2_macro_restore_e_current: ~
+  # source: audit
+  button.k1_05f2_macro_restore_gcode_state: ~
+  # source: audit
+  button.k1_05f2_macro_resume: ~
+  # source: audit
+  button.k1_05f2_macro_resume_base: ~
+  # source: audit
+  button.k1_05f2_macro_run_shell_command: ~
+  # source: audit
+  button.k1_05f2_macro_safe_down_z: ~
+  # source: audit
+  button.k1_05f2_macro_safe_move_z: ~
+  # source: audit
+  button.k1_05f2_macro_save_config: ~
+  # source: audit
+  button.k1_05f2_macro_save_gcode_state: ~
+  # source: audit
+  button.k1_05f2_macro_sdcard_print_file: ~
+  # source: audit
+  button.k1_05f2_macro_sdcard_reset_file: ~
+  # source: audit
+  button.k1_05f2_macro_self_check_prtouch: ~
+  # source: audit
+  button.k1_05f2_macro_set_display_text: ~
+  # source: audit
+  button.k1_05f2_macro_set_e_min_current: ~
+  # source: audit
+  button.k1_05f2_macro_set_extruder_rotation_distance: ~
+  # source: audit
+  button.k1_05f2_macro_set_extruder_step_distance: ~
+  # source: audit
+  button.k1_05f2_macro_set_filament_sensor: ~
+  # source: audit
+  button.k1_05f2_macro_set_gcode_offset: ~
+  # source: audit
+  button.k1_05f2_macro_set_gcode_variable: ~
+  # source: audit
+  button.k1_05f2_macro_set_heater_temperature: ~
+  # source: audit
+  button.k1_05f2_macro_set_idle_timeout: ~
+  # source: audit
+  button.k1_05f2_macro_set_input_shaper: ~
+  # source: audit
+  button.k1_05f2_macro_set_kinematic_position: ~
+  # source: audit
+  button.k1_05f2_macro_set_pin: ~
+  # source: audit
+  button.k1_05f2_macro_set_position: ~
+  # source: audit
+  button.k1_05f2_macro_set_pressure_advance: ~
+  # source: audit
+  button.k1_05f2_macro_set_print_stats_info: ~
+  # source: audit
+  button.k1_05f2_macro_set_qmode_flag: ~
+  # source: audit
+  button.k1_05f2_macro_set_stepper_enable: ~
+  # source: audit
+  button.k1_05f2_macro_set_temperature_fan_target: ~
+  # source: audit
+  button.k1_05f2_macro_set_timelapse_setup: ~
+  # source: audit
+  button.k1_05f2_macro_set_tmc_current: ~
+  # source: audit
+  button.k1_05f2_macro_set_tmc_field: ~
+  # source: audit
+  button.k1_05f2_macro_set_velocity_limit: ~
+  # source: audit
+  button.k1_05f2_macro_set_virtual_pin: ~
+  # source: audit
+  button.k1_05f2_macro_shaper_calibrate: ~
+  # source: audit
+  button.k1_05f2_macro_smart_park: ~
+  # source: audit
+  button.k1_05f2_macro_start_current_object: ~
+  # source: audit
+  button.k1_05f2_macro_start_print: ~
+  # source: audit
+  button.k1_05f2_macro_start_step_prtouch: ~
+  # source: audit
+  button.k1_05f2_macro_status: ~
+  # source: audit
+  button.k1_05f2_macro_stepper_buzz: ~
+  # source: audit
+  button.k1_05f2_macro_sync_extruder_motion: ~
+  # source: audit
+  button.k1_05f2_macro_sync_stepper_to_extruder: ~
+  # source: audit
+  button.k1_05f2_macro_temperature_wait: ~
+  # source: audit
+  button.k1_05f2_macro_test_prth: ~
+  # source: audit
+  button.k1_05f2_macro_test_resonances: ~
+  # source: audit
+  button.k1_05f2_macro_test_resonances_graphs: ~
+  # source: audit
+  button.k1_05f2_macro_test_stream_delay: ~
+  # source: audit
+  button.k1_05f2_macro_test_swap: ~
+  # source: audit
+  button.k1_05f2_macro_timelapse_new_frame: ~
+  # source: audit
+  button.k1_05f2_macro_timelapse_render: ~
+  # source: audit
+  button.k1_05f2_macro_timelapse_take_frame: ~
+  # source: audit
+  button.k1_05f2_macro_trig_bed_test: ~
+  # source: audit
+  button.k1_05f2_macro_trig_test: ~
+  # source: audit
+  button.k1_05f2_macro_tuning_tower: ~
+  # source: audit
+  button.k1_05f2_macro_tunoffinputshaper: ~
+  # source: audit
+  button.k1_05f2_macro_turn_off_heaters: ~
+  # source: audit
+  button.k1_05f2_macro_update_delayed_gcode: ~
+  # source: audit
+  button.k1_05f2_macro_update_input_shaper: ~
+  # source: audit
+  button.k1_05f2_macro_wait_temp_end: ~
+  # source: audit
+  button.k1_05f2_macro_wait_temp_start: ~
+  # source: audit
+  button.k1_05f2_macro_warmup: ~
+  # source: audit
+  button.k1_05f2_macro_xyz_ready: ~
+  # source: audit
+  button.k1_05f2_macro_z_endstop_calibrate: ~
+  # source: audit
+  button.k1_05f2_macro_z_offset_apply_endstop: ~
+  # source: audit
+  button.k1_05f2_macro_z_offset_apply_probe: ~
+  # source: audit
+  button.k1_05f2_pause_print: ~
+  # source: audit
+  button.k1_05f2_reset_totals: ~
+  # source: audit
+  button.k1_05f2_resume_print: ~
+  # source: audit
+  button.k1_05f2_server_restart: ~
+  # source: audit
+  button.kaffeemaschine_reboot: ~
+  # source: audit
+  button.kuche_led_identify: ~
+  # source: audit
+  button.kuchespot_reboot: ~
+  # source: audit
+  button.light_bed_stephan_links_identify: ~
+  # source: audit
+  button.light_bed_stephan_rechts_identify: ~
+  # source: audit
+  button.lumi_lumi_sensor_magnet_aq2_identify: ~
+  # source: audit
+  button.lumi_lumi_sensor_magnet_aq2_identify_2: ~
+  # source: audit
+  button.lumi_lumi_sensor_motion_aq2_identify: ~
+  # source: audit
+  button.lumi_lumi_sensor_motion_aq2_identify_2: ~
+  # source: audit
+  button.lumi_lumi_sensor_motion_aq2_identify_3: ~
+  # source: audit
+  button.lumi_lumi_sensor_motion_aq2_identify_5: ~
+  # source: audit
+  button.lumi_lumi_sensor_motion_aq2_identify_6: ~
+  # source: audit
+  button.lumi_lumi_sensor_motion_aq2_identify_7: ~
+  # source: audit
+  button.lumi_lumi_sensor_motion_aq2_identify_8: ~
+  # source: audit
+  button.lumi_lumi_sensor_motion_aq2_identify_9: ~
+  # source: audit
+  button.lumi_lumi_weather_identify: ~
+  # source: audit
+  button.lumi_lumi_weather_identify_2: ~
+  # source: audit
+  button.lumi_lumi_weather_identify_4: ~
+  # source: audit
+  button.lumi_lumi_weather_identify_5: ~
+  # source: audit
+  button.motion_esstisch_identify_4: ~
+  # source: audit
+  button.motion_gang_kuche_identify_9: ~
+  # source: audit
+  button.motion_schlafzimmer_kinder_identify_9: ~
+  # source: audit
+  button.motionsensor_bad_identify_4: ~
+  # source: audit
+  button.motionsensor_wc_identify_9: ~
+  # source: audit
+  button.multisensor_bad_identify_3: ~
+  # source: audit
+  button.schalter_zimmer_joshua_schreibtisch_licht_identify: ~
+  # source: audit
+  button.schlafzimmer_kinder_deckenlicht_identify: ~
+  # source: audit
+  button.sensorair_buro_identify: ~
+  # source: audit
+  button.sh_buro_gerate_reboot: ~
+  # source: audit
+  button.sh_pro3_em_reboot: ~
+  # source: audit
+  button.sh_reserve_reboot: ~
+  # source: audit
+  button.sh_rgbw_aquarium_kinder_reboot: ~
+  # source: audit
+  button.sh_schlafzimmer_kinder_reboot: ~
+  # source: audit
+  button.sh_schlafzimmer_stephan_reboot: ~
+  # source: audit
+  button.sh_schreibtisch_licht_reboot: ~
+  # source: audit
+  button.sh_sofa_tv_led_reboot: ~
+  # source: audit
+  button.sh_tv_board_reboot: ~
+  # source: audit
+  button.sh_wc_licht_reboot: ~
+  # source: audit
+  button.sofa_deckenlicht_identify: ~
+  # source: audit
+  button.sofa_spot_identify: ~
+  # source: audit
+  button.spielzimmer_deckenlicht_identify: ~
+  # source: audit
+  button.stefan_deckenlicht_identify_3: ~
+  # source: audit
+  button.temperatur_45p_identify: ~
+  # source: audit
+  button.temperatur_aquarium_60p_identify: ~
+  # source: audit
+  button.trolley_door_opener_identify_3: ~
+  # source: audit
+  button.trolley_reboot: ~
+  # source: audit
+  button.unk_manufacturer_unk_model_identify: ~
+  # source: audit
+  button.waschmaschine_identify: ~
+  # source: audit
+  button.wasserpumpe_identify_3: ~
+  # source: audit
+  button.werktisch_licht_identify_2: ~
+  # source: audit
+  button.wohnraum_store_reboot: ~
+  # source: audit
+  camera.k1_05f2_indoor_cam: ~
+  # source: audit
+  camera.k1_05f2_thumbnail: ~
+  # source: audit
+  camera.my_esp32_cam: ~
+  # source: audit
+  cover.buro_store: ~
+  # source: audit
+  cover.wohnraum_store: ~
+  # source: audit
+  device_tracker.google_pixel_watch_2: ~
+  # source: audit
+  device_tracker.lenovo_tb_j616x: ~
+  # source: audit
+  device_tracker.pixel_8_pro: ~
+  # source: audit
+  device_tracker.pixel_9_pro: ~
+  # source: audit
+  device_tracker.pw_stephan: ~
+  # source: audit
+  device_tracker.tablet_sk_i: ~
+  # source: audit
+  device_tracker.tablet_stephan_8: ~
+  # source: audit
+  event.backup_automatic_backup: ~
+  # source: audit
+  event.gang_licht_input_0: ~
+  # source: audit
+  event.sh_sofa_tv_led_input_0: ~
+  # source: audit
+  event.sh_sofa_tv_led_input_1: ~
+  # source: audit
+  event.sh_sofa_tv_led_input_2: ~
+  # source: audit
+  event.sh_sofa_tv_led_input_3: ~
+  # source: audit
+  input_boolean.alarm_active: ~
+  # source: audit
+  input_boolean.guest_mode: ~
+  # source: audit
+  input_boolean.kids_home: ~
+  # source: audit
+  input_boolean.manual_activation_essraum: ~
+  # source: audit
+  input_boolean.manual_activation_licht_julian: ~
+  # source: audit
+  input_boolean.manual_activation_schlafzimmer_stephan: ~
+  # source: audit
+  input_boolean.manual_activation_wohnraum: ~
+  # source: audit
+  input_boolean.motion_essraum: ~
+  # source: audit
+  input_boolean.motion_wohnraum: ~
+  # source: audit
+  input_boolean.night_mode: ~
+  # source: audit
+  input_boolean.night_special_dimming_enabled: ~
+  # source: audit
+  input_boolean.show_additional_functionality: ~
+  # source: audit
+  input_boolean.sound_eg_groued: ~
+  # source: audit
+  input_boolean.soundeg: ~
+  # source: audit
+  input_boolean.tageslicht: ~
+  # source: audit
+  input_boolean.tv_is_off: ~
+  # source: audit
+  input_boolean.wakeup_enabled_joshua: ~
+  # source: audit
+  input_boolean.wakeup_enabled_julian: ~
+  # source: audit
+  input_boolean.wakeup_enabled_stephan: ~
+  # source: audit
+  input_datetime.aquarium_45p_wasserwechsel: ~
+  # source: audit
+  input_datetime.aquarium_60p_wasserwechsel: ~
+  # source: audit
+  input_datetime.night_auto_light_end: ~
+  # source: audit
+  input_datetime.night_auto_light_end_joshua: ~
+  # source: audit
+  input_datetime.night_auto_light_end_julian: ~
+  # source: audit
+  input_datetime.night_auto_light_end_stephan: ~
+  # source: audit
+  input_datetime.night_auto_light_start: ~
+  # source: audit
+  input_datetime.night_auto_light_start_joshua: ~
+  # source: audit
+  input_datetime.night_auto_light_start_julian: ~
+  # source: audit
+  input_datetime.night_auto_light_start_stephan: ~
+  # source: audit
+  input_datetime.night_mode_kids_end: "Zeit Night Mode Kinder Ende"
+  # source: audit
+  input_datetime.night_mode_kids_start: "Zeit Night Mode Kinder Start"
+  # source: audit
+  input_datetime.wakeup_weekday_end_time_joshua: ~
+  # source: audit
+  input_datetime.wakeup_weekday_end_time_julian: ~
+  # source: audit
+  input_datetime.wakeup_weekday_end_time_stephan: ~
+  # source: audit
+  input_datetime.wakeup_weekday_time_joshua: ~
+  # source: audit
+  input_datetime.wakeup_weekday_time_julian: ~
+  # source: audit
+  input_datetime.wakeup_weekday_time_stephan: ~
+  # source: audit
+  input_datetime.wakeup_weekend_end_time_joshua: ~
+  # source: audit
+  input_datetime.wakeup_weekend_end_time_julian: ~
+  # source: audit
+  input_datetime.wakeup_weekend_end_time_stephan: ~
+  # source: audit
+  input_datetime.wakeup_weekend_time_joshua: ~
+  # source: audit
+  input_datetime.wakeup_weekend_time_julian: ~
+  # source: audit
+  input_datetime.wakeup_weekend_time_stephan: ~
+  # source: audit
+  input_number.ckw_energy_cost: ~
+  # source: audit
+  input_number.day_brightness_decke_stephan: "Wert Tag Helligkeit Decke Schlafzimmer Stephan"
+  # source: audit
+  input_number.day_brightness_sofa: "Wert Tag Helligkeit Sofa"
+  # source: audit
+  input_number.eg_sound_esszimmer: ~
+  # source: audit
+  input_number.eg_sound_spielzimmer: ~
+  # source: audit
+  input_number.eg_sound_wohnzimmer: ~
+  # source: audit
+  input_number.illuminance_wohnraum: ~
+  # source: audit
+  input_number.night_brightness_decke_joshua: ~
+  # source: audit
+  input_number.night_brightness_decke_julian: ~
+  # source: audit
+  input_number.night_brightness_decke_stephan: ~
+  # source: audit
+  input_number.night_brightness_esstisch: ~
+  # source: audit
+  input_number.night_brightness_kuche: ~
+  # source: audit
+  input_number.night_brightness_sofa: ~
+  # source: audit
+  input_number.wakeup_brightness_joshua: ~
+  # source: audit
+  input_number.wakeup_brightness_julian: ~
+  # source: audit
+  input_number.wakeup_brightness_stephan: ~
+  # source: audit
+  input_select.buro_licht_scene: ~
+  # source: audit
+  input_select.essraum_light_scene: ~
+  # source: audit
+  input_select.light_scene_esstisch: ~
+  # source: audit
+  input_select.schlafzimmer_stephan_light_scene: ~
+  # source: audit
+  input_select.sound_choice: ~
+  # source: audit
+  input_select.wohnraum_light_scene: ~
+  # source: audit
+  input_select.wohnraum_scene: ~
+  # source: audit
+  input_text.privatevent: ~
+  # source: audit
+  input_text.workevent: ~
+  # source: audit
+  light.buro_tisch_licht: ~
+  # source: audit
+  light.buro_tischlampe_links_light: ~
+  # source: audit
+  light.buro_tischlampe_rechts_light: ~
+  # source: customize
+  light.deckenlicht_zimmer_julian_light: "Licht Zimmer Julian Decke"
+  # source: audit
+  light.dresden_elektronik_raspbee_ii_no_name_group_0x0008: ~
+  # source: audit
+  light.dresden_elektronik_raspbee_ii_no_name_group_0x000f: ~
+  # source: audit
+  light.dresden_elektronik_raspbee_ii_no_name_group_0xfff0: ~
+  # source: audit
+  light.esstisch_2: ~
+  # source: audit
+  light.esstisch_l_light: ~
+  # source: audit
+  light.esstisch_ml_light: ~
+  # source: audit
+  light.esstisch_mr_light_2: ~
+  # source: audit
+  light.esstisch_r_light_4: ~
+  # source: audit
+  light.flashlight: ~
+  # source: audit
+  light.ikea_of_sweden_tradfri_bulb_gu10_ww_400lm: ~
+  # source: audit
+  light.kuche_led_light: ~
+  # source: customize
+  light.sh_rgbw_aquarium_joshua_channel_3: "Licht Aquarium Zimmer Joshua Kanal 3"
+  # source: customize
+  light.sh_rgbw_aquarium_joshua_channel_4: "Licht Aquarium Zimmer Joshua Kanal 4"
+  # source: audit
+  light.sh_rgbw_aquarium_kinder_channel_1: ~
+  # source: audit
+  light.sh_rgbw_aquarium_kinder_channel_2: ~
+  # source: audit
+  light.sh_schreibtisch_licht_channel_2: ~
+  # source: audit
+  light.sh_schreibtisch_licht_channel_3: ~
+  # source: audit
+  light.sh_schreibtisch_licht_channel_4: ~
+  # source: audit
+  light.sh_sofa_tv_led_rgbw_light_0: ~
+  # source: audit
+  light.sofa_deckenlicht_light: ~
+  # source: audit
+  light.sofa_spot_light: ~
+  # source: audit
+  light.stefan_deckenlicht_light_3: ~
+  # source: customize
+  light.zimmer_joshua_deckenlicht_light: "Licht Zimmer Joshua Hauptlicht"
+  # source: customize
+  light.zimmer_julian_deckenlicht_light: "Licht Zimmer Julian Hauptlicht"
+  # source: audit
+  lock.hauseingang_muhle_5: ~
+  # source: audit
+  lock.unk_manufacturer_unk_model_door_lock: ~
+  # source: audit
+  lock.wohnung_eingang: ~
+  # source: audit
+  media_player.android_tv_10_0_0_220: ~
+  # source: audit
+  media_player.bad: ~
+  # source: audit
+  media_player.bad_2: "MediaPlayer Bad"
+  # source: audit
+  media_player.buro: ~
+  # source: audit
+  media_player.essraum: "MediaPlayer Essraum"
+  # source: audit
+  media_player.schlafzimmer_stephan: "MediaPlayer Schlafzimmer Stephan"
+  # source: audit
+  media_player.shield: "MediaPlayer SHIELD"
+  # source: audit
+  media_player.sonos_roam: ~
+  # source: audit
+  media_player.sonos_roam_2: "MediaPlayer Sonos Roam"
+  # source: audit
+  media_player.stephan: ~
+  # source: audit
+  media_player.tv: ~
+  # source: audit
+  media_player.wohnraum: "MediaPlayer Wohnraum"
+  # source: audit
+  media_player.wohnzimmer: ~
+  # source: audit
+  media_player.wohnzimmer_2: ~
+  # source: customize
+  media_player.zimmer_joshua: "MediaPlayer Zimmer Joshua"
+  # source: audit
+  media_player.zimmer_joshua_2: "MediaPlayer Zimmer Joshua"
+  # source: customize
+  media_player.zimmer_julian: "MediaPlayer Zimmer Julian"
+  # source: audit
+  media_player.zimmer_julian_2: "MediaPlayer Zimmer Julian"
+  # source: audit
+  number.bad_balance: ~
+  # source: audit
+  number.bad_bass: ~
+  # source: audit
+  number.bad_treble: ~
+  # source: audit
+  number.buro_balance: ~
+  # source: audit
+  number.buro_bass: ~
+  # source: audit
+  number.buro_tischlampe_links_on_level: ~
+  # source: audit
+  number.buro_tischlampe_links_on_off_transition_time: ~
+  # source: audit
+  number.buro_tischlampe_links_start_up_color_temperature: ~
+  # source: audit
+  number.buro_tischlampe_links_start_up_current_level: ~
+  # source: audit
+  number.buro_tischlampe_rechts_on_level: ~
+  # source: audit
+  number.buro_tischlampe_rechts_on_off_transition_time: ~
+  # source: audit
+  number.buro_tischlampe_rechts_start_up_color_temperature: ~
+  # source: audit
+  number.buro_tischlampe_rechts_start_up_current_level: ~
+  # source: audit
+  number.buro_treble: ~
+  # source: audit
+  number.deckenlicht_kinderspielzimmer_on_level: ~
+  # source: audit
+  number.deckenlicht_kinderspielzimmer_on_off_transition_time: ~
+  # source: audit
+  number.deckenlicht_kinderspielzimmer_start_up_color_temperature: ~
+  # source: audit
+  number.deckenlicht_kinderspielzimmer_start_up_current_level: ~
+  # source: audit
+  number.esstisch_ml_start_up_current_level: ~
+  # source: audit
+  number.esstisch_mr_start_up_current_level: ~
+  # source: audit
+  number.esstisch_r_start_up_current_level: ~
+  # source: audit
+  number.ikea_of_sweden_tradfri_bulb_gu10_ww_400lm_on_level: ~
+  # source: audit
+  number.ikea_of_sweden_tradfri_bulb_gu10_ww_400lm_on_off_transition_time: ~
+  # source: audit
+  number.ikea_of_sweden_tradfri_bulb_gu10_ww_400lm_start_up_current_level: ~
+  # source: audit
+  number.joshua_nachttisch_on_level: ~
+  # source: audit
+  number.joshua_nachttisch_on_off_transition_time: ~
+  # source: audit
+  number.joshua_nachttisch_start_up_current_level: ~
+  # source: audit
+  number.k1_05f2_bed_target: ~
+  # source: audit
+  number.k1_05f2_extruder_target: ~
+  # source: audit
+  number.k1_05f2_output_pin_fan0: ~
+  # source: audit
+  number.k1_05f2_output_pin_fan1: ~
+  # source: audit
+  number.k1_05f2_output_pin_fan2: ~
+  # source: audit
+  number.k1_05f2_output_pin_led: ~
+  # source: audit
+  number.kinderschlafzimmer_balance: ~
+  # source: audit
+  number.kinderschlafzimmer_bass: ~
+  # source: audit
+  number.kinderschlafzimmer_treble: ~
+  # source: audit
+  number.kuche_led_on_level: ~
+  # source: audit
+  number.kuche_led_on_off_transition_time: ~
+  # source: audit
+  number.kuche_led_start_up_current_level: ~
+  # source: audit
+  number.schlafzimmer_kinder_deckenlicht_start_up_current_level: ~
+  # source: audit
+  number.signify_netherlands_b_v_lwv005_start_up_current_level: ~
+  # source: audit
+  number.sofa_deckenlicht_start_up_current_level: ~
+  # source: audit
+  number.sofa_spot_on_level: ~
+  # source: audit
+  number.sofa_spot_on_off_transition_time: ~
+  # source: audit
+  number.sofa_spot_start_up_current_level: ~
+  # source: audit
+  number.sonos_roam_balance: ~
+  # source: audit
+  number.sonos_roam_bass: ~
+  # source: audit
+  number.sonos_roam_treble: ~
+  # source: audit
+  number.spielzimmer_balance: ~
+  # source: audit
+  number.spielzimmer_bass: ~
+  # source: audit
+  number.spielzimmer_deckenlicht_start_up_current_level: ~
+  # source: audit
+  number.spielzimmer_treble: ~
+  # source: audit
+  number.stefan_deckenlicht_start_up_current_level: ~
+  # source: audit
+  number.stephan_balance: ~
+  # source: audit
+  number.stephan_bass: ~
+  # source: audit
+  number.stephan_treble: ~
+  # source: audit
+  number.tv_audio_delay: ~
+  # source: audit
+  number.tv_balance: ~
+  # source: audit
+  number.tv_bass: ~
+  # source: audit
+  number.tv_music_surround_level: ~
+  # source: audit
+  number.tv_surround_level: ~
+  # source: audit
+  number.tv_treble: ~
+  # source: audit
+  number.werktisch_licht_on_level_2: ~
+  # source: audit
+  number.werktisch_licht_on_off_transition_time_2: ~
+  # source: audit
+  number.werktisch_licht_start_up_current_level_2: ~
+  # source: audit
+  number.wohnzimmer_balance: ~
+  # source: audit
+  number.wohnzimmer_balance_2: ~
+  # source: audit
+  number.wohnzimmer_bass: ~
+  # source: audit
+  number.wohnzimmer_bass_2: ~
+  # source: audit
+  number.wohnzimmer_treble: ~
+  # source: audit
+  number.wohnzimmer_treble_2: ~
+  # source: audit
+  person.joshua_kreilos: ~
+  # source: audit
+  person.julian_kreilos: ~
+  # source: audit
+  person.skreilos: ~
+  # source: audit
+  person.stephan_kreilos: ~
+  # source: audit
+  remote.android_tv_10_0_0_220: ~
+  # source: audit
+  scene.buro_schreibtisch_off: ~
+  # source: audit
+  scene.buro_schreibtisch_on_high: ~
+  # source: audit
+  scene.buro_schreibtisch_on_medium: ~
+  # source: audit
+  scene.buro_sound_office: ~
+  # source: audit
+  scene.esstisch_on_high_motion_off: ~
+  # source: audit
+  scene.esstisch_on_high_motion_on: ~
+  # source: audit
+  scene.kuche_motion_off: ~
+  # source: audit
+  scene.kuche_motion_on: ~
+  # source: audit
+  scene.kuche_off_motion_on: ~
+  # source: audit
+  scene.kuche_on_motion_on: ~
+  # source: audit
+  scene.schlafzimmer_stephan_off_motion_on: ~
+  # source: audit
+  scene.sofa_off_motion_off: ~
+  # source: audit
+  scene.sofa_off_motion_on: ~
+  # source: audit
+  scene.sofa_on_high_motion_off: ~
+  # source: audit
+  scene.sofa_on_high_motion_on: ~
+  # source: audit
+  scene.sofa_on_medium_motion_off: ~
+  # source: audit
+  scene.sofa_on_medium_motion_on: ~
+  # source: audit
+  script.alarm_flash_loop: ~
+  # source: audit
+  script.alarm_flash_off: ~
+  # source: audit
+  script.alarm_flash_on: ~
+  # source: audit
+  script.essen: ~
+  # source: audit
+  script.lesen: ~
+  # source: audit
+  script.light_off_all: ~
+  # source: audit
+  script.light_off_eg: ~
+  # source: audit
+  script.sonos_group_speakers_all: ~
+  # source: audit
+  script.sonos_group_speakers_living: ~
+  # source: audit
+  script.sonos_play_all_eg: ~
+  # source: audit
+  script.sonos_play_esszimmer: ~
+  # source: audit
+  script.sonos_play_jazz: ~
+  # source: audit
+  script.sonos_play_music_joshua: ~
+  # source: audit
+  script.sonos_play_music_julian: ~
+  # source: audit
+  script.sonos_play_music_wohnzimmer: ~
+  # source: audit
+  script.sonos_play_pop: ~
+  # source: audit
+  script.sonos_play_radio: ~
+  # source: audit
+  script.sonos_play_srf3: ~
+  # source: audit
+  script.sonos_play_wohnzimmer: ~
+  # source: audit
+  script.sonos_play_zimmer_julian: ~
+  # source: audit
+  script.sonos_status_off: ~
+  # source: audit
+  script.sonos_status_on: ~
+  # source: audit
+  script.sonos_stop_all: ~
+  # source: audit
+  script.sonos_stop_all_eg: ~
+  # source: audit
+  script.sonos_stop_esszimmer: ~
+  # source: audit
+  script.sonos_stop_joshua: ~
+  # source: audit
+  script.sonos_stop_julian: ~
+  # source: audit
+  script.sonos_stop_stephan: ~
+  # source: audit
+  script.sonos_stop_wohnzimmer: ~
+  # source: audit
+  script.sonos_stop_zimmer_julian: ~
+  # source: audit
+  script.sonos_ungroup_speakers_all: ~
+  # source: audit
+  script.sonos_volume_set_eg_sound_all: ~
+  # source: audit
+  script.sonos_volume_set_eg_sound_all_2: ~
+  # source: audit
+  script.sonos_volume_set_eg_sound_all_3: ~
+  # source: audit
+  script.sonos_volume_set_eg_sound_esszimmer: ~
+  # source: audit
+  script.sonos_volume_set_eg_sound_stephan: ~
+  # source: audit
+  script.sonos_volume_set_eg_sound_wohnzimmer: ~
+  # source: audit
+  script.sonos_volume_set_eg_sound_zimmer_julian: ~
+  # source: audit
+  script.sonos_volume_set_joshua: ~
+  # source: audit
+  script.sonos_volume_set_julian: ~
+  # source: audit
+  script.sonos_volume_set_stephan: ~
+  # source: audit
+  script.sonos_volume_set_wohnzimmer: ~
+  # source: audit
+  script.tv: ~
+  # source: audit
+  select.45p_co2_start_up_behavior: ~
+  # source: audit
+  select.65p_co2_start_up_behavior_4: ~
+  # source: audit
+  select.buro_tischlampe_links_start_up_behavior: ~
+  # source: audit
+  select.buro_tischlampe_rechts_start_up_behavior: ~
+  # source: audit
+  select.deckenlicht_kinderspielzimmer_start_up_behavior: ~
+  # source: audit
+  select.esstisch_ml_start_up_behavior: ~
+  # source: audit
+  select.esstisch_mr_start_up_behavior: ~
+  # source: audit
+  select.esstisch_r_start_up_behavior: ~
+  # source: audit
+  select.hombli_smart_socket_2_power_on_behavior: ~
+  # source: audit
+  select.hombli_smart_socket_3_power_on_behavior: ~
+  # source: audit
+  select.hombli_smart_socket_power_on_behavior: ~
+  # source: audit
+  select.ikea_of_sweden_tradfri_bulb_gu10_ww_400lm_start_up_behavior: ~
+  # source: audit
+  select.ikea_of_sweden_tradfri_control_outlet_start_up_behavior: ~
+  # source: audit
+  select.joshua_nachttisch_start_up_behavior: ~
+  # source: audit
+  select.julian_nachttisch_start_up_behavior_4: ~
+  # source: audit
+  select.kuche_led_start_up_behavior: ~
+  # source: audit
+  select.light_bed_stephan_links_start_up_behavior: ~
+  # source: audit
+  select.light_bed_stephan_rechts_start_up_behavior: ~
+  # source: audit
+  select.schalter_zimmer_joshua_schreibtisch_licht_start_up_behavior: ~
+  # source: audit
+  select.schlafzimmer_kinder_deckenlicht_start_up_behavior: ~
+  # source: audit
+  select.signify_netherlands_b_v_lwv005_start_up_behavior: ~
+  # source: audit
+  select.sofa_deckenlicht_start_up_behavior: ~
+  # source: audit
+  select.sofa_spot_start_up_behavior: ~
+  # source: audit
+  select.spielzimmer_deckenlicht_start_up_behavior: ~
+  # source: audit
+  select.stefan_deckenlicht_start_up_behavior: ~
+  # source: audit
+  select.waschmaschine_backlight_mode: ~
+  # source: audit
+  select.waschmaschine_power_on_state: ~
+  # source: audit
+  select.wasserpumpe_start_up_behavior_2: ~
+  # source: audit
+  select.werktisch_licht_start_up_behavior_2: ~
+  # source: audit
+  sensor.3d_printer_rssi: ~
+  # source: audit
+  sensor.3d_printer_summation_delivered_cost: ~
+  # source: audit
+  sensor.3d_printer_switch_0_current: ~
+  # source: audit
+  sensor.3d_printer_switch_0_device_temperature: ~
+  # source: audit
+  sensor.3d_printer_switch_0_energy: ~
+  # source: audit
+  sensor.3d_printer_switch_0_energy_cost: ~
+  # source: audit
+  sensor.3d_printer_switch_0_power: ~
+  # source: audit
+  sensor.3d_printer_switch_0_voltage: ~
+  # source: audit
+  sensor.3d_printer_uptime: ~
+  # source: audit
+  sensor.45p_co2_lqi: ~
+  # source: audit
+  sensor.45p_co2_rssi: ~
+  # source: audit
+  sensor.65p_co2_lqi_5: ~
+  # source: audit
+  sensor.65p_co2_rssi_5: ~
+  # source: audit
+  sensor.abwaschmaschine_rssi: ~
+  # source: audit
+  sensor.abwaschmaschine_switch_0_current: ~
+  # source: audit
+  sensor.abwaschmaschine_switch_0_device_temperature: ~
+  # source: audit
+  sensor.abwaschmaschine_switch_0_energy: ~
+  # source: audit
+  sensor.abwaschmaschine_switch_0_energy_cost: ~
+  # source: audit
+  sensor.abwaschmaschine_switch_0_energy_cost_2: ~
+  # source: audit
+  sensor.abwaschmaschine_switch_0_power: ~
+  # source: audit
+  sensor.abwaschmaschine_switch_0_voltage: ~
+  # source: audit
+  sensor.abwaschmaschine_uptime: ~
+  # source: audit
+  sensor.aquarium_45p: ~
+  # source: audit
+  sensor.aquarium_45p_v2_channel_1_energy_cost: ~
+  # source: audit
+  sensor.aquarium_45p_v2_channel_1_energy_cost_2: ~
+  # source: audit
+  sensor.aquarium_45p_v2_channel_2_energy_cost: ~
+  # source: audit
+  sensor.aquarium_45p_v2_channel_2_energy_cost_2: ~
+  # source: audit
+  sensor.aquarium_65p: ~
+  # source: audit
+  sensor.aquarium_hauptschalter_rssi: ~
+  # source: audit
+  sensor.aquarium_hauptschalter_switch_0_current: ~
+  # source: audit
+  sensor.aquarium_hauptschalter_switch_0_device_temperature: ~
+  # source: audit
+  sensor.aquarium_hauptschalter_switch_0_energy: ~
+  # source: audit
+  sensor.aquarium_hauptschalter_switch_0_frequency: ~
+  # source: audit
+  sensor.aquarium_hauptschalter_switch_0_power: ~
+  # source: audit
+  sensor.aquarium_hauptschalter_switch_0_voltage: ~
+  # source: audit
+  sensor.aquarium_hauptschalter_uptime: ~
+  # source: audit
+  sensor.backup_backup_manager_state: ~
+  # source: audit
+  sensor.backup_last_attempted_automatic_backup: ~
+  # source: audit
+  sensor.backup_last_successful_automatic_backup: ~
+  # source: audit
+  sensor.backup_next_scheduled_automatic_backup: ~
+  # source: audit
+  sensor.bad_licht_channel_1_energy: ~
+  # source: audit
+  sensor.bad_licht_channel_1_power: ~
+  # source: audit
+  sensor.bad_licht_channel_2_energy: ~
+  # source: audit
+  sensor.bad_licht_channel_2_power: ~
+  # source: audit
+  sensor.bad_licht_device_temperature: ~
+  # source: audit
+  sensor.bad_licht_rssi: ~
+  # source: audit
+  sensor.bad_licht_uptime: ~
+  # source: audit
+  sensor.bad_licht_voltage: ~
+  # source: audit
+  sensor.buro_store_current: ~
+  # source: audit
+  sensor.buro_store_device_temperature: ~
+  # source: audit
+  sensor.buro_store_energy: ~
+  # source: audit
+  sensor.buro_store_frequency: ~
+  # source: audit
+  sensor.buro_store_power: ~
+  # source: audit
+  sensor.buro_store_rssi: ~
+  # source: audit
+  sensor.buro_store_uptime: ~
+  # source: audit
+  sensor.buro_store_voltage: ~
+  # source: audit
+  sensor.buro_tisch_licht_energy: ~
+  # source: audit
+  sensor.buro_tisch_licht_power: ~
+  # source: audit
+  sensor.button_eingang_battery: ~
+  # source: audit
+  sensor.button_eingang_device_temperature: ~
+  # source: audit
+  sensor.button_eingangsture_battery_4: ~
+  # source: audit
+  sensor.button_kaffeemaschine_battery_3: ~
+  # source: audit
+  sensor.button_kinderzimmer_lqi_4: ~
+  # source: audit
+  sensor.button_kinderzimmer_rssi_4: ~
+  # source: audit
+  sensor.button_nachttisch_joshua_battery_5: ~
+  # source: audit
+  sensor.button_nachttisch_joshua_lqi_5: ~
+  # source: audit
+  sensor.button_nachttisch_joshua_rssi_5: ~
+  # source: audit
+  sensor.button_nachttisch_julian_battery_2: ~
+  # source: audit
+  sensor.button_nachttisch_julian_lqi_2: ~
+  # source: audit
+  sensor.button_nachttisch_julian_rssi_2: ~
+  # source: audit
+  sensor.button_nachttisch_stephan_links_battery: ~
+  # source: audit
+  sensor.button_nachttisch_stephan_rechts_battery: ~
+  # source: audit
+  sensor.button_schreibtisch_battery_6: ~
+  # source: audit
+  sensor.button_schreibtisch_lqi_7: ~
+  # source: audit
+  sensor.button_schreibtisch_rssi_7: ~
+  # source: audit
+  sensor.button_sound_control_buro_battery: ~
+  # source: audit
+  sensor.button_sound_control_buro_lqi: ~
+  # source: audit
+  sensor.button_sound_control_buro_rssi: ~
+  # source: customize
+  sensor.button_spielzimmer_battery_6: "Sensor Button Zimmer Julian Batterie"
+  # source: audit
+  sensor.button_trolley_battery_4: ~
+  # source: audit
+  sensor.button_trolley_lqi_4: ~
+  # source: audit
+  sensor.button_trolley_rssi_4: ~
+  # source: customize
+  sensor.button_werktisch_battery_6: "Sensor Button Schreibtisch Julian Batterie"
+  # source: customize
+  sensor.button_werktisch_lqi_7: "Sensor Button Schreibtisch Julian LQI"
+  # source: customize
+  sensor.button_werktisch_rssi_7: "Sensor Button Schreibtisch Julian RSSI"
+  # source: audit
+  sensor.button_zimmer_joshua_schreibtisch: ~
+  # source: audit
+  sensor.button_zimmer_joshua_schreibtisch_battery: ~
+  # source: audit
+  sensor.button_zimmer_joshua_schreibtisch_lqi: ~
+  # source: audit
+  sensor.button_zimmer_joshua_schreibtisch_rssi: ~
+  # source: audit
+  sensor.esstisch_l_lqi: ~
+  # source: audit
+  sensor.esstisch_l_rssi: ~
+  # source: audit
+  sensor.esstisch_ml_lqi: ~
+  # source: audit
+  sensor.esstisch_ml_rssi: ~
+  # source: audit
+  sensor.esstisch_mr_lqi_2: ~
+  # source: audit
+  sensor.esstisch_mr_rssi_2: ~
+  # source: audit
+  sensor.esstisch_r_lqi_4: ~
+  # source: audit
+  sensor.esstisch_r_rssi_4: ~
+  # source: audit
+  sensor.gang_licht_energy_consumed: ~
+  # source: audit
+  sensor.gang_licht_returned_energy: ~
+  # source: audit
+  sensor.gang_licht_rssi: ~
+  # source: audit
+  sensor.gang_licht_switch_0_current: ~
+  # source: audit
+  sensor.gang_licht_switch_0_device_temperature: ~
+  # source: audit
+  sensor.gang_licht_switch_0_energy: ~
+  # source: audit
+  sensor.gang_licht_switch_0_energy_cost: ~
+  # source: audit
+  sensor.gang_licht_switch_0_frequency: ~
+  # source: audit
+  sensor.gang_licht_switch_0_power: ~
+  # source: audit
+  sensor.gang_licht_switch_0_voltage: ~
+  # source: audit
+  sensor.gang_licht_uptime: ~
+  # source: audit
+  sensor.google_pixel_watch_2_activity_state: ~
+  # source: audit
+  sensor.google_pixel_watch_2_app_importance: ~
+  # source: audit
+  sensor.google_pixel_watch_2_app_memory: ~
+  # source: audit
+  sensor.google_pixel_watch_2_app_rx_gb: ~
+  # source: audit
+  sensor.google_pixel_watch_2_app_standby_bucket: ~
+  # source: audit
+  sensor.google_pixel_watch_2_app_tx_gb: ~
+  # source: audit
+  sensor.google_pixel_watch_2_audio_mode: ~
+  # source: audit
+  sensor.google_pixel_watch_2_battery_health: ~
+  # source: audit
+  sensor.google_pixel_watch_2_battery_level: ~
+  # source: audit
+  sensor.google_pixel_watch_2_battery_power: ~
+  # source: audit
+  sensor.google_pixel_watch_2_battery_state: ~
+  # source: audit
+  sensor.google_pixel_watch_2_battery_temperature: ~
+  # source: audit
+  sensor.google_pixel_watch_2_beacon_monitor: ~
+  # source: audit
+  sensor.google_pixel_watch_2_ble_transmitter: ~
+  # source: audit
+  sensor.google_pixel_watch_2_bluetooth_connection: ~
+  # source: audit
+  sensor.google_pixel_watch_2_charger_type: ~
+  # source: audit
+  sensor.google_pixel_watch_2_current_time_zone: ~
+  # source: audit
+  sensor.google_pixel_watch_2_current_version: ~
+  # source: audit
+  sensor.google_pixel_watch_2_daily_calories: ~
+  # source: audit
+  sensor.google_pixel_watch_2_daily_distance: ~
+  # source: audit
+  sensor.google_pixel_watch_2_daily_floors: ~
+  # source: audit
+  sensor.google_pixel_watch_2_daily_steps: ~
+  # source: audit
+  sensor.google_pixel_watch_2_do_not_disturb_sensor: ~
+  # source: audit
+  sensor.google_pixel_watch_2_external_storage: ~
+  # source: audit
+  sensor.google_pixel_watch_2_heart_rate: ~
+  # source: audit
+  sensor.google_pixel_watch_2_internal_storage: ~
+  # source: audit
+  sensor.google_pixel_watch_2_ipv6_addresses: ~
+  # source: audit
+  sensor.google_pixel_watch_2_last_reboot: ~
+  # source: audit
+  sensor.google_pixel_watch_2_last_update_trigger: ~
+  # source: audit
+  sensor.google_pixel_watch_2_light_sensor: ~
+  # source: audit
+  sensor.google_pixel_watch_2_network_type: ~
+  # source: audit
+  sensor.google_pixel_watch_2_next_alarm: ~
+  # source: audit
+  sensor.google_pixel_watch_2_os_version: ~
+  # source: audit
+  sensor.google_pixel_watch_2_pressure_sensor: ~
+  # source: audit
+  sensor.google_pixel_watch_2_public_ip_address: ~
+  # source: audit
+  sensor.google_pixel_watch_2_remaining_charge_time: ~
+  # source: audit
+  sensor.google_pixel_watch_2_ringer_mode: ~
+  # source: audit
+  sensor.google_pixel_watch_2_screen_brightness: ~
+  # source: audit
+  sensor.google_pixel_watch_2_screen_off_timeout: ~
+  # source: audit
+  sensor.google_pixel_watch_2_screen_orientation: ~
+  # source: audit
+  sensor.google_pixel_watch_2_screen_rotation: ~
+  # source: audit
+  sensor.google_pixel_watch_2_security_patch: ~
+  # source: audit
+  sensor.google_pixel_watch_2_steps_sensor: ~
+  # source: audit
+  sensor.google_pixel_watch_2_total_rx_gb: ~
+  # source: audit
+  sensor.google_pixel_watch_2_total_tx_gb: ~
+  # source: audit
+  sensor.google_pixel_watch_2_volume_level_accessibility: ~
+  # source: audit
+  sensor.google_pixel_watch_2_volume_level_alarm: ~
+  # source: audit
+  sensor.google_pixel_watch_2_volume_level_call: ~
+  # source: audit
+  sensor.google_pixel_watch_2_volume_level_dtmf: ~
+  # source: audit
+  sensor.google_pixel_watch_2_volume_level_music: ~
+  # source: audit
+  sensor.google_pixel_watch_2_volume_level_notification: ~
+  # source: audit
+  sensor.google_pixel_watch_2_volume_level_ringer: ~
+  # source: audit
+  sensor.google_pixel_watch_2_volume_level_system: ~
+  # source: audit
+  sensor.google_pixel_watch_2_wifi_bssid: ~
+  # source: audit
+  sensor.google_pixel_watch_2_wifi_connection: ~
+  # source: audit
+  sensor.google_pixel_watch_2_wifi_frequency: ~
+  # source: audit
+  sensor.google_pixel_watch_2_wifi_ip_address: ~
+  # source: audit
+  sensor.google_pixel_watch_2_wifi_link_speed: ~
+  # source: audit
+  sensor.google_pixel_watch_2_wifi_signal_strength: ~
+  # source: audit
+  sensor.hombli_bad_total_energy: ~
+  # source: audit
+  sensor.hombli_reserve_1_total_energy: ~
+  # source: audit
+  sensor.hombli_reserve_2_total_energy: ~
+  # source: audit
+  sensor.hombli_smart_socket_2_current: ~
+  # source: audit
+  sensor.hombli_smart_socket_2_power: ~
+  # source: audit
+  sensor.hombli_smart_socket_2_voltage: ~
+  # source: audit
+  sensor.hombli_smart_socket_3_current: ~
+  # source: audit
+  sensor.hombli_smart_socket_3_power: ~
+  # source: audit
+  sensor.hombli_smart_socket_3_voltage: ~
+  # source: audit
+  sensor.hombli_smart_socket_current: ~
+  # source: audit
+  sensor.hombli_smart_socket_power: ~
+  # source: audit
+  sensor.hombli_smart_socket_voltage: ~
+  # source: customize
+  sensor.ikea_of_sweden_jetstrom_40100_lqi: "Sensor Deckenlicht Zimmer Julian LQI"
+  # source: customize
+  sensor.ikea_of_sweden_jetstrom_40100_rssi: "Sensor Deckenlicht Zimmer Julian RSSI"
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_bulb_e14_ws_candle_470lm_lqi: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_bulb_e14_ws_candle_470lm_rssi: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_bulb_gu10_ww_400lm_lqi: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_bulb_gu10_ww_400lm_rssi: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_control_outlet_lqi: ~
+  # source: customize
+  sensor.ikea_of_sweden_tradfri_control_outlet_lqi_2: "Sensor Schreibtisch Licht Zimmer Julian LQI"
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_control_outlet_lqi_3: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_control_outlet_lqi_4: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_control_outlet_rssi: ~
+  # source: customize
+  sensor.ikea_of_sweden_tradfri_control_outlet_rssi_2: "Sensor Schreibtisch Licht Zimmer Julian RSSI"
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_control_outlet_rssi_3: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_control_outlet_rssi_4: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_on_off_switch_battery: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_on_off_switch_lqi: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_on_off_switch_lqi_2: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_on_off_switch_lqi_3: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_on_off_switch_lqi_4: ~
+  # source: customize
+  sensor.ikea_of_sweden_tradfri_on_off_switch_lqi_6: "Sensor Button Zimmer Julian LQI"
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_on_off_switch_rssi: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_on_off_switch_rssi_2: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_on_off_switch_rssi_3: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfri_on_off_switch_rssi_4: ~
+  # source: customize
+  sensor.ikea_of_sweden_tradfri_on_off_switch_rssi_6: "Sensor Button Zimmer Julian RSSI"
+  # source: audit
+  sensor.ikea_of_sweden_tradfribulbe14wscandleopal470lm_lqi: ~
+  # source: audit
+  sensor.ikea_of_sweden_tradfribulbe14wscandleopal470lm_rssi: ~
+  # source: audit
+  sensor.joshua_nachttisch_lqi_2: ~
+  # source: audit
+  sensor.joshua_nachttisch_rssi_2: ~
+  # source: audit
+  sensor.julian_nachttisch_lqi: ~
+  # source: audit
+  sensor.julian_nachttisch_rssi: ~
+  # source: audit
+  sensor.k1_05f2_bed_power: ~
+  # source: audit
+  sensor.k1_05f2_bed_target: ~
+  # source: audit
+  sensor.k1_05f2_bed_temperature: ~
+  # source: audit
+  sensor.k1_05f2_chamber_fan_temp: ~
+  # source: audit
+  sensor.k1_05f2_chamber_temp: ~
+  # source: audit
+  sensor.k1_05f2_current_display_message: ~
+  # source: audit
+  sensor.k1_05f2_current_layer: ~
+  # source: audit
+  sensor.k1_05f2_current_print_message: ~
+  # source: audit
+  sensor.k1_05f2_current_print_state: ~
+  # source: audit
+  sensor.k1_05f2_extruder_power: ~
+  # source: audit
+  sensor.k1_05f2_extruder_target: ~
+  # source: audit
+  sensor.k1_05f2_extruder_temperature: ~
+  # source: audit
+  sensor.k1_05f2_filament_used: ~
+  # source: audit
+  sensor.k1_05f2_filename: ~
+  # source: audit
+  sensor.k1_05f2_hotend_fan: ~
+  # source: audit
+  sensor.k1_05f2_jobs_in_queue: ~
+  # source: audit
+  sensor.k1_05f2_longest_print: ~
+  # source: audit
+  sensor.k1_05f2_mcu_awake: ~
+  # source: audit
+  sensor.k1_05f2_mcu_leveling_mcu_awake: ~
+  # source: audit
+  sensor.k1_05f2_mcu_leveling_mcu_load: ~
+  # source: audit
+  sensor.k1_05f2_mcu_load: ~
+  # source: audit
+  sensor.k1_05f2_mcu_nozzle_mcu_awake: ~
+  # source: audit
+  sensor.k1_05f2_mcu_nozzle_mcu_load: ~
+  # source: audit
+  sensor.k1_05f2_mcu_rpi_awake: ~
+  # source: audit
+  sensor.k1_05f2_mcu_rpi_load: ~
+  # source: audit
+  sensor.k1_05f2_mcu_temp: ~
+  # source: audit
+  sensor.k1_05f2_memory_used: ~
+  # source: audit
+  sensor.k1_05f2_object_height: ~
+  # source: audit
+  sensor.k1_05f2_print_duration: ~
+  # source: audit
+  sensor.k1_05f2_print_eta: ~
+  # source: audit
+  sensor.k1_05f2_print_projected_total_duration: ~
+  # source: audit
+  sensor.k1_05f2_print_time_left: ~
+  # source: audit
+  sensor.k1_05f2_printer_message: ~
+  # source: audit
+  sensor.k1_05f2_printer_state: ~
+  # source: audit
+  sensor.k1_05f2_progress: ~
+  # source: audit
+  sensor.k1_05f2_queue_state: ~
+  # source: audit
+  sensor.k1_05f2_slicer_print_duration_estimate: ~
+  # source: audit
+  sensor.k1_05f2_slicer_print_time_left_estimate: ~
+  # source: audit
+  sensor.k1_05f2_soc_fan_temp: ~
+  # source: audit
+  sensor.k1_05f2_speed_factor: ~
+  # source: audit
+  sensor.k1_05f2_system_load: ~
+  # source: audit
+  sensor.k1_05f2_toolhead_position_x: ~
+  # source: audit
+  sensor.k1_05f2_toolhead_position_y: ~
+  # source: audit
+  sensor.k1_05f2_toolhead_position_z: ~
+  # source: audit
+  sensor.k1_05f2_total_layer: ~
+  # source: audit
+  sensor.k1_05f2_totals_filament_used: ~
+  # source: audit
+  sensor.k1_05f2_totals_jobs: ~
+  # source: audit
+  sensor.k1_05f2_totals_print_time: ~
+  # source: audit
+  sensor.k1_05f2_version_creality_helper_script: ~
+  # source: audit
+  sensor.k1_05f2_version_fluidd: ~
+  # source: audit
+  sensor.k1_05f2_version_mainsail: ~
+  # source: audit
+  sensor.k1_05f2_version_moonraker: ~
+  # source: audit
+  sensor.k1_05f2_version_octoeverywhere: ~
+  # source: audit
+  sensor.kaffeemaschine_rssi_2: ~
+  # source: audit
+  sensor.kaffeemaschine_switch_0_current: ~
+  # source: audit
+  sensor.kaffeemaschine_switch_0_device_temperature: ~
+  # source: audit
+  sensor.kaffeemaschine_switch_0_energy: ~
+  # source: audit
+  sensor.kaffeemaschine_switch_0_energy_cost: ~
+  # source: audit
+  sensor.kaffeemaschine_switch_0_frequency: ~
+  # source: audit
+  sensor.kaffeemaschine_switch_0_power: ~
+  # source: audit
+  sensor.kaffeemaschine_switch_0_voltage: ~
+  # source: audit
+  sensor.kaffeemaschine_uptime: ~
+  # source: audit
+  sensor.kuche_led_lqi: ~
+  # source: audit
+  sensor.kuche_led_rssi: ~
+  # source: audit
+  sensor.kuchespot_rssi: ~
+  # source: audit
+  sensor.kuchespot_switch_0_current: ~
+  # source: audit
+  sensor.kuchespot_switch_0_device_temperature: ~
+  # source: audit
+  sensor.kuchespot_switch_0_energy: ~
+  # source: audit
+  sensor.kuchespot_switch_0_power: ~
+  # source: audit
+  sensor.kuchespot_switch_0_voltage: ~
+  # source: audit
+  sensor.kuchespot_uptime: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_accent_color: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_active_notification_count: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_app_importance: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_app_memory: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_app_rx_gb: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_app_standby_bucket: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_app_tx_gb: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_audio_mode: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_battery_health: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_battery_level: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_battery_power: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_battery_state: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_battery_temperature: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_beacon_monitor: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_ble_transmitter: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_bluetooth_connection: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_car_battery: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_car_charging_status: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_car_ev_connector_type: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_car_fuel: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_car_fuel_type: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_car_name: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_car_odometer: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_car_range_remaining: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_car_speed: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_charger_type: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_current_time_zone: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_current_version: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_detected_activity: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_do_not_disturb_sensor: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_external_storage: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_geocoded_location: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_high_accuracy_update_interval: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_internal_storage: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_ipv6_addresses: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_last_notification: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_last_reboot: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_last_removed_notification: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_last_update_trigger: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_last_used_app: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_light_sensor: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_media_session: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_mobile_rx_gb: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_mobile_tx_gb: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_network_type: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_next_alarm: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_os_version: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_phone_state: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_proximity_sensor: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_public_ip_address: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_remaining_charge_time: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_ringer_mode: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_screen_brightness: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_screen_off_timeout: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_screen_orientation: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_screen_rotation: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_security_patch: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_sim_1: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_sim_2: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_sleep_confidence: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_sleep_segment: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_total_rx_gb: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_total_tx_gb: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_volume_level_accessibility: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_volume_level_alarm: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_volume_level_call: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_volume_level_dtmf: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_volume_level_music: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_volume_level_notification: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_volume_level_ringer: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_volume_level_system: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_wi_fi_bssid: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_wi_fi_connection: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_wi_fi_frequency: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_wi_fi_ip_address: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_wi_fi_link_speed: ~
+  # source: audit
+  sensor.lenovo_tb_j616x_wi_fi_signal_strength: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_magnet_aq2_battery: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_magnet_aq2_battery_2: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_magnet_aq2_device_temperature: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_magnet_aq2_device_temperature_2: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_magnet_aq2_lqi: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_magnet_aq2_lqi_2: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_magnet_aq2_lqi_3: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_magnet_aq2_rssi: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_magnet_aq2_rssi_2: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_magnet_aq2_rssi_3: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_battery: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_battery_2: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_battery_3: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_battery_5: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_battery_6: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_battery_7: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_battery_8: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_battery_9: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_device_temperature: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_device_temperature_2: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_device_temperature_3: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_device_temperature_5: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_device_temperature_6: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_device_temperature_7: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_device_temperature_8: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_device_temperature_9: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_illuminance: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_illuminance_2: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_illuminance_3: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_illuminance_5: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_illuminance_6: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_illuminance_7: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_illuminance_8: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_illuminance_9: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_lqi: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_lqi_10: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_lqi_12: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_lqi_13: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_lqi_2: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_lqi_3: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_lqi_4: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_lqi_5: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_lqi_6: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_lqi_7: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_lqi_8: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_lqi_9: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_rssi: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_rssi_10: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_rssi_12: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_rssi_13: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_rssi_2: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_rssi_3: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_rssi_4: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_rssi_5: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_rssi_6: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_rssi_7: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_rssi_8: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_motion_aq2_rssi_9: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_switch_aq2_lqi: ~
+  # source: audit
+  sensor.lumi_lumi_sensor_switch_aq2_rssi: ~
+  # source: audit
+  sensor.lumi_lumi_vibration_aq1_battery: ~
+  # source: audit
+  sensor.lumi_lumi_vibration_aq1_device_temperature: ~
+  # source: audit
+  sensor.lumi_lumi_weather_battery: ~
+  # source: audit
+  sensor.lumi_lumi_weather_battery_2: ~
+  # source: audit
+  sensor.lumi_lumi_weather_battery_4: ~
+  # source: customize
+  sensor.lumi_lumi_weather_battery_5: "Sensor MultiSensor Zimmer Julian Batterie"
+  # source: audit
+  sensor.lumi_lumi_weather_humidity: ~
+  # source: audit
+  sensor.lumi_lumi_weather_humidity_2: ~
+  # source: audit
+  sensor.lumi_lumi_weather_humidity_4: ~
+  # source: customize
+  sensor.lumi_lumi_weather_humidity_5: "Sensor MultiSensor Zimmer Julian Luftfeuchte"
+  # source: audit
+  sensor.lumi_lumi_weather_lqi: ~
+  # source: audit
+  sensor.lumi_lumi_weather_lqi_2: ~
+  # source: audit
+  sensor.lumi_lumi_weather_lqi_3: ~
+  # source: audit
+  sensor.lumi_lumi_weather_lqi_4: ~
+  # source: customize
+  sensor.lumi_lumi_weather_lqi_5: "Sensor MultiSensor Zimmer Julian LQI"
+  # source: audit
+  sensor.lumi_lumi_weather_pressure: ~
+  # source: audit
+  sensor.lumi_lumi_weather_pressure_2: ~
+  # source: audit
+  sensor.lumi_lumi_weather_pressure_4: ~
+  # source: customize
+  sensor.lumi_lumi_weather_pressure_5: "Sensor MultiSensor Zimmer Julian Luftdruck"
+  # source: audit
+  sensor.lumi_lumi_weather_rssi: ~
+  # source: audit
+  sensor.lumi_lumi_weather_rssi_2: ~
+  # source: audit
+  sensor.lumi_lumi_weather_rssi_3: ~
+  # source: audit
+  sensor.lumi_lumi_weather_rssi_4: ~
+  # source: customize
+  sensor.lumi_lumi_weather_rssi_5: "Sensor MultiSensor Zimmer Julian RSSI"
+  # source: audit
+  sensor.lumi_lumi_weather_temperature: ~
+  # source: audit
+  sensor.lumi_lumi_weather_temperature_2: ~
+  # source: audit
+  sensor.lumi_lumi_weather_temperature_4: ~
+  # source: customize
+  sensor.lumi_lumi_weather_temperature_5: "Sensor MultiSensor Zimmer Julian Temperatur"
+  # source: audit
+  sensor.motion_esstisch_battery_4: ~
+  # source: audit
+  sensor.motion_esstisch_device_temperature_4: ~
+  # source: audit
+  sensor.motion_esstisch_illuminance_4: ~
+  # source: audit
+  sensor.motion_esstisch_lqi_4: ~
+  # source: audit
+  sensor.motion_esstisch_rssi_4: ~
+  # source: audit
+  sensor.motion_gang_kuche_battery_9: ~
+  # source: audit
+  sensor.motion_gang_kuche_device_temperature_9: ~
+  # source: audit
+  sensor.motion_gang_kuche_illuminance_9: ~
+  # source: audit
+  sensor.motion_schlafzimmer_kinder_battery_9: ~
+  # source: audit
+  sensor.motion_schlafzimmer_kinder_device_temperature_9: ~
+  # source: audit
+  sensor.motion_schlafzimmer_kinder_illuminance_9: ~
+  # source: audit
+  sensor.motionsensor_bad_battery_4: ~
+  # source: audit
+  sensor.motionsensor_bad_device_temperature_4: ~
+  # source: audit
+  sensor.motionsensor_bad_illuminance_4: ~
+  # source: audit
+  sensor.motionsensor_wc_battery_9: ~
+  # source: audit
+  sensor.motionsensor_wc_device_temperature_9: ~
+  # source: audit
+  sensor.motionsensor_wc_illuminance_9: ~
+  # source: audit
+  sensor.multisensor_bad_battery_3: ~
+  # source: audit
+  sensor.multisensor_bad_humidity_3: ~
+  # source: audit
+  sensor.multisensor_bad_pressure_3: ~
+  # source: audit
+  sensor.multisensor_bad_temperature_3: ~
+  # source: customize
+  sensor.philips_lwv001_lqi: "Sensor Deckenlicht Zimmer Julian LQI"
+  # source: customize
+  sensor.philips_lwv001_rssi: "Sensor Deckenlicht Zimmer Julian RSSI"
+  # source: audit
+  sensor.pixel_8_pro_accent_color: ~
+  # source: audit
+  sensor.pixel_8_pro_active_notification_count: ~
+  # source: audit
+  sensor.pixel_8_pro_app_importance: ~
+  # source: audit
+  sensor.pixel_8_pro_app_memory: ~
+  # source: audit
+  sensor.pixel_8_pro_app_rx_gb: ~
+  # source: audit
+  sensor.pixel_8_pro_app_standby_bucket: ~
+  # source: audit
+  sensor.pixel_8_pro_app_tx_gb: ~
+  # source: audit
+  sensor.pixel_8_pro_audio_mode: ~
+  # source: audit
+  sensor.pixel_8_pro_battery_health: ~
+  # source: audit
+  sensor.pixel_8_pro_battery_level: ~
+  # source: audit
+  sensor.pixel_8_pro_battery_power: ~
+  # source: audit
+  sensor.pixel_8_pro_battery_state: ~
+  # source: audit
+  sensor.pixel_8_pro_battery_temperature: ~
+  # source: audit
+  sensor.pixel_8_pro_beacon_monitor: ~
+  # source: audit
+  sensor.pixel_8_pro_ble_transmitter: ~
+  # source: audit
+  sensor.pixel_8_pro_bluetooth_connection: ~
+  # source: audit
+  sensor.pixel_8_pro_car_battery: ~
+  # source: audit
+  sensor.pixel_8_pro_car_charging_status: ~
+  # source: audit
+  sensor.pixel_8_pro_car_ev_connector_type: ~
+  # source: audit
+  sensor.pixel_8_pro_car_fuel: ~
+  # source: audit
+  sensor.pixel_8_pro_car_fuel_type: ~
+  # source: audit
+  sensor.pixel_8_pro_car_name: ~
+  # source: audit
+  sensor.pixel_8_pro_car_odometer: ~
+  # source: audit
+  sensor.pixel_8_pro_charger_type: ~
+  # source: audit
+  sensor.pixel_8_pro_current_time_zone: ~
+  # source: audit
+  sensor.pixel_8_pro_current_version: ~
+  # source: audit
+  sensor.pixel_8_pro_data_network_type_sim_1: ~
+  # source: audit
+  sensor.pixel_8_pro_data_network_type_sim_2: ~
+  # source: audit
+  sensor.pixel_8_pro_detected_activity: ~
+  # source: audit
+  sensor.pixel_8_pro_do_not_disturb_sensor: ~
+  # source: audit
+  sensor.pixel_8_pro_external_storage: ~
+  # source: audit
+  sensor.pixel_8_pro_geocoded_location: ~
+  # source: audit
+  sensor.pixel_8_pro_high_accuracy_update_interval: ~
+  # source: audit
+  sensor.pixel_8_pro_internal_storage: ~
+  # source: audit
+  sensor.pixel_8_pro_ipv6_addresses: ~
+  # source: audit
+  sensor.pixel_8_pro_last_notification: ~
+  # source: audit
+  sensor.pixel_8_pro_last_reboot: ~
+  # source: audit
+  sensor.pixel_8_pro_last_removed_notification: ~
+  # source: audit
+  sensor.pixel_8_pro_last_update_trigger: ~
+  # source: audit
+  sensor.pixel_8_pro_last_used_app: ~
+  # source: audit
+  sensor.pixel_8_pro_light_sensor: ~
+  # source: audit
+  sensor.pixel_8_pro_media_session: ~
+  # source: audit
+  sensor.pixel_8_pro_mobile_rx_gb: ~
+  # source: audit
+  sensor.pixel_8_pro_mobile_tx_gb: ~
+  # source: audit
+  sensor.pixel_8_pro_network_type: ~
+  # source: audit
+  sensor.pixel_8_pro_next_alarm: ~
+  # source: audit
+  sensor.pixel_8_pro_os_version: ~
+  # source: audit
+  sensor.pixel_8_pro_phone_state: ~
+  # source: audit
+  sensor.pixel_8_pro_pressure_sensor: ~
+  # source: audit
+  sensor.pixel_8_pro_proximity_sensor: ~
+  # source: audit
+  sensor.pixel_8_pro_public_ip_address: ~
+  # source: audit
+  sensor.pixel_8_pro_remaining_charge_time: ~
+  # source: audit
+  sensor.pixel_8_pro_ringer_mode: ~
+  # source: audit
+  sensor.pixel_8_pro_screen_brightness: ~
+  # source: audit
+  sensor.pixel_8_pro_screen_off_timeout: ~
+  # source: audit
+  sensor.pixel_8_pro_screen_orientation: ~
+  # source: audit
+  sensor.pixel_8_pro_screen_rotation: ~
+  # source: audit
+  sensor.pixel_8_pro_security_patch: ~
+  # source: audit
+  sensor.pixel_8_pro_signal_strength_sim_1: ~
+  # source: audit
+  sensor.pixel_8_pro_signal_strength_sim_2: ~
+  # source: audit
+  sensor.pixel_8_pro_sim_1: ~
+  # source: audit
+  sensor.pixel_8_pro_sim_2: ~
+  # source: audit
+  sensor.pixel_8_pro_sleep_confidence: ~
+  # source: audit
+  sensor.pixel_8_pro_sleep_segment: ~
+  # source: audit
+  sensor.pixel_8_pro_steps_sensor: ~
+  # source: audit
+  sensor.pixel_8_pro_total_rx_gb: ~
+  # source: audit
+  sensor.pixel_8_pro_total_tx_gb: ~
+  # source: audit
+  sensor.pixel_8_pro_volume_level_accessibility: ~
+  # source: audit
+  sensor.pixel_8_pro_volume_level_alarm: ~
+  # source: audit
+  sensor.pixel_8_pro_volume_level_call: ~
+  # source: audit
+  sensor.pixel_8_pro_volume_level_dtmf: ~
+  # source: audit
+  sensor.pixel_8_pro_volume_level_music: ~
+  # source: audit
+  sensor.pixel_8_pro_volume_level_notification: ~
+  # source: audit
+  sensor.pixel_8_pro_volume_level_ringer: ~
+  # source: audit
+  sensor.pixel_8_pro_volume_level_system: ~
+  # source: audit
+  sensor.pixel_8_pro_wifi_bssid: ~
+  # source: audit
+  sensor.pixel_8_pro_wifi_connection: ~
+  # source: audit
+  sensor.pixel_8_pro_wifi_frequency: ~
+  # source: audit
+  sensor.pixel_8_pro_wifi_ip_address: ~
+  # source: audit
+  sensor.pixel_8_pro_wifi_link_speed: ~
+  # source: audit
+  sensor.pixel_8_pro_wifi_signal_strength: ~
+  # source: audit
+  sensor.pixel_9_pro_accent_color: ~
+  # source: audit
+  sensor.pixel_9_pro_active_calories_burned: ~
+  # source: audit
+  sensor.pixel_9_pro_active_notification_count: ~
+  # source: audit
+  sensor.pixel_9_pro_app_importance: ~
+  # source: audit
+  sensor.pixel_9_pro_app_memory: ~
+  # source: audit
+  sensor.pixel_9_pro_app_rx_gb: ~
+  # source: audit
+  sensor.pixel_9_pro_app_standby_bucket: ~
+  # source: audit
+  sensor.pixel_9_pro_app_tx_gb: ~
+  # source: audit
+  sensor.pixel_9_pro_audio_mode: ~
+  # source: audit
+  sensor.pixel_9_pro_basal_body_temperature: ~
+  # source: audit
+  sensor.pixel_9_pro_basal_metabolic_rate: ~
+  # source: audit
+  sensor.pixel_9_pro_battery_cycle_count: ~
+  # source: audit
+  sensor.pixel_9_pro_battery_health: ~
+  # source: audit
+  sensor.pixel_9_pro_battery_level: ~
+  # source: audit
+  sensor.pixel_9_pro_battery_power: ~
+  # source: audit
+  sensor.pixel_9_pro_battery_state: ~
+  # source: audit
+  sensor.pixel_9_pro_battery_temperature: ~
+  # source: audit
+  sensor.pixel_9_pro_beacon_monitor: ~
+  # source: audit
+  sensor.pixel_9_pro_ble_transmitter: ~
+  # source: audit
+  sensor.pixel_9_pro_blood_glucose: ~
+  # source: audit
+  sensor.pixel_9_pro_bluetooth_connection: ~
+  # source: audit
+  sensor.pixel_9_pro_body_fat: ~
+  # source: audit
+  sensor.pixel_9_pro_body_temperature: ~
+  # source: audit
+  sensor.pixel_9_pro_body_water_mass: ~
+  # source: audit
+  sensor.pixel_9_pro_bone_mass: ~
+  # source: audit
+  sensor.pixel_9_pro_car_battery: ~
+  # source: audit
+  sensor.pixel_9_pro_car_charging_status: ~
+  # source: audit
+  sensor.pixel_9_pro_car_ev_connector_type: ~
+  # source: audit
+  sensor.pixel_9_pro_car_fuel: ~
+  # source: audit
+  sensor.pixel_9_pro_car_fuel_type: ~
+  # source: audit
+  sensor.pixel_9_pro_car_name: ~
+  # source: audit
+  sensor.pixel_9_pro_car_odometer: ~
+  # source: audit
+  sensor.pixel_9_pro_car_range_remaining: ~
+  # source: audit
+  sensor.pixel_9_pro_car_speed: ~
+  # source: audit
+  sensor.pixel_9_pro_charger_type: ~
+  # source: audit
+  sensor.pixel_9_pro_current_time_zone: ~
+  # source: audit
+  sensor.pixel_9_pro_current_version: ~
+  # source: audit
+  sensor.pixel_9_pro_daily_distance: ~
+  # source: audit
+  sensor.pixel_9_pro_daily_elevation_gained: ~
+  # source: audit
+  sensor.pixel_9_pro_daily_floors: ~
+  # source: audit
+  sensor.pixel_9_pro_daily_hydration: ~
+  # source: audit
+  sensor.pixel_9_pro_daily_steps: ~
+  # source: audit
+  sensor.pixel_9_pro_data_network_type_sim_1: ~
+  # source: audit
+  sensor.pixel_9_pro_data_network_type_sim_2: ~
+  # source: audit
+  sensor.pixel_9_pro_detected_activity: ~
+  # source: audit
+  sensor.pixel_9_pro_diastolic_blood_pressure: ~
+  # source: audit
+  sensor.pixel_9_pro_do_not_disturb_sensor: ~
+  # source: audit
+  sensor.pixel_9_pro_external_storage: ~
+  # source: audit
+  sensor.pixel_9_pro_geocoded_location: ~
+  # source: audit
+  sensor.pixel_9_pro_heart_rate: ~
+  # source: audit
+  sensor.pixel_9_pro_heart_rate_variability: ~
+  # source: audit
+  sensor.pixel_9_pro_height: ~
+  # source: audit
+  sensor.pixel_9_pro_high_accuracy_update_interval: ~
+  # source: audit
+  sensor.pixel_9_pro_internal_storage: ~
+  # source: audit
+  sensor.pixel_9_pro_ipv6_addresses: ~
+  # source: audit
+  sensor.pixel_9_pro_last_notification: ~
+  # source: audit
+  sensor.pixel_9_pro_last_reboot: ~
+  # source: audit
+  sensor.pixel_9_pro_last_removed_notification: ~
+  # source: audit
+  sensor.pixel_9_pro_last_update_trigger: ~
+  # source: audit
+  sensor.pixel_9_pro_last_used_app: ~
+  # source: audit
+  sensor.pixel_9_pro_lean_body_mass: ~
+  # source: audit
+  sensor.pixel_9_pro_light_sensor: ~
+  # source: audit
+  sensor.pixel_9_pro_media_session: ~
+  # source: audit
+  sensor.pixel_9_pro_mobile_rx_gb: ~
+  # source: audit
+  sensor.pixel_9_pro_mobile_tx_gb: ~
+  # source: audit
+  sensor.pixel_9_pro_network_type: ~
+  # source: audit
+  sensor.pixel_9_pro_next_alarm: ~
+  # source: audit
+  sensor.pixel_9_pro_os_version: ~
+  # source: audit
+  sensor.pixel_9_pro_oxygen_saturation: ~
+  # source: audit
+  sensor.pixel_9_pro_phone_state: ~
+  # source: audit
+  sensor.pixel_9_pro_pressure_sensor: ~
+  # source: audit
+  sensor.pixel_9_pro_proximity_sensor: ~
+  # source: audit
+  sensor.pixel_9_pro_public_ip_address: ~
+  # source: audit
+  sensor.pixel_9_pro_remaining_charge_time: ~
+  # source: audit
+  sensor.pixel_9_pro_respiratory_rate: ~
+  # source: audit
+  sensor.pixel_9_pro_resting_heart_rate: ~
+  # source: audit
+  sensor.pixel_9_pro_ringer_mode: ~
+  # source: audit
+  sensor.pixel_9_pro_screen_brightness: ~
+  # source: audit
+  sensor.pixel_9_pro_screen_off_timeout: ~
+  # source: audit
+  sensor.pixel_9_pro_screen_orientation: ~
+  # source: audit
+  sensor.pixel_9_pro_screen_rotation: ~
+  # source: audit
+  sensor.pixel_9_pro_security_patch: ~
+  # source: audit
+  sensor.pixel_9_pro_signal_strength_sim_1: ~
+  # source: audit
+  sensor.pixel_9_pro_signal_strength_sim_2: ~
+  # source: audit
+  sensor.pixel_9_pro_sim_1: ~
+  # source: audit
+  sensor.pixel_9_pro_sim_2: ~
+  # source: audit
+  sensor.pixel_9_pro_sleep_confidence: ~
+  # source: audit
+  sensor.pixel_9_pro_sleep_duration: ~
+  # source: audit
+  sensor.pixel_9_pro_sleep_segment: ~
+  # source: audit
+  sensor.pixel_9_pro_steps_sensor: ~
+  # source: audit
+  sensor.pixel_9_pro_systolic_blood_pressure: ~
+  # source: audit
+  sensor.pixel_9_pro_total_calories_burned: ~
+  # source: audit
+  sensor.pixel_9_pro_total_rx_gb: ~
+  # source: audit
+  sensor.pixel_9_pro_total_tx_gb: ~
+  # source: audit
+  sensor.pixel_9_pro_vo2_max: ~
+  # source: audit
+  sensor.pixel_9_pro_volume_level_accessibility: ~
+  # source: audit
+  sensor.pixel_9_pro_volume_level_alarm: ~
+  # source: audit
+  sensor.pixel_9_pro_volume_level_call: ~
+  # source: audit
+  sensor.pixel_9_pro_volume_level_dtmf: ~
+  # source: audit
+  sensor.pixel_9_pro_volume_level_music: ~
+  # source: audit
+  sensor.pixel_9_pro_volume_level_notification: ~
+  # source: audit
+  sensor.pixel_9_pro_volume_level_ringer: ~
+  # source: audit
+  sensor.pixel_9_pro_volume_level_system: ~
+  # source: audit
+  sensor.pixel_9_pro_weight: ~
+  # source: audit
+  sensor.pixel_9_pro_wifi_bssid: ~
+  # source: audit
+  sensor.pixel_9_pro_wifi_connection: ~
+  # source: audit
+  sensor.pixel_9_pro_wifi_frequency: ~
+  # source: audit
+  sensor.pixel_9_pro_wifi_ip_address: ~
+  # source: audit
+  sensor.pixel_9_pro_wifi_link_speed: ~
+  # source: audit
+  sensor.pixel_9_pro_wifi_signal_strength: ~
+  # source: audit
+  sensor.pw_stephan_activity_state: ~
+  # source: audit
+  sensor.pw_stephan_app_importance: ~
+  # source: audit
+  sensor.pw_stephan_app_memory: ~
+  # source: audit
+  sensor.pw_stephan_app_rx_gb: ~
+  # source: audit
+  sensor.pw_stephan_app_standby_bucket: ~
+  # source: audit
+  sensor.pw_stephan_app_tx_gb: ~
+  # source: audit
+  sensor.pw_stephan_audio_mode: ~
+  # source: audit
+  sensor.pw_stephan_battery_health: ~
+  # source: audit
+  sensor.pw_stephan_battery_level: ~
+  # source: audit
+  sensor.pw_stephan_battery_power: ~
+  # source: audit
+  sensor.pw_stephan_battery_state: ~
+  # source: audit
+  sensor.pw_stephan_battery_temperature: ~
+  # source: audit
+  sensor.pw_stephan_beacon_monitor: ~
+  # source: audit
+  sensor.pw_stephan_ble_transmitter: ~
+  # source: audit
+  sensor.pw_stephan_bluetooth_connection: ~
+  # source: audit
+  sensor.pw_stephan_charger_type: ~
+  # source: audit
+  sensor.pw_stephan_current_time_zone: ~
+  # source: audit
+  sensor.pw_stephan_current_version: ~
+  # source: audit
+  sensor.pw_stephan_daily_calories: ~
+  # source: audit
+  sensor.pw_stephan_daily_distance: ~
+  # source: audit
+  sensor.pw_stephan_daily_floors: ~
+  # source: audit
+  sensor.pw_stephan_daily_steps: ~
+  # source: audit
+  sensor.pw_stephan_do_not_disturb_sensor: ~
+  # source: audit
+  sensor.pw_stephan_external_storage: ~
+  # source: audit
+  sensor.pw_stephan_heart_rate: ~
+  # source: audit
+  sensor.pw_stephan_internal_storage: ~
+  # source: audit
+  sensor.pw_stephan_ipv6_addresses: ~
+  # source: audit
+  sensor.pw_stephan_last_reboot: ~
+  # source: audit
+  sensor.pw_stephan_last_update_trigger: ~
+  # source: audit
+  sensor.pw_stephan_light_sensor: ~
+  # source: audit
+  sensor.pw_stephan_network_type: ~
+  # source: audit
+  sensor.pw_stephan_next_alarm: ~
+  # source: audit
+  sensor.pw_stephan_os_version: ~
+  # source: audit
+  sensor.pw_stephan_pressure_sensor: ~
+  # source: audit
+  sensor.pw_stephan_public_ip_address: ~
+  # source: audit
+  sensor.pw_stephan_remaining_charge_time: ~
+  # source: audit
+  sensor.pw_stephan_ringer_mode: ~
+  # source: audit
+  sensor.pw_stephan_screen_brightness: ~
+  # source: audit
+  sensor.pw_stephan_screen_off_timeout: ~
+  # source: audit
+  sensor.pw_stephan_screen_orientation: ~
+  # source: audit
+  sensor.pw_stephan_screen_rotation: ~
+  # source: audit
+  sensor.pw_stephan_security_patch: ~
+  # source: audit
+  sensor.pw_stephan_steps_sensor: ~
+  # source: audit
+  sensor.pw_stephan_total_rx_gb: ~
+  # source: audit
+  sensor.pw_stephan_total_tx_gb: ~
+  # source: audit
+  sensor.pw_stephan_volume_level_accessibility: ~
+  # source: audit
+  sensor.pw_stephan_volume_level_alarm: ~
+  # source: audit
+  sensor.pw_stephan_volume_level_call: ~
+  # source: audit
+  sensor.pw_stephan_volume_level_dtmf: ~
+  # source: audit
+  sensor.pw_stephan_volume_level_music: ~
+  # source: audit
+  sensor.pw_stephan_volume_level_notification: ~
+  # source: audit
+  sensor.pw_stephan_volume_level_ringer: ~
+  # source: audit
+  sensor.pw_stephan_volume_level_system: ~
+  # source: audit
+  sensor.pw_stephan_wifi_bssid: ~
+  # source: audit
+  sensor.pw_stephan_wifi_connection: ~
+  # source: audit
+  sensor.pw_stephan_wifi_frequency: ~
+  # source: audit
+  sensor.pw_stephan_wifi_ip_address: ~
+  # source: audit
+  sensor.pw_stephan_wifi_link_speed: ~
+  # source: audit
+  sensor.pw_stephan_wifi_signal_strength: ~
+  # source: audit
+  sensor.schalter_zimmer_joshua_schreibtisch_licht_lqi: ~
+  # source: audit
+  sensor.schalter_zimmer_joshua_schreibtisch_licht_rssi: ~
+  # source: audit
+  sensor.schlafzimmer_kinder_deckenlicht_lqi_2: ~
+  # source: audit
+  sensor.schlafzimmer_kinder_deckenlicht_rssi_2: ~
+  # source: audit
+  sensor.schreibtisch_switch_0_energy_cost: ~
+  # source: audit
+  sensor.sensorair_buro_humidity: ~
+  # source: audit
+  sensor.sensorair_buro_lqi: ~
+  # source: audit
+  sensor.sensorair_buro_pm2_5: ~
+  # source: audit
+  sensor.sensorair_buro_rssi: ~
+  # source: audit
+  sensor.sensorair_buro_temperature: ~
+  # source: audit
+  sensor.sensorair_buro_voc_index: ~
+  # source: audit
+  sensor.sh_aquarium_hs_energy_consumed: ~
+  # source: audit
+  sensor.sh_aquarium_hs_returned_energy: ~
+  # source: audit
+  sensor.sh_buro_gerate_energy_consumed: ~
+  # source: audit
+  sensor.sh_buro_gerate_returned_energy: ~
+  # source: audit
+  sensor.sh_buro_gerate_rssi: ~
+  # source: audit
+  sensor.sh_buro_gerate_switch_0_current: ~
+  # source: audit
+  sensor.sh_buro_gerate_switch_0_device_temperature: ~
+  # source: audit
+  sensor.sh_buro_gerate_switch_0_energy: ~
+  # source: audit
+  sensor.sh_buro_gerate_switch_0_frequency: ~
+  # source: audit
+  sensor.sh_buro_gerate_switch_0_power: ~
+  # source: audit
+  sensor.sh_buro_gerate_switch_0_voltage: ~
+  # source: audit
+  sensor.sh_buro_gerate_uptime: ~
+  # source: audit
+  sensor.sh_kaffeemaschine_energy_consumed: ~
+  # source: audit
+  sensor.sh_kaffeemaschine_returned_energy: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_a_active_power: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_a_apparent_power: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_a_current: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_a_frequency: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_a_power_factor: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_a_total_active_energy: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_a_total_active_returned_energy: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_a_voltage: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_b_active_power: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_b_apparent_power: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_b_current: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_b_frequency: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_b_power_factor: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_b_total_active_energy: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_b_total_active_returned_energy: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_b_voltage: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_c_active_power: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_c_apparent_power: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_c_current: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_c_frequency: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_c_power_factor: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_c_total_active_energy: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_c_total_active_returned_energy: ~
+  # source: audit
+  sensor.sh_pro3_em_phase_c_voltage: ~
+  # source: audit
+  sensor.sh_pro3_em_rssi: ~
+  # source: audit
+  sensor.sh_pro3_em_temperature: ~
+  # source: audit
+  sensor.sh_pro3_em_total_active_energy: ~
+  # source: audit
+  sensor.sh_pro3_em_total_active_energy_cost: ~
+  # source: audit
+  sensor.sh_pro3_em_total_active_power: ~
+  # source: audit
+  sensor.sh_pro3_em_total_active_returned_energy: ~
+  # source: audit
+  sensor.sh_pro3_em_total_apparent_power: ~
+  # source: audit
+  sensor.sh_pro3_em_total_current: ~
+  # source: audit
+  sensor.sh_pro3_em_uptime: ~
+  # source: audit
+  sensor.sh_reserve_rssi: ~
+  # source: audit
+  sensor.sh_reserve_switch_0_current: ~
+  # source: audit
+  sensor.sh_reserve_switch_0_device_temperature: ~
+  # source: audit
+  sensor.sh_reserve_switch_0_energy: ~
+  # source: audit
+  sensor.sh_reserve_switch_0_power: ~
+  # source: audit
+  sensor.sh_reserve_switch_0_voltage: ~
+  # source: audit
+  sensor.sh_reserve_uptime: ~
+  # source: audit
+  sensor.sh_rgbw_aquarium_kinder_channel_1_energy: ~
+  # source: audit
+  sensor.sh_rgbw_aquarium_kinder_channel_1_power: ~
+  # source: audit
+  sensor.sh_rgbw_aquarium_kinder_channel_2_energy: ~
+  # source: audit
+  sensor.sh_rgbw_aquarium_kinder_channel_2_power: ~
+  # source: audit
+  sensor.sh_rgbw_aquarium_kinder_channel_3_energy: ~
+  # source: audit
+  sensor.sh_rgbw_aquarium_kinder_channel_3_power: ~
+  # source: audit
+  sensor.sh_rgbw_aquarium_kinder_channel_4_energy: ~
+  # source: audit
+  sensor.sh_rgbw_aquarium_kinder_channel_4_power: ~
+  # source: audit
+  sensor.sh_rgbw_aquarium_kinder_rssi: ~
+  # source: audit
+  sensor.sh_rgbw_aquarium_kinder_uptime: ~
+  # source: audit
+  sensor.sh_schlafzimmer_kinder_energy_consumed: ~
+  # source: audit
+  sensor.sh_schlafzimmer_kinder_returned_energy: ~
+  # source: audit
+  sensor.sh_schlafzimmer_kinder_rssi: ~
+  # source: audit
+  sensor.sh_schlafzimmer_kinder_switch_0_current: ~
+  # source: audit
+  sensor.sh_schlafzimmer_kinder_switch_0_device_temperature: ~
+  # source: audit
+  sensor.sh_schlafzimmer_kinder_switch_0_energy: ~
+  # source: audit
+  sensor.sh_schlafzimmer_kinder_switch_0_frequency: ~
+  # source: audit
+  sensor.sh_schlafzimmer_kinder_switch_0_power: ~
+  # source: audit
+  sensor.sh_schlafzimmer_kinder_switch_0_voltage: ~
+  # source: audit
+  sensor.sh_schlafzimmer_kinder_uptime: ~
+  # source: audit
+  sensor.sh_schlafzimmer_stephan_energy_consumed: ~
+  # source: audit
+  sensor.sh_schlafzimmer_stephan_returned_energy: ~
+  # source: audit
+  sensor.sh_schlafzimmer_stephan_rssi: ~
+  # source: audit
+  sensor.sh_schlafzimmer_stephan_switch_0_current: ~
+  # source: audit
+  sensor.sh_schlafzimmer_stephan_switch_0_device_temperature: ~
+  # source: audit
+  sensor.sh_schlafzimmer_stephan_switch_0_energy: ~
+  # source: audit
+  sensor.sh_schlafzimmer_stephan_switch_0_frequency: ~
+  # source: audit
+  sensor.sh_schlafzimmer_stephan_switch_0_power: ~
+  # source: audit
+  sensor.sh_schlafzimmer_stephan_switch_0_voltage: ~
+  # source: audit
+  sensor.sh_schlafzimmer_stephan_uptime: ~
+  # source: audit
+  sensor.sh_schreibtisch_licht_channel_2_energy: ~
+  # source: audit
+  sensor.sh_schreibtisch_licht_channel_2_power: ~
+  # source: audit
+  sensor.sh_schreibtisch_licht_channel_3_energy: ~
+  # source: audit
+  sensor.sh_schreibtisch_licht_channel_3_power: ~
+  # source: audit
+  sensor.sh_schreibtisch_licht_channel_4_energy: ~
+  # source: audit
+  sensor.sh_schreibtisch_licht_channel_4_power: ~
+  # source: audit
+  sensor.sh_schreibtisch_licht_rssi: ~
+  # source: audit
+  sensor.sh_schreibtisch_licht_uptime: ~
+  # source: audit
+  sensor.sh_sofa_tv_led_rgbw_light_0_current: ~
+  # source: audit
+  sensor.sh_sofa_tv_led_rgbw_light_0_device_temperature: ~
+  # source: audit
+  sensor.sh_sofa_tv_led_rgbw_light_0_energy: ~
+  # source: audit
+  sensor.sh_sofa_tv_led_rgbw_light_0_power: ~
+  # source: audit
+  sensor.sh_sofa_tv_led_rgbw_light_0_voltage: ~
+  # source: audit
+  sensor.sh_sofa_tv_led_rssi: ~
+  # source: audit
+  sensor.sh_sofa_tv_led_uptime: ~
+  # source: audit
+  sensor.sh_th_wohnraum_battery: ~
+  # source: audit
+  sensor.sh_th_wohnraum_humidity: ~
+  # source: audit
+  sensor.sh_th_wohnraum_temperature: ~
+  # source: audit
+  sensor.sh_tv_board_energy_consumed: ~
+  # source: audit
+  sensor.sh_tv_board_returned_energy: ~
+  # source: audit
+  sensor.sh_tv_board_rssi: ~
+  # source: audit
+  sensor.sh_tv_board_switch_0_current: ~
+  # source: audit
+  sensor.sh_tv_board_switch_0_device_temperature: ~
+  # source: audit
+  sensor.sh_tv_board_switch_0_energy: ~
+  # source: audit
+  sensor.sh_tv_board_switch_0_frequency: ~
+  # source: audit
+  sensor.sh_tv_board_switch_0_power: ~
+  # source: audit
+  sensor.sh_tv_board_switch_0_voltage: ~
+  # source: audit
+  sensor.sh_tv_board_uptime: ~
+  # source: audit
+  sensor.sh_wc_licht_channel_1_energy: ~
+  # source: audit
+  sensor.sh_wc_licht_channel_1_energy_cost: ~
+  # source: audit
+  sensor.sh_wc_licht_channel_1_power: ~
+  # source: audit
+  sensor.sh_wc_licht_channel_2_energy: ~
+  # source: audit
+  sensor.sh_wc_licht_channel_2_energy_cost: ~
+  # source: audit
+  sensor.sh_wc_licht_channel_2_power: ~
+  # source: audit
+  sensor.sh_wc_licht_device_temperature: ~
+  # source: audit
+  sensor.sh_wc_licht_rssi: ~
+  # source: audit
+  sensor.sh_wc_licht_uptime: ~
+  # source: audit
+  sensor.sh_wc_licht_voltage: ~
+  # source: audit
+  sensor.shellymotionmqtt_60a423992c8clux: ~
+  # source: audit
+  sensor.shellypro3em_a0dd6c9f9870_total_active_energy_cost: ~
+  # source: audit
+  sensor.sofa_deckenlicht_lqi: ~
+  # source: audit
+  sensor.sofa_deckenlicht_rssi: ~
+  # source: audit
+  sensor.sofa_spot_lqi: ~
+  # source: audit
+  sensor.sofa_spot_rssi: ~
+  # source: audit
+  sensor.sonoff_snzb_02ld_lqi: ~
+  # source: audit
+  sensor.sonoff_snzb_02ld_rssi: ~
+  # source: audit
+  sensor.sonos_favorites: ~
+  # source: audit
+  sensor.sonos_roam_battery: ~
+  # source: audit
+  sensor.sonos_roam_power_source: ~
+  # source: audit
+  sensor.stefan_deckenlicht_lqi_3: ~
+  # source: audit
+  sensor.stefan_deckenlicht_rssi_3: ~
+  # source: audit
+  sensor.sun_next_dawn: ~
+  # source: audit
+  sensor.sun_next_dusk: ~
+  # source: audit
+  sensor.sun_next_midnight: ~
+  # source: audit
+  sensor.sun_next_noon: ~
+  # source: audit
+  sensor.sun_next_rising: ~
+  # source: audit
+  sensor.sun_next_setting: ~
+  # source: audit
+  sensor.sun_solar_azimuth: ~
+  # source: audit
+  sensor.sun_solar_elevation: ~
+  # source: audit
+  sensor.sun_solar_rising: ~
+  # source: audit
+  sensor.tablet_sk_i_accent_color: ~
+  # source: audit
+  sensor.tablet_sk_i_active_notification_count: ~
+  # source: audit
+  sensor.tablet_sk_i_app_importance: ~
+  # source: audit
+  sensor.tablet_sk_i_app_memory: ~
+  # source: audit
+  sensor.tablet_sk_i_app_rx_gb: ~
+  # source: audit
+  sensor.tablet_sk_i_app_standby_bucket: ~
+  # source: audit
+  sensor.tablet_sk_i_app_tx_gb: ~
+  # source: audit
+  sensor.tablet_sk_i_audio_mode: ~
+  # source: audit
+  sensor.tablet_sk_i_battery_health: ~
+  # source: audit
+  sensor.tablet_sk_i_battery_level: ~
+  # source: audit
+  sensor.tablet_sk_i_battery_power: ~
+  # source: audit
+  sensor.tablet_sk_i_battery_state: ~
+  # source: audit
+  sensor.tablet_sk_i_battery_temperature: ~
+  # source: audit
+  sensor.tablet_sk_i_beacon_monitor: ~
+  # source: audit
+  sensor.tablet_sk_i_ble_transmitter: ~
+  # source: audit
+  sensor.tablet_sk_i_bluetooth_connection: ~
+  # source: audit
+  sensor.tablet_sk_i_car_battery: ~
+  # source: audit
+  sensor.tablet_sk_i_car_charging_status: ~
+  # source: audit
+  sensor.tablet_sk_i_car_ev_connector_type: ~
+  # source: audit
+  sensor.tablet_sk_i_car_fuel: ~
+  # source: audit
+  sensor.tablet_sk_i_car_fuel_type: ~
+  # source: audit
+  sensor.tablet_sk_i_car_name: ~
+  # source: audit
+  sensor.tablet_sk_i_car_odometer: ~
+  # source: audit
+  sensor.tablet_sk_i_car_range_remaining: ~
+  # source: audit
+  sensor.tablet_sk_i_car_speed: ~
+  # source: audit
+  sensor.tablet_sk_i_charger_type: ~
+  # source: audit
+  sensor.tablet_sk_i_current_time_zone: ~
+  # source: audit
+  sensor.tablet_sk_i_current_version: ~
+  # source: audit
+  sensor.tablet_sk_i_detected_activity: ~
+  # source: audit
+  sensor.tablet_sk_i_do_not_disturb_sensor: ~
+  # source: audit
+  sensor.tablet_sk_i_external_storage: ~
+  # source: audit
+  sensor.tablet_sk_i_geocoded_location: ~
+  # source: audit
+  sensor.tablet_sk_i_high_accuracy_update_interval: ~
+  # source: audit
+  sensor.tablet_sk_i_internal_storage: ~
+  # source: audit
+  sensor.tablet_sk_i_ipv6_addresses: ~
+  # source: audit
+  sensor.tablet_sk_i_last_notification: ~
+  # source: audit
+  sensor.tablet_sk_i_last_reboot: ~
+  # source: audit
+  sensor.tablet_sk_i_last_removed_notification: ~
+  # source: audit
+  sensor.tablet_sk_i_last_update_trigger: ~
+  # source: audit
+  sensor.tablet_sk_i_last_used_app: ~
+  # source: audit
+  sensor.tablet_sk_i_light_sensor: ~
+  # source: audit
+  sensor.tablet_sk_i_media_session: ~
+  # source: audit
+  sensor.tablet_sk_i_network_type: ~
+  # source: audit
+  sensor.tablet_sk_i_next_alarm: ~
+  # source: audit
+  sensor.tablet_sk_i_os_version: ~
+  # source: audit
+  sensor.tablet_sk_i_phone_state: ~
+  # source: audit
+  sensor.tablet_sk_i_proximity_sensor: ~
+  # source: audit
+  sensor.tablet_sk_i_public_ip_address: ~
+  # source: audit
+  sensor.tablet_sk_i_remaining_charge_time: ~
+  # source: audit
+  sensor.tablet_sk_i_ringer_mode: ~
+  # source: audit
+  sensor.tablet_sk_i_screen_brightness: ~
+  # source: audit
+  sensor.tablet_sk_i_screen_off_timeout: ~
+  # source: audit
+  sensor.tablet_sk_i_screen_orientation: ~
+  # source: audit
+  sensor.tablet_sk_i_screen_rotation: ~
+  # source: audit
+  sensor.tablet_sk_i_security_patch: ~
+  # source: audit
+  sensor.tablet_sk_i_sim_1: ~
+  # source: audit
+  sensor.tablet_sk_i_sim_2: ~
+  # source: audit
+  sensor.tablet_sk_i_sleep_confidence: ~
+  # source: audit
+  sensor.tablet_sk_i_sleep_segment: ~
+  # source: audit
+  sensor.tablet_sk_i_total_rx_gb: ~
+  # source: audit
+  sensor.tablet_sk_i_total_tx_gb: ~
+  # source: audit
+  sensor.tablet_sk_i_volume_level_accessibility: ~
+  # source: audit
+  sensor.tablet_sk_i_volume_level_alarm: ~
+  # source: audit
+  sensor.tablet_sk_i_volume_level_call: ~
+  # source: audit
+  sensor.tablet_sk_i_volume_level_dtmf: ~
+  # source: audit
+  sensor.tablet_sk_i_volume_level_music: ~
+  # source: audit
+  sensor.tablet_sk_i_volume_level_notification: ~
+  # source: audit
+  sensor.tablet_sk_i_volume_level_ringer: ~
+  # source: audit
+  sensor.tablet_sk_i_volume_level_system: ~
+  # source: audit
+  sensor.tablet_sk_i_wifi_bssid: ~
+  # source: audit
+  sensor.tablet_sk_i_wifi_connection: ~
+  # source: audit
+  sensor.tablet_sk_i_wifi_frequency: ~
+  # source: audit
+  sensor.tablet_sk_i_wifi_ip_address: ~
+  # source: audit
+  sensor.tablet_sk_i_wifi_link_speed: ~
+  # source: audit
+  sensor.tablet_sk_i_wifi_signal_strength: ~
+  # source: audit
+  sensor.tablet_stephan_8_accent_color: ~
+  # source: audit
+  sensor.tablet_stephan_8_active_notification_count: ~
+  # source: audit
+  sensor.tablet_stephan_8_app_importance: ~
+  # source: audit
+  sensor.tablet_stephan_8_app_memory: ~
+  # source: audit
+  sensor.tablet_stephan_8_app_rx_gb: ~
+  # source: audit
+  sensor.tablet_stephan_8_app_standby_bucket: ~
+  # source: audit
+  sensor.tablet_stephan_8_app_tx_gb: ~
+  # source: audit
+  sensor.tablet_stephan_8_audio_mode: ~
+  # source: audit
+  sensor.tablet_stephan_8_battery_health: ~
+  # source: audit
+  sensor.tablet_stephan_8_battery_level: ~
+  # source: audit
+  sensor.tablet_stephan_8_battery_power: ~
+  # source: audit
+  sensor.tablet_stephan_8_battery_state: ~
+  # source: audit
+  sensor.tablet_stephan_8_battery_temperature: ~
+  # source: audit
+  sensor.tablet_stephan_8_beacon_monitor: ~
+  # source: audit
+  sensor.tablet_stephan_8_ble_transmitter: ~
+  # source: audit
+  sensor.tablet_stephan_8_bluetooth_connection: ~
+  # source: audit
+  sensor.tablet_stephan_8_car_battery: ~
+  # source: audit
+  sensor.tablet_stephan_8_car_charging_status: ~
+  # source: audit
+  sensor.tablet_stephan_8_car_ev_connector_type: ~
+  # source: audit
+  sensor.tablet_stephan_8_car_fuel: ~
+  # source: audit
+  sensor.tablet_stephan_8_car_fuel_type: ~
+  # source: audit
+  sensor.tablet_stephan_8_car_name: ~
+  # source: audit
+  sensor.tablet_stephan_8_car_odometer: ~
+  # source: audit
+  sensor.tablet_stephan_8_car_range_remaining: ~
+  # source: audit
+  sensor.tablet_stephan_8_car_speed: ~
+  # source: audit
+  sensor.tablet_stephan_8_charger_type: ~
+  # source: audit
+  sensor.tablet_stephan_8_current_time_zone: ~
+  # source: audit
+  sensor.tablet_stephan_8_current_version: ~
+  # source: audit
+  sensor.tablet_stephan_8_detected_activity: ~
+  # source: audit
+  sensor.tablet_stephan_8_do_not_disturb_sensor: ~
+  # source: audit
+  sensor.tablet_stephan_8_external_storage: ~
+  # source: audit
+  sensor.tablet_stephan_8_geocoded_location: ~
+  # source: audit
+  sensor.tablet_stephan_8_high_accuracy_update_interval: ~
+  # source: audit
+  sensor.tablet_stephan_8_internal_storage: ~
+  # source: audit
+  sensor.tablet_stephan_8_ipv6_addresses: ~
+  # source: audit
+  sensor.tablet_stephan_8_last_notification: ~
+  # source: audit
+  sensor.tablet_stephan_8_last_reboot: ~
+  # source: audit
+  sensor.tablet_stephan_8_last_removed_notification: ~
+  # source: audit
+  sensor.tablet_stephan_8_last_update_trigger: ~
+  # source: audit
+  sensor.tablet_stephan_8_last_used_app: ~
+  # source: audit
+  sensor.tablet_stephan_8_light_sensor: ~
+  # source: audit
+  sensor.tablet_stephan_8_media_session: ~
+  # source: audit
+  sensor.tablet_stephan_8_mobile_rx_gb: ~
+  # source: audit
+  sensor.tablet_stephan_8_mobile_tx_gb: ~
+  # source: audit
+  sensor.tablet_stephan_8_network_type: ~
+  # source: audit
+  sensor.tablet_stephan_8_next_alarm: ~
+  # source: audit
+  sensor.tablet_stephan_8_os_version: ~
+  # source: audit
+  sensor.tablet_stephan_8_phone_state: ~
+  # source: audit
+  sensor.tablet_stephan_8_public_ip_address: ~
+  # source: audit
+  sensor.tablet_stephan_8_remaining_charge_time: ~
+  # source: audit
+  sensor.tablet_stephan_8_ringer_mode: ~
+  # source: audit
+  sensor.tablet_stephan_8_screen_brightness: ~
+  # source: audit
+  sensor.tablet_stephan_8_screen_off_timeout: ~
+  # source: audit
+  sensor.tablet_stephan_8_screen_orientation: ~
+  # source: audit
+  sensor.tablet_stephan_8_screen_rotation: ~
+  # source: audit
+  sensor.tablet_stephan_8_security_patch: ~
+  # source: audit
+  sensor.tablet_stephan_8_sim_1: ~
+  # source: audit
+  sensor.tablet_stephan_8_sim_2: ~
+  # source: audit
+  sensor.tablet_stephan_8_sleep_confidence: ~
+  # source: audit
+  sensor.tablet_stephan_8_sleep_segment: ~
+  # source: audit
+  sensor.tablet_stephan_8_steps_sensor: ~
+  # source: audit
+  sensor.tablet_stephan_8_total_rx_gb: ~
+  # source: audit
+  sensor.tablet_stephan_8_total_tx_gb: ~
+  # source: audit
+  sensor.tablet_stephan_8_volume_level_accessibility: ~
+  # source: audit
+  sensor.tablet_stephan_8_volume_level_alarm: ~
+  # source: audit
+  sensor.tablet_stephan_8_volume_level_call: ~
+  # source: audit
+  sensor.tablet_stephan_8_volume_level_dtmf: ~
+  # source: audit
+  sensor.tablet_stephan_8_volume_level_music: ~
+  # source: audit
+  sensor.tablet_stephan_8_volume_level_notification: ~
+  # source: audit
+  sensor.tablet_stephan_8_volume_level_ringer: ~
+  # source: audit
+  sensor.tablet_stephan_8_volume_level_system: ~
+  # source: audit
+  sensor.tablet_stephan_8_wi_fi_bssid: ~
+  # source: audit
+  sensor.tablet_stephan_8_wi_fi_connection: ~
+  # source: audit
+  sensor.tablet_stephan_8_wi_fi_frequency: ~
+  # source: audit
+  sensor.tablet_stephan_8_wi_fi_ip_address: ~
+  # source: audit
+  sensor.tablet_stephan_8_wi_fi_link_speed: ~
+  # source: audit
+  sensor.tablet_stephan_8_wi_fi_signal_strength: ~
+  # source: audit
+  sensor.temperatur_45p: ~
+  # source: audit
+  sensor.temperatur_45p_battery: ~
+  # source: audit
+  sensor.temperatur_aquarium_60p: ~
+  # source: audit
+  sensor.temperatur_aquarium_60p_battery: ~
+  # source: audit
+  sensor.temperatur_aquarium_60p_lqi: ~
+  # source: audit
+  sensor.temperatur_aquarium_60p_rssi: ~
+  # source: audit
+  sensor.trolley_device_temperature: ~
+  # source: audit
+  sensor.trolley_door_opener_battery_3: ~
+  # source: audit
+  sensor.trolley_door_opener_device_temperature_3: ~
+  # source: audit
+  sensor.trolley_energy: ~
+  # source: audit
+  sensor.trolley_energy_cost: ~
+  # source: audit
+  sensor.trolley_power: ~
+  # source: audit
+  sensor.trolley_rssi: ~
+  # source: audit
+  sensor.trolley_uptime: ~
+  # source: audit
+  sensor.tv_audio_input_format: ~
+  # source: audit
+  sensor.tz3000_ko6v90pg_ts011f_lqi: ~
+  # source: audit
+  sensor.tz3000_ko6v90pg_ts011f_rssi: ~
+  # source: audit
+  sensor.unk_manufacturer_unk_model_lqi: ~
+  # source: audit
+  sensor.unk_manufacturer_unk_model_rssi: ~
+  # source: audit
+  sensor.waschmaschine_channel_1_energy_cost: ~
+  # source: audit
+  sensor.waschmaschine_channel_2_energy_cost: ~
+  # source: audit
+  sensor.waschmaschine_current: ~
+  # source: audit
+  sensor.waschmaschine_power: ~
+  # source: audit
+  sensor.waschmaschine_summation_delivered: ~
+  # source: audit
+  sensor.waschmaschine_switch_0_energy_cost: ~
+  # source: audit
+  sensor.waschmaschine_switch_0_energy_cost_2: ~
+  # source: audit
+  sensor.waschmaschine_voltage: ~
+  # source: audit
+  sensor.wasserpumpe_lqi_3: ~
+  # source: audit
+  sensor.wasserpumpe_rssi_3: ~
+  # source: audit
+  sensor.wohnraum_store_current: ~
+  # source: audit
+  sensor.wohnraum_store_device_temperature: ~
+  # source: audit
+  sensor.wohnraum_store_energy: ~
+  # source: audit
+  sensor.wohnraum_store_frequency: ~
+  # source: audit
+  sensor.wohnraum_store_power: ~
+  # source: audit
+  sensor.wohnraum_store_rssi: ~
+  # source: audit
+  sensor.wohnraum_store_uptime: ~
+  # source: audit
+  sensor.wohnraum_store_voltage: ~
+  # source: audit
+  sensor.wohnung_eingang_battery: ~
+  # source: audit
+  switch.3d_printer_switch_0: ~
+  # source: audit
+  switch.45p_co2_switch: ~
+  # source: audit
+  switch.65p_co2_switch_5: ~
+  # source: audit
+  switch.abwaschmaschine_switch_0: ~
+  # source: audit
+  switch.aquarium_hauptschalter_switch_0: ~
+  # source: audit
+  switch.bad_crossfade: ~
+  # source: audit
+  switch.bad_licht_channel_1: ~
+  # source: audit
+  switch.bad_licht_channel_2: ~
+  # source: audit
+  switch.bad_loudness: ~
+  # source: audit
+  switch.bad_status_light: ~
+  # source: audit
+  switch.bad_touch_controls: ~
+  # source: audit
+  switch.buro_crossfade: ~
+  # source: audit
+  switch.buro_loudness: ~
+  # source: audit
+  switch.buro_status_light: ~
+  # source: audit
+  switch.buro_touch_controls: ~
+  # source: audit
+  switch.button_card_pre_release: ~
+  # source: audit
+  switch.dreame_vacuum_pre_release: ~
+  # source: audit
+  switch.dresden_elektronik_raspbee_ii_no_name_group_0x000b: ~
+  # source: audit
+  switch.dresden_elektronik_raspbee_ii_no_name_group_0x0013: ~
+  # source: audit
+  switch.dresden_elektronik_raspbee_ii_no_name_group_0x001e: ~
+  # source: audit
+  switch.dresden_elektronik_raspbee_ii_no_name_group_0xfff0: ~
+  # source: audit
+  switch.gang_licht_switch_0: ~
+  # source: audit
+  switch.hacs_pre_release: ~
+  # source: audit
+  switch.hombli_smart_socket_2_socket_1: ~
+  # source: audit
+  switch.hombli_smart_socket_3_socket_1: ~
+  # source: audit
+  switch.hombli_smart_socket_socket_1: ~
+  # source: customize
+  switch.joshua_nachttisch_switch_2: "Schalter Zimmer Joshua Nachttisch"
+  # source: customize
+  switch.julian_nachttisch_switch: "Schalter Zimmer Julian Nachttisch"
+  # source: audit
+  switch.k1_05f2_output_pin_adaptive_bed_mesh: ~
+  # source: audit
+  switch.k1_05f2_output_pin_adaptive_purge_line: ~
+  # source: audit
+  switch.k1_05f2_output_pin_full_bed_mesh: ~
+  # source: audit
+  switch.kaffeemaschine_switch_0: ~
+  # source: audit
+  switch.kuchespot_switch_0: ~
+  # source: audit
+  switch.light_bed_stephan_links_switch: ~
+  # source: audit
+  switch.light_bed_stephan_rechts_switch: ~
+  # source: audit
+  switch.moonraker_pre_release: ~
+  # source: audit
+  switch.schalter_zimmer_joshua_schreibtisch_licht: ~
+  # source: audit
+  switch.sh_buro_gerate_switch_0: ~
+  # source: audit
+  switch.sh_reserve_switch_0: ~
+  # source: audit
+  switch.sh_schlafzimmer_kinder_switch_0: ~
+  # source: audit
+  switch.sh_schlafzimmer_stephan_switch_0: ~
+  # source: audit
+  switch.sh_tv_board_switch_0: ~
+  # source: audit
+  switch.sh_wc_licht_channel_1: ~
+  # source: audit
+  switch.sh_wc_licht_channel_2: ~
+  # source: audit
+  switch.sonos_roam_crossfade: ~
+  # source: audit
+  switch.sonos_roam_loudness: ~
+  # source: audit
+  switch.sonos_roam_status_light: ~
+  # source: audit
+  switch.sonos_roam_touch_controls: ~
+  # source: audit
+  switch.stephan_crossfade: ~
+  # source: audit
+  switch.stephan_loudness: ~
+  # source: audit
+  switch.stephan_status_light: ~
+  # source: audit
+  switch.stephan_touch_controls: ~
+  # source: audit
+  switch.trolley: ~
+  # source: audit
+  switch.tv_crossfade: ~
+  # source: audit
+  switch.tv_loudness: ~
+  # source: audit
+  switch.tv_night_sound: ~
+  # source: audit
+  switch.tv_speech_enhancement: ~
+  # source: audit
+  switch.tv_status_light: ~
+  # source: audit
+  switch.tv_surround_enabled: ~
+  # source: audit
+  switch.tv_surround_music_full_volume: ~
+  # source: audit
+  switch.tv_touch_controls: ~
+  # source: audit
+  switch.waschmaschine_child_lock: ~
+  # source: audit
+  switch.waschmaschine_switch: ~
+  # source: audit
+  switch.wasserpumpe_switch_3: ~
+  # source: audit
+  switch.wohnzimmer_crossfade: ~
+  # source: audit
+  switch.wohnzimmer_crossfade_2: ~
+  # source: audit
+  switch.wohnzimmer_loudness: ~
+  # source: audit
+  switch.wohnzimmer_loudness_2: ~
+  # source: audit
+  switch.wohnzimmer_status_light: ~
+  # source: audit
+  switch.wohnzimmer_status_light_2: ~
+  # source: audit
+  switch.wohnzimmer_touch_controls: ~
+  # source: audit
+  switch.wohnzimmer_touch_controls_2: ~
+  # source: audit
+  switch.zimmer_joshua_crossfade: ~
+  # source: audit
+  switch.zimmer_joshua_loudness: ~
+  # source: audit
+  switch.zimmer_joshua_status_light: ~
+  # source: audit
+  switch.zimmer_joshua_touch_controls: ~
+  # source: audit
+  switch.zimmer_julian_crossfade: ~
+  # source: audit
+  switch.zimmer_julian_loudness: ~
+  # source: audit
+  switch.zimmer_julian_schreibtisch_licht_switch: ~
+  # source: customize
+  switch.zimmer_julian_spot_switch_6: "Schalter Zimmer Julian Spot"
+  # source: audit
+  switch.zimmer_julian_status_light: ~
+  # source: audit
+  switch.zimmer_julian_touch_controls: ~
+  # source: audit
+  update.3d_printer_beta_firmware_update: ~
+  # source: audit
+  update.3d_printer_firmware_update: ~
+  # source: audit
+  update.45p_co2_firmware: ~
+  # source: audit
+  update.65p_co2_firmware: ~
+  # source: audit
+  update.abwaschmaschine_beta_firmware: ~
+  # source: audit
+  update.abwaschmaschine_firmware: ~
+  # source: audit
+  update.aquarium_hauptschalter_beta_firmware_update: ~
+  # source: audit
+  update.aquarium_hauptschalter_firmware_update: ~
+  # source: audit
+  update.bad_licht_beta_firmware_update: ~
+  # source: audit
+  update.bad_licht_firmware_update: ~
+  # source: audit
+  update.buro_store_beta_firmware_update: ~
+  # source: audit
+  update.buro_store_firmware_update: ~
+  # source: audit
+  update.buro_tischlampe_links_firmware: ~
+  # source: audit
+  update.buro_tischlampe_rechts_firmware: ~
+  # source: audit
+  update.button_card_update: ~
+  # source: audit
+  update.button_eingangsture_firmware: ~
+  # source: audit
+  update.button_kaffeemaschine_firmware: ~
+  # source: audit
+  update.button_nachttisch_joshua_firmware: ~
+  # source: audit
+  update.button_nachttisch_julian_firmware: ~
+  # source: audit
+  update.button_nachttisch_stephan_links_firmware: ~
+  # source: audit
+  update.button_nachttisch_stephan_rechts_firmware: ~
+  # source: audit
+  update.button_schreibtisch_firmware: ~
+  # source: audit
+  update.button_sound_control_buro_firmware: ~
+  # source: audit
+  update.button_spielzimmer_firmware: ~
+  # source: audit
+  update.button_trolley_firmware: ~
+  # source: audit
+  update.button_werktisch_firmware: ~
+  # source: audit
+  update.deckenlicht_kinderspielzimmer_firmware: ~
+  # source: audit
+  update.dreame_vacuum_update: ~
+  # source: audit
+  update.esstisch_ml_firmware: ~
+  # source: audit
+  update.esstisch_mr_firmware: ~
+  # source: audit
+  update.esstisch_r_firmware: ~
+  # source: audit
+  update.gang_licht_beta_firmware_update: ~
+  # source: audit
+  update.gang_licht_firmware_update: ~
+  # source: audit
+  update.hacs_update: ~
+  # source: audit
+  update.ikea_of_sweden_tradfri_bulb_gu10_ww_400lm_firmware: ~
+  # source: audit
+  update.ikea_of_sweden_tradfri_control_outlet_firmware: ~
+  # source: audit
+  update.ikea_of_sweden_tradfri_on_off_switch_firmware: ~
+  # source: audit
+  update.joshua_nachttisch_firmware: ~
+  # source: audit
+  update.julian_nachttisch_firmware: ~
+  # source: audit
+  update.kaffeemaschine_beta_firmware_update: ~
+  # source: audit
+  update.kaffeemaschine_firmware_update: ~
+  # source: audit
+  update.kuche_led_firmware: ~
+  # source: audit
+  update.kuchespot_beta_firmware_update: ~
+  # source: audit
+  update.kuchespot_firmware_update: ~
+  # source: audit
+  update.light_bed_stephan_links_firmware: ~
+  # source: audit
+  update.light_bed_stephan_rechts_firmware: ~
+  # source: audit
+  update.lumi_lumi_sensor_motion_aq2_firmware_2: ~
+  # source: audit
+  update.lumi_lumi_vibration_aq1_firmware: ~
+  # source: audit
+  update.moonraker_update: ~
+  # source: audit
+  update.motion_bett_stefan_l_firmware: ~
+  # source: audit
+  update.motion_bett_stefan_r_firmware: ~
+  # source: audit
+  update.motion_esstisch_firmware: ~
+  # source: audit
+  update.motion_gang_hinten_firmware: ~
+  # source: audit
+  update.motion_gang_kuche_firmware: ~
+  # source: audit
+  update.motion_gang_mitte_firmware: ~
+  # source: audit
+  update.motion_kuche_firmware: ~
+  # source: audit
+  update.motion_schlafzimmer_kinder_firmware: ~
+  # source: audit
+  update.motion_sofa_firmware: ~
+  # source: audit
+  update.motion_tv_firmware: ~
+  # source: audit
+  update.motionsensor_bad_firmware: ~
+  # source: audit
+  update.motionsensor_wc_firmware: ~
+  # source: audit
+  update.schalter_zimmer_joshua_schreibtisch_licht_firmware: ~
+  # source: audit
+  update.schlafzimmer_kinder_deckenlicht_firmware: ~
+  # source: audit
+  update.sensorair_buro_firmware: ~
+  # source: audit
+  update.sh_buro_gerate_beta_firmware: ~
+  # source: audit
+  update.sh_buro_gerate_firmware: ~
+  # source: audit
+  update.sh_pro3_em_beta_firmware: ~
+  # source: audit
+  update.sh_pro3_em_firmware: ~
+  # source: audit
+  update.sh_reserve_beta_firmware: ~
+  # source: audit
+  update.sh_reserve_firmware: ~
+  # source: audit
+  update.sh_rgbw_aquarium_kinder_beta_firmware: ~
+  # source: audit
+  update.sh_rgbw_aquarium_kinder_firmware: ~
+  # source: audit
+  update.sh_schlafzimmer_kinder_beta_firmware: ~
+  # source: audit
+  update.sh_schlafzimmer_kinder_firmware: ~
+  # source: audit
+  update.sh_schlafzimmer_stephan_beta_firmware: ~
+  # source: audit
+  update.sh_schlafzimmer_stephan_firmware: ~
+  # source: audit
+  update.sh_schreibtisch_licht_beta_firmware: ~
+  # source: audit
+  update.sh_schreibtisch_licht_firmware: ~
+  # source: audit
+  update.sh_sofa_tv_led_beta_firmware: ~
+  # source: audit
+  update.sh_sofa_tv_led_firmware: ~
+  # source: audit
+  update.sh_th_wohnraum_beta_firmware_update: ~
+  # source: audit
+  update.sh_th_wohnraum_firmware_update: ~
+  # source: audit
+  update.sh_tv_board_beta_firmware: ~
+  # source: audit
+  update.sh_tv_board_firmware: ~
+  # source: audit
+  update.sh_wc_licht_beta_firmware_update: ~
+  # source: audit
+  update.sh_wc_licht_firmware_update: ~
+  # source: audit
+  update.signify_netherlands_b_v_lwv005_firmware: ~
+  # source: audit
+  update.sofa_deckenlicht_firmware: ~
+  # source: audit
+  update.sofa_spot_firmware: ~
+  # source: audit
+  update.spielzimmer_deckenlicht_firmware: ~
+  # source: audit
+  update.stefan_deckenlicht_firmware: ~
+  # source: audit
+  update.temperatur_45p_firmware: ~
+  # source: audit
+  update.temperatur_aquarium_60p_firmware: ~
+  # source: audit
+  update.trolley_beta_firmware_update: ~
+  # source: audit
+  update.trolley_firmware_update: ~
+  # source: audit
+  update.waschmaschine_firmware: ~
+  # source: audit
+  update.wasserpumpe_firmware: ~
+  # source: audit
+  update.werktisch_licht_firmware: ~
+  # source: audit
+  update.wohnraum_store_beta_firmware_update: ~
+  # source: audit
+  update.wohnraum_store_firmware_update: ~
+  # source: audit
+  weather.home: ~
+
+devices: {}

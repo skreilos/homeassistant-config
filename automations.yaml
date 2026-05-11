@@ -163,8 +163,14 @@
       - condition: template
         value_template: "{{ in_night | bool and is_state('input_boolean.guest_mode', 'off') }}"
       sequence:
+      - wait_template: >
+          {{ states(target_light | trim) not in ['unavailable','unknown'] }}
+        timeout: '00:00:08'
+        continue_on_timeout: true
+      - delay:
+          milliseconds: 800
       - target:
-          entity_id: "{{ target_light }}"
+          entity_id: "{{ target_light | trim }}"
         data:
           brightness_pct: "{{ night_pct | int }}"
           transition: 1
@@ -708,12 +714,6 @@
         entity_id: input_boolean.wakeup_enabled_stephan
         state: 'on'
       sequence:
-      - action: light.turn_on
-        target:
-          entity_id: light.stefan_deckenlicht_light_3
-        data:
-          brightness_pct: "{{ states('input_number.wakeup_brightness_stephan') | int(35) }}"
-          transition: 8
       - action: switch.turn_on
         target:
           entity_id:
@@ -721,6 +721,18 @@
           - switch.light_bed_stephan_links_switch
           - switch.light_bed_stephan_rechts_switch
         data: {}
+      - wait_template: >
+          {{ states('light.stefan_deckenlicht_light_3') not in ['unavailable','unknown'] }}
+        timeout: '00:00:08'
+        continue_on_timeout: true
+      - delay:
+          milliseconds: 800
+      - action: light.turn_on
+        target:
+          entity_id: light.stefan_deckenlicht_light_3
+        data:
+          brightness_pct: "{{ states('input_number.wakeup_brightness_stephan') | int(35) }}"
+          transition: 8
     - conditions:
       - condition: trigger
         id:
@@ -759,12 +771,6 @@
         entity_id: input_boolean.wakeup_enabled_stephan
         state: 'on'
       sequence:
-      - action: light.turn_on
-        target:
-          entity_id: light.stefan_deckenlicht_light_3
-        data:
-          brightness_pct: "{{ states('input_number.wakeup_brightness_stephan') | int(35) }}"
-          transition: 8
       - action: switch.turn_on
         target:
           entity_id:
@@ -772,6 +778,18 @@
           - switch.light_bed_stephan_links_switch
           - switch.light_bed_stephan_rechts_switch
         data: {}
+      - wait_template: >
+          {{ states('light.stefan_deckenlicht_light_3') not in ['unavailable','unknown'] }}
+        timeout: '00:00:08'
+        continue_on_timeout: true
+      - delay:
+          milliseconds: 800
+      - action: light.turn_on
+        target:
+          entity_id: light.stefan_deckenlicht_light_3
+        data:
+          brightness_pct: "{{ states('input_number.wakeup_brightness_stephan') | int(35) }}"
+          transition: 8
     - conditions:
       - condition: trigger
         id:
@@ -915,18 +933,24 @@
         entity_id: input_boolean.kids_home
         state: 'on'
       sequence:
-      - action: light.turn_on
-        target:
-          entity_id: light.zimmer_joshua_deckenlicht_light
-        data:
-          brightness_pct: "{{ states('input_number.wakeup_brightness_joshua') | int(35) }}"
-          transition: 8
       - action: switch.turn_on
         target:
           entity_id:
           - switch.sh_schlafzimmer_kinder_switch_0
           - switch.joshua_nachttisch_switch_2
         data: {}
+      - wait_template: >
+          {{ states('light.zimmer_joshua_deckenlicht_light') not in ['unavailable','unknown'] }}
+        timeout: '00:00:08'
+        continue_on_timeout: true
+      - delay:
+          milliseconds: 800
+      - action: light.turn_on
+        target:
+          entity_id: light.zimmer_joshua_deckenlicht_light
+        data:
+          brightness_pct: "{{ states('input_number.wakeup_brightness_joshua') | int(35) }}"
+          transition: 8
     - conditions:
       - condition: trigger
         id:
@@ -970,18 +994,24 @@
         entity_id: input_boolean.kids_home
         state: 'on'
       sequence:
-      - action: light.turn_on
-        target:
-          entity_id: light.zimmer_joshua_deckenlicht_light
-        data:
-          brightness_pct: "{{ states('input_number.wakeup_brightness_joshua') | int(35) }}"
-          transition: 8
       - action: switch.turn_on
         target:
           entity_id:
           - switch.sh_schlafzimmer_kinder_switch_0
           - switch.joshua_nachttisch_switch_2
         data: {}
+      - wait_template: >
+          {{ states('light.zimmer_joshua_deckenlicht_light') not in ['unavailable','unknown'] }}
+        timeout: '00:00:08'
+        continue_on_timeout: true
+      - delay:
+          milliseconds: 800
+      - action: light.turn_on
+        target:
+          entity_id: light.zimmer_joshua_deckenlicht_light
+        data:
+          brightness_pct: "{{ states('input_number.wakeup_brightness_joshua') | int(35) }}"
+          transition: 8
     - conditions:
       - condition: trigger
         id:

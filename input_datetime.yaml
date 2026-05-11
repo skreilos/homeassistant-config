@@ -151,3 +151,31 @@ wakeup_weekend_end_time_joshua:
   has_time: true
   icon: mdi:calendar-weekend
   initial: "09:00:00"
+
+kids_home_auto_light_start_julian:
+  name: Wecker Modus Tag Julian Start
+  has_date: false
+  has_time: true
+  icon: mdi:clock-start
+  initial: "08:00:00"
+
+kids_home_auto_light_end_julian:
+  name: Wecker Modus Tag Julian Ende
+  has_date: false
+  has_time: true
+  icon: mdi:clock-end
+  initial: "20:30:00"
+
+kids_home_auto_light_start_joshua:
+  name: Wecker Modus Tag Joshua Start
+  has_date: false
+  has_time: true
+  icon: mdi:clock-start
+  initial: "08:00:00"
+
+kids_home_auto_light_end_joshua:
+  name: Wecker Modus Tag Joshua Ende
+  has_date: false
+  has_time: true
+  icon: mdi:clock-end
+  initial: "20:30:00"

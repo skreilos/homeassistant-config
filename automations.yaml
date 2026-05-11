@@ -2230,7 +2230,7 @@
 - id: '1700081600900'
   alias: Licht Zimmer Julian Auto
   description: ''
-  trigger:
+  triggers:
   - type: motion
     platform: device
     device_id: 10f2c28e538678afa87baa50f1a46a60
@@ -2243,18 +2243,66 @@
     entity_id: 7aeaacf60ef1406495de3e9e1c7fa993
     domain: binary_sensor
     id: Motion Off
-  condition: []
-  action:
+  conditions: []
+  actions:
+  - variables:
+      lux: >
+        {% set v = states('sensor.lumi_lumi_sensor_motion_aq2_illuminance_9') %}
+        {{ v | float(9999) if v not in ['unknown','unavailable','none',''] else 9999 }}
+      day_window: >
+        {% set s = states('input_datetime.kids_home_auto_light_start_julian') %}
+        {% set e = states('input_datetime.kids_home_auto_light_end_julian') %}
+        {% set invalid = ['unknown','unavailable','none',''] %}
+        {% if s in invalid or e in invalid %} false
+        {% else %}
+          {% set start = today_at(s) %}
+          {% set end = today_at(e) %}
+          {% if end <= start %}
+            {{ now() >= start or now() < end }}
+          {% else %}
+            {{ now() >= start and now() < end }}
+          {% endif %}
+        {% endif %}
+      in_night: >
+        {% set s = states('input_datetime.night_auto_light_start_julian') %}
+        {% set e = states('input_datetime.night_auto_light_end_julian') %}
+        {% set invalid = ['unknown','unavailable','none',''] %}
+        {% if s in invalid or e in invalid %} false
+        {% else %}
+          {% set start = today_at(s) %}
+          {% set end = today_at(e) %}
+          {% if end <= start %}
+            {{ now() >= start or now() < end }}
+          {% else %}
+            {{ now() >= start and now() < end }}
+          {% endif %}
+        {% endif %}
+      night_pct: >
+        {{ states('input_number.night_brightness_decke_julian') | int(20) }}
+      target_pct: >
+        {{ night_pct if (in_night | bool and is_state('input_boolean.guest_mode','off')) else 100 }}
   - choose:
     - conditions:
       - condition: trigger
         id:
         - Motion On
+      - condition: template
+        value_template: "{{ lux | float < 120 }}"
+      - condition: or
+        conditions:
+        - condition: state
+          entity_id: input_boolean.kids_home
+          state: 'off'
+        - condition: template
+          value_template: "{{ day_window | bool }}"
       sequence:
-      - service: light.turn_on
+      - action: light.turn_on
         target:
           entity_id: light.deckenlicht_zimmer_julian_light
-      - service: switch.turn_on
+        data:
+          brightness_pct: "{{ target_pct | int }}"
+          transition: 1
+      - action: switch.turn_on
         target:
           entity_id: switch.zimmer_julian_schreibtisch_licht_switch
     - conditions:
@@ -2262,17 +2310,17 @@
         id:
         - Motion Off
       sequence:
-      - service: light.turn_off
+      - action: light.turn_off
         target:
           entity_id: light.deckenlicht_zimmer_julian_light
-      - service: switch.turn_off
+      - action: switch.turn_off
         target:
           entity_id: switch.zimmer_julian_schreibtisch_licht_switch
   mode: single
 - id: '1700083428473'
   alias: Licht Zimmer Joshua Auto
   description: ''
-  trigger:
+  triggers:
   - type: motion
     platform: device
     device_id: 30eb2c48b9f016cc0d29c317f0e7868b
@@ -2285,41 +2333,85 @@
     entity_id: 18e45793cb39f5e3b9c788ee67c10880
     domain: binary_sensor
     id: Motion Off
-  condition: []
-  action:
+  conditions: []
+  actions:
+  - variables:
+      lux: >
+        {% set v = states('sensor.motion_schlafzimmer_kinder_illuminance_9') %}
+        {{ v | float(9999) if v not in ['unknown','unavailable','none',''] else 9999 }}
+      day_window: >
+        {% set s = states('input_datetime.kids_home_auto_light_start_joshua') %}
+        {% set e = states('input_datetime.kids_home_auto_light_end_joshua') %}
+        {% set invalid = ['unknown','unavailable','none',''] %}
+        {% if s in invalid or e in invalid %} false
+        {% else %}
+          {% set start = today_at(s) %}
+          {% set end = today_at(e) %}
+          {% if end <= start %}
+            {{ now() >= start or now() < end }}
+          {% else %}
+            {{ now() >= start and now() < end }}
+          {% endif %}
+        {% endif %}
+      in_night: >
+        {% set s = states('input_datetime.night_auto_light_start_joshua') %}
+        {% set e = states('input_datetime.night_auto_light_end_joshua') %}
+        {% set invalid = ['unknown','unavailable','none',''] %}
+        {% if s in invalid or e in invalid %} false
+        {% else %}
+          {% set start = today_at(s) %}
+          {% set end = today_at(e) %}
+          {% if end <= start %}
+            {{ now() >= start or now() < end }}
+          {% else %}
+            {{ now() >= start and now() < end }}
+          {% endif %}
+        {% endif %}
+      night_pct: >
+        {{ states('input_number.night_brightness_decke_joshua') | int(20) }}
+      target_pct: >
+        {{ night_pct if (in_night | bool and is_state('input_boolean.guest_mode','off')) else 100 }}
   - choose:
     - conditions:
       - condition: trigger
         id:
         - Motion On
+      - condition: template
+        value_template: "{{ lux | float < 120 }}"
       - condition: or
         conditions:
-        - condition: time
-          after: 08:00:00
-          before: '20:00:00'
         - condition: state
           entity_id: input_boolean.kids_home
           state: 'off'
+        - condition: template
+          value_template: "{{ day_window | bool }}"
       sequence:
-      - service: switch.turn_on
+      - action: switch.turn_on
         target:
           entity_id: switch.sh_schlafzimmer_kinder_switch_0
+      - action: light.turn_on
+        target:
+          entity_id: light.zimmer_joshua_deckenlicht_light
+        data:
+          brightness_pct: "{{ target_pct | int }}"
+          transition: 1
+      - action: switch.turn_on
+        target:
+          entity_id: switch.schalter_zimmer_joshua_schreibtisch_licht
     - conditions:
       - condition: trigger
         id:
         - Motion Off
-      - condition: or
-        conditions:
-        - condition: state
-          entity_id: input_boolean.kids_home
-          state: 'off'
-        - condition: time
-          after: 08:00:00
-          before: '20:00:00'
       sequence:
-      - service: switch.turn_off
+      - action: light.turn_off
+        target:
+          entity_id: light.zimmer_joshua_deckenlicht_light
+      - action: switch.turn_off
         target:
           entity_id: switch.sh_schlafzimmer_kinder_switch_0
+      - action: switch.turn_off
+        target:
+          entity_id: switch.schalter_zimmer_joshua_schreibtisch_licht
   mode: single
 - id: '1700602646090'
   alias: Schalter Küche Abwaschmaschine Auto Ein

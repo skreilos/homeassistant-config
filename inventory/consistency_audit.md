@@ -1,8 +1,8 @@
 # Home Assistant Consistency Audit
 
-- Entities in snapshot: **2160**
-- Missing references in active config: **21**
-- Legacy entity IDs remaining: **36**
+- Entities in snapshot: **2217**
+- Missing references in active config: **22**
+- Legacy entity IDs remaining: **34**
 - Stale customize keys: **0**
 
 ## Priority Findings
@@ -13,10 +13,11 @@
 ## Missing References (Active Config)
 - `switch.sz_joshua_aquarium` in `automations.yaml`
 - `switch.sz_julian_aquarium` in `automations.yaml`
-- `media_player.android_tv_10_0_0_22` in `automations.yaml`
 - `sensor.ms_kuche` in `automations.yaml`
 - `light.aquarium_joshua` in `automations.yaml`
 - `light.aquarium_julian` in `automations.yaml`
+- `binary_sensor.julian_tablet_ip` in `automations.yaml`
+- `binary_sensor.joshua_tablet_ip` in `automations.yaml`
 - `scene.wohnraum_dimm_high` in `automations.yaml`
 - `scene.wohnraum` in `automations.yaml`
 - `scene.wohnraum_off` in `automations.yaml`
@@ -43,8 +44,6 @@
 - `button.spielzimmer_deckenlicht_identify`
 - `button.werktisch_licht_identify_2`
 - `input_number.eg_sound_spielzimmer`
-- `media_player.zimmer_joshua`
-- `media_player.zimmer_julian`
 - `number.deckenlicht_kinderspielzimmer_on_level`
 - `number.deckenlicht_kinderspielzimmer_on_off_transition_time`
 - `number.deckenlicht_kinderspielzimmer_start_up_color_temperature`

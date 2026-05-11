@@ -1,109 +1,114 @@
 {
   "summary": {
-    "entity_count": 2160,
-    "missing_reference_count": 21,
-    "legacy_entity_id_count": 36,
+    "entity_count": 2217,
+    "missing_reference_count": 22,
+    "legacy_entity_id_count": 34,
     "stale_customize_count": 0
   },
   "missing_references": [
     [
       "automations.yaml",
-      169,
+      298,
       "switch.sz_joshua_aquarium"
     ],
     [
       "automations.yaml",
-      170,
+      299,
       "switch.sz_julian_aquarium"
     ],
     [
       "automations.yaml",
-      285,
-      "media_player.android_tv_10_0_0_22"
-    ],
-    [
-      "automations.yaml",
-      412,
+      583,
       "sensor.ms_kuche"
     ],
     [
       "automations.yaml",
-      736,
+      1069,
       "light.aquarium_joshua"
     ],
     [
       "automations.yaml",
-      819,
+      1152,
       "light.aquarium_julian"
     ],
     [
       "automations.yaml",
-      2015,
+      1841,
+      "binary_sensor.julian_tablet_ip"
+    ],
+    [
+      "automations.yaml",
+      1842,
+      "binary_sensor.joshua_tablet_ip"
+    ],
+    [
+      "automations.yaml",
+      2429,
       "scene.wohnraum_dimm_high"
     ],
     [
       "automations.yaml",
-      2026,
+      2440,
       "scene.wohnraum"
     ],
     [
       "automations.yaml",
-      2037,
+      2451,
       "scene.wohnraum_off"
     ],
     [
       "automations.yaml",
-      2063,
+      2477,
       "scene.buro_on"
     ],
     [
       "automations.yaml",
-      2074,
+      2488,
       "scene.buro_off"
     ],
     [
       "automations.yaml",
-      2106,
+      2520,
       "scene.esstisch_high"
     ],
     [
       "automations.yaml",
-      2116,
+      2530,
       "scene.esstisch_off_motion_off"
     ],
     [
       "automations.yaml",
-      2126,
+      2540,
       "scene.esstisch_high_duplicate"
     ],
     [
       "automations.yaml",
-      2486,
+      2900,
       "sensor.web_scrape_2"
     ],
     [
       "automations.yaml",
-      2505,
+      2919,
       "sensor.website_seebadiwollishofen"
     ],
     [
       "automations.yaml",
-      2506,
+      2920,
       "sensor.website_badiletzigraben"
     ],
     [
       "automations.yaml",
-      2507,
+      2921,
       "sensor.website_coiffeurnora"
     ],
     [
       "automations.yaml",
-      2508,
+      2922,
       "sensor.website_massagepraxis"
     ],
     [
       "automations.yaml",
-      2509,
+      2923,
       "sensor.website_spatzenaescht"
     ],
     [
@@ -119,8 +124,6 @@
     "button.spielzimmer_deckenlicht_identify",
     "button.werktisch_licht_identify_2",
     "input_number.eg_sound_spielzimmer",
-    "media_player.kinderschlafzimmer",
-    "media_player.spielzimmer",
     "number.deckenlicht_kinderspielzimmer_on_level",
     "number.deckenlicht_kinderspielzimmer_on_off_transition_time",
     "number.deckenlicht_kinderspielzimmer_start_up_color_temperature",

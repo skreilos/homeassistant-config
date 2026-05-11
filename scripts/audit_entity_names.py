@@ -216,40 +216,55 @@ def parse_customize_friendly_names(repo_root: Path) -> Dict[str, str]:
     return result
 
 
-def parse_existing_map(path: Path) -> Tuple[Dict[str, Optional[str]], List[str]]:
+def parse_existing_map(
+    path: Path,
+) -> Tuple[Dict[str, Optional[str]], List[str], Dict[str, Optional[str]]]:
     """Read an existing entity_friendly_name_map.yaml.
 
-    Returns (entity_value_map, key_order). Values may be ``None`` for null/~
-    entries. Lines preserved in original order so re-writing keeps user
-    grouping comments where possible.
+    Returns (entity_value_map, key_order, device_value_map). Values may be
+    ``None`` for null/~ entries.
     """
     if not path.exists():
-        return {}, []
+        return {}, [], {}
     values: Dict[str, Optional[str]] = {}
     order: List[str] = []
+    devices: Dict[str, Optional[str]] = {}
     in_entities = False
+    in_devices = False
     for raw_line in path.read_text(encoding="utf-8").splitlines():
         stripped_l = raw_line.rstrip()
         if stripped_l.startswith("entities:"):
             in_entities = True
+            in_devices = False
             continue
         if stripped_l.startswith("devices:") or stripped_l.startswith("device:"):
             in_entities = False
+            inline = stripped_l.split(":", 1)[1].strip()
+            in_devices = inline not in {"{}", "[]"}
             continue
-        if not in_entities:
-            continue
-        m = re.match(r"^  ([a-z_]+\.[a-zA-Z0-9_]+):\s*(.*)$", stripped_l)
-        if not m:
-            continue
-        eid = m.group(1)
-        raw_val = m.group(2).strip()
-        if raw_val in {"", "~", "null"}:
-            values[eid] = None
-        else:
-            values[eid] = raw_val.strip('"').strip("'")
-        if eid not in order:
-            order.append(eid)
-    return values, order
+        if in_entities:
+            m = re.match(r"^  ([a-z_]+\.[a-zA-Z0-9_]+):\s*(.*)$", stripped_l)
+            if not m:
+                continue
+            eid = m.group(1)
+            raw_val = m.group(2).strip()
+            if raw_val in {"", "~", "null"}:
+                values[eid] = None
+            else:
+                values[eid] = raw_val.strip('"').strip("'")
+            if eid not in order:
+                order.append(eid)
+        elif in_devices:
+            md = re.match(r"^  ([A-Za-z0-9_\-:]+):\s*(.*)$", stripped_l)
+            if not md:
+                continue
+            did = md.group(1)
+            raw_val = md.group(2).strip()
+            if raw_val in {"", "~", "null"}:
+                devices[did] = None
+            else:
+                devices[did] = raw_val.strip('"').strip("'")
+    return values, order, devices
 
 
 def parse_scene_names(repo_root: Path) -> Dict[str, str]:
@@ -493,6 +508,7 @@ def write_production_map(
     cats: Dict[str, CategoryFinding],
     customize_overrides: Dict[str, str],
     existing_map: Dict[str, Optional[str]],
+    existing_devices: Optional[Dict[str, Optional[str]]] = None,
 ) -> Tuple[int, int]:
     """Write entity_friendly_name_map.yaml.
 
@@ -577,7 +593,17 @@ def write_production_map(
             lines.append(f'  {eid}: "{safe}"')
 
     lines.append("")
-    lines.append("devices: {}")
+    if existing_devices:
+        lines.append("devices:")
+        for did in sorted(existing_devices.keys()):
+            val = existing_devices[did]
+            if val is None:
+                lines.append(f"  {did}: ~")
+            else:
+                safe = val.replace('"', '\\"')
+                lines.append(f'  {did}: "{safe}"')
+    else:
+        lines.append("devices: {}")
     lines.append("")
     path.write_text("\n".join(lines), encoding="utf-8")
 
@@ -661,12 +687,16 @@ def main() -> int:
     map_path = root / "entity_friendly_name_map.yaml"
 
     customize_overrides = parse_customize_friendly_names(root)
-    existing_map, _ = parse_existing_map(map_path)
+    existing_map, _, existing_devices = parse_existing_map(map_path)
 
     write_markdown(md_path, cats, totals)
     write_template(template_path, cats)
     map_written, customized = write_production_map(
-        map_path, cats, customize_overrides, existing_map
+        map_path,
+        cats,
+        customize_overrides,
+        existing_map,
+        existing_devices=existing_devices,
     )
 
     payload = {

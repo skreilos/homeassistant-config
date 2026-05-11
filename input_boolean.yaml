@@ -54,12 +54,12 @@ show_additional_functionality:
   initial: off
 
 motion_wohnraum:
-  name: Sensor Bewegung Wohnraum
+  name: Sensor Wohnraum Bewegung
   icon: mdi:kettle
   initial: off
 
 motion_essraum:
-  name: Sensor Bewegung Essraum
+  name: Sensor Essraum Bewegung
   icon: mdi:kettle
   initial: off
 

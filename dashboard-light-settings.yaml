@@ -78,3 +78,21 @@ views:
             name: Zimmer Julian Schwelle
           - entity: input_number.auto_light_lux_threshold_joshua
             name: Zimmer Joshua Schwelle
+      - type: entities
+        title: Aktuelle Lux Bewegungsmelder
+        show_header_toggle: false
+        entities:
+          - entity: sensor.motion_gang_kuche_illuminance_9
+            name: Küche
+          - entity: sensor.motion_esstisch_illuminance_4
+            name: Essraum
+          - entity: sensor.lumi_lumi_sensor_motion_aq2_illuminance_2
+            name: Wohnzimmer Sofa
+          - entity: sensor.lumi_lumi_sensor_motion_aq2_illuminance
+            name: Schlafzimmer Stephan rechts
+          - entity: sensor.lumi_lumi_sensor_motion_aq2_illuminance_8
+            name: Schlafzimmer Stephan links
+          - entity: sensor.lumi_lumi_sensor_motion_aq2_illuminance_9
+            name: Zimmer Julian
+          - entity: sensor.motion_schlafzimmer_kinder_illuminance_9
+            name: Zimmer Joshua

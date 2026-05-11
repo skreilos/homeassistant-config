@@ -92,7 +92,7 @@ views:
             name: Schlafzimmer Stephan rechts
           - entity: sensor.lumi_lumi_sensor_motion_aq2_illuminance_8
             name: Schlafzimmer Stephan links
-          - entity: sensor.lumi_lumi_sensor_motion_aq2_illuminance_9
+          - entity: sensor.sensor_zimmer_julian_bewegung_illuminance
             name: Zimmer Julian
           - entity: sensor.motion_schlafzimmer_kinder_illuminance_9
             name: Zimmer Joshua

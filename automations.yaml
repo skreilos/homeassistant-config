@@ -2251,7 +2251,7 @@
   actions:
   - variables:
       lux: >
-        {% set v = states('sensor.lumi_lumi_sensor_motion_aq2_illuminance_9') %}
+        {% set v = states('sensor.sensor_zimmer_julian_bewegung_illuminance') %}
         {{ v | float(9999) if v not in ['unknown','unavailable','none',''] else 9999 }}
       lux_threshold: >
         {{ states('input_number.auto_light_lux_threshold_julian') | float(210) }}

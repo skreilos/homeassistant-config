@@ -442,6 +442,19 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: null
+  - entity_id: "automation.luftung_wohnung_timeout"
+    domain: "automation"
+    platform: "automation"
+    name: null
+    original_name: "Lüftung Wohnung Timeout"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: null
   - entity_id: "automation.mobile_schalter_zimmer_julian_v2"
     domain: "automation"
     platform: "automation"
@@ -2093,19 +2106,6 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "binary_sensor.lumi_lumi_sensor_motion_aq2_motion_9"
-    domain: "binary_sensor"
-    platform: "zha"
-    name: null
-    original_name: null
-    area_id: null
-    area_name: null
-    device_id: "10f2c28e538678afa87baa50f1a46a60"
-    device_name: "LUMI lumi.sensor_motion.aq2"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
   - entity_id: "binary_sensor.lumi_lumi_sensor_motion_aq2_occupancy"
     domain: "binary_sensor"
     platform: "zha"
@@ -2193,19 +2193,6 @@ entities:
     area_name: null
     device_id: "c837c3a276a2472f5bb7509e33e3fed7"
     device_name: "Motion Bett Stefan L"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
-  - entity_id: "binary_sensor.lumi_lumi_sensor_motion_aq2_occupancy_9"
-    domain: "binary_sensor"
-    platform: "zha"
-    name: null
-    original_name: "Occupancy"
-    area_id: null
-    area_name: null
-    device_id: "10f2c28e538678afa87baa50f1a46a60"
-    device_name: "LUMI lumi.sensor_motion.aq2"
     disabled_by: null
     hidden_by: null
     has_entity_name: true
@@ -3249,6 +3236,32 @@ entities:
     disabled_by: null
     hidden_by: null
     has_entity_name: false
+    original_icon: null
+  - entity_id: "binary_sensor.sensor_zimmer_julian_bewegung"
+    domain: "binary_sensor"
+    platform: "zha"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "10f2c28e538678afa87baa50f1a46a60"
+    device_name: "Sensor Zimmer Julian Bewegung"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "binary_sensor.sensor_zimmer_julian_bewegung_occupancy"
+    domain: "binary_sensor"
+    platform: "zha"
+    name: null
+    original_name: "Occupancy"
+    area_id: null
+    area_name: null
+    device_id: "10f2c28e538678afa87baa50f1a46a60"
+    device_name: "Sensor Zimmer Julian Bewegung"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
     original_icon: null
   - entity_id: "binary_sensor.sh_3d_printer_restart_required"
     domain: "binary_sensor"
@@ -8164,19 +8177,6 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "button.lumi_lumi_sensor_motion_aq2_identify_9"
-    domain: "button"
-    platform: "zha"
-    name: null
-    original_name: "Identify"
-    area_id: null
-    area_name: null
-    device_id: "10f2c28e538678afa87baa50f1a46a60"
-    device_name: "LUMI lumi.sensor_motion.aq2"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
   - entity_id: "button.lumi_lumi_weather_identify"
     domain: "button"
     platform: "zha"
@@ -8342,6 +8342,19 @@ entities:
     area_name: null
     device_id: "c6474e5c186b23a20c37c4a4c56042b7"
     device_name: "Schlafzimmer Stephan"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "button.sensor_zimmer_julian_bewegung_identify"
+    domain: "button"
+    platform: "zha"
+    name: null
+    original_name: "Identify"
+    area_id: null
+    area_name: null
+    device_id: "10f2c28e538678afa87baa50f1a46a60"
+    device_name: "Sensor Zimmer Julian Bewegung"
     disabled_by: null
     hidden_by: null
     has_entity_name: true
@@ -17589,19 +17602,6 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "sensor.lumi_lumi_sensor_motion_aq2_battery_9"
-    domain: "sensor"
-    platform: "zha"
-    name: null
-    original_name: "Battery"
-    area_id: null
-    area_name: null
-    device_id: "10f2c28e538678afa87baa50f1a46a60"
-    device_name: "LUMI lumi.sensor_motion.aq2"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
   - entity_id: "sensor.lumi_lumi_sensor_motion_aq2_device_temperature"
     domain: "sensor"
     platform: "zha"
@@ -17689,19 +17689,6 @@ entities:
     area_name: null
     device_id: "c837c3a276a2472f5bb7509e33e3fed7"
     device_name: "Motion Bett Stefan L"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
-  - entity_id: "sensor.lumi_lumi_sensor_motion_aq2_device_temperature_9"
-    domain: "sensor"
-    platform: "zha"
-    name: null
-    original_name: "Device temperature"
-    area_id: null
-    area_name: null
-    device_id: "10f2c28e538678afa87baa50f1a46a60"
-    device_name: "LUMI lumi.sensor_motion.aq2"
     disabled_by: null
     hidden_by: null
     has_entity_name: true
@@ -17797,19 +17784,6 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "sensor.lumi_lumi_sensor_motion_aq2_illuminance_9"
-    domain: "sensor"
-    platform: "zha"
-    name: null
-    original_name: "Illuminance"
-    area_id: null
-    area_name: null
-    device_id: "10f2c28e538678afa87baa50f1a46a60"
-    device_name: "LUMI lumi.sensor_motion.aq2"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
   - entity_id: "sensor.lumi_lumi_sensor_motion_aq2_lqi"
     domain: "sensor"
     platform: "zha"
@@ -17819,19 +17793,6 @@ entities:
     area_name: null
     device_id: "0283b2963c652472d3cddf0880770a65"
     device_name: "Motion Bett Stefan R"
-    disabled_by: "integration"
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
-  - entity_id: "sensor.lumi_lumi_sensor_motion_aq2_lqi_10"
-    domain: "sensor"
-    platform: "zha"
-    name: null
-    original_name: "LQI"
-    area_id: null
-    area_name: null
-    device_id: "10f2c28e538678afa87baa50f1a46a60"
-    device_name: "LUMI lumi.sensor_motion.aq2"
     disabled_by: "integration"
     hidden_by: null
     has_entity_name: true
@@ -17975,19 +17936,6 @@ entities:
     area_name: null
     device_id: "0283b2963c652472d3cddf0880770a65"
     device_name: "Motion Bett Stefan R"
-    disabled_by: "integration"
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
-  - entity_id: "sensor.lumi_lumi_sensor_motion_aq2_rssi_10"
-    domain: "sensor"
-    platform: "zha"
-    name: null
-    original_name: "RSSI"
-    area_id: null
-    area_name: null
-    device_id: "10f2c28e538678afa87baa50f1a46a60"
-    device_name: "LUMI lumi.sensor_motion.aq2"
     disabled_by: "integration"
     hidden_by: null
     has_entity_name: true
@@ -22125,6 +22073,71 @@ entities:
     disabled_by: null
     hidden_by: "integration"
     has_entity_name: false
+    original_icon: null
+  - entity_id: "sensor.sensor_zimmer_julian_bewegung_battery"
+    domain: "sensor"
+    platform: "zha"
+    name: null
+    original_name: "Battery"
+    area_id: null
+    area_name: null
+    device_id: "10f2c28e538678afa87baa50f1a46a60"
+    device_name: "Sensor Zimmer Julian Bewegung"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "sensor.sensor_zimmer_julian_bewegung_device_temperature"
+    domain: "sensor"
+    platform: "zha"
+    name: null
+    original_name: "Device temperature"
+    area_id: null
+    area_name: null
+    device_id: "10f2c28e538678afa87baa50f1a46a60"
+    device_name: "Sensor Zimmer Julian Bewegung"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "sensor.sensor_zimmer_julian_bewegung_illuminance"
+    domain: "sensor"
+    platform: "zha"
+    name: null
+    original_name: "Illuminance"
+    area_id: null
+    area_name: null
+    device_id: "10f2c28e538678afa87baa50f1a46a60"
+    device_name: "Sensor Zimmer Julian Bewegung"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "sensor.sensor_zimmer_julian_bewegung_lqi"
+    domain: "sensor"
+    platform: "zha"
+    name: null
+    original_name: "LQI"
+    area_id: null
+    area_name: null
+    device_id: "10f2c28e538678afa87baa50f1a46a60"
+    device_name: "Sensor Zimmer Julian Bewegung"
+    disabled_by: "integration"
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "sensor.sensor_zimmer_julian_bewegung_rssi"
+    domain: "sensor"
+    platform: "zha"
+    name: null
+    original_name: "RSSI"
+    area_id: null
+    area_name: null
+    device_id: "10f2c28e538678afa87baa50f1a46a60"
+    device_name: "Sensor Zimmer Julian Bewegung"
+    disabled_by: "integration"
+    hidden_by: null
+    has_entity_name: true
     original_icon: null
   - entity_id: "sensor.sensorair_buro_humidity"
     domain: "sensor"
@@ -28366,19 +28379,6 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
-  - entity_id: "update.lumi_lumi_sensor_motion_aq2_firmware_2"
-    domain: "update"
-    platform: "zha"
-    name: null
-    original_name: "Firmware"
-    area_id: null
-    area_name: null
-    device_id: "10f2c28e538678afa87baa50f1a46a60"
-    device_name: "LUMI lumi.sensor_motion.aq2"
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: true
-    original_icon: null
   - entity_id: "update.lumi_lumi_vibration_aq1_firmware"
     domain: "update"
     platform: "zha"
@@ -28583,6 +28583,19 @@ entities:
     area_name: null
     device_id: "63aa61c380a7932519e7479316839d5e"
     device_name: "Licht Zimmer Joshua Hauptlicht"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "update.sensor_zimmer_julian_bewegung_firmware"
+    domain: "update"
+    platform: "zha"
+    name: null
+    original_name: "Firmware"
+    area_id: null
+    area_name: null
+    device_id: "10f2c28e538678afa87baa50f1a46a60"
+    device_name: "Sensor Zimmer Julian Bewegung"
     disabled_by: null
     hidden_by: null
     has_entity_name: true

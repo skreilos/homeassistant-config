@@ -3067,3 +3067,23 @@
     entity_id: ddb0c6c3f0bc91dd1ef0845d65d71267
     domain: switch
   mode: single
+- id: '1778839200000'
+  alias: Lüftung Wohnung Timeout
+  description: Schaltet eine Lüftung aus, wenn sie länger als 1h ununterbrochen läuft.
+  triggers:
+  - trigger: state
+    entity_id:
+    - switch.bad_licht_channel_2
+    - switch.sh_wc_licht_channel_2
+    to: 'on'
+    for:
+      hours: 1
+      minutes: 0
+      seconds: 0
+  conditions: []
+  actions:
+  - action: switch.turn_off
+    target:
+      entity_id: '{{ trigger.entity_id }}'
+  mode: parallel
+  max: 5

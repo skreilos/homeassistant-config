@@ -767,6 +767,19 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: null
+  - entity_id: "automation.weihnachtsdeko"
+    domain: "automation"
+    platform: "automation"
+    name: null
+    original_name: "Schalter Wohnung Weihnachtsdeko"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: null
   - entity_id: "automation.wohnraum_scene_change"
     domain: "automation"
     platform: "automation"
@@ -8948,7 +8961,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Alarm Aktiv"
+    original_name: "Alarm Wohnung Aktiv"
     area_id: null
     area_name: null
     device_id: null
@@ -8961,7 +8974,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Gästemodus"
+    original_name: "Präsenz Gast Aktiv"
     area_id: null
     area_name: null
     device_id: null
@@ -8974,7 +8987,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Kinder Zuhause"
+    original_name: "Präsenz Kinder Zuhause"
     area_id: null
     area_name: null
     device_id: null
@@ -8987,7 +9000,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Manuelle Aktivierung Essraum"
+    original_name: "Schalter Essraum Manuell"
     area_id: null
     area_name: null
     device_id: null
@@ -9000,7 +9013,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Manuelle Aktivierung Zimmer Julian"
+    original_name: "Schalter Zimmer Julian Manuell"
     area_id: null
     area_name: null
     device_id: null
@@ -9013,7 +9026,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Manuelle Aktivierung Schlafzimmer Stephan"
+    original_name: "Schalter Zimmer Stephan Manuell"
     area_id: null
     area_name: null
     device_id: null
@@ -9026,7 +9039,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Manuelle Aktivierung Wohnraum"
+    original_name: "Schalter Wohnraum Manuell"
     area_id: null
     area_name: null
     device_id: null
@@ -9039,7 +9052,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Bewegung Essraum"
+    original_name: "Sensor Essraum Bewegung"
     area_id: null
     area_name: null
     device_id: null
@@ -9052,7 +9065,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Bewegung Wohnraum"
+    original_name: "Sensor Wohnraum Bewegung"
     area_id: null
     area_name: null
     device_id: null
@@ -9065,7 +9078,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Night Mode"
+    original_name: "Schalter Modus Nacht"
     area_id: null
     area_name: null
     device_id: null
@@ -9091,7 +9104,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Zusätzliche Funktionen Anzeigen"
+    original_name: "Schalter Zusätzliche Funktionen"
     area_id: null
     area_name: null
     device_id: null
@@ -9104,7 +9117,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Sonos EG gruppiert"
+    original_name: "Sound EG Gruppiert"
     area_id: null
     area_name: null
     device_id: null
@@ -9117,7 +9130,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "EG Sound"
+    original_name: "Sound EG Aktiv"
     area_id: null
     area_name: null
     device_id: null
@@ -9130,7 +9143,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Tageslicht"
+    original_name: "Schalter Tageslicht"
     area_id: null
     area_name: null
     device_id: null
@@ -9156,7 +9169,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Weckfunktion Joshua Aktiv"
+    original_name: "Wecker Joshua Aktiv"
     area_id: null
     area_name: null
     device_id: null
@@ -9169,7 +9182,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Weckfunktion Julian Aktiv"
+    original_name: "Wecker Julian Aktiv"
     area_id: null
     area_name: null
     device_id: null
@@ -9182,7 +9195,7 @@ entities:
     domain: "input_boolean"
     platform: "input_boolean"
     name: null
-    original_name: "Weckfunktion Stephan Aktiv"
+    original_name: "Wecker Stephan Aktiv"
     area_id: null
     area_name: null
     device_id: null
@@ -9221,7 +9234,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Nachtmodus Ende"
+    original_name: "Wecker Modus Nacht Ende"
     area_id: null
     area_name: null
     device_id: null
@@ -9234,7 +9247,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Nachtmodus Ende Joshua"
+    original_name: "Wecker Modus Nacht Joshua Ende"
     area_id: null
     area_name: null
     device_id: null
@@ -9247,7 +9260,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Nachtmodus Ende Julian"
+    original_name: "Wecker Modus Nacht Julian Ende"
     area_id: null
     area_name: null
     device_id: null
@@ -9260,7 +9273,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Nachtmodus Ende Stephan"
+    original_name: "Wecker Modus Nacht Stephan Ende"
     area_id: null
     area_name: null
     device_id: null
@@ -9273,7 +9286,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Nachtmodus Start"
+    original_name: "Wecker Modus Nacht Start"
     area_id: null
     area_name: null
     device_id: null
@@ -9286,7 +9299,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Nachtmodus Start Joshua"
+    original_name: "Wecker Modus Nacht Joshua Start"
     area_id: null
     area_name: null
     device_id: null
@@ -9299,7 +9312,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Nachtmodus Start Julian"
+    original_name: "Wecker Modus Nacht Julian Start"
     area_id: null
     area_name: null
     device_id: null
@@ -9312,7 +9325,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Nachtmodus Start Stephan"
+    original_name: "Wecker Modus Nacht Stephan Start"
     area_id: null
     area_name: null
     device_id: null
@@ -9325,7 +9338,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: "Zeit Night Mode Kinder Ende"
-    original_name: "Night Mode Kinder Ende"
+    original_name: "Wecker Modus Nacht Kinder Ende"
     area_id: null
     area_name: null
     device_id: null
@@ -9338,7 +9351,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: "Zeit Night Mode Kinder Start"
-    original_name: "Night Mode Kinder Start"
+    original_name: "Wecker Modus Nacht Kinder Start"
     area_id: null
     area_name: null
     device_id: null
@@ -9351,7 +9364,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Weckzeit Ende Wochentag Joshua"
+    original_name: "Wecker Joshua Wochentag Ende"
     area_id: null
     area_name: null
     device_id: null
@@ -9364,7 +9377,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Weckzeit Ende Wochentag Julian"
+    original_name: "Wecker Julian Wochentag Ende"
     area_id: null
     area_name: null
     device_id: null
@@ -9377,7 +9390,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Weckzeit Ende Wochentag Stephan"
+    original_name: "Wecker Stephan Wochentag Ende"
     area_id: null
     area_name: null
     device_id: null
@@ -9390,7 +9403,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Weckzeit Wochentag Joshua"
+    original_name: "Wecker Joshua Wochentag Start"
     area_id: null
     area_name: null
     device_id: null
@@ -9403,7 +9416,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Weckzeit Wochentag Julian"
+    original_name: "Wecker Julian Wochentag Start"
     area_id: null
     area_name: null
     device_id: null
@@ -9416,7 +9429,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Weckzeit Wochentag Stephan"
+    original_name: "Wecker Stephan Wochentag Start"
     area_id: null
     area_name: null
     device_id: null
@@ -9429,7 +9442,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Weckzeit Ende Wochenende Joshua"
+    original_name: "Wecker Joshua Wochenende Ende"
     area_id: null
     area_name: null
     device_id: null
@@ -9442,7 +9455,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Weckzeit Ende Wochenende Julian"
+    original_name: "Wecker Julian Wochenende Ende"
     area_id: null
     area_name: null
     device_id: null
@@ -9455,7 +9468,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Weckzeit Ende Wochenende Stephan"
+    original_name: "Wecker Stephan Wochenende Ende"
     area_id: null
     area_name: null
     device_id: null
@@ -9468,7 +9481,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Weckzeit Wochenende Joshua"
+    original_name: "Wecker Joshua Wochenende Start"
     area_id: null
     area_name: null
     device_id: null
@@ -9481,7 +9494,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Weckzeit Wochenende Julian"
+    original_name: "Wecker Julian Wochenende Start"
     area_id: null
     area_name: null
     device_id: null
@@ -9494,7 +9507,7 @@ entities:
     domain: "input_datetime"
     platform: "input_datetime"
     name: null
-    original_name: "Weckzeit Wochenende Stephan"
+    original_name: "Wecker Stephan Wochenende Start"
     area_id: null
     area_name: null
     device_id: null
@@ -9520,7 +9533,7 @@ entities:
     domain: "input_number"
     platform: "input_number"
     name: "Wert Tag Helligkeit Decke Schlafzimmer Stephan"
-    original_name: "Tag Helligkeit Decke Schlafzimmer Stephan"
+    original_name: "Licht Zimmer Stephan Decke Tag Helligkeit"
     area_id: null
     area_name: null
     device_id: null
@@ -9533,7 +9546,7 @@ entities:
     domain: "input_number"
     platform: "input_number"
     name: "Wert Tag Helligkeit Sofa"
-    original_name: "Tag Helligkeit Sofa"
+    original_name: "Licht Sofa Tag Helligkeit"
     area_id: null
     area_name: null
     device_id: null
@@ -9598,7 +9611,7 @@ entities:
     domain: "input_number"
     platform: "input_number"
     name: null
-    original_name: "Nacht Helligkeit Decke Joshua"
+    original_name: "Licht Zimmer Joshua Decke Nacht Helligkeit"
     area_id: null
     area_name: null
     device_id: null
@@ -9611,7 +9624,7 @@ entities:
     domain: "input_number"
     platform: "input_number"
     name: null
-    original_name: "Nacht Helligkeit Decke Julian"
+    original_name: "Licht Zimmer Julian Decke Nacht Helligkeit"
     area_id: null
     area_name: null
     device_id: null
@@ -9624,7 +9637,7 @@ entities:
     domain: "input_number"
     platform: "input_number"
     name: null
-    original_name: "Nacht Helligkeit Decke Schlafzimmer Stephan"
+    original_name: "Licht Zimmer Stephan Decke Nacht Helligkeit"
     area_id: null
     area_name: null
     device_id: null
@@ -9637,7 +9650,7 @@ entities:
     domain: "input_number"
     platform: "input_number"
     name: null
-    original_name: "Nacht Helligkeit Esstisch"
+    original_name: "Licht Esstisch Nacht Helligkeit"
     area_id: null
     area_name: null
     device_id: null
@@ -9650,7 +9663,7 @@ entities:
     domain: "input_number"
     platform: "input_number"
     name: null
-    original_name: "Nacht Helligkeit Küche"
+    original_name: "Licht Küche Nacht Helligkeit"
     area_id: null
     area_name: null
     device_id: null
@@ -9663,7 +9676,7 @@ entities:
     domain: "input_number"
     platform: "input_number"
     name: null
-    original_name: "Nacht Helligkeit Sofa"
+    original_name: "Licht Sofa Nacht Helligkeit"
     area_id: null
     area_name: null
     device_id: null
@@ -9676,7 +9689,7 @@ entities:
     domain: "input_number"
     platform: "input_number"
     name: null
-    original_name: "Weckfunktion Helligkeit Joshua"
+    original_name: "Wecker Joshua Helligkeit"
     area_id: null
     area_name: null
     device_id: null
@@ -9689,7 +9702,7 @@ entities:
     domain: "input_number"
     platform: "input_number"
     name: null
-    original_name: "Weckfunktion Helligkeit Julian"
+    original_name: "Wecker Julian Helligkeit"
     area_id: null
     area_name: null
     device_id: null
@@ -9702,7 +9715,7 @@ entities:
     domain: "input_number"
     platform: "input_number"
     name: null
-    original_name: "Weckfunktion Helligkeit Stephan"
+    original_name: "Wecker Stephan Helligkeit"
     area_id: null
     area_name: null
     device_id: null

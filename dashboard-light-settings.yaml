@@ -27,6 +27,18 @@ views:
           - entity: input_boolean.guest_mode
             name: Gästemodus
       - type: entities
+        title: Auto-Light Tageszeiten Kinderzimmer
+        show_header_toggle: false
+        entities:
+          - entity: input_datetime.kids_home_auto_light_start_julian
+            name: Auto-Light Julian Start
+          - entity: input_datetime.kids_home_auto_light_end_julian
+            name: Auto-Light Julian Ende
+          - entity: input_datetime.kids_home_auto_light_start_joshua
+            name: Auto-Light Joshua Start
+          - entity: input_datetime.kids_home_auto_light_end_joshua
+            name: Auto-Light Joshua Ende
+      - type: entities
         title: Helligkeit je Bereich
         show_header_toggle: false
         entities:

@@ -9243,6 +9243,58 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: "mdi:water-check"
+  - entity_id: "input_datetime.kids_home_auto_light_end_joshua"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Wecker Modus Tag Joshua Ende"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-end"
+  - entity_id: "input_datetime.kids_home_auto_light_end_julian"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Wecker Modus Tag Julian Ende"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-end"
+  - entity_id: "input_datetime.kids_home_auto_light_start_joshua"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Wecker Modus Tag Joshua Start"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-start"
+  - entity_id: "input_datetime.kids_home_auto_light_start_julian"
+    domain: "input_datetime"
+    platform: "input_datetime"
+    name: null
+    original_name: "Wecker Modus Tag Julian Start"
+    area_id: null
+    area_name: null
+    device_id: null
+    device_name: null
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: false
+    original_icon: "mdi:clock-start"
   - entity_id: "input_datetime.night_auto_light_end"
     domain: "input_datetime"
     platform: "input_datetime"

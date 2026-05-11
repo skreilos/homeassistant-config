@@ -62,3 +62,19 @@ views:
             name: Licht Zimmer Julian Decke Nacht
           - entity: input_number.night_brightness_decke_joshua
             name: Licht Zimmer Joshua Decke Nacht
+      - type: entities
+        title: Auto-Light Lux Schwellen
+        show_header_toggle: false
+        entities:
+          - entity: input_number.auto_light_lux_threshold_kuche
+            name: Küche Schwelle
+          - entity: input_number.auto_light_lux_threshold_essraum
+            name: Essraum Schwelle
+          - entity: input_number.auto_light_lux_threshold_sofa
+            name: Wohnzimmer Sofa Schwelle
+          - entity: input_number.auto_light_lux_threshold_schlafzimmer_stephan
+            name: Schlafzimmer Stephan Schwelle
+          - entity: input_number.auto_light_lux_threshold_julian
+            name: Zimmer Julian Schwelle
+          - entity: input_number.auto_light_lux_threshold_joshua
+            name: Zimmer Joshua Schwelle

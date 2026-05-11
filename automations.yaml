@@ -25,12 +25,12 @@
       - condition: trigger
         id:
         - Motion Küche On
-      - type: is_illuminance
-        condition: device
-        device_id: 51879b5d5dac01662aa2fc857af1aa6a
-        entity_id: 2727f4c60cd15af34090663bd6eb8bd3
-        domain: sensor
-        below: 180
+      - condition: template
+        value_template: >
+          {% set v = states('sensor.motion_gang_kuche_illuminance_9') %}
+          {% set lux = v | float(9999) if v not in ['unknown','unavailable','none',''] else 9999 %}
+          {% set th = states('input_number.auto_light_lux_threshold_kuche') | float(180) %}
+          {{ lux < th }}
       sequence:
       - service: light.turn_on
         data:
@@ -335,12 +335,12 @@
       - condition: trigger
         id:
         - Motion Esstisch On
-      - type: is_illuminance
-        condition: device
-        device_id: 265b30cca6a252a0611b9ba4c2bdcf18
-        entity_id: b7f5347381ea4bf7cda34880486f0fa8
-        domain: sensor
-        below: 250
+      - condition: template
+        value_template: >
+          {% set v = states('sensor.motion_esstisch_illuminance_4') %}
+          {% set lux = v | float(9999) if v not in ['unknown','unavailable','none',''] else 9999 %}
+          {% set th = states('input_number.auto_light_lux_threshold_essraum') | float(250) %}
+          {{ lux < th }}
       sequence:
       - choose:
         - conditions:
@@ -406,9 +406,12 @@
       - condition: trigger
         id:
         - Motion Sofa On
-      - condition: numeric_state
-        entity_id: sensor.lumi_lumi_sensor_motion_aq2_illuminance_2
-        below: 250
+      - condition: template
+        value_template: >
+          {% set v = states('sensor.lumi_lumi_sensor_motion_aq2_illuminance_2') %}
+          {% set lux = v | float(9999) if v not in ['unknown','unavailable','none',''] else 9999 %}
+          {% set th = states('input_number.auto_light_lux_threshold_sofa') | float(250) %}
+          {{ lux < th }}
       sequence:
       - data:
           brightness_pct: >
@@ -1256,7 +1259,8 @@
         value_template: >
           {% set lux_r = states('sensor.lumi_lumi_sensor_motion_aq2_illuminance') | float(9999) %}
           {% set lux_l = states('sensor.lumi_lumi_sensor_motion_aq2_illuminance_8') | float(9999) %}
-          {{ lux_r < 250 or lux_l < 250 }}
+          {% set th = states('input_number.auto_light_lux_threshold_schlafzimmer_stephan') | float(250) %}
+          {{ lux_r < th or lux_l < th }}
       - condition: or
         conditions:
         - condition: state
@@ -2249,6 +2253,8 @@
       lux: >
         {% set v = states('sensor.lumi_lumi_sensor_motion_aq2_illuminance_9') %}
         {{ v | float(9999) if v not in ['unknown','unavailable','none',''] else 9999 }}
+      lux_threshold: >
+        {{ states('input_number.auto_light_lux_threshold_julian') | float(120) }}
       day_window: >
         {% set s = states('input_datetime.kids_home_auto_light_start_julian') %}
         {% set e = states('input_datetime.kids_home_auto_light_end_julian') %}
@@ -2287,7 +2293,7 @@
         id:
         - Motion On
       - condition: template
-        value_template: "{{ lux | float < 120 }}"
+        value_template: "{{ lux | float < lux_threshold | float }}"
       - condition: or
         conditions:
         - condition: state
@@ -2339,6 +2345,8 @@
       lux: >
         {% set v = states('sensor.motion_schlafzimmer_kinder_illuminance_9') %}
         {{ v | float(9999) if v not in ['unknown','unavailable','none',''] else 9999 }}
+      lux_threshold: >
+        {{ states('input_number.auto_light_lux_threshold_joshua') | float(120) }}
       day_window: >
         {% set s = states('input_datetime.kids_home_auto_light_start_joshua') %}
         {% set e = states('input_datetime.kids_home_auto_light_end_joshua') %}
@@ -2377,7 +2385,7 @@
         id:
         - Motion On
       - condition: template
-        value_template: "{{ lux | float < 120 }}"
+        value_template: "{{ lux | float < lux_threshold | float }}"
       - condition: or
         conditions:
         - condition: state

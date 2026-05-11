@@ -107,3 +107,63 @@ wakeup_brightness_joshua:
   unit_of_measurement: "%"
   icon: mdi:weather-sunset-up
   initial: 100
+
+auto_light_lux_threshold_kuche:
+  name: Licht Küche Lux Schwelle
+  min: 0
+  max: 1000
+  step: 5
+  mode: slider
+  unit_of_measurement: "lx"
+  icon: mdi:brightness-5
+  initial: 180
+
+auto_light_lux_threshold_essraum:
+  name: Licht Essraum Lux Schwelle
+  min: 0
+  max: 1000
+  step: 5
+  mode: slider
+  unit_of_measurement: "lx"
+  icon: mdi:brightness-5
+  initial: 250
+
+auto_light_lux_threshold_sofa:
+  name: Licht Wohnzimmer Sofa Lux Schwelle
+  min: 0
+  max: 1000
+  step: 5
+  mode: slider
+  unit_of_measurement: "lx"
+  icon: mdi:brightness-5
+  initial: 250
+
+auto_light_lux_threshold_schlafzimmer_stephan:
+  name: Licht Schlafzimmer Stephan Lux Schwelle
+  min: 0
+  max: 1000
+  step: 5
+  mode: slider
+  unit_of_measurement: "lx"
+  icon: mdi:brightness-5
+  initial: 250
+
+auto_light_lux_threshold_julian:
+  name: Licht Zimmer Julian Lux Schwelle
+  min: 0
+  max: 1000
+  step: 5
+  mode: slider
+  unit_of_measurement: "lx"
+  icon: mdi:brightness-5
+  initial: 120
+
+auto_light_lux_threshold_joshua:
+  name: Licht Zimmer Joshua Lux Schwelle
+  min: 0
+  max: 1000
+  step: 5
+  mode: slider
+  unit_of_measurement: "lx"
+  icon: mdi:brightness-5
+  initial: 120

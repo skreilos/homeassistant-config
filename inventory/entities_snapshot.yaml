@@ -767,19 +767,6 @@ entities:
     hidden_by: null
     has_entity_name: false
     original_icon: null
-  - entity_id: "automation.weihnachtsdeko"
-    domain: "automation"
-    platform: "automation"
-    name: null
-    original_name: "Schalter Wohnung Weihnachtsdeko"
-    area_id: null
-    area_name: null
-    device_id: null
-    device_name: null
-    disabled_by: null
-    hidden_by: null
-    has_entity_name: false
-    original_icon: null
   - entity_id: "automation.wohnraum_scene_change"
     domain: "automation"
     platform: "automation"
@@ -4910,6 +4897,19 @@ entities:
     area_name: null
     device_id: "28a0e52e485932684d4de5ad97cd3dfe"
     device_name: "SH_Aquarium_HS"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: null
+  - entity_id: "button.bad_favorite_current_song"
+    domain: "button"
+    platform: "music_assistant"
+    name: null
+    original_name: "Favorite current song"
+    area_id: null
+    area_name: null
+    device_id: "4e967f99287783b2c2771b89df037ee0"
+    device_name: "Bad"
     disabled_by: null
     hidden_by: null
     has_entity_name: true
@@ -10257,6 +10257,19 @@ entities:
     hidden_by: null
     has_entity_name: true
     original_icon: null
+  - entity_id: "media_player.bad_2"
+    domain: "media_player"
+    platform: "music_assistant"
+    name: null
+    original_name: null
+    area_id: null
+    area_name: null
+    device_id: "4e967f99287783b2c2771b89df037ee0"
+    device_name: "Bad"
+    disabled_by: null
+    hidden_by: null
+    has_entity_name: true
+    original_icon: "mdi:speaker"
   - entity_id: "media_player.buro"
     domain: "media_player"
     platform: "sonos"

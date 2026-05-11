@@ -56,6 +56,13 @@ devices:
     manufacturer: "Sonos"
     model: "SYMFONISK Bookshelf"
     via_device_id: null
+  - device_id: "4e967f99287783b2c2771b89df037ee0"
+    name: "Bad"
+    name_by_user: null
+    area_id: null
+    manufacturer: "SONOS"
+    model: "Bookshelf"
+    via_device_id: null
   - device_id: "23f3d7dab64946f776b59768ec6297d2"
     name: "IKEA of Sweden TRADFRI remote control"
     name_by_user: "Button - Sound Control - Büro"

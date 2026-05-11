@@ -2397,15 +2397,21 @@
       - action: switch.turn_on
         target:
           entity_id: switch.sh_schlafzimmer_kinder_switch_0
+      - action: switch.turn_on
+        target:
+          entity_id: switch.schalter_zimmer_joshua_schreibtisch_licht
+      - wait_template: >
+          {{ states('light.zimmer_joshua_deckenlicht_light') not in ['unavailable','unknown'] }}
+        timeout: '00:00:08'
+        continue_on_timeout: true
+      - delay:
+          milliseconds: 800
       - action: light.turn_on
         target:
           entity_id: light.zimmer_joshua_deckenlicht_light
         data:
           brightness_pct: "{{ target_pct | int }}"
           transition: 1
-      - action: switch.turn_on
-        target:
-          entity_id: switch.schalter_zimmer_joshua_schreibtisch_licht
     - conditions:
       - condition: trigger
         id:
